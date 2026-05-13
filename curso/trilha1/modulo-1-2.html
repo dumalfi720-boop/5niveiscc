@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.2 Cheat Code: seu primeiro Projeto | T1</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .bg-emerald-500\/10{background-color:rgba(4,120,87,.08)}html:not(.dark) .bg-emerald-500\/20{background-color:rgba(4,120,87,.12)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(4,120,87,.3)}html:not(.dark) .bg-emerald-600{background-color:#047857}html:not(.dark) .hover\:bg-emerald-500:hover{background-color:#059669}
+</style>
+</head>
+<body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+    <div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+    <div class="flex items-center space-x-2"><a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10">T1</a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div>
+  </div></div>
+</nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-emerald-400">Início</a> / <a href="index.html" class="hover:text-emerald-400">Trilha 1</a> / <span class="text-neutral-300">Módulo 1.2</span></nav>
+
+<header class="mb-10">
+  <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mb-3">MÓDULO 1.2 · CHEAT CODE · ~20 min</span>
+  <h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🚀 Cheat Code: seu primeiro Projeto</h1>
+  <p class="text-lg text-neutral-300">Esse é o único módulo que precisa ser feito antes de passar pro Nível 2. Projetos são a "espinha dorsal" do N2 — tudo o que vem depois usa essa base.</p>
+</header>
+
+<section class="mb-16">
+  <div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🦴 Por que Projeto é a espinha do N2</h2></div>
+  <p class="text-neutral-300 mb-4">Projeto é um espaço dentro do Claude com 3 ingredientes que mudam tudo: <strong class="text-emerald-400">instrução fixa</strong> (system prompt sobre quem você é e como Claude deve responder), <strong class="text-emerald-400">base de conhecimento</strong> (PDFs, docs, exemplos), e <strong class="text-emerald-400">histórico</strong> (todas as conversas no projeto ficam acessíveis).</p>
+  <p class="text-neutral-300 mb-4">O resultado prático: você abre uma conversa nova segunda-feira e diz "qual foi a decisão que tomamos sobre o lançamento Q2?" — e Claude responde, cita a conversa, e continua dali. Não é mais ferramenta sem estado. É continuidade.</p>
+  <div class="bg-emerald-500/10 border-l-4 border-emerald-500/30 rounded-lg p-4">
+    <p class="text-sm text-neutral-300"><strong class="text-emerald-400">💡 Por isso é o cheat code:</strong> uma única configuração de 10 minutos destranca todas as 6 features do Nível 2. Sem isso, você fica preso no chat puro pra sempre.</p>
+  </div>
+</section>
+
+<section class="mb-16">
+  <div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">🎯 Escolhendo o tema certo</h2></div>
+  <p class="text-neutral-300 mb-4">O primeiro projeto define se você vai ter "uau" ou "tanto faz". Use os 3 critérios:</p>
+  <div class="space-y-3">
+    <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-emerald-400 mb-1">1. Recorrente</h3><p class="text-sm text-neutral-300">Algo que você toca toda semana — atendimento de cliente, criação de conteúdo, estudo de um tema, gestão de um produto.</p></div>
+    <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-emerald-400 mb-1">2. Com material de referência</h3><p class="text-sm text-neutral-300">Você tem PDFs, docs, exemplos passados, brand guidelines, FAQs — algo pra "alimentar" o projeto.</p></div>
+    <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-emerald-400 mb-1">3. Com público/escopo definido</h3><p class="text-sm text-neutral-300">"Atendimento da loja X" > "Atendimento ao cliente". Específico ganha sempre.</p></div>
+  </div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mt-4"><h3 class="font-semibold text-emerald-400 mb-2">📋 Exemplos práticos por papel:</h3><ul class="text-sm text-neutral-300 space-y-1"><li>• <strong>Criador de conteúdo:</strong> "Roteiros pro canal X sobre tema Y"</li><li>• <strong>Atendimento:</strong> "Suporte da loja Z, política W"</li><li>• <strong>Vendas:</strong> "Outbound pra ICP X, oferta Y"</li><li>• <strong>Estudo:</strong> "Concurso da carreira X, edital atual"</li><li>• <strong>Gestão:</strong> "Squad X, sprint atual"</li></ul></div>
+</section>
+
+<section class="mb-16">
+  <div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🧬 Anatomia de um Projeto bem montado</h2></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5 mb-4">
+    <h3 class="font-semibold text-emerald-400 mb-3">Camada 1 — System prompt (instrução fixa)</h3>
+    <p class="text-sm text-neutral-300 mb-2">Onde: aba "Instructions" do projeto. Tamanho: até 1 página. O que vai aí:</p>
+    <ul class="text-sm text-neutral-300 space-y-1 ml-4"><li>• <strong>Quem você é</strong> (papel, contexto profissional)</li><li>• <strong>Como Claude deve responder</strong> (tom, idioma, formato preferido)</li><li>• <strong>Regras fixas</strong> ("sempre cite a fonte", "nunca use jargão")</li><li>• <strong>Atalhos</strong> ("quando eu disser 'modo briefing', faça X")</li></ul>
+  </div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5 mb-4">
+    <h3 class="font-semibold text-emerald-400 mb-3">Camada 2 — Knowledge base</h3>
+    <p class="text-sm text-neutral-300">Onde: "Project knowledge". Cole PDFs, docs Markdown, exemplos de trabalhos passados, brand book. Limite ~200k tokens. Comece com 2-5 arquivos essenciais — mais é menos quando o assunto é projeto novo.</p>
+  </div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+    <h3 class="font-semibold text-emerald-400 mb-3">Camada 3 — Histórico de conversas</h3>
+    <p class="text-sm text-neutral-300">Toda conversa criada dentro do projeto fica acessível. Memory ativa permite que Claude lembre decisões. Combine com "busca em conversas anteriores" (paid) pra encontrar qualquer coisa.</p>
+  </div>
+</section>
+
+<section class="mb-16">
+  <div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">📝 Template de instrução fixa</h2></div>
+  <p class="text-neutral-300 mb-4">Cole, adapte os campos entre [colchetes], pronto:</p>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5 font-mono text-sm text-neutral-300 whitespace-pre-line">
+**Quem sou eu**
+Sou [seu papel] na [contexto / empresa]. Meu público é [quem consome o que você produz].
+
+**Como você deve responder**
+- Idioma: português do Brasil, tom [confiante / informal / técnico]
+- Formato preferido: [bullets / parágrafos curtos / tabelas]
+- Sempre: [3 regras inegociáveis]
+- Nunca: [3 vetos claros]
+
+**Materiais de referência**
+Use os arquivos do projeto como fonte primária. Cite trecho ou nome do arquivo sempre que afirmar algo.
+
+**Atalhos**
+- Quando eu disser "modo briefing", entregue resumo executivo em 5 bullets.
+- Quando eu disser "modo crítico", aponte os 3 pontos fracos antes de elogiar.
+- Quando eu disser "modo entregável", responda em formato pronto pra cliente.
+  </div>
+</section>
+
+<section class="mb-16">
+  <div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">✅ Sinais de que você está pronto pra subir</h2></div>
+  <p class="text-neutral-300 mb-4">Você criou o projeto, usou por uma semana, e começou a sentir esses incômodos. Cada um deles é gatilho do N2:</p>
+  <ul class="text-sm text-neutral-300 space-y-2">
+    <li>• <strong class="text-emerald-400">"Queria que ele pegasse esse arquivo do Drive sozinho"</strong> → conectores (N2)</li>
+    <li>• <strong class="text-emerald-400">"Esse Excel mereceria um deck"</strong> → criação de arquivos (N2)</li>
+    <li>• <strong class="text-emerald-400">"Quero compartilhar essa ferramenta com o time"</strong> → artifacts publicáveis (N2)</li>
+    <li>• <strong class="text-emerald-400">"Esse gráfico ficaria melhor visual"</strong> → visuais inline (N2)</li>
+    <li>• <strong class="text-emerald-400">"Sempre pergunto pelas mesmas decisões antigas"</strong> → memória + busca (N2)</li>
+  </ul>
+</section>
+
+<section class="mb-16">
+  <div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📋 Checklist de transição → Nível 2</h2></div>
+  <p class="text-neutral-300 mb-4">Marque cada item antes de pular pra Trilha 2:</p>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><ul class="text-sm text-neutral-300 space-y-2">
+    <li>☐ Tema escolhido (recorrente, com material, com escopo)</li>
+    <li>☐ Instrução fixa escrita usando o template</li>
+    <li>☐ 2-5 arquivos de referência anexados</li>
+    <li>☐ 1 conversa-piloto rodou e o resultado foi melhor que no chat puro</li>
+    <li>☐ Você revisou os erros do Claude e ajustou a instrução</li>
+    <li>☐ Memory ativada nas configurações</li>
+    <li>☐ Você sente atrito de manualizar (= sinal verde pra N2)</li>
+  </ul></div>
+</section>
+
+<section class="mb-12">
+  <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
+    <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+    <div class="space-y-3 mb-6 text-sm">
+      <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Projeto = espinha do N2</strong> <span class="text-neutral-400">— instrução + knowledge + histórico.</span></div></div>
+      <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">3 critérios pro tema certo</strong> <span class="text-neutral-400">— recorrente, com material, com escopo.</span></div></div>
+      <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Template de instrução</strong> <span class="text-neutral-400">— quem eu sou, como responder, sempre/nunca, atalhos.</span></div></div>
+      <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Suba pelo incômodo certo</strong> <span class="text-neutral-400">— "queria que ele fizesse X sozinho" é o sinal.</span></div></div>
+      <div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">7 itens de checklist</strong> <span class="text-neutral-400">— pular sem isso = caos no N2.</span></div></div>
+    </div>
+    <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-emerald-400 mb-2">Próxima Trilha:</h3><p class="text-neutral-300">Trilha 2 — Iniciante: projetos, memória, conectores, arquivos reais e artifacts.</p></div>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
+      <a href="../trilha2/index.html" class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition">Próxima Trilha →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body>
+</html>

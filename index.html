@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Os 5 Níveis do Claude Code | INEMA.CLUB</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: { extend: { colors: {
+    primary: '#FACC15',
+    dark: { 600:'#374151', 700:'#1f2937', 800:'#111827', 900:'#0a0f1c' }
+  }}}
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+.dark body { background-color: #0a0f1c; }
+html:not(.dark) body { background-color: #f8fafc; }
+html:not(.dark) .bg-dark-900 { background-color: #ffffff; }
+html:not(.dark) .bg-dark-900\/95 { background-color: rgba(255,255,255,0.95); }
+html:not(.dark) .bg-dark-800 { background-color: #f9fafb; }
+html:not(.dark) .bg-dark-700 { background-color: #f3f4f6; }
+html:not(.dark) .bg-dark-600 { background-color: #e5e7eb; }
+html:not(.dark) .text-neutral-100 { color: #111827; }
+html:not(.dark) .text-neutral-300 { color: #4b5563; }
+html:not(.dark) .text-neutral-400 { color: #6b7280; }
+html:not(.dark) .text-neutral-500 { color: #9ca3af; }
+html:not(.dark) .border-dark-600 { border-color: #d1d5db; }
+html:not(.dark) .border-dark-700 { border-color: #e5e7eb; }
+html:not(.dark) [class*="bg-gradient-to"] { background-image: none !important; }
+html:not(.dark) .text-primary { color: #a16207; }
+html:not(.dark) .text-sky-400 { color: #0369a1; }
+html:not(.dark) .text-yellow-400 { color: #a16207; }
+html:not(.dark) .hover\:text-sky-300:hover { color: #0284c7; }
+/* Acentos por trilha */
+html:not(.dark) .text-emerald-400 { color: #047857; }
+html:not(.dark) .bg-emerald-500\/10 { background-color: rgba(4,120,87,0.08); }
+html:not(.dark) .bg-emerald-500\/20 { background-color: rgba(4,120,87,0.12); }
+html:not(.dark) .border-emerald-500\/30 { border-color: rgba(4,120,87,0.3); }
+html:not(.dark) .hover\:text-emerald-400:hover { color: #047857; }
+html:not(.dark) .text-blue-400 { color: #1d4ed8; }
+html:not(.dark) .bg-blue-500\/10 { background-color: rgba(29,78,216,0.08); }
+html:not(.dark) .bg-blue-500\/20 { background-color: rgba(29,78,216,0.12); }
+html:not(.dark) .border-blue-500\/30 { border-color: rgba(29,78,216,0.3); }
+html:not(.dark) .hover\:text-blue-400:hover { color: #1d4ed8; }
+html:not(.dark) .text-purple-400 { color: #6d28d9; }
+html:not(.dark) .bg-purple-500\/10 { background-color: rgba(109,40,217,0.08); }
+html:not(.dark) .bg-purple-500\/20 { background-color: rgba(109,40,217,0.12); }
+html:not(.dark) .border-purple-500\/30 { border-color: rgba(109,40,217,0.3); }
+html:not(.dark) .hover\:text-purple-400:hover { color: #6d28d9; }
+html:not(.dark) .text-amber-400 { color: #b45309; }
+html:not(.dark) .bg-amber-500\/10 { background-color: rgba(180,83,9,0.08); }
+html:not(.dark) .bg-amber-500\/20 { background-color: rgba(180,83,9,0.12); }
+html:not(.dark) .border-amber-500\/30 { border-color: rgba(180,83,9,0.3); }
+html:not(.dark) .hover\:text-amber-400:hover { color: #b45309; }
+html:not(.dark) .text-teal-400 { color: #0f766e; }
+html:not(.dark) .bg-teal-500\/10 { background-color: rgba(15,118,110,0.08); }
+html:not(.dark) .bg-teal-500\/20 { background-color: rgba(15,118,110,0.12); }
+html:not(.dark) .border-teal-500\/30 { border-color: rgba(15,118,110,0.3); }
+html:not(.dark) .hover\:text-teal-400:hover { color: #0f766e; }
+html:not(.dark) .text-rose-400 { color: #be123c; }
+html:not(.dark) .bg-rose-500\/10 { background-color: rgba(190,18,60,0.08); }
+html:not(.dark) .bg-rose-500\/20 { background-color: rgba(190,18,60,0.12); }
+html:not(.dark) .border-rose-500\/30 { border-color: rgba(190,18,60,0.3); }
+html:not(.dark) .hover\:text-rose-400:hover { color: #be123c; }
+</style>
+</head>
+<body class="text-neutral-100">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-14">
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="text-2xl">🪜</span>
+          <span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude Code</span>
+        </a>
+        <span class="text-neutral-600">|</span>
+        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+      </div>
+      <div class="flex items-center space-x-1 sm:space-x-2">
+        <a href="curso/trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+        <a href="curso/trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+        <a href="curso/trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+        <a href="curso/trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+        <a href="curso/trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+        <a href="curso/trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+        <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1">
+          <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+  <div class="grid lg:grid-cols-2 gap-8 items-center">
+    <div>
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary border border-primary/40 mb-4">CURSO COMPLETO • PT-BR</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Em qual <span class="text-primary">nível</span> do Claude você está hoje?</h1>
+      <p class="text-lg text-neutral-300 mb-6">Da conversa simples à automação autônoma. Cinco níveis, um caminho claro, cheat codes entre cada um — e uma prova final pra você se posicionar com honestidade.</p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="#diagnostico" class="px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:opacity-90 transition text-center">▶ Fazer o diagnóstico</a>
+        <a href="#trilhas" class="px-6 py-3 bg-dark-700 text-neutral-100 font-semibold rounded-lg hover:bg-dark-600 transition text-center border border-dark-600">Ver as 6 trilhas</a>
+      </div>
+      <p class="text-sm text-neutral-500 mt-4">⏱ ~6h de conteúdo · 13 módulos · 80+ tópicos · prova final</p>
+    </div>
+    <div>
+      <img src="assets/capa.png" alt="Os 5 Níveis do Claude" class="w-full rounded-xl border border-dark-600 shadow-2xl">
+    </div>
+  </div>
+</section>
+
+<!-- PROVOCAÇÃO -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="bg-gradient-to-br from-primary/10 via-dark-800 to-dark-800 rounded-xl border border-primary/40 p-8">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4">⚡ Não adianta pular níveis — adianta saber em qual você travou.</h2>
+    <p class="text-neutral-300 text-lg mb-2">Todo mundo trata Claude como busca. 90% trava no Nível 1 sem perceber. Quem chega ao Nível 5 acorda com PRs já revisados, briefings prontos e relatórios entregues — máquina desligada.</p>
+    <p class="text-neutral-300 text-lg">O salto entre níveis tem um <strong class="text-primary">"cheat code"</strong> em cada um. Esse curso te dá os 5.</p>
+  </div>
+</section>
+
+<!-- DIAGNÓSTICO -->
+<section id="diagnostico" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="text-center mb-10">
+    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-3">DIAGNÓSTICO RÁPIDO</span>
+    <h2 class="text-3xl sm:text-4xl font-bold mb-3">📊 Em 10 perguntas, eu te digo seu nível</h2>
+    <p class="text-neutral-400">Marque apenas o que você JÁ FAZ hoje (não o que pretende fazer).</p>
+  </div>
+  <div id="quiz" class="bg-dark-800 rounded-xl border border-dark-600 p-6 sm:p-8 max-w-3xl mx-auto">
+    <div id="quiz-questions" class="space-y-3"></div>
+    <button id="quiz-submit" class="w-full mt-6 px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:opacity-90 transition">Calcular meu nível</button>
+    <div id="quiz-result" class="hidden mt-6"></div>
+  </div>
+</section>
+
+<!-- TRILHAS -->
+<section id="trilhas" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-3">🗺 As 6 trilhas do curso</h2>
+    <p class="text-neutral-400">5 níveis + 1 prova final. Cada trilha tem cor própria — siga em ordem ou pule pra onde você está.</p>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+    <a href="curso/trilha1/index.html" class="group bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all">
+      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-emerald-500/20 text-emerald-400">TRILHA 1</span><span class="text-neutral-500 text-xs">~45min</span></div>
+      <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">💬 Entusiasta</h3>
+      <p class="text-sm text-neutral-400 mb-4">Você usa Claude como uma busca inteligente. Aprenda a sair daí.</p>
+      <ul class="text-xs text-neutral-500 space-y-1"><li>• Prompts que entregam</li><li>• Screenshots como input</li><li>• Cheat code: 1º projeto</li></ul>
+    </a>
+
+    <a href="curso/trilha2/index.html" class="group bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all">
+      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-blue-500/20 text-blue-400">TRILHA 2</span><span class="text-neutral-500 text-xs">~50min</span></div>
+      <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">📁 Iniciante</h3>
+      <p class="text-sm text-neutral-400 mb-4">Projetos, memória, conectores e arquivos reais. 5h economizadas por semana.</p>
+      <ul class="text-xs text-neutral-500 space-y-1"><li>• Projects + system prompts</li><li>• Slack/Drive/Gmail/Notion</li><li>• Excel, PPT, PDF do chat</li></ul>
+    </a>
+
+    <a href="curso/trilha3/index.html" class="group bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all">
+      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-purple-500/20 text-purple-400">TRILHA 3</span><span class="text-neutral-500 text-xs">~70min</span></div>
+      <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition">🖥 Intermediário</h3>
+      <p class="text-sm text-neutral-400 mb-4">Co-work, skills, tarefas agendadas. Claude vira coworker na sua máquina.</p>
+      <ul class="text-xs text-neutral-500 space-y-1"><li>• Filesystem access seguro</li><li>• Skills + /schedule</li><li>• Claude Design</li></ul>
+    </a>
+
+    <a href="curso/trilha4/index.html" class="group bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all">
+      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-amber-500/20 text-amber-400">TRILHA 4</span><span class="text-neutral-500 text-xs">~80min</span></div>
+      <h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition">⚙ Avançado</h3>
+      <p class="text-sm text-neutral-400 mb-4">Claude Code, claude.md, worktrees, subagentes. Projetos R$ 25–75k.</p>
+      <ul class="text-xs text-neutral-500 space-y-1"><li>• Plan mode + Opus Plan</li><li>• 3–4 sessões paralelas</li><li>• Slash commands custom</li></ul>
+    </a>
+
+    <a href="curso/trilha5/index.html" class="group bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all">
+      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-teal-500/20 text-teal-400">TRILHA 5</span><span class="text-neutral-500 text-xs">~90min</span></div>
+      <h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition">🛰 Arquiteto</h3>
+      <p class="text-sm text-neutral-400 mb-4">Routines, hooks, agent SDK. Claude trabalha enquanto você dorme.</p>
+      <ul class="text-xs text-neutral-500 space-y-1"><li>• Cloud routines + triggers</li><li>• Hooks como trilhos</li><li>• Agent teams + autodream</li></ul>
+    </a>
+
+    <a href="curso/trilha6/index.html" class="group bg-gradient-to-br from-rose-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-rose-500/30 p-6 transition-all">
+      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-rose-500/20 text-rose-400">TRILHA 6</span><span class="text-neutral-500 text-xs">~30min</span></div>
+      <h3 class="text-xl font-bold mb-2 group-hover:text-rose-400 transition">🏁 Prova Final</h3>
+      <p class="text-sm text-neutral-400 mb-4">Avaliação dos 5 níveis. Honestidade sem trapaça — descubra onde você realmente está.</p>
+      <ul class="text-xs text-neutral-500 space-y-1"><li>• 50 questões</li><li>• Score por nível</li><li>• Certificado interno</li></ul>
+    </a>
+
+  </div>
+</section>
+
+<!-- CAMINHO -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="bg-dark-800 rounded-xl border border-dark-600 p-8">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">🧭 Como funciona o caminho</h2>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+      <div class="text-center"><div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">1</div><strong>Chat</strong><p class="text-xs text-neutral-400 mt-1">Pergunta-resposta</p></div>
+      <div class="text-center"><div class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">2</div><strong>Projetos</strong><p class="text-xs text-neutral-400 mt-1">Contexto contínuo</p></div>
+      <div class="text-center"><div class="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">3</div><strong>Co-work</strong><p class="text-xs text-neutral-400 mt-1">Sua máquina</p></div>
+      <div class="text-center"><div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">4</div><strong>Claude Code</strong><p class="text-xs text-neutral-400 mt-1">Time paralelo</p></div>
+      <div class="text-center"><div class="w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">5</div><strong>Nuvem</strong><p class="text-xs text-neutral-400 mt-1">Infra 24/7</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-dark-600 mt-12 py-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-neutral-500">
+    <p>Curso desenvolvido por <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · Baseado em "Every Level of Claude Explained" · Atualizado em Maio/2026</p>
+  </div>
+</footer>
+
+<script>
+// Theme toggle
+const themeToggle = document.getElementById('theme-toggle');
+const darkIcon = document.getElementById('theme-toggle-dark-icon');
+const lightIcon = document.getElementById('theme-toggle-light-icon');
+const htmlEl = document.documentElement;
+if (localStorage.getItem('theme') === 'light') { htmlEl.classList.remove('dark'); darkIcon.classList.remove('hidden'); }
+else { lightIcon.classList.remove('hidden'); }
+themeToggle.addEventListener('click', () => {
+  darkIcon.classList.toggle('hidden'); lightIcon.classList.toggle('hidden');
+  htmlEl.classList.toggle('dark');
+  localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+});
+
+// Quiz
+const questions = [
+  { q: "Eu já mando screenshots pro Claude em vez de digitar o que vejo", level: 1 },
+  { q: "Eu tenho pelo menos 1 Projeto com instrução fixa e docs de referência", level: 2 },
+  { q: "Eu uso conectores (Slack/Drive/Gmail/etc.) em vez de copiar e colar", level: 2 },
+  { q: "Eu já dei acesso ao filesystem pro Claude organizar uma pasta minha", level: 3 },
+  { q: "Eu tenho pelo menos 1 skill reutilizável criada e usada regularmente", level: 3 },
+  { q: "Eu mantenho um claude.md que eu atualizo quando o Claude erra", level: 4 },
+  { q: "Eu rodo 2+ sessões paralelas em worktrees no Claude Code", level: 4 },
+  { q: "Eu uso slash commands customizados que eu criei", level: 4 },
+  { q: "Eu tenho pelo menos uma rotina rodando na nuvem (máquina desligada)", level: 5 },
+  { q: "Eu uso hooks (pre-tool/post-edit/stop) como trilhos de segurança", level: 5 }
+];
+const qContainer = document.getElementById('quiz-questions');
+questions.forEach((item, i) => {
+  qContainer.insertAdjacentHTML('beforeend', `
+    <label class="flex items-start space-x-3 p-3 rounded-lg hover:bg-dark-700/50 cursor-pointer border border-transparent hover:border-dark-600">
+      <input type="checkbox" data-level="${item.level}" class="mt-1 w-5 h-5 accent-yellow-400 flex-shrink-0">
+      <span class="text-sm text-neutral-300"><strong class="text-neutral-100">${i+1}.</strong> ${item.q}</span>
+    </label>`);
+});
+
+document.getElementById('quiz-submit').addEventListener('click', () => {
+  const checks = document.querySelectorAll('#quiz-questions input:checked');
+  const scores = {1:0,2:0,3:0,4:0,5:0};
+  checks.forEach(c => scores[c.dataset.level]++);
+  // Lógica: nível = maior nível em que TODAS as perguntas foram marcadas
+  let nivel = 0;
+  const totaisPorNivel = {1:1, 2:2, 3:2, 4:3, 5:2};
+  for (let n = 1; n <= 5; n++) {
+    if (scores[n] === totaisPorNivel[n]) nivel = n;
+    else break;
+  }
+  const cores = {0:'neutral',1:'emerald',2:'blue',3:'purple',4:'amber',5:'teal'};
+  const nomes = {0:'Pré-Nível 1',1:'Entusiasta',2:'Iniciante',3:'Intermediário',4:'Avançado',5:'Arquiteto'};
+  const trilhas = {0:'curso/trilha1/index.html',1:'curso/trilha1/index.html',2:'curso/trilha2/index.html',3:'curso/trilha3/index.html',4:'curso/trilha4/index.html',5:'curso/trilha5/index.html'};
+  const msgs = {
+    0:'Você ainda usa Claude como busca. Comece pela Trilha 1 — em 45min você sai daí.',
+    1:'Você domina o básico. Próximo salto: configurar seu primeiro Projeto. Comece pela Trilha 2.',
+    2:'Boa! Você já economiza horas/semana. Próximo: deixar Claude trabalhar na sua máquina. Trilha 3.',
+    3:'Coworker pronto. Hora de virar engenheiro: claude.md, worktrees, subagentes. Trilha 4.',
+    4:'Você opera como time de engenharia. Falta o salto de confiança pra autônomos. Trilha 5.',
+    5:'Você é arquiteto. Faça a Prova Final pra confirmar — depois pense em vender o sistema.'
+  };
+  const cor = cores[nivel];
+  const result = document.getElementById('quiz-result');
+  result.classList.remove('hidden');
+  result.innerHTML = `
+    <div class="rounded-xl border border-${cor}-500/30 bg-${cor}-500/10 p-6">
+      <div class="text-sm font-bold text-${cor}-400 mb-1">SEU NÍVEL HOJE</div>
+      <div class="text-3xl font-extrabold mb-2">Nível ${nivel} — ${nomes[nivel]}</div>
+      <p class="text-neutral-300 mb-4">${msgs[nivel]}</p>
+      <a href="${trilhas[nivel]}" class="inline-block px-5 py-2.5 bg-${cor}-500/20 text-${cor}-400 border border-${cor}-500/30 rounded-lg font-semibold hover:bg-${cor}-500/30 transition">▶ Começar pela Trilha ${nivel === 0 ? 1 : nivel}</a>
+      <a href="curso/trilha6/index.html" class="inline-block px-5 py-2.5 ml-2 bg-rose-500/20 text-rose-400 border border-rose-500/30 rounded-lg font-semibold hover:bg-rose-500/30 transition">Ou fazer a Prova Final</a>
+    </div>`;
+  result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+</script>
+</body>
+</html>

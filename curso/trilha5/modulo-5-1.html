@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5.1 Claude como infraestrutura | T5</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .bg-teal-500\/10{background-color:rgba(15,118,110,.08)}html:not(.dark) .bg-teal-500\/20{background-color:rgba(15,118,110,.12)}html:not(.dark) .border-teal-500\/30{border-color:rgba(15,118,110,.3)}html:not(.dark) .bg-teal-600{background-color:#0f766e}html:not(.dark) .hover\:bg-teal-500:hover{background-color:#14b8a6}</style></head><body class="text-neutral-100">
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-2"><a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-teal-400 bg-teal-500/10">T5</a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-teal-400">Início</a> / <a href="index.html" class="hover:text-teal-400">Trilha 5</a> / <span class="text-neutral-300">Módulo 5.1</span></nav>
+
+<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-400 border border-teal-500/30 mb-3">MÓDULO 5.1 · ~35 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🛰 Claude como infraestrutura</h1><p class="text-lg text-neutral-300">Os 8 elementos que tiram Claude do "laptop ligado" e o colocam pra rodar 24/7 — routines, hooks, channels, headless, agent SDK, autodream.</p></header>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">☁ Routines em nuvem</h2></div>
+<p class="text-neutral-300 mb-4">Routines são configurações de Claude Code que rodam <strong class="text-teal-400">na infra da Anthropic</strong> — seu laptop fica desligado. É O salto qualitativo do N5: tudo no curso aponta pra esse momento.</p>
+<p class="text-neutral-300">Exemplo canônico: você dorme, alguém abre PR no seu repo, routine detecta, dispara revisão completa com comments inline, posta sumário no Slack. Quando acorda, está pronto pra mergear.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">🔔 Triggers: cron, API, GitHub event</h2></div>
+<p class="text-neutral-300 mb-4">3 formas de acionar:</p>
+<ul class="text-sm text-neutral-300 space-y-2 ml-4">
+  <li>• <strong class="text-teal-400">Cron</strong> — "todo dia 8h", "toda segunda 9h", "primeiro do mês". Pra rituais previsíveis.</li>
+  <li>• <strong class="text-teal-400">API call (webhook)</strong> — chegada de webhook dispara. Pra integração com Stripe, Zapier, Make, n8n.</li>
+  <li>• <strong class="text-teal-400">GitHub event</strong> — PR aberto, issue criada, comentário com /command. Direto na sua dev pipeline.</li>
+</ul>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🛡 Hooks como trilhos de segurança</h2></div>
+<p class="text-neutral-300 mb-4">Lógica custom em pontos do ciclo de vida. Os 4 tipos mais úteis:</p>
+<div class="grid sm:grid-cols-2 gap-3 mb-4">
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">pre-tool-use</strong><p class="text-sm text-neutral-300">Bloqueia comando perigoso antes dele rodar (ex: rm -rf, drop table, force push em main).</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">post-edit</strong><p class="text-sm text-neutral-300">Auto-format, lint, type-check em todo arquivo que Claude tocar.</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">stop</strong><p class="text-sm text-neutral-300">Notifica Slack/email quando sessão longa termina.</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">response</strong><p class="text-sm text-neutral-300">Som/badge a cada resposta. Útil em remote control.</p></div>
+</div>
+<p class="text-neutral-300">Hooks são o que separa "demo bonita" de "infra confiável".</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">📡 Channels: Slack, Discord, Telegram, iMessage, webhook</h2></div>
+<p class="text-neutral-300 mb-4">Dois sabores de channel:</p>
+<ul class="text-sm text-neutral-300 space-y-2 ml-4">
+  <li>• <strong class="text-teal-400">1-way (evento → Claude):</strong> calendário marca reunião, Claude prepara briefing. CI quebra, Claude analisa logs. Cliente abre ticket, Claude triagem.</li>
+  <li>• <strong class="text-teal-400">2-way (humano ↔ Claude):</strong> você texta do celular "fix bug X". Claude opera no codebase remoto e responde quando termina.</li>
+</ul>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">🤖 Headless mode (claude -p)</h2></div>
+<p class="text-neutral-300 mb-4">Claude Code roda sem TTY humano: <code class="bg-dark-700 px-2 py-0.5 rounded text-teal-400">claude -p "faz X"</code>. Saída vai pro stdout. Pipe-friendly: canaliza pra Slack, Datadog, outro agente, qualquer coisa.</p>
+<p class="text-neutral-300">É o que viabiliza Claude como peça componível em sistemas maiores. Sem ele, Claude fica preso ao loop interativo.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📚 Agent SDK — virar builder, não só user</h2></div>
+<p class="text-neutral-300 mb-4">Bibliotecas oficiais em Python e TypeScript pra construir seu próprio produto sobre o engine do Claude Code. Tools customizadas, streaming, embed em SaaS.</p>
+<p class="text-neutral-300">É a saída pra quem quer produto SaaS em vez de só consultoria. Você para de vender automação e começa a vender software.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">📱 Remote control — celular como remote do PC</h2></div>
+<p class="text-neutral-300 mb-4"><code class="bg-dark-700 px-2 py-0.5 rounded text-teal-400">/remote-control</code> conecta sessão local ao app mobile do Claude. QR code ou link. Você sai pra caminhar com o cachorro e continua "operando" do iPhone — a sessão segue rodando no Mac.</p>
+<p class="text-neutral-300">Trabalho parou de ter "lugar". O laptop vira servidor; o celular é só interface.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">💤 Autodream — consolidação de memória</h2></div>
+<p class="text-neutral-300 mb-4">Subagente em background que entre sessões: apaga fatos contraditos, mescla duplicados, converte "ontem" pra datas absolutas. Como humano que sonha pra consolidar memória.</p>
+<p class="text-neutral-300">Sem isso, a memória drifta após 3-6 meses. Com isso, Claude fica afiado por muito mais tempo. Detalhe importante: você precisa <strong class="text-teal-400">ativar manualmente</strong>.</p>
+</section>
+
+<section class="mb-12"><div class="bg-gradient-to-br from-teal-900/40 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
+  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span> Resumo do Módulo</h2>
+  <div class="space-y-3 mb-6 text-sm">
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Routines em nuvem</strong> — laptop desligado, infra da Anthropic.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">3 triggers</strong> — cron, API, GitHub event.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Hooks</strong> — pre-tool, post-edit, stop, response.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Channels</strong> — 1-way e 2-way, Slack/Discord/iMessage/webhook.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Headless</strong> — claude -p, pipe-friendly.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Agent SDK</strong> — builder, não user.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Remote control</strong> — celular como interface.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Autodream</strong> — memória consolidada (ativar manual).</div></div>
+  </div>
+  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-teal-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">5.2 — Operando autônomos com responsabilidade.</p></div>
+  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="modulo-5-2.html" class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition">Próximo Módulo →</a></div>
+</div></section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>

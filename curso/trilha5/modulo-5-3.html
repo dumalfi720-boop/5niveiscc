@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5.3 O que vender e descobrir | T5</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .bg-teal-500\/10{background-color:rgba(15,118,110,.08)}html:not(.dark) .bg-teal-500\/20{background-color:rgba(15,118,110,.12)}html:not(.dark) .border-teal-500\/30{border-color:rgba(15,118,110,.3)}html:not(.dark) .bg-teal-600{background-color:#0f766e}html:not(.dark) .hover\:bg-teal-500:hover{background-color:#14b8a6}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-500\/10{background-color:rgba(185,28,28,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(185,28,28,.3)}
+html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .bg-rose-500\/10{background-color:rgba(190,18,60,.08)}html:not(.dark) .bg-rose-500\/20{background-color:rgba(190,18,60,.12)}html:not(.dark) .border-rose-500\/30{border-color:rgba(190,18,60,.3)}html:not(.dark) .bg-rose-600{background-color:#be123c}html:not(.dark) .hover\:bg-rose-500:hover{background-color:#e11d48}</style></head><body class="text-neutral-100">
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-2"><a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-teal-400 bg-teal-500/10">T5</a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-teal-400">Início</a> / <a href="index.html" class="hover:text-teal-400">Trilha 5</a> / <span class="text-neutral-300">Módulo 5.3</span></nav>
+
+<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-400 border border-teal-500/30 mb-3">MÓDULO 5.3 · ~25 min · FINAL</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">💼 O que vender e como descobrir o que já existe</h1><p class="text-lg text-neutral-300">A skill de maior alavancagem do N5 não é construir do zero — é descobrir o que a comunidade já fez e adaptar pro contexto do cliente.</p></header>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">📚 Catálogo da comunidade (5k+ skills, 800+ MCPs, 3k+ marketplaces)</h2></div>
+<p class="text-neutral-300 mb-4">Em maio/2026 o ecossistema já tem mais de <strong class="text-teal-400">5.000 skills publicadas</strong>, <strong class="text-teal-400">800+ MCP servers</strong>, <strong class="text-teal-400">3.000+ marketplaces</strong> de plugins. Maioria open-source, muita coisa madura.</p>
+<p class="text-neutral-300">Quem entra no N5 achando que precisa criar tudo do zero está jogando 80% do tempo fora. Quem garimpa primeiro entrega cliente em 1 semana em vez de 1 mês.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">🔍 Onde garimpar</h2></div>
+<ul class="text-sm text-neutral-300 space-y-2 ml-4 mb-4">
+  <li>• <strong class="text-teal-400">Marketplace oficial Anthropic</strong> — categorizado, verificado, seguro</li>
+  <li>• <strong class="text-teal-400">GitHub</strong> — busque "awesome-claude-code", "awesome-claude-skills"</li>
+  <li>• <strong class="text-teal-400">X (Twitter)</strong> — "claude code skill" + sua vertical (devops/sales/finance/legal)</li>
+  <li>• <strong class="text-teal-400">Reddit</strong> — r/ClaudeAI, r/LocalLLaMA têm threads de implementações reais</li>
+  <li>• <strong class="text-teal-400">Marketplaces verticais</strong> — alguns só de devops, outros só de sales, etc.</li>
+</ul>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🔧 Como adaptar OSS sem virar refém</h2></div>
+<p class="text-neutral-300 mb-4">Disciplina pra não ficar preso à versão antiga:</p>
+<ol class="text-sm text-neutral-300 space-y-2 ml-4">
+  <li><strong class="text-teal-400">1.</strong> Fork antes de mexer — não edite o original</li>
+  <li><strong class="text-teal-400">2.</strong> Documente cada customização em CHANGELOG.md local</li>
+  <li><strong class="text-teal-400">3.</strong> Rebase periódico do upstream (mensal) — pega atualizações</li>
+  <li><strong class="text-teal-400">4.</strong> Contribua patches de volta quando faz sentido genérico</li>
+  <li><strong class="text-teal-400">5.</strong> Se a customização vira maior que o original, é sinal de criar do zero</li>
+</ol>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">💼 Ofertas vendáveis no Nível 5</h2></div>
+<div class="space-y-3">
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">Revisão de PR 24/7</strong> <span class="text-neutral-500">— R$ 8-15k/mês</span><p class="text-sm text-neutral-300 mt-1">SLA: comments em PR em &lt;30min após abrir. Substitui parte do code review humano.</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">Triagem automática de backlog</strong> <span class="text-neutral-500">— R$ 5-12k/mês</span><p class="text-sm text-neutral-300 mt-1">Issues entram, Claude categoriza, prioriza, anexa contexto e atribui.</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">Auditoria semanal</strong> <span class="text-neutral-500">— R$ 6-10k/mês</span><p class="text-sm text-neutral-300 mt-1">Segurança, qualidade de código, dívida técnica, dependências.</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">Briefing pré-call de cliente</strong> <span class="text-neutral-500">— R$ 4-8k/mês</span><p class="text-sm text-neutral-300 mt-1">Pra times de vendas/CS: cada reunião com cliente vem com briefing antes.</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">Relatório autônomo</strong> <span class="text-neutral-500">— R$ 3-7k/mês</span><p class="text-sm text-neutral-300 mt-1">Semanal/mensal — métricas operacionais consolidadas pra diretoria.</p></div>
+  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-teal-400">Monitor de competidores</strong> <span class="text-neutral-500">— R$ 2-5k/mês</span><p class="text-sm text-neutral-300 mt-1">Lê site/redes/PRs dos concorrentes, alerta sobre lançamentos.</p></div>
+</div>
+<p class="text-neutral-300 mt-4">Posicione como <strong class="text-teal-400">infraestrutura</strong>, não como "agente de IA". SLA mensurável, recurring revenue, setup + manutenção.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">⚠ Erros que destroem confiança do cliente</h2></div>
+<div class="grid sm:grid-cols-2 gap-3">
+  <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4"><h3 class="font-semibold text-red-400 mb-1">❌ Habilitar rotina sem dry-run</h3><p class="text-sm text-neutral-300">Cliente vê primeiro bug, perde fé.</p></div>
+  <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4"><h3 class="font-semibold text-red-400 mb-1">❌ Vender autonomia em tarefa criativa</h3><p class="text-sm text-neutral-300">Copywriting / posicionamento NÃO automatize.</p></div>
+  <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4"><h3 class="font-semibold text-red-400 mb-1">❌ Sem monitor de logs</h3><p class="text-sm text-neutral-300">Drift silencioso destrói qualidade.</p></div>
+  <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4"><h3 class="font-semibold text-red-400 mb-1">❌ SLA sem alçada</h3><p class="text-sm text-neutral-300">"24/7" sem definir o que escala pra humano vira problema.</p></div>
+  <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4"><h3 class="font-semibold text-red-400 mb-1">❌ Ignorar custo de tokens</h3><p class="text-sm text-neutral-300">Margem some sem você perceber.</p></div>
+  <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4"><h3 class="font-semibold text-red-400 mb-1">❌ Entregar sem runbook</h3><p class="text-sm text-neutral-300">Cliente fica sem saber operar quando você sumir.</p></div>
+</div>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">🏁 Resumo dos 5 níveis + próximo passo</h2></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5 mb-4">
+  <ul class="text-sm text-neutral-300 space-y-2">
+    <li>• <strong class="text-teal-400">N1 Entusiasta</strong> — chat puro, ~30min/dia poupados</li>
+    <li>• <strong class="text-teal-400">N2 Iniciante</strong> — projetos + conectores + arquivos, ~5h/sem</li>
+    <li>• <strong class="text-teal-400">N3 Intermediário</strong> — co-work na sua máquina, ~10h/sem, R$ 5-15k/projeto</li>
+    <li>• <strong class="text-teal-400">N4 Avançado</strong> — Claude Code com paralelo, R$ 25-75k/projeto</li>
+    <li>• <strong class="text-teal-400">N5 Arquiteto</strong> — infra 24/7, R$ 8-15k/mês recorrente</li>
+  </ul>
+</div>
+<p class="text-neutral-300">A cada nível: o trabalho cresce, a babá diminui. <strong class="text-teal-400">Próximo passo:</strong> a Prova Final (Trilha 6). Faça honestamente — ela revela onde você realmente está, não onde acha que está.</p>
+</section>
+
+<section class="mb-12"><div class="bg-gradient-to-br from-teal-900/40 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
+  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Você completou os 5 níveis</h2>
+  <div class="space-y-3 mb-6 text-sm">
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">5k+ skills, 800+ MCPs, 3k+ marketplaces</strong> — comece descobrindo.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Garimpe</strong> em marketplaces oficiais, GitHub, X, Reddit.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Fork, documente, rebase</strong> — não vire refém.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">6 ofertas vendáveis</strong> com preço de mercado.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">6 erros que matam cliente</strong> — evite todos.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">5 níveis fechados</strong> — agora valide na Prova.</div></div>
+  </div>
+  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-teal-400 mb-2">Próximo passo:</h3><p class="text-neutral-300">Trilha 6 — Prova Final com 50 questões. Honestidade sem trapaça.</p></div>
+  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="../trilha6/index.html" class="flex-1 text-center px-6 py-3 bg-rose-600 text-white rounded-lg font-semibold hover:bg-rose-500 transition">🏁 Fazer a Prova Final →</a></div>
+</div></section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>

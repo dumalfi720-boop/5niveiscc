@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilha 4 — Avançado | 5 Níveis do Claude</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+.topic-explanation{display:none}.topic-explanation.active{display:block}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-700\/50{background-color:rgba(243,244,246,.5)}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .bg-amber-500\/20{background-color:rgba(180,83,9,.12)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}html:not(.dark) .bg-amber-600{background-color:#b45309}html:not(.dark) .hover\:bg-amber-500:hover{background-color:#d97706}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .hover\:text-emerald-400:hover{color:#047857}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(4,120,87,.08)}
+html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .hover\:text-blue-400:hover{color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(29,78,216,.08)}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .hover\:text-purple-400:hover{color:#6d28d9}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(109,40,217,.08)}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .hover\:text-teal-400:hover{color:#0f766e}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(15,118,110,.08)}
+html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-400:hover{color:#be123c}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(190,18,60,.08)}
+</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+<div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+  <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+  <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+  <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+  <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-amber-400 bg-amber-500/10"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+  <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+  <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+  <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<section class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-3">TRILHA 4</span>
+    <h1 class="text-3xl sm:text-5xl font-extrabold mb-3">⚙ Nível 4 — Avançado</h1>
+    <p class="text-lg text-neutral-300 max-w-3xl mb-6">Claude Code: 3-4 Claudes em paralelo, claude.md que treina o agente no seu jeito, plan mode com aprovação, subagentes especializados, worktrees, slash commands customizados. Onde projetos viram R$ 25-75k.</p>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-amber-400">3</div><div class="text-xs text-neutral-400">Módulos</div></div>
+      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-amber-400">22</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-amber-400">~80min</div><div class="text-xs text-neutral-400">Duração</div></div>
+      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-amber-400">R$ 25-75k</div><div class="text-xs text-neutral-400">Projeto</div></div>
+    </div>
+  </div>
+</section>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+<section class="mb-12"><h2 class="text-2xl font-bold mb-6">🗺 Mapa da trilha</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+  <a href="#modulo-4-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.1</span><span class="text-xs text-neutral-500">~30 min</span></div><h3 class="font-semibold mb-1 group-hover:text-amber-400 transition">⚙ Claude Code: o motor</h3><p class="text-xs text-neutral-400">8 tópicos: claude.md, plan mode, subagentes, worktrees, MCP</p></a>
+  <a href="#modulo-4-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.2</span><span class="text-xs text-neutral-500">~30 min</span></div><h3 class="font-semibold mb-1 group-hover:text-amber-400 transition">🚀 Movimentos de alto impacto</h3><p class="text-xs text-neutral-400">8 tópicos: /compact, auto mode, verificação, slash commands, /insights</p></a>
+  <a href="#modulo-4-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.3</span><span class="text-xs text-neutral-500">~20 min</span></div><h3 class="font-semibold mb-1 group-hover:text-amber-400 transition">🚀 Cheat Code: parar de babar Claude</h3><p class="text-xs text-neutral-400">6 tópicos: identificar, transformar em automação, sinais do N5</p></a>
+</div></section>
+
+<div class="border-t border-dark-600 my-10"></div>
+<h2 class="text-2xl font-bold mb-8">📚 Conteúdo detalhado</h2>
+
+<div id="modulo-4-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.1</span><span class="text-xs text-neutral-500">~30 min</span></div><h3 class="text-2xl font-bold mb-2">⚙ Claude Code: o motor</h3><p class="text-neutral-400 text-sm">Os 8 elementos centrais de quem trabalha com Claude Code todos os dias.</p></div>
+<div class="divide-y divide-dark-700">
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🖥</span><div><span class="font-medium">Terminal vs aba Code</span><span class="text-neutral-500 text-sm ml-2">— mesmo engine</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Claude Code roda como CLI no terminal ou como aba Code no Claude Desktop. Mesmo engine, interface diferente. Terminal é mais rápido depois que acostuma.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Não precisa ser dev terminal-fluente — comece pela aba Code, evolua quando quiser velocidade.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">CLI · Desktop · Mesmo modelo · Mesmas features · Curva de aprendizado opcional.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📜</span><div><span class="font-medium">claude.md — arquivo que treina Claude no seu jeito</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Markdown na raiz do projeto. Claude lê em toda conversa: stack, convenções, papel, regras. Regra de ouro: ≤200 linhas. Use @arquivo pra detalhes só quando precisar.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o que separa N4 de N3. Sem isso, Claude reinventa convenções a cada sessão.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Stack · Convenções · Papel · Regras · @ pra detalhes · Atualize quando errar.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🔁</span><div><span class="font-medium">Atualizar claude.md quando Claude errar</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Quando Claude erra, diga "atualize o claude.md pra não fazer isso de novo". A própria Anthropic faz isso. Em semanas, o arquivo treina Claude no seu jeito.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o loop que separa N4 médio de N4 dominante.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Erro = oportunidade · Regra escrita > regra falada · Versão controlada · Compartilhe no time.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">📋</span><div><span class="font-medium">Plan mode (Shift+Tab×2) + Opus Plan</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Shift+Tab 2x ativa plan mode: Claude lê o código, apresenta plano, espera sua aprovação. Opus Plan: Opus planeja, Sonnet executa. Custo metade, qualidade igual.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Aprovar plano explícito reduz refactors. Opus Plan é o atalho de custo mais subestimado.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Plano antes do código · Aprovação humana · Opus pra planejar · Sonnet pra executar.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">👥</span><div><span class="font-medium">Subagentes especializados</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Claudes especializados pra trabalhos específicos: um pra testes, um pra segurança, um pra docs. Cada um roda em contexto próprio — ruído de um não polui o outro.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Você monta um "time de engenharia" com especialistas. Múltiplos em paralelo.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Context isolado · Especialista por papel · Comunicação via main session · Não conversam diretamente.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🌳</span><div><span class="font-medium">Worktrees: 3-4 Claudes em paralelo</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">claude-worktree feature-name cria workspace git isolado por branch. Abre outro terminal e roda outro. 3-4 sessões paralelas sem conflito de arquivos.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É como Boris Cherny (criador do Claude Code) trabalha: 5 sessões mínimo todo dia.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Isolated git workspace · Branch própria · Sem conflito · Sweet spot 3-4.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span><span class="text-lg">🔗</span><div><span class="font-medium">MCP com asterisco: CLI > API > Skill > MCP</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Model Context Protocol conecta ferramentas externas. Mas a regra (da própria Anthropic) é: CLI primeiro, endpoints REST depois, skills em seguida, MCP só quando nada mais cabe. CLI gasta 60-70% menos tokens.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Quem ignora essa hierarquia paga 3x mais em tokens e perde contexto rápido.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">CLI tools (gh, aws, gcloud) · APIs REST · Skills · MCP último.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span><span class="text-lg">🔧</span><div><span class="font-medium">Tool search e deferred loading</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Feature de Janeiro/2026: quando MCP passa de 10% do contexto, Claude defere carregamento de tools até precisar. Reduz overhead em 85%, zero config.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Quem usa MCP precisa entender isso — é a feature que torna MCP viável em sessões longas.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">10% trigger · Tool search automático · Carregamento sob demanda · Mais MCP sem pagar contexto.</p></div>
+</div></div></div>
+
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-4-1.html" class="px-5 py-2.5 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-4-1')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+</div>
+
+<div id="modulo-4-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.2</span><span class="text-xs text-neutral-500">~30 min</span></div><h3 class="text-2xl font-bold mb-2">🚀 Movimentos de alto impacto</h3><p class="text-neutral-400 text-sm">Os 8 hábitos que distinguem usuário casual de power-user.</p></div>
+<div class="divide-y divide-dark-700">
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">📐</span><div><span class="font-medium">Master do context window: /compact e /context</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">/compact resume o histórico antigo em um sumário tight (rode proativamente, não espere o warning). /context mostra onde seus tokens estão indo. Combinado com prompt caching: -60-90% de custo em sessões longas.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Janela de 1M no Opus 4.7 ainda fica sloppy depois de 50%. Quem controla, paga menos e mantém qualidade.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">/compact proativo · /context pra debug · Prompt caching automático · 50% é o gatilho.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">⚡</span><div><span class="font-medium">Auto mode + /focus pra rodar paralelo sem babá</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Shift+Tab cicla pro auto mode: comandos seguros passam por classifier em vez de pedir aprovação. /focus oculta intermediários, mostra só resultado final.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Parar de apertar "yes" 30x por sessão libera você pra rodar paralelo de verdade.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Auto mode · Classifier de segurança · /focus · Switch entre sessões.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🔍</span><div><span class="font-medium">Loop de verificação</span><span class="text-neutral-500 text-sm ml-2">— Claude testa o próprio trabalho</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Boris Cherny diz que esse é o hábito mais importante do N4: dê a Claude jeito de checar o próprio trabalho (extensão Chrome pra abrir browser, screenshot, rodar testes) e itere até PASS.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Boris diz que dobra ou triplica a qualidade do output.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Self-test · Chrome extension · Screenshots · Não me chame antes de PASS.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">⌨</span><div><span class="font-medium">Slash commands customizados</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Se você digitou o mesmo prompt duas vezes, transforme em slash command. Boris usa /commit-push-pr dezenas de vezes por dia. Vivem em .claude/commands/.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada slash é uma macro pessoal. Multiplique por 20 — sua produtividade explode.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">.claude/commands/ · Compartilhável com time · Versionado em git · /commit-push-pr clássico.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🔄</span><div><span class="font-medium">/rewind, /btw, /branch — git pra conversa</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">/rewind (ou Esc Esc) descarta tentativa falha sem poluir contexto. /btw deixa você fazer pergunta paralela sem quebrar o fluxo. /branch (antigo /fork) bifurca a conversa pra testar caminhos diferentes.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">São "controle de versão" do raciocínio. Pareia perfeitamente com worktrees.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Rewind = limpar fracasso · BTW = dúvida lateral · Branch = experimento.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📊</span><div><span class="font-medium">/insights — relatório mensal do seu uso</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Lê seu último mês de uso e gera relatório: padrões repetitivos, gastos de tokens, prompts candidatos a virar skill, regras pra adicionar no claude.md.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Maioria não tem dado do próprio uso. Roda 1x/mês, vira mapa de melhoria.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Audit pessoal · Padrões · Candidatos a skill · Regras de claude.md emergem.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span><span class="text-lg">🎭</span><div><span class="font-medium">Output styles — 10 jobs com mesmo Claude</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">/output style new troca a "personalidade" do Claude Code. Built-ins: default, explanatory, learning. Custom: code reviewer mode, no-fluff, documentation writer.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Mesma ferramenta cobre 10 papeis diferentes sem misturar.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Built-in vs custom · Por projeto · Style trocável a quente.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span><span class="text-lg">🔀</span><div><span class="font-medium">PRs melhores e revisão sistemática</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">PRs N4 trazem: contexto do problema, plano executado, arquivos alterados com motivo, evidência de testes/checks, riscos conhecidos. Padrão de PR é parte do claude.md.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">PR bom é diferença entre cliente que paga R$ 25k e cliente que vira recorrente.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Template de PR no claude.md · Evidência de teste · Riscos listados · Revisão por subagente.</p></div>
+</div></div></div>
+
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-4-2.html" class="px-5 py-2.5 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-4-2')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+</div>
+
+<div id="modulo-4-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.3</span><span class="text-xs text-neutral-500">~20 min</span></div><h3 class="text-2xl font-bold mb-2">🚀 Cheat Code: parar de babar Claude</h3><p class="text-neutral-400 text-sm">A passagem do N4 pro N5 é mental, não técnica.</p></div>
+<div class="divide-y divide-dark-700">
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🍼</span><div><span class="font-medium">Identificar o que você ainda faz "olhando"</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">A maioria no N4 vira babá: dispara sessões e fica olhando cada uma. Identifique 3 tarefas que você faz manualmente embora poderiam ser slash command, skill ou hook.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Babá é o gargalo. Sai do gargalo = sobe pro N5.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Auditar 1 semana · 3 tarefas-babá · Cada uma vira automação.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🔧</span><div><span class="font-medium">Transformar em comando, skill ou hook</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Tarefa repetitiva: slash command. Workflow complexo: skill. Validação automática em momento específico: hook (pré-N5). Cada uma das 3 tarefas-babá vira um desses.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Escolher a abstração certa = manutenção fácil.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Slash = atalho · Skill = workflow · Hook = trigger automático.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">⚠</span><div><span class="font-medium">Erros típicos do Nível 4</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Gerenciar paralelo na unha · não usar plan mode · pular verificação · claude.md gigante · ignorar /insights · MCP-first em vez de CLI-first.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada erro é um teto invisível. Cair em 2-3 deles = você ficou 1 ano sem evoluir.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Gerenciamento ≠ babá · Plan mode default · Verificação obrigatória · CLI antes de MCP.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🚨</span><div><span class="font-medium">Sinal do teto: "queria que rodasse sem eu estar aqui"</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Você sente "isso podia rodar todo dia 8h sem eu precisar abrir o laptop". É o teto do N4 — entra o N5 (rotinas em nuvem).</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Reconhecer evita "espremer N4" e demorar pra subir.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Rotina vs sessão · Sem máquina · 24/7 · Sleep-friendly.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">💼</span><div><span class="font-medium">Como cobrar projetos R$ 25-75k</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">N4 entrega sistemas reais — não automação isolada. Cobre por valor: o cliente paga R$ 50k porque a feature destrava R$ 500k/ano em receita ou poupa 2000h de equipe.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É onde freelance vira agência sustentável.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ROI explícito · Escopo fechado · Manutenção mensal · Cliente que entende valor.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📋</span><div><span class="font-medium">Preparando rotina simples pro Nível 5</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Antes de habilitar N5: escolha 1 rotina baixíssimo risco (resumo diário que só vem pra você). Roda manual 5x. Se passar nas 5, agenda. Confiança se constrói, não se assume.</p></div>
+<div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Pular essa etapa = automação que destrói confiança no 1º bug.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Baixo risco primeiro · Manual antes de cron · 5 rodadas mínimo · Só você como destinatário.</p></div>
+</div></div></div>
+
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-4-3.html" class="px-5 py-2.5 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-4-3')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+</div>
+
+<div class="flex flex-col sm:flex-row gap-4 mt-8"><a href="../trilha3/index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Trilha Anterior: Intermediário</a><a href="../trilha5/index.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition">Próxima Trilha: Arquiteto →</a></div>
+</main>
+
+<footer class="border-t border-dark-600 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 5 Níveis do Claude Code</div></footer>
+
+<div id="modal-4-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.1</span><span class="font-semibold">Claude Code: o motor</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-4-1.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-4-2" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.2</span><span class="font-semibold">Movimentos de alto impacto</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-4-2.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-4-3" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.3</span><span class="font-semibold">Cheat Code: parar de babar Claude</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-4-3.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+
+<script>
+const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;
+if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}
+tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});
+function toggleTopic(b){const t=b.closest('.topic-item'),e=t.querySelector('.topic-explanation'),m=b.closest('.bg-dark-800');m.querySelectorAll('.topic-explanation.active').forEach(x=>{if(x!==e)x.classList.remove('active');});e.classList.toggle('active');}
+function openModal(id){document.getElementById(id).classList.remove('hidden');document.body.style.overflow='hidden';}
+function closeModal(){document.querySelectorAll('.modal').forEach(m=>m.classList.add('hidden'));document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body></html>

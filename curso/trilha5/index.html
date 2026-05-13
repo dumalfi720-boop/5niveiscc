@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trilha 5 — Arquiteto | 5 Níveis do Claude</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}.topic-explanation{display:none}.topic-explanation.active{display:block}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-700\/50{background-color:rgba(243,244,246,.5)}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .bg-teal-500\/10{background-color:rgba(15,118,110,.08)}html:not(.dark) .bg-teal-500\/20{background-color:rgba(15,118,110,.12)}html:not(.dark) .border-teal-500\/30{border-color:rgba(15,118,110,.3)}html:not(.dark) .bg-teal-600{background-color:#0f766e}html:not(.dark) .hover\:bg-teal-500:hover{background-color:#14b8a6}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .hover\:text-emerald-400:hover{color:#047857}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(4,120,87,.08)}
+html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .hover\:text-blue-400:hover{color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(29,78,216,.08)}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .hover\:text-purple-400:hover{color:#6d28d9}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(109,40,217,.08)}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .hover\:text-amber-400:hover{color:#b45309}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(180,83,9,.08)}
+html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-400:hover{color:#be123c}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(190,18,60,.08)}</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+  <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+  <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+  <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+  <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+  <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-teal-400 bg-teal-500/10"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+  <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+  <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<section class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-400 border border-teal-500/30 mb-3">TRILHA 5</span>
+<h1 class="text-3xl sm:text-5xl font-extrabold mb-3">🛰 Nível 5 — Arquiteto</h1>
+<p class="text-lg text-neutral-300 max-w-3xl mb-6">Routines em nuvem (máquina desligada), hooks como trilhos, channels (Slack/Discord/iMessage), Agent SDK, agent teams, autodream. Você fecha o laptop e Claude trabalha. A trava aqui não é técnica — é confiança.</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+  <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-teal-400">3</div><div class="text-xs text-neutral-400">Módulos</div></div>
+  <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-teal-400">22</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+  <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-teal-400">~90min</div><div class="text-xs text-neutral-400">Duração</div></div>
+  <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-teal-400">24/7</div><div class="text-xs text-neutral-400">Infra</div></div>
+</div></div></section>
+
+<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+<section class="mb-12"><h2 class="text-2xl font-bold mb-6">🗺 Mapa da trilha</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+  <a href="#modulo-5-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.1</span><span class="text-xs text-neutral-500">~35 min</span></div><h3 class="font-semibold mb-1 group-hover:text-teal-400 transition">🛰 Claude como infraestrutura</h3><p class="text-xs text-neutral-400">8 tópicos: routines, hooks, channels, headless, agent SDK, autodream</p></a>
+  <a href="#modulo-5-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.2</span><span class="text-xs text-neutral-500">~30 min</span></div><h3 class="font-semibold mb-1 group-hover:text-teal-400 transition">🛡 Operando autônomos com responsabilidade</h3><p class="text-xs text-neutral-400">8 tópicos: task budgets, agent teams, plano 7 dias, exemplos, checklist</p></a>
+  <a href="#modulo-5-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">5.3</span><span class="text-xs text-neutral-500">~25 min</span></div><h3 class="font-semibold mb-1 group-hover:text-teal-400 transition">💼 O que vender + descobrir o que já existe</h3><p class="text-xs text-neutral-400">6 tópicos: 5k+ skills, 800+ MCPs, ofertas vendáveis, erros, fim</p></a>
+</div></section>
+
+<div class="border-t border-dark-600 my-10"></div>
+<h2 class="text-2xl font-bold mb-8">📚 Conteúdo detalhado</h2>
+
+<div id="modulo-5-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.1</span><span class="text-xs text-neutral-500">~35 min</span></div><h3 class="text-2xl font-bold mb-2">🛰 Claude como infraestrutura</h3><p class="text-neutral-400 text-sm">Os 8 elementos que tiram Claude do "laptop ligado" e o colocam pra rodar 24/7.</p></div>
+<div class="divide-y divide-dark-700">
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">☁</span><div><span class="font-medium">Routines: cloud-scheduled, máquina desligada</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Configurações de Claude Code salvas que rodam na infra da Anthropic. Seu laptop fica desligado. Triggers: cron, API call, GitHub event.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É O salto qualitativo do N5. Tudo no curso aponta pra isso.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">/schedule cloud · Triggers diversos · Sem máquina · Anthropic infra.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🔔</span><div><span class="font-medium">Triggers: cron / API / evento GitHub</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Routines acionam por: (1) cron — "todo dia 8h", (2) API call — webhook chega, dispara, (3) GitHub event — PR aberto, dispara revisão.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Triggers certos = automação útil. Triggers errados = ruído ou loop.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Cron pra rotina · API pra integração · Webhook pra evento · Idempotência.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🛡</span><div><span class="font-medium">Hooks como trilhos (pre-tool, post-edit, stop, response)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Lógica custom que dispara em momentos do ciclo de vida: pre-tool-use (bloqueia rm -rf antes de executar), post-edit (formata todo arquivo modificado), stop (Slack ping ao fim de sessão longa), response (notificação a cada resposta).</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">São o que separa "demo legal" de "sistema de produção confiável".</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">18+ tipos de hook · Não consomem contexto até disparar · Red squigglies pra agente.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">📡</span><div><span class="font-medium">Channels: Slack, Discord, Telegram, iMessage, webhook</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Controle sessões fora do terminal. Dois sabores: 1-way (evento externo dispara Claude — calendário marca call, Claude prepara briefing) e 2-way (você texta Claude do celular, ele opera no seu codebase).</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem channels, N5 fica preso ao terminal. Com channels, vira infraestrutura "sempre ligada".</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">1-way vs 2-way · Pares humano-Claude · Notificações inteligentes · Webhook custom.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🤖</span><div><span class="font-medium">Headless mode (claude -p)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Claude Code roda sem sessão humana: <code class="bg-dark-700 px-2 py-0.5 rounded text-teal-400">claude -p "faz X"</code> retorna a saída. Você canaliza pra Slack, Datadog, outro agente — pipeline livre.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o que viabiliza Claude como peça em sistemas maiores.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sem TTY · stdin/stdout · Pipe-friendly · Componível.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📚</span><div><span class="font-medium">Agent SDK (Python/TS) — virar builder, não só user</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Bibliotecas Python e TypeScript pra construir seu próprio produto em cima do engine do Claude Code.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Você para de ser user e vira fornecedor de IA pra terceiros. Saída pra produto SaaS.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">SDK oficial · Streaming · Tools customizadas · Embed em app próprio.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span><span class="text-lg">📱</span><div><span class="font-medium">Remote control: celular como controle do PC</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm"><code class="bg-dark-700 px-2 py-0.5 rounded text-teal-400">/remote-control</code> conecta sessão local à app mobile do Claude. QR ou link. Você anda na rua, manda comandos do celular, sessão segue rodando na sua máquina.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Trabalho parou de ter "lugar". Você opera engineering remotamente do iPhone.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">QR pairing · Push notifications · Sessão local mantida · Mobile-first.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span><span class="text-lg">💤</span><div><span class="font-medium">Consolidação de memória (autodream)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Subagente em background que faz "manutenção" da memória entre sessões: apaga fatos contraditos, mescla duplicados, converte "ontem" pra datas reais. Como humano que sonha pra consolidar memória.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem isso, memória drifta. Com isso, Claude fica afiado mesmo após 6 meses.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Background agent · Merge de duplicados · Resolução de contradição · Tem que ativar manualmente.</p></div>
+</div></div></div>
+
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-5-1.html" class="px-5 py-2.5 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-5-1')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+</div>
+
+<div id="modulo-5-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.2</span><span class="text-xs text-neutral-500">~30 min</span></div><h3 class="text-2xl font-bold mb-2">🛡 Operando autônomos com responsabilidade</h3><p class="text-neutral-400 text-sm">A trava do N5 é confiança. Esse módulo te ensina a construir confiança gradualmente.</p></div>
+<div class="divide-y divide-dark-700">
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">💰</span><div><span class="font-medium">Task budgets (Opus 4.7 beta)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Você define orçamento de tokens pra rotina inteira — thinking + tools + output entram no cap. Claude se auto-regula e encerra graciosamente quando vê que vai estourar.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem isso, autônomos podem "viajar" e queimar conta. Com isso, dá pra capar de verdade.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Token cap · Auto-regulação · API only (por enquanto) · Lever de custo crítico.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">👥</span><div><span class="font-medium">Agent teams: agentes que conversam, debatem, decidem</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Múltiplos Claudes coordenados por um "lead". Diferente de subagentes (N4): aqui eles se mensagem, têm channel compartilhado, debate, task list compartilhada.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a próxima fronteira: equipes de Claude que decidem juntas. Ainda experimental, mas quem entende cedo capitaliza.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Lead agent · Channel · Debate · MCP (tool) + Ato (agent-to-agent).</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">✅</span><div><span class="font-medium">Outcomes: validação automática multi-agente</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Feature 2026 da Anthropic: outcome explícito + validador automático. Você define "sucesso = X, Y, Z" e um agente revisor checa antes da entrega chegar em você.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Mata o "Claude entregou mas não está bom". Confiança constrói com PASS automático.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Outcome = sucesso · Validador agente · Pass/fail · Iterar até PASS.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">📅</span><div><span class="font-medium">Plano 7 dias — confiança gradual</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Dia 1: escolha rotina simples · Dia 2: define escopo · Dia 3: cria formato de saída · Dia 4: adiciona notificação · Dia 5: roda manual · Dia 6: agenda com supervisão · Dia 7: revisa logs.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Pular esse plano = automação que destrói confiança no primeiro bug.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">1 rotina por vez · Manual antes de cron · Logs obrigatórios · Iteração diária.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">🎯</span><div><span class="font-medium">3 exemplos prontos (PR review, briefing, relatório)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">(1) Revisão automática de PR: GitHub event → revisão + comments inline + Slack · (2) Briefing pré-reunião: calendar event → leitura de contexto → e-mail com 1 página · (3) Relatório semanal: cron sexta 17h → leitura de fontes → entrega.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">São os 3 casos âncora do N5. Domina os 3, vê todos os outros como variações.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Trigger + ação + entrega · Não bloqueia merge · Read-only é o default · Notifica humano.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📋</span><div><span class="font-medium">Checklist de segurança (logs, dry-run, kill switch, alçada)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Antes de habilitar qualquer rotina: log de cada execução · dry-run que rode em paralelo por 1 semana · kill switch acessível · alçada (até R$/quantidade X, Claude executa sozinho; acima, pede aprovação humana).</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem essas 4, autonomia vira risco.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Logs estruturados · Dry-run paralelo · Kill switch · Alçada explícita.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span><span class="text-lg">🪜</span><div><span class="font-medium">Trust ladder: N4→N5 é psicológico</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Quase todo mundo consegue criar rotina técnica. Mas não habilita. Razão: confiar em sistema rodando enquanto você dorme é antinatural. A fix é igual a aprender a dirigir: comece num estacionamento vazio.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Reconhecer que a trava é psicológica te livra de "esperar mais features".</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Confiança = exposição · Baixo risco repetido · 10 runs perfeitas = primeira confiança · 100 runs = segunda.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span><span class="text-lg">⚖</span><div><span class="font-medium">Determinístico vs não-determinístico — onde confiar</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Automações determinísticas (move arquivo X pra pasta Y) são seguras — entrada → saída fixa. Skills/agentes Claude são não-determinísticos mais poderosos mas exigem mais validação.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Confiança total em algo não-determinístico é receita pra desastre. Misture os dois.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ETL determinístico · LLM no meio só onde precisa · Limites claros · Saídas auditáveis.</p></div>
+</div></div></div>
+
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-5-2.html" class="px-5 py-2.5 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-5-2')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+</div>
+
+<div id="modulo-5-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold">5.3</span><span class="text-xs text-neutral-500">~25 min</span></div><h3 class="text-2xl font-bold mb-2">💼 O que vender e como descobrir o que já existe</h3><p class="text-neutral-400 text-sm">A skill de maior alavancagem do N5 não é construir do zero — é descobrir o que já foi feito.</p></div>
+<div class="divide-y divide-dark-700">
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">📚</span><div><span class="font-medium">Catálogo da comunidade (5k+ skills, 800+ MCPs, 3k+ marketplaces)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Em maio/2026 já tem 5.000+ skills, 800+ MCP servers, 3.000+ marketplaces de plugins. Tudo público, maioria open-source.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Reinventar é caro. Adaptar é rápido.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Anthropic oficial · Comunidade · Plugins (bundles) · Marketplace por verticais.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🔍</span><div><span class="font-medium">Onde garimpar (X, Reddit, GitHub, marketplaces)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">X: busque "claude code skill" + sua vertical · Reddit r/ClaudeAI · GitHub awesome-claude-code · marketplace oficial da Anthropic · marketplaces verticalizados (devops, sales, finance).</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Quem garimpa primeiro entrega cliente em 1 semana em vez de 1 mês.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Search-first · Validar autor · Forkar antes de adaptar · Contribuir de volta.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🔧</span><div><span class="font-medium">Como adaptar OSS pro cliente sem virar refém</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Forkar · adaptar pro contexto · manter changelog claro · documentar customizações · contribuir patches de volta quando faz sentido.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem disciplina, você fica preso à versão antiga e perde atualizações do upstream.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Fork claro · Diff documentado · Rebase periódico · Contribute back.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">💼</span><div><span class="font-medium">Ofertas vendáveis no Nível 5</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Revisão de PR 24/7 (R$ 8-15k/mês) · Triagem automática de backlog · Auditoria semanal de segurança/qualidade · Briefing pré-call de cliente · Relatório dominical autônomo · Monitor de competidor.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">N5 não é "vendo agente de IA" — é "vendo SLA, redução de tempo, infra confiável".</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">SLA mensurável · Recurring revenue · Setup + manutenção · Posicionamento como infra.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">⚠</span><div><span class="font-medium">Erros que destroem a confiança do cliente</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Habilitar rotina sem dry-run · vender autonomia em tarefa criativa · não monitorar logs · prometer SLA sem alçada · ignorar custo de tokens · entregar sem runbook.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada um desses transforma cliente em ex-cliente.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Dry-run sempre · Não autoescreva criativo · Logs visíveis · Alçada clara · Token budget · Runbook obrigatório.</p></div>
+</div></div></div>
+
+<div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🏁</span><div><span class="font-medium">Resumo dos 5 níveis + próximo passo do leitor</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-teal-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">N1 chat · N2 projetos · N3 co-work · N4 Code · N5 infraestrutura. A cada nível, o "trabalho" cresce e a "babá" diminui. Próximo passo: faça a Prova (T6) honestamente. Ela revela onde você realmente está.</p></div>
+<div><span class="text-teal-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Quem fecha o ciclo entende a jornada como um todo, não pedaços soltos.</p></div>
+<div><span class="text-teal-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Mapa completo · Prova honesta · Plano de 90 dias por nível · Repetir.</p></div>
+</div></div></div>
+
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-5-3.html" class="px-5 py-2.5 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-5-3')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+</div>
+
+<div class="flex flex-col sm:flex-row gap-4 mt-8"><a href="../trilha4/index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Trilha Anterior: Avançado</a><a href="../trilha6/index.html" class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition">Prova Final →</a></div>
+
+</main>
+<footer class="border-t border-dark-600 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 5 Níveis do Claude Code</div></footer>
+
+<div id="modal-5-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-teal-400 font-bold">5.1</span><span class="font-semibold">Claude como infraestrutura</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-5-1.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-5-2" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-teal-400 font-bold">5.2</span><span class="font-semibold">Autônomos com responsabilidade</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-5-2.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+<div id="modal-5-3" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-teal-400 font-bold">5.3</span><span class="font-semibold">O que vender</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-5-3.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
+
+<script>
+const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;
+if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}
+tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});
+function toggleTopic(b){const t=b.closest('.topic-item'),e=t.querySelector('.topic-explanation'),m=b.closest('.bg-dark-800');m.querySelectorAll('.topic-explanation.active').forEach(x=>{if(x!==e)x.classList.remove('active');});e.classList.toggle('active');}
+function openModal(id){document.getElementById(id).classList.remove('hidden');document.body.style.overflow='hidden';}
+function closeModal(){document.querySelectorAll('.modal').forEach(m=>m.classList.add('hidden'));document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body></html>

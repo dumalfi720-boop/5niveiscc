@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3.1 Co-work | T3</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .bg-purple-500\/10{background-color:rgba(109,40,217,.08)}html:not(.dark) .bg-purple-500\/20{background-color:rgba(109,40,217,.12)}html:not(.dark) .border-purple-500\/30{border-color:rgba(109,40,217,.3)}html:not(.dark) .bg-purple-600{background-color:#6d28d9}html:not(.dark) .hover\:bg-purple-500:hover{background-color:#7c3aed}
+</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-2"><a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-purple-400 bg-purple-500/10">T3</a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-purple-400">Início</a> / <a href="index.html" class="hover:text-purple-400">Trilha 3</a> / <span class="text-neutral-300">Módulo 3.1</span></nav>
+
+<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-3">MÓDULO 3.1 · ~25 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🖥 Co-work: Claude na sua máquina</h1><p class="text-lg text-neutral-300">Os 7 recursos que tiram Claude de uma aba do browser e o colocam pra trabalhar na sua máquina, com acesso real ao filesystem, skills reutilizáveis, agendamento e controle pelo celular.</p></header>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🏠 O que é co-work</h2></div>
+<p class="text-neutral-300 mb-4">Co-work é uma aba dentro do Claude Desktop que roda código numa VM isolada — mas com leitura/escrita real nas pastas que você autorizou. Você descreve o resultado ("organiza meu Downloads por tipo e data"), Claude descobre os passos e executa.</p>
+<p class="text-neutral-300 mb-4">Difere do chat: chat raciocina sobre o que você cola. Co-work age na sua máquina. É a primeira vez que Claude para de ser "assistente que te orienta" e vira "operador que executa".</p>
+<div class="bg-purple-500/10 border-l-4 border-purple-500/30 rounded-lg p-4"><p class="text-sm text-neutral-300"><strong class="text-purple-400">⚠ Importante:</strong> co-work é pago (Pro, Max, Team ou Enterprise). Se você está no free, este é o sinal pra avaliar upgrade.</p></div>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">📂 Filesystem access com segurança</h2></div>
+<p class="text-neutral-300 mb-4">Você escolhe pasta a pasta o que Claude pode ler e o que pode escrever. Tudo fora do escopo é invisível. Princípio do menor privilégio: dê só o necessário pra tarefa.</p>
+<ul class="text-sm text-neutral-300 space-y-2 ml-4 mb-4">
+  <li>• <strong class="text-purple-400">Read-only</strong> por padrão — write é opt-in explícito</li>
+  <li>• <strong class="text-purple-400">Pasta-por-pasta</strong> — sem "todo o /Users"</li>
+  <li>• <strong class="text-purple-400">Lista de exclusão</strong> — esconda subpastas sensíveis</li>
+  <li>• <strong class="text-purple-400">Confirmação antes de apagar</strong> — regra obrigatória nas suas instruções</li>
+</ul>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🧩 Skills reutilizáveis</h2></div>
+<p class="text-neutral-300 mb-4">Skills são workflows reutilizáveis em arquivo markdown. Você define <em>"relatório semanal de clientes"</em> uma vez e invoca com 1 comando. Mais de 100 publicadas — 16+ oficiais da Anthropic mais a comunidade.</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 font-mono text-sm text-neutral-300 mb-4">---<br>name: relatorio-semanal-clientes<br>description: Resume tickets, vendas e NPS da semana<br>---<br><br># Passos<br>1. Leia entradas de 03_entradas/<br>2. Compile métricas-chave<br>3. Gere markdown em 05_outputs/relatorio-{data}.md</div>
+<p class="text-neutral-300">Funcionam em co-work, chat e Claude Code. Cuidado com a origem de skills da comunidade — leia antes de instalar.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">⏰ Tarefas agendadas (/schedule)</h2></div>
+<p class="text-neutral-300 mb-4">Em qualquer conversa do co-work, <code class="bg-dark-700 px-2 py-0.5 rounded text-purple-400">/schedule</code> salva a tarefa pra rodar na cadência que você definir: diário 8h, semanal segunda, mensal dia 1.</p>
+<p class="text-neutral-300 mb-4">Caveat: máquina ligada e desktop aberto. Pra rotina 24/7 (sem máquina), vai pro N5 (Routines).</p>
+<p class="text-neutral-300"><strong class="text-purple-400">Casos perfeitos pro /schedule:</strong> stand-up diário a partir de PRs, brief antes da reunião lendo agenda+docs, resumo de e-mails 17h.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">📱 Controle pelo celular (Dispatch)</h2></div>
+<p class="text-neutral-300 mb-4">Pareie celular com desktop. Mande tarefa do trânsito, da academia, da reunião. Claude executa no desktop e te avisa quando termina.</p>
+<p class="text-neutral-300">É quando co-work deixa de ser "Claude que eu uso" e vira "Claude que trabalha pra mim". O pulo psicológico é grande — pela primeira vez você "delega" sem digitar contexto.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">🎨 Claude Design</h2></div>
+<p class="text-neutral-300 mb-4">Produto separado da Anthropic Labs, incluso no Pro. Você descreve em linguagem natural (deck, landing, one-pager) e Claude entrega + design system extraído da marca.</p>
+<p class="text-neutral-300 mb-4">O diferencial: cole seu repo, brand book ou arquivos de design — Claude extrai cores, tipografia, espaçamentos e usa em TUDO depois. Saída não tem cara de "AI slop".</p>
+<p class="text-neutral-300">Handoff: pacote pronto pra Claude Code (N4), Canva ou export ZIP. Não-coder vai do briefing ao site publicado sem escrever 1 linha.</p>
+</section>
+
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">🖱 Computer Use</h2></div>
+<p class="text-neutral-300 mb-4">Pra apps que não têm conector nativo, Claude navega visualmente como humano: clica, digita, tab, submit. Mac e Windows.</p>
+<p class="text-neutral-300">Use como <strong class="text-purple-400">última escolha</strong>: lento, caro em tokens, mais errado que conectores. Bom pra intranets, ERPs legados e apps proprietários.</p>
+</section>
+
+<section class="mb-12"><div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
+  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span> Resumo do Módulo</h2>
+  <div class="space-y-3 mb-6 text-sm">
+    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Co-work = Claude operador</strong>, não só conselheiro.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Filesystem com segurança</strong> — read-only por padrão, pasta-por-pasta.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Skills</strong> — defina 1 vez, use sempre, em qualquer surface.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">/schedule</strong> = automação supervisionada (pré-N5).</div></div>
+    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Dispatch</strong> = celular como remote.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Claude Design</strong> = não-coder cria frontend com marca.</div></div>
+    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Computer Use</strong> = última escolha.</div></div>
+  </div>
+  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-purple-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">3.2 — Estrutura de pastas que faz Claude virar coworker</p></div>
+  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="modulo-3-2.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">Próximo Módulo →</a></div>
+</div></section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>
