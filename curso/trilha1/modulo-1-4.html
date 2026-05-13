@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.4 Walkthrough: da reunião à ata | T1</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .bg-emerald-500\/10{background-color:rgba(4,120,87,.08)}html:not(.dark) .bg-emerald-500\/20{background-color:rgba(4,120,87,.12)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(4,120,87,.3)}html:not(.dark) .bg-emerald-600{background-color:#047857}html:not(.dark) .hover\:bg-emerald-500:hover{background-color:#059669}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-500\/10{background-color:rgba(185,28,28,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(185,28,28,.3)}
+html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .hover\:text-blue-400:hover{color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(29,78,216,.08)}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .hover\:text-purple-400:hover{color:#6d28d9}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(109,40,217,.08)}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .hover\:text-amber-400:hover{color:#b45309}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(180,83,9,.08)}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .hover\:text-teal-400:hover{color:#0f766e}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(15,118,110,.08)}
+html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-400:hover{color:#be123c}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(190,18,60,.08)}
+.dialogue{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;line-height:1.55}
+.you{border-left:3px solid #FACC15;padding-left:1rem}
+.claude-says{border-left:3px solid #10b981;padding-left:1rem}
+</style>
+</head>
+<body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+<div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+  <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-emerald-400 bg-emerald-500/10"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+  <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+  <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+  <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+  <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+  <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+  <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-emerald-400">Início</a> / <a href="index.html" class="hover:text-emerald-400">Trilha 1</a> / <span class="text-neutral-300">Módulo 1.4</span></nav>
+
+<header class="mb-10">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mb-3">MÓDULO 1.4 · WALKTHROUGH · ~45 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎬 Da reunião de 78min à ata que todos leem</h1>
+<p class="text-lg text-neutral-300">Vamos seguir Patrícia, gerente de operações, da quarta-feira 15h35 (saiu de uma reunião longa com um WhatsApp tenso do CEO) até quinta 9h12 (CEO respondeu "perfeito, agradeço a clareza"). Você vai ver cada prompt, cada output, cada erro, cada ajuste. Sem corte.</p>
+<div class="mt-6 bg-emerald-500/10 border-l-4 border-emerald-500/30 rounded-lg p-4">
+<p class="text-sm text-neutral-300"><strong class="text-emerald-400">Como ler esse módulo:</strong> não pule os "outputs falhados". O valor do walkthrough é justamente ver onde a coisa quase deu errado — e o ajuste exato que destravou. Isso é o que livro de prompt engineering nunca mostra.</p>
+</div>
+</header>
+
+<!-- ============ SETUP ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">⚙</span>
+<h2 class="text-2xl font-bold">Setup — quarta-feira, 15h35</h2>
+</div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<p class="text-neutral-300 mb-3"><strong class="text-emerald-400">Quem:</strong> Patrícia, 33, gerente de operações numa empresa de tecnologia médica com 90 funcionários. 4 anos de casa. Não é "early adopter" — usa Claude às vezes, no nível básico do chat.</p>
+<p class="text-neutral-300 mb-3"><strong class="text-emerald-400">O que aconteceu:</strong> acabou agora de sair de uma reunião com 6 pessoas sobre o pipeline de homologação de um novo dispositivo na Anvisa. Reunião durou 78 minutos. Foi gravada no Zoom (Patrícia tem acesso à transcrição automática, ~14 mil palavras de texto bruto).</p>
+<p class="text-neutral-300 mb-3"><strong class="text-emerald-400">A pressão:</strong> 15h33 chegou WhatsApp do CEO:</p>
+<blockquote class="border-l-4 border-red-500/30 pl-4 italic text-neutral-300 my-3">"Pat, vc tava na call agora né? Me passa o resumo aí. Preciso saber até qd a homologação fica pronta, qts blockers temos e quem é dono de cada um. Conselho amanhã 9h."</blockquote>
+<p class="text-neutral-300"><strong class="text-emerald-400">Stakes:</strong> Conselho é 9h. CEO precisa apresentar com confiança. Patrícia tem (idealmente) até final do dia. Cansou-se de tomar nota — esqueceu metade. Próxima call dela é 17h, então tem ~1h20.</p>
+</div>
+</section>
+
+<!-- ============ ITERAÇÃO 0 ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-red-500/20 text-red-400 font-bold text-xl flex-shrink-0">0</span>
+<h2 class="text-2xl font-bold">Tentativa 0 — o reflexo ruim (15h38)</h2>
+</div>
+<p class="text-neutral-300 mb-4">Patrícia abre o Claude no celular (ainda no carro), copia a transcrição inteira do Zoom, e digita:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">PATRÍCIA →</div>
+<div class="dialogue you text-sm text-neutral-200">faz um resumo dessa reunião pra mim<br><br>[cola 14k palavras]</div>
+</div>
+<p class="text-neutral-300 mb-4"><strong class="text-emerald-400">Claude devolve, 8 segundos depois:</strong></p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">← CLAUDE</div>
+<div class="dialogue claude-says text-sm text-neutral-300">A reunião abordou o processo de homologação de um novo dispositivo médico junto à Anvisa. Foram discutidos diversos aspectos técnicos, regulatórios e operacionais. A equipe alinhou expectativas sobre prazos e responsabilidades, identificou desafios pendentes e definiu próximos passos. Os participantes demonstraram comprometimento com o projeto e concordaram em retomar a discussão na próxima semana...</div>
+</div>
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5">
+<h3 class="font-bold text-red-400 mb-2">😬 O que aconteceu</h3>
+<p class="text-sm text-neutral-300 mb-3">Patrícia leu, sentiu o frio na barriga: <em>isso não serve pra nada</em>. Não tem data. Não tem nome. Não tem blocker concreto. Não responde a pergunta do CEO. Se ela manda isso, o CEO responde "Pat, me liga".</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Por que falhou (e por que isso acontece com TODO MUNDO no N1):</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 mt-2 ml-4">
+<li>• Ela pediu o que <em>parecia</em> óbvio ("resumo da reunião") em vez do que <em>realmente precisava</em> (resposta às 3 perguntas do CEO)</li>
+<li>• Não passou o contexto crítico: a pergunta do CEO, quem são os players, quem é a audiência final (Conselho)</li>
+<li>• Não pediu formato</li>
+<li>• Não disse o que era importante extrair (datas, donos, blockers) versus o que era ruído (small talk, repetições, divagações técnicas)</li>
+</ul>
+</div>
+</section>
+
+<!-- ============ ITERAÇÃO 1 ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span>
+<h2 class="text-2xl font-bold">Iteração 1 — primeiro ajuste (15h42)</h2>
+</div>
+<p class="text-neutral-300 mb-4">Patrícia respira, pensa "ok, o que o CEO PRECISA?". Reescreve:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">PATRÍCIA →</div>
+<div class="dialogue you text-sm text-neutral-200">Aja como secretária executiva sênior. Vou colar a transcrição de uma reunião de 78 minutos sobre homologação Anvisa.
+
+Meu CEO pediu o resumo agora. Ele precisa saber:
+1. Até quando a homologação fica pronta
+2. Quantos blockers temos
+3. Quem é dono de cada um
+
+Apresentação dele pro Conselho é amanhã 9h.
+
+Me dá esse resumo focado nessas 3 perguntas. Formato bullets.
+
+[cola 14k palavras]</div>
+</div>
+<p class="text-neutral-300 mb-4"><strong class="text-emerald-400">Claude devolve:</strong></p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">← CLAUDE</div>
+<div class="dialogue claude-says text-sm text-neutral-300">**Prazo de homologação:** A equipe trabalha com prazo estimado entre o final de junho e meados de julho de 2026, condicionado à conclusão dos testes de eficácia.
+
+**Blockers identificados:**
+- Atraso no laudo de eficácia clínica
+- Pendência de documentação técnica do fornecedor de embalagem
+- Aguardando retorno da Anvisa sobre o dossiê parcial submetido em fevereiro
+- Necessidade de revisar IFU em razão de feedback do consultor regulatório
+
+**Responsáveis mencionados:**
+Diversos membros da equipe foram citados, incluindo profissionais das áreas técnica, regulatória e comercial. As responsabilidades específicas foram discutidas durante a reunião.</div>
+</div>
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5">
+<h3 class="font-bold text-amber-400 mb-2">🟡 Melhor — mas ainda não serve</h3>
+<p class="text-sm text-neutral-300 mb-3">Patrícia lê e percebe: <strong>melhor</strong>, mas ainda não dá pra mandar pro CEO. Problemas:</p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4">
+<li>• Prazo está vago ("final de junho e meados de julho") quando na reunião alguém disse <em>uma data específica</em></li>
+<li>• Blockers estão sem dono — exatamente a pergunta do CEO ("quem é dono de cada um")</li>
+<li>• "Diversos membros" é a frase mais inútil que existe num resumo executivo</li>
+<li>• Claude inventou "consultor regulatório" — Patrícia não lembra disso ter sido falado. Claude pode ter alucinado</li>
+</ul>
+</div>
+</section>
+
+<!-- ============ ITERAÇÃO 2 ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span>
+<h2 class="text-2xl font-bold">Iteração 2 — apertando contexto e veto (15h48)</h2>
+</div>
+<p class="text-neutral-300 mb-4">Patrícia volta. Agora ela sabe o que falta. Reescreve com 3 mudanças importantes:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">PATRÍCIA →</div>
+<div class="dialogue you text-sm text-neutral-200">Mesma reunião. Vou re-pedir com regras mais rígidas.
+
+Aja como secretária executiva sênior que trabalha em empresa de tecnologia médica. Você conhece o jargão (Anvisa, IFU, dossiê, RDC). Você sabe que CEO odeia vaguidade.
+
+Contexto crítico:
+- Reunião de 78min sobre homologação de novo dispositivo na Anvisa
+- 6 pessoas presentes (vou listar no final)
+- Audiência final do resumo: CEO, que vai apresentar pro Conselho amanhã 9h
+- CEO odeia: nomes vagos, datas em "ranges" sem premissa, blocker sem dono
+
+Tarefa: gere ata-relatório com EXATAMENTE essa estrutura:
+
+## Resposta direta ao CEO (3 bullets)
+- Prazo de homologação: [DATA específica + premissa que justifica]
+- Total de blockers ativos: [número]
+- Resumo em 1 frase
+
+## Cronograma
+| Marco | Data | Dependência |
+[3-5 linhas]
+
+## Blockers (1 tabela)
+| # | Blocker | Dono (nome) | Data de resolução prevista | Impacto se não resolver |
+[1 linha por blocker]
+
+## Decisões tomadas na reunião (não recomendações, decisões)
+- ...
+
+## O que NÃO foi decidido (vai pro Conselho)
+- ...
+
+## Participantes
+- Nome — função (decisão que tomou)
+
+REGRAS:
+- Se a transcrição não tem nome específico de dono, escreva "A definir — falar com [pessoa que ficou de levantar]". NÃO INVENTE nome.
+- Se a transcrição não tem data específica, escreva "Não foi dito na reunião" e ponto.
+- NÃO use "diversos", "alguns", "vários", "discutiu-se". Cada linha precisa ter ator e ação.
+- Não invente fatos. Se não tem certeza, marque com [?] e eu valido.
+
+Transcrição:
+[cola 14k palavras]</div>
+</div>
+<p class="text-neutral-300 mb-4"><strong class="text-emerald-400">Claude devolve (recortado):</strong></p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">← CLAUDE</div>
+<div class="dialogue claude-says text-sm text-neutral-300">## Resposta direta ao CEO
+- **Prazo de homologação:** 12 de agosto de 2026 (premissa: laudo de eficácia entregue até 30/jun e dossiê final submetido até 15/jul)
+- **Total de blockers ativos:** 3 (1 crítico, 2 importantes)
+- Em 1 frase: o caminho crítico passa pelo laudo de eficácia — atrasou 18 dias e segue o blocker que define o resto do cronograma.
+
+## Cronograma
+| Marco | Data | Dependência |
+|---|---|---|
+| Entrega laudo de eficácia (CRO Bioteste) | 30/jun/2026 | Coleta de dados de 12 pacientes finalizada — 8 já feitos |
+| Dossiê final consolidado | 15/jul/2026 | Laudo de eficácia + revisão IFU |
+| Submissão Anvisa | 20/jul/2026 | Dossiê final + ART do responsável técnico |
+| Estimativa de aprovação | 12/ago/2026 | Premissa: análise Anvisa em fluxo padrão (~20 dias) |
+
+## Blockers
+| # | Blocker | Dono | Resolução | Impacto se não resolver |
+|---|---|---|---|---|
+| 1 | Atraso de 18 dias no laudo de eficácia (CRO atrasou recrutamento) | Marcelo (RT) — em contato com Bioteste | 30/jun | Estoura a janela do Conselho. Sem laudo, sem dossiê. |
+| 2 | Documentação técnica do fornecedor de embalagem (NimTec) pendente | A definir — Patrícia ficou de checar com compras | 25/jun | Atrasa dossiê em ~5 dias. Existe fornecedor B já avaliado, é um plano B. |
+| 3 | Revisão de IFU pendente de feedback regulatório interno | Camila (Regulatório) | 28/jun | Pode reabrir versão final do dossiê se exigir mudança. |
+
+## Decisões tomadas na reunião
+- Manter Bioteste como CRO (alternativa Cromos custaria 22 dias a mais)
+- Plano B com fornecedor de embalagem ativado se NimTec não entregar até 22/jun
+- Camila tem autonomia pra aprovar IFU sem nova reunião do comitê
+
+## O que NÃO foi decidido
+- Se vamos comunicar o atraso pro Conselho ANTES da reunião de quinta (CEO decide)
+- Se contratamos consultor regulatório externo pra revisar o dossiê final antes da submissão [?]
+
+## Participantes
+- Marcelo Veiga — RT (responsável técnico, dono do blocker #1)
+- Camila Santos — Regulatório (dona do blocker #3)
+- Patrícia Lima — Operações (vou levantar status NimTec)
+- Roberto Alves — Comercial (não tomou decisão)
+- Daniel Oliveira — Financeiro (validou orçamento extra de R$ 14k para plano B embalagem)
+- Lucia Pereira — Suporte clínico (não tomou decisão)
+
+[?] flag: na transcrição apareceu rapidamente a sugestão de "consultor regulatório externo" mas não fechou decisão. Recomendo você validar com Marcelo.</div>
+</div>
+<div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5">
+<h3 class="font-bold text-emerald-400 mb-2">✅ Agora sim</h3>
+<p class="text-sm text-neutral-300 mb-2">Patrícia lê e sente o alívio. <strong>Isso tem o que o CEO precisa.</strong> Data específica, blockers com dono, cronograma com premissa. O [?] flag é genial — Claude marcou onde teve dúvida em vez de inventar.</p>
+<p class="text-sm text-neutral-300">As 3 mudanças que destravaram tudo:</p>
+<ol class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
+<li>1. <strong class="text-emerald-400">Estrutura exata da saída</strong> com headers e tabelas — Claude para de "narrar" e começa a "preencher slots".</li>
+<li>2. <strong class="text-emerald-400">Regras anti-vaguidade</strong> ("não use 'diversos', 'vários'; cada linha precisa ter ator e ação") — força especificidade.</li>
+<li>3. <strong class="text-emerald-400">Permissão pra dizer "não sei"</strong> ([?] / "Não foi dito na reunião") — mata alucinação. Esse é talvez o ingrediente mais subestimado do N1.</li>
+</ol>
+</div>
+</section>
+
+<!-- ============ ITERAÇÃO 3 ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span>
+<h2 class="text-2xl font-bold">Iteração 3 — o CEO pede outro corte (16h32)</h2>
+</div>
+<p class="text-neutral-300 mb-4">Patrícia manda. CEO responde em 4 minutos:</p>
+<blockquote class="border-l-4 border-amber-500/30 pl-4 italic text-neutral-300 my-3">"Excelente. Me dá agora a versão que vou COLAR no slide do Conselho. Máximo 6 linhas. Linguagem de Conselho, não de operações. E uma frase de risco no final, sem alarmismo."</blockquote>
+<p class="text-neutral-300 mb-4">Patrícia volta no Claude — <strong>mesma conversa</strong>, então o contexto já está lá:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">PATRÍCIA →</div>
+<div class="dialogue you text-sm text-neutral-200">CEO pediu agora: versão de slide do Conselho. Máximo 6 linhas. Linguagem de Conselho (não operacional). Frase de risco no final, sem alarmismo.
+
+Usa o conteúdo que você já tem da reunião. Não precisa repetir transcrição.</div>
+</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<div class="text-xs text-neutral-500 mb-2">← CLAUDE</div>
+<div class="dialogue claude-says text-sm text-neutral-300">**Status — Homologação Anvisa**
+
+- Submissão prevista para **20 de julho**; aprovação esperada em **12 de agosto de 2026**.
+- Três frentes em monitoramento: laudo de eficácia, documentação de embalagem e revisão do IFU.
+- A frente crítica é o **laudo de eficácia**, com atraso recuperável de 18 dias; CRO contratada se comprometeu com entrega em 30 de junho.
+- Plano alternativo de fornecedor de embalagem está validado e pode ser acionado se necessário em 22 de junho.
+- Orçamento atual contempla a contingência (R$ 14k adicionais já aprovados internamente).
+
+**Risco a monitorar:** novo atraso no laudo de eficácia comprime a janela de submissão e pode empurrar a aprovação para o final de agosto.</div>
+</div>
+<p class="text-neutral-300"><strong class="text-emerald-400">Patrícia copia, cola no slide, manda pro CEO 16h38.</strong> CEO responde "perfeito". Patrícia volta pra sua call de 17h com 22 minutos sobrando.</p>
+</section>
+
+<!-- ============ DEPLOY / RESULTADO ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">✓</span>
+<h2 class="text-2xl font-bold">Quinta, 9h12 — o feedback</h2>
+</div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<p class="text-neutral-300 mb-3">CEO terminou a apresentação no Conselho. Mandou pra Patrícia:</p>
+<blockquote class="border-l-4 border-emerald-500/30 pl-4 italic text-neutral-300 my-3">"Pat, perfeito, agradeço a clareza. Conselho aprovou o plano. Único pedido: faz a mesma estrutura como template fixo pra todas as reuniões críticas daqui pra frente. Compartilha com a galera."</blockquote>
+<p class="text-neutral-300">Patrícia, no banho de manhã, percebeu uma coisa: o ganho não foi o "Claude resumiu rápido". Foi que ela <strong>conseguiu duas saídas DIFERENTES da mesma reunião</strong> (uma operacional, uma de Conselho) sem reler 14 mil palavras duas vezes. Esse é o desbloqueio real.</p>
+</div>
+</section>
+
+<!-- ============ LIÇÕES ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">★</span>
+<h2 class="text-2xl font-bold">Lições da jornada</h2>
+</div>
+<div class="space-y-4">
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+<h3 class="font-bold text-emerald-400 mb-2">1. "Resumo" é o output errado 90% das vezes</h3>
+<p class="text-sm text-neutral-300">O que parece pedido óbvio ("me resume isso") quase nunca é o que você precisa. Pergunta certa: <em>"o que a PESSOA QUE VAI LER PRECISA SABER?"</em>. A iteração 0 pedia resumo. A iteração 2 pediu "resposta às 3 perguntas do CEO + estrutura tabelada". Output diferente, valor totalmente diferente.</p>
+</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+<h3 class="font-bold text-emerald-400 mb-2">2. Estrutura exata &gt; instruções abstratas</h3>
+<p class="text-sm text-neutral-300">"Faz um resumo bom" não funciona. "Cabeçalho ## X, tabela com colunas A,B,C, listas com no máx 3 itens, frase final em itálico" funciona — Claude para de narrar e começa a preencher. Você projeta o output, Claude executa.</p>
+</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+<h3 class="font-bold text-emerald-400 mb-2">3. Permissão explícita pra dizer "não sei" mata alucinação</h3>
+<p class="text-sm text-neutral-300">Foi o ingrediente mais subestimado da iteração 2. "Não invente. Se não tem certeza, marque com [?]." — esse comando explícito impede o Claude de fabricar nomes, datas, citações. Sem ele, ele vai inventar pra "ser útil".</p>
+</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+<h3 class="font-bold text-emerald-400 mb-2">4. Continuar a conversa &gt; começar do zero</h3>
+<p class="text-sm text-neutral-300">Iteração 3 foi rápida porque Patrícia usou a MESMA conversa. Contexto já estava lá. Se ela tivesse aberto chat novo, teria que recolar transcrição e re-explicar. Continuidade dentro de uma sessão é o "N1 sendo bem feito" — não precisa subir pra N2 (Projetos) ainda.</p>
+</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+<h3 class="font-bold text-emerald-400 mb-2">5. O ganho real é a RE-USABILIDADE</h3>
+<p class="text-sm text-neutral-300">CEO pediu "faz isso virar template". Aí Patrícia salvou o prompt da iteração 2 num doc. Toda reunião crítica daqui pra frente, 30 segundos pra adaptar. Quando você sente isso, está pronta pra subir pro N2 (transformar em Projeto fixo).</p>
+</div>
+</div>
+</section>
+
+<!-- ============ ADAPTAÇÕES ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">⚙</span>
+<h2 class="text-2xl font-bold">Adapte o walkthrough pro seu mundo</h2>
+</div>
+<p class="text-neutral-300 mb-4">A jornada de Patrícia era ata de reunião. Mas o <strong>padrão</strong> serve pra qualquer texto longo que precisa virar entregável estruturado:</p>
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-emerald-400 mb-2">📚 Aula gravada → ficha de estudo</h3><p class="text-sm text-neutral-300">Mesma estrutura: estrutura exata de saída (flashcards + mapa + 5 questões) + regra anti-alucinação ("não invente conceito que não estava na aula").</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-emerald-400 mb-2">📞 Call de venda → relatório CRM</h3><p class="text-sm text-neutral-300">"Cliente disse X, Y, Z; objeções A, B; next step W". Tabela. Cada coluna obrigatória. Sem "diversos pontos foram discutidos".</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-emerald-400 mb-2">📄 Contrato longo → resumo de risco</h3><p class="text-sm text-neutral-300">"Liste todas as cláusulas que: (a) implicam multa, (b) limitam minha rescisão, (c) têm prazo &lt;30 dias. Cite cláusula e página. Se não houver, escreva 'nenhuma encontrada'."</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-emerald-400 mb-2">🎙 Podcast/entrevista → matéria</h3><p class="text-sm text-neutral-300">"Lead + 3 quotes pinçadas + tabela de fatos verificáveis + 1 pergunta que ficou no ar". Estrutura jornalística.</p></div>
+</div>
+</section>
+
+<!-- ============ MÉTRICAS ============ -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">📊</span>
+<h2 class="text-2xl font-bold">Métricas reais da jornada</h2>
+</div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+<div><div class="text-3xl font-bold text-emerald-400">63 min</div><div class="text-xs text-neutral-500">economizados<br>(versus fazer manual)</div></div>
+<div><div class="text-3xl font-bold text-emerald-400">3</div><div class="text-xs text-neutral-500">iterações até<br>versão final</div></div>
+<div><div class="text-3xl font-bold text-emerald-400">2 outputs</div><div class="text-xs text-neutral-500">diferentes da mesma<br>fonte (ops + Conselho)</div></div>
+<div><div class="text-3xl font-bold text-emerald-400">0</div><div class="text-xs text-neutral-500">alucinações no<br>output final</div></div>
+</div>
+<p class="text-sm text-neutral-400 mt-5 text-center italic">Tudo no chat puro. Sem Projeto, sem skill, sem conectores. N1 bem feito já entrega isso.</p>
+</div>
+</section>
+
+<!-- ============ RESUMO ============ -->
+<section class="mb-12">
+<div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">"Resumo" é quase sempre o output errado</strong> — pergunta certa é "o que o leitor precisa saber?"</div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Estrutura exata desbloqueia tudo</strong> — projete cabeçalhos, tabelas, número de itens. Claude preenche slots, não narra.</div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">"Não invente. Se não souber, marque [?]"</strong> — anti-alucinação explícita. Subestimadíssimo.</div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Continuidade na mesma conversa</strong> — segundo output (slide) em 30s reusando contexto.</div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Quando o output vira template salvo</strong> = sinal pra subir pro N2 (Projetos).</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-emerald-400 mb-2">Próximo passo:</h3><p class="text-neutral-300">Volte pra Trilha 1 e revise o módulo 1.2 (Cheat Code: primeiro Projeto). Agora você tem um template real (o prompt da iteração 2) pra virar seu primeiro Projeto no N2.</p></div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
+<a href="../trilha2/index.html" class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition">Próxima Trilha: Iniciante →</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>
