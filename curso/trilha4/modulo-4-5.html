@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4.5 Walkthrough: bug sexta 23h → PR segunda 8h | T4</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .bg-amber-500\/20{background-color:rgba(180,83,9,.12)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}html:not(.dark) .bg-amber-600{background-color:#b45309}html:not(.dark) .hover\:bg-amber-500:hover{background-color:#d97706}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-500\/10{background-color:rgba(185,28,28,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(185,28,28,.3)}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .bg-emerald-500\/10{background-color:rgba(4,120,87,.08)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(4,120,87,.3)}
+.dialogue{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;line-height:1.55}
+.you{border-left:3px solid #FACC15;padding-left:1rem}
+.claude-says{border-left:3px solid #f59e0b;padding-left:1rem}
+.timeline-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;margin-top:6px}</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+<a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+<a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+<a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-amber-400 bg-amber-500/10"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+<a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+<a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-amber-400">Início</a> / <a href="index.html" class="hover:text-amber-400">Trilha 4</a> / <span class="text-neutral-300">Módulo 4.5</span></nav>
+
+<header class="mb-10">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-3">MÓDULO 4.5 · WALKTHROUGH · ~50 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎬 Bug report sexta 23h12 → PR mergeado segunda 8h (sem queimar o fim de semana)</h1>
+<p class="text-lg text-neutral-300">Mariana, plantonista do mês, recebe alerta de um cliente enterprise às 23h12 de sexta. Você acompanha as 4 horas de trabalho dela ao longo do sábado — uso real de plan mode, subagentes especializados, loop de verificação e a coordenação com CTO via PR — e como ela passa o domingo inteiro com a família.</p>
+<div class="mt-6 bg-amber-500/10 border-l-4 border-amber-500/30 rounded-lg p-4">
+<p class="text-sm text-neutral-300"><strong class="text-amber-400">⚠ O ponto desse walkthrough:</strong> N4 não é "trabalhar mais" — é "trabalhar com sistema". Mariana resolveu em 4h o que sem Claude Code teria virado fim-de-semana inteiro. Você vê CADA decisão.</p>
+</div>
+</header>
+
+<!-- SETUP -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Setup — sexta-feira 23h12</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<p class="text-neutral-300 mb-3"><strong class="text-amber-400">Quem:</strong> Mariana, 34, dev sênior numa SaaS B2B de gestão financeira pra empresas médias. 5 anos de casa. É a plantonista do mês (escala rotativa).</p>
+<p class="text-neutral-300 mb-3"><strong class="text-amber-400">O sinal:</strong> 23h12 de sexta, pager-duty toca:</p>
+<blockquote class="border-l-4 border-red-500/30 pl-4 italic text-neutral-300 my-3">"[P1] Cliente Acme Corp (ID 8842) reportou: carregamento do relatório mensal de fluxo de caixa retorna erro 500 desde quinta de manhã. Estão tentando fechar contabilidade — janela termina segunda. Contrato enterprise, conta de R$ 240k/ano."</blockquote>
+<p class="text-neutral-300 mb-3"><strong class="text-amber-400">Mariana abre o laptop:</strong> a tentação é resolver agora à noite, 23h. Mas ela conhece a regra do time: <em>"problema P1 não-derruba-tudo na sexta após 22h → confirmar com cliente que estamos cientes, dormir, atacar sábado de manhã descansado."</em></p>
+<p class="text-neutral-300">Ela responde no portal: "Vista. Vamos investigar amanhã 8h e te atualizar até 12h. Janela contábil ainda tem 2 dias úteis." Fecha laptop, dorme.</p>
+</div>
+</section>
+
+<!-- T0 -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">Sábado 8h47 — abrindo o caso</h2></div>
+<p class="text-neutral-300 mb-4">Mariana abre laptop, café na mão. Cria worktree dedicada:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="dialogue you text-sm text-neutral-200 code-block">cd ~/work/saas-main
+claude-worktree hotfix-acme-report-500</div></div>
+<p class="text-neutral-300 mb-4">Inicia Claude Code com plan mode + Opus Plan:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">MARIANA →</div><div class="dialogue you text-sm text-neutral-200">[Plan Mode + Opus]
+
+Cliente Acme Corp reportou: GET /api/reports/monthly-cashflow retorna 500 desde quinta de manhã. Cliente ID 8842.
+
+Antes de qualquer mudança, faça:
+1. Reproduza o erro localmente (use o staging dump em /db/dumps/staging-2026-05-09.sql).
+2. Lê os logs do Sentry pros últimos 48h filtrando por endpoint e cliente.
+3. Cruze com PRs mergeados de quarta+quinta — algum tocou nessa área?
+4. Forme hipótese de causa raiz com nível de confiança (%).
+5. Volta com plano de fix + plano de teste. NÃO altere código ainda.</div></div>
+<p class="text-neutral-300 mb-4"><strong>9h05 — Claude volta com diagnóstico:</strong></p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">**Reprodução confirmada.**
+Erro 500 ao chamar GET /api/reports/monthly-cashflow?clientId=8842&month=2026-05 com dump de staging.
+
+**Logs Sentry (últimas 48h):**
+- 47 ocorrências do erro, todas após 09h32 de quinta
+- 100% concentradas em clientes "enterprise" (não afeta plano "growth" ou "starter")
+- Stack trace aponta pra função `aggregateCashflowByCategory()` em `/lib/reports/cashflow.ts:142`
+- Erro específico: "TypeError: Cannot read properties of undefined (reading 'subCategories')"
+
+**Cruzamento com PRs:**
+- PR #1224 mergeado quinta 09h12 — "Refactor: separar lógica de subcategorias de categorias" (autor: Felipe)
+- O PR tocou EXATAMENTE em `cashflow.ts`. Diff relevante linhas 138-156.
+- 1 teste foi removido nesse PR ("removed test outdated") — pode ser o que cobria esse caminho.
+
+**Hipótese de causa raiz (confiança: 92%):**
+Refactor de PR #1224 assumiu que TODA categoria tem `subCategories` populado. Para clientes enterprise com plano custom de contas, algumas categorias ficam sem subCategories (Postgres retorna null, não array vazio). O acesso direto `.subCategories.map(...)` quebra.
+
+**Confirmação rápida (8% de incerteza):**
+Pra eliminar a dúvida, sugiro: query direto na tabela `cashflow_categories` filtrando WHERE client_id=8842 AND sub_categories IS NULL. Se voltar resultado, confirma 100%.
+
+**Plano de fix proposto:**
+1. Em `cashflow.ts:142`, adicionar default `?? []` em `category.subCategories ?? []` na linha que itera
+2. Adicionar teste explícito: caso com categoria SEM subCategories deve retornar 0 no agregado, não 500
+3. Adicionar teste que protege esse cenário em fixtures (cliente enterprise sample)
+4. Verificar se há outros lugares no mesmo PR #1224 com mesma assumption
+
+**Plano de teste:**
+- Test unit: `aggregateCashflowByCategory` com input vazio em subCategories
+- Test integração: endpoint completo com cliente enterprise fixture sem sub-cat
+- Regressão: rodar suite completa de reports + smoke do endpoint
+
+**Risco residual:**
+- Se outros endpoints assumiram a mesma estrutura, podem ter o mesmo bug latente. Vou auditar antes de PR.
+
+Quer que eu execute? Ou prefere validar a hipótese primeiro?</div></div>
+<div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5">
+<h3 class="font-bold text-emerald-400 mb-2">✅ Mariana valida em 4 minutos</h3>
+<p class="text-sm text-neutral-300">Roda o query sugerido. Volta com resultados — confirma: 23 categorias do Acme Corp sem subCategories. Hipótese 100% certa. Aprova o plano.</p>
+</div>
+</section>
+
+<!-- T1 -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">9h22 — fix + auditoria com subagentes</h2></div>
+<p class="text-neutral-300 mb-4">Mariana usa 2 subagentes em paralelo:</p>
+<div class="space-y-3 mb-4">
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4">
+<p class="text-sm text-neutral-300 mb-1"><strong class="text-amber-400">Subagente "fix":</strong> implementa o fix do plano.</p>
+<div class="bg-dark-700/50 rounded p-3 code-block text-sm text-neutral-300">
+"Aplique o fix do plano. Não toque em mais nada além do necessário. Cada arquivo alterado: comente em 1 linha o porquê da mudança."
+</div>
+</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4">
+<p class="text-sm text-neutral-300 mb-1"><strong class="text-amber-400">Subagente "audit-similar":</strong> caça padrões similares no codebase.</p>
+<div class="bg-dark-700/50 rounded p-3 code-block text-sm text-neutral-300">
+"Audite o PR #1224 inteiro + funções relacionadas a relatório. Procure padrão similar: acesso direto a array assumindo que existe (sem optional chaining ou default). Liste arquivos, linhas, severidade (1-5). Não corrija — só liste."
+</div>
+</div>
+</div>
+<p class="text-neutral-300"><strong>9h41 — saídas dos subagentes:</strong></p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4">
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-emerald-400">Subagente fix:</strong> aplicou correção em <code class="bg-dark-700 px-1 rounded">cashflow.ts:142</code> + 1 lugar similar em <code class="bg-dark-700 px-1 rounded">cashflow.ts:198</code>. Adicionou 3 testes (1 unitário, 2 integração). Total: 2 arquivos código + 1 arquivo teste alterados.</p>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-emerald-400">Subagente audit-similar:</strong> encontrou 2 lugares com mesmo padrão arriscado:</p>
+<ul class="text-sm text-neutral-300 ml-4 space-y-1">
+<li>• <code class="bg-dark-700 px-1 rounded">/lib/reports/balance.ts:87</code> — severidade 3 (afeta só plano starter, baixa probabilidade)</li>
+<li>• <code class="bg-dark-700 px-1 rounded">/lib/reports/forecast.ts:213</code> — severidade 4 (afeta enterprise, mesma classe de bug)</li>
+</ul>
+</div>
+<p class="text-neutral-300">Mariana decide: fix imediato cobre só o reportado. Os 2 outros viram ticket separado pra próxima semana (não bloqueia Acme).</p>
+</section>
+
+<!-- T2 -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">9h47 — loop de verificação</h2></div>
+<p class="text-neutral-300 mb-4">Antes de chamar review, Mariana ativa loop de verificação:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">MARIANA →</div><div class="dialogue you text-sm text-neutral-200">Antes de chamar PR, valide tudo:
+
+1. Rode `npm run test -- reports` — todos passando?
+2. Rode `npm run typecheck` — sem erros?
+3. Inicie servidor local, chame `GET /api/reports/monthly-cashflow?clientId=8842&month=2026-05`. Deve retornar 200 com dados.
+4. Repita 3 com clientes growth e starter. Deve manter funcionando.
+5. Tire screenshot da response (use a extensão de browser) — quero ver o JSON.
+6. SE ALGO FALHAR, NÃO ME CHAME — analise, ajuste, repete até PASS.</div></div>
+<p class="text-neutral-300 mb-4"><strong>10h18 — Claude volta:</strong></p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">Loop de verificação completo:
+
+✓ npm run test -- reports: 47/47 passando
+✓ npm run typecheck: 0 erros
+✓ GET /api/reports/monthly-cashflow?clientId=8842 (enterprise): retornou 200, payload válido, 23 categorias sem sub-cat tratadas como [] (resultado correto)
+✓ GET /api/reports/monthly-cashflow?clientId=1142 (growth): 200, regressão OK
+✓ GET /api/reports/monthly-cashflow?clientId=552 (starter): 200, regressão OK
+✓ Screenshot do payload em /screenshots/verify-acme-fix.png
+
+Tudo verde. Pronto pra PR. Devo abrir?</div></div>
+</section>
+
+<!-- T3 - PR -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">10h31 — PR via slash command</h2></div>
+<p class="text-neutral-300 mb-4">Mariana invoca slash command custom <code class="bg-dark-700 px-1 rounded">/hotfix-pr</code> (versão pra hotfixes urgentes que pula etapas opcionais):</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">MARIANA →</div><div class="dialogue you text-sm text-neutral-200">/hotfix-pr
+
+Contexto: cliente Acme Corp P1, erro 500 em relatório mensal causado por PR #1224 (refactor que não tratou subCategories null em enterprise).
+
+Linkar issues: ACME-001 (ticket interno do plantão).
+Marcar autores: @felipe (autor do PR #1224, pra ele saber), @cto (review urgente).
+Tag: hotfix, priority/p1.</div></div>
+<p class="text-neutral-300"><strong>10h35 — PR aberto:</strong></p>
+<div class="bg-dark-700/50 rounded p-4 text-sm text-neutral-300 mb-4">
+<p class="font-bold mb-2">🚨 hotfix: trata subCategories nullable em cashflow report</p>
+
+<p class="font-semibold mt-3 mb-1">Contexto</p>
+<p>Cliente Acme Corp (enterprise) reportou erro 500 em GET /api/reports/monthly-cashflow desde quinta 09h32. Causa raiz: refactor do PR #1224 assumiu subCategories sempre populado, mas categorias custom de planos enterprise podem retornar null do banco.</p>
+
+<p class="font-semibold mt-3 mb-1">Plano executado</p>
+<ul class="ml-4 list-disc">
+<li>cashflow.ts:142 e :198 → adicionado <code>?? []</code> no acesso a subCategories</li>
+<li>3 testes adicionados (1 unit, 2 integração) cobrindo categoria sem sub-cat</li>
+<li>Fixture de cliente enterprise sample agora inclui caso sem sub-cat (proteção contra regressão)</li>
+</ul>
+
+<p class="font-semibold mt-3 mb-1">Evidência de teste</p>
+<ul class="ml-4 list-disc">
+<li>npm run test -- reports: 47/47 ✓</li>
+<li>npm run typecheck: 0 erros</li>
+<li>Reprodução local com cliente 8842: 200 OK (antes 500)</li>
+<li>Regressão com growth/starter: 200 OK</li>
+<li>Screenshot do payload em /screenshots/verify-acme-fix.png</li>
+</ul>
+
+<p class="font-semibold mt-3 mb-1">Riscos</p>
+<ul class="ml-4 list-disc">
+<li>Mudança defensiva, baixo risco. Aplica default vazio em vez de quebrar.</li>
+<li>Audit identificou 2 lugares similares (balance.ts, forecast.ts) — abri ticket separado #ACME-002 pra próxima sprint, NÃO bloqueia este PR.</li>
+</ul>
+
+<p class="font-semibold mt-3 mb-1">Deploy</p>
+<p>Sugiro merge + deploy em janela suave (domingo &gt; 21h). Cliente já comunicado que correção sai até segunda.</p>
+</div>
+<p class="text-neutral-300">10h42 — Mariana ping pessoal no CTO via Slack: "PR de hotfix Acme: [link]. Pode revisar entre 21-22h domingo pra deploy noturno? Já testei tudo, baixo risco."</p>
+</section>
+
+<!-- T4 - DESCANSO -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">✓</span><h2 class="text-2xl font-bold">10h47 — comunicar cliente e fechar laptop</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<p class="text-neutral-300 mb-3">Mariana manda atualização pro Acme no portal:</p>
+<blockquote class="border-l-4 border-emerald-500/30 pl-4 italic text-neutral-300 my-3">
+"Atualização: identificamos a causa raiz (assumption indevida sobre estrutura de dados em planos enterprise customizados) e implementamos a correção. Já validamos em ambiente de pré-produção que o problema está resolvido pro seu cenário. Deploy em produção: domingo 22h. Confirmaremos por aqui assim que estiver no ar. Janela contábil de vocês não é afetada — fechamento segue normalmente segunda."
+</blockquote>
+<p class="text-neutral-300">11h00 — Mariana fecha o laptop. Total de tempo trabalhado: <strong>2h13</strong>. Vai pra feira com a filha.</p>
+</div>
+</section>
+
+<!-- DOMINGO -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold">Domingo 21h47 — CTO revisa e aprova pelo celular</h2></div>
+<p class="text-neutral-300 mb-4">CTO abre o PR pelo celular. Lê o contexto, plano executado, evidência. Examina o diff (4 arquivos, mudanças cirúrgicas). Aprova com comentário: <em>"Limpo. Mereceu fim de semana decente. Mergeio agora."</em></p>
+<p class="text-neutral-300 mb-4">21h52 — CI roda. Verde. Merge. Pipeline de deploy automático dispara.</p>
+<p class="text-neutral-300">22h17 — Deploy completo. Smoke tests automáticos validam endpoint. Verde.</p>
+<p class="text-neutral-300 mt-3">22h21 — Hook no projeto envia mensagem automática pro Slack <code class="bg-dark-700 px-1 rounded">#deploys</code>: "🟢 PR #1287 merged + deployed. Endpoint /reports/monthly-cashflow: 200 OK em smoke."</p>
+</section>
+
+<!-- SEGUNDA -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">✓</span><h2 class="text-2xl font-bold">Segunda 8h02 — feedback do cliente</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<p class="text-neutral-300 mb-3">Mariana abre o portal antes do café:</p>
+<blockquote class="border-l-4 border-emerald-500/30 pl-4 italic text-neutral-300 my-3">
+"Mariana, bom dia. Acabei de rodar o relatório, voltou perfeito. Janela contábil mantida. Obrigado pela rapidez e pela comunicação clara durante o processo — você nos atualizou ANTES de eu cobrar, isso fez muita diferença. — Carlos, CFO Acme Corp"
+</blockquote>
+<p class="text-neutral-300 mt-3">Mariana arquiva o ticket. PR está mergeado. Bug resolvido. Domingo intocado. Cliente impressionado.</p>
+</div>
+</section>
+
+<!-- TIMELINE -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">⏱</span><h2 class="text-2xl font-bold">Timeline completa</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<div class="space-y-3 text-sm text-neutral-300">
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-red-500"></div><div><strong>Sexta 23h12</strong> — alerta P1 do Acme Corp. Mariana confirma recebimento, comunica plano (sábado 8h investigar, atualização até 12h). Fecha laptop.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>Sábado 8h47</strong> — worktree criada, Claude Code aberto em plan mode.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>9h05</strong> — diagnóstico com 92% de confiança, hipótese de causa raiz, plano de fix completo.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>9h09</strong> — Mariana valida hipótese com 1 query. 100% confirmado.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>9h22-9h41</strong> — 2 subagentes em paralelo: fix + audit-similar.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>9h47-10h18</strong> — loop de verificação. Testes, typecheck, smoke local, screenshot.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>10h31-10h35</strong> — /hotfix-pr slash command. PR aberto com contexto completo.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>10h47</strong> — comunicação proativa ao cliente.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-emerald-500"></div><div><strong>11h00</strong> — laptop fechado. Total trabalhado: 2h13.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-neutral-600"></div><div><strong>Domingo</strong> — Mariana descansa. CTO está livre.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-amber-500"></div><div><strong>Domingo 21h47-22h21</strong> — CTO aprova pelo celular. CI verde. Deploy automático. Smoke OK.</div></div>
+<div class="flex items-start space-x-3"><div class="timeline-dot bg-emerald-500"></div><div><strong>Segunda 8h02</strong> — feedback positivo do cliente. Janela contábil mantida.</div></div>
+</div>
+</div>
+</section>
+
+<!-- LIÇÕES -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">★</span><h2 class="text-2xl font-bold">Lições da jornada</h2></div>
+<div class="space-y-4">
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-amber-400 mb-2">1. Plantão sexta-noite = "confirmar e dormir"</h3><p class="text-sm text-neutral-300">Bug P1 fora de janela "derruba-tudo" não exige trabalho às 23h. Confirme recebimento, comunique plano, descanse. Decisão clara EVITA mau-julgamento por sono.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-amber-400 mb-2">2. Plan mode em bug ambíguo = investigar com método</h3><p class="text-sm text-neutral-300">Mariana não pediu "fix the bug". Pediu "reproduza, leia logs, cruze com PRs, forme hipótese com %, plano de fix, plano de teste". 18 minutos depois ela tinha mapa completo.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-amber-400 mb-2">3. Subagentes paralelos = audit e fix simultâneos</h3><p class="text-sm text-neutral-300">"audit-similar" descobriu 2 bugs latentes que Mariana NÃO planejava procurar. Viraram ticket separado, pré-emptivo. Cliente fica protegido sem PR inchado.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-amber-400 mb-2">4. Loop de verificação tira você do "espero-CI"</h3><p class="text-sm text-neutral-300">Claude validou tudo antes do PR. Quando CTO abriu pelo celular, viu PR com evidência inline — não precisou esperar CI rodar. Aprovação em 5 minutos.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-amber-400 mb-2">5. Comunicação proativa &gt; correção rápida</h3><p class="text-sm text-neutral-300">Feedback do CFO Acme cita "comunicação ANTES de eu cobrar". 3 mensagens curtas (sexta, sábado, domingo) custaram 5 minutos no total — transformaram a percepção do incidente.</p></div>
+</div>
+</section>
+
+<!-- ADAPTAÇÕES -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Adaptações pro seu contexto</h2></div>
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-amber-400 mb-2">🔥 P0 que derruba TUDO em produção</h3><p class="text-sm text-neutral-300">Mesma estrutura mas sem "dormir": Claude opera enquanto você comunica stakeholders. Plan mode mais rápido (5min, não 18). Verification loop é mais curto também.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-amber-400 mb-2">🐛 Bug de "comportamento estranho" sem stack trace</h3><p class="text-sm text-neutral-300">Plan mode investiga: "use feature flag de log verbose, reproduza, junte logs, identifique linha". Sem stack o trabalho de hipótese é maior.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-amber-400 mb-2">🚀 Feature de cliente premium urgente</h3><p class="text-sm text-neutral-300">Plan mode mais elaborado (incluir conflito com PRs em vôo). Verification loop com browser automation pra UX. Slash command de PR com formato "premium feature".</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-amber-400 mb-2">🔁 Refactor que afeta 20+ arquivos</h3><p class="text-sm text-neutral-300">Plan mode em 2 etapas: 1) mapeia tudo afetado 2) agrupa em commits lógicos. Subagente "consistency-check" depois de cada commit.</p></div>
+</div>
+</section>
+
+<!-- MÉTRICAS -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">📊</span><h2 class="text-2xl font-bold">Métricas reais</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+<div><div class="text-3xl font-bold text-amber-400">2h13</div><div class="text-xs text-neutral-500">tempo total da Mariana</div></div>
+<div><div class="text-3xl font-bold text-amber-400">~6-8h</div><div class="text-xs text-neutral-500">se sem Claude Code</div></div>
+<div><div class="text-3xl font-bold text-amber-400">100%</div><div class="text-xs text-neutral-500">domingo da Mariana<br>fora do trabalho</div></div>
+<div><div class="text-3xl font-bold text-amber-400">+1</div><div class="text-xs text-neutral-500">cliente encantado pela<br>comunicação proativa</div></div>
+</div>
+</div>
+</section>
+
+<!-- RESUMO -->
+<section class="mb-12">
+<div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">P1 sexta noite</strong> = confirmar + comunicar plano + dormir.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Plan mode</strong> com investigação metodológica: reproduzir + logs + cruzar PRs + hipótese com %.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Subagentes paralelos</strong> — fix e audit-similar simultaneamente.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Loop de verificação OBRIGATÓRIO</strong> antes de PR.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">/hotfix-pr slash command</strong> — PR com evidência inline, CTO aprova pelo celular em 5min.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">3 comunicações curtas</strong> = cliente encantado pela transparência.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-amber-400 mb-2">Próxima Trilha:</h3><p class="text-neutral-300">Trilha 5 — Arquiteto. Claude rodando 24/7, hook que salva de drop table acidental, routines, SDK pra construir produto.</p></div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
+<a href="../trilha5/index.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition">Próxima Trilha →</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>

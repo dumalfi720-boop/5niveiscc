@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3.4 Cases completos | T3</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-700\/50{background-color:rgba(243,244,246,.5)}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .bg-purple-500\/10{background-color:rgba(109,40,217,.08)}html:not(.dark) .bg-purple-500\/20{background-color:rgba(109,40,217,.12)}html:not(.dark) .border-purple-500\/30{border-color:rgba(109,40,217,.3)}html:not(.dark) .bg-purple-600{background-color:#6d28d9}html:not(.dark) .hover\:bg-purple-500:hover{background-color:#7c3aed}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-500\/10{background-color:rgba(185,28,28,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(185,28,28,.3)}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .hover\:text-emerald-400:hover{color:#047857}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(4,120,87,.08)}
+html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .hover\:text-blue-400:hover{color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(29,78,216,.08)}
+html:not(.dark) .hover\:text-amber-400:hover{color:#b45309}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(180,83,9,.08)}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .hover\:text-teal-400:hover{color:#0f766e}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(15,118,110,.08)}
+html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-400:hover{color:#be123c}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(190,18,60,.08)}
+.prompt-block{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;line-height:1.55}</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+<a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+<a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-purple-400 bg-purple-500/10"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+<a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+<a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+<a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-purple-400">Início</a> / <a href="index.html" class="hover:text-purple-400">Trilha 3</a> / <span class="text-neutral-300">Módulo 3.4</span></nav>
+
+<header class="mb-10">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-3">MÓDULO 3.4 · CASES COMPLETOS · ~50 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎯 Cases de Co-work + Skills + Agendamento</h1>
+<p class="text-lg text-neutral-300">3 cenários reais onde Claude opera na sua máquina. Cada caso com a tentativa que QUASE deu errado, regras de chão que destravaram, skill final em markdown copia-e-cola e métricas honestas.</p>
+<div class="mt-6 bg-purple-500/10 border-l-4 border-purple-500/30 rounded-lg p-4">
+<p class="text-sm text-neutral-300"><strong class="text-purple-400">⚠ Atenção redobrada no N3.</strong> Aqui Claude APAGA, MOVE, EDITA arquivos seus. Cada case mostra o quase-acidente real e a regra de chão que evitou. Pula isso = você vai aprender do jeito ruim.</p>
+</div>
+</header>
+
+<!-- CASE 1 -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span><div><div class="text-xs font-bold text-purple-400 mb-1">CASE 1</div><h2 class="text-2xl font-bold">📂 Organizando 3 anos de Downloads (e quase apagando um contrato)</h2></div></div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Letícia, contadora autônoma, 38, atende 22 clientes PJ. Pasta ~/Downloads tem 4.847 arquivos: contratos, notas fiscais, capturas de tela, .zip de fornecedores, prints aleatórios. Procura "contrato Cliente X 2024" leva 15 minutos. Sabe que dá pra automatizar mas tem medo de Claude apagar coisa importante.</p>
+<p class="text-neutral-300"><strong class="text-purple-400">Recursos:</strong> co-work ativado, pasta autorizada (só Downloads), modelos de nomenclatura preferidos.</p>
+</div>
+
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-red-400 mb-2">❌ Primeira tentativa — o quase-desastre</h3>
+<div class="bg-dark-800/50 rounded p-3 prompt-block text-sm text-neutral-400 mb-3">Organiza minha pasta de Downloads. Põe arquivo igual em pasta com nome do tipo. Apaga duplicados.</div>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-red-400">O que aconteceu:</strong> Claude começou. Criou pastas /pdf, /docx, /xlsx, /img, /zip. Movendo arquivos. 15 minutos depois Letícia notou: um arquivo chamado "contrato.pdf" foi pra /pdf. Outro "contrato.pdf" (de cliente DIFERENTE, ano diferente) também foi pra /pdf — Claude considerou duplicado pelo nome e APAGOU um.</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Letícia teve sorte:</strong> notou rápido. Recuperou pela Lixeira. Mas o susto foi real.</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-red-400">Por que QUASE foi catástrofe:</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
+<li>• Sem <strong>dry-run primeiro</strong> — Claude executou sem mostrar plano</li>
+<li>• "Apaga duplicados" sem critério (nome? hash? tamanho?) — Claude defaultou pra nome</li>
+<li>• Sem <strong>backup automático</strong> antes de operação destrutiva</li>
+<li>• Sem <strong>log</strong> do que estava fazendo — só foi visível depois que ela abriu pra ver</li>
+</ul>
+</div>
+
+<div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">✅ Skill final com 5 regras de chão</h3>
+<p class="text-sm text-neutral-300 mb-2">Letícia transformou a aprendizagem em skill reutilizável. Salva em <code class="bg-dark-700 px-1 rounded">~/.claude/skills/organizar-downloads.md</code>:</p>
+<div class="bg-dark-800/50 rounded p-4 prompt-block text-sm text-neutral-200">---
+name: organizar-downloads
+description: Organiza ~/Downloads em pastas por categoria. SEMPRE com dry-run e backup.
+---
+
+# Regras de chão NÃO-NEGOCIÁVEIS
+
+1. **Nunca apagar.** Mover, sim. Apagar, jamais. Eu apago manualmente depois de revisar.
+2. **Dry-run primeiro SEMPRE.** Antes de mover qualquer coisa, mostre plano em formato:
+   - "Vou mover X arquivos pra /pasta-Y"
+   - "Vou detectar Z prováveis duplicados (mas não vou apagar — vou mover pra /possiveis-duplicados pra eu revisar)"
+   E espere meu OK explícito.
+3. **Backup antes:** crie ~/Downloads/_backup_ANTES_organizacao_AAAA-MM-DD_HHMM/ e copie 100% do conteúdo atual pra lá ANTES de qualquer movimentação. Sim, mesmo que dobre o espaço temporariamente.
+4. **Categorias baseadas em CONTEÚDO, não só extensão:**
+   - "contrato*" + .pdf → /contratos/AAAA/
+   - "NF*" ou "nota_fiscal*" + .pdf → /notas_fiscais/AAAA-MM/
+   - Imagem .png/.jpg → /imagens/AAAA-MM/
+   - Outros .pdf → /pdf_revisar/
+   - .zip → /zips_revisar/
+   - .docx genérico → /documentos/AAAA-MM/
+5. **Log obrigatório:** ao final, gerar /Downloads/_log_organizacao_AAAA-MM-DD.md com:
+   - Quantos arquivos foram movidos por categoria
+   - Lista completa de "possíveis duplicados" (mesmo nome, locais diferentes) pra eu auditar
+   - Erros encontrados (arquivo corrompido, sem permissão, etc.)
+   - Tamanho antes/depois
+
+# Como invocar
+"Roda a skill organizar-downloads. Faça dry-run primeiro."
+
+# Se eu disser "aprova e executa"
+- Cria backup
+- Move conforme plano
+- Gera log
+- ME PERGUNTE antes de tocar em qualquer "possível duplicado"</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">📤 Como ficou a execução real</h3>
+<p class="text-sm text-neutral-300 mb-2"><strong>Dry-run output:</strong></p>
+<div class="bg-dark-700/50 rounded p-4 text-sm text-neutral-300 mb-3">
+PLANO (sem executar ainda):<br><br>
+- Backup: 4.847 arquivos → ~/Downloads/_backup_ANTES_2026-05-13_2240/<br>
+- /contratos/2024/ → 287 arquivos<br>
+- /contratos/2025/ → 412 arquivos<br>
+- /contratos/2026/ → 156 arquivos<br>
+- /notas_fiscais/2024-* → 1.243 arquivos<br>
+- /notas_fiscais/2025-* → 1.876 arquivos<br>
+- /imagens/* → 423 arquivos<br>
+- /pdf_revisar/ → 187 arquivos<br>
+- /zips_revisar/ → 89 arquivos<br>
+- /documentos/* → 174 arquivos<br><br>
+⚠ 67 prováveis duplicados detectados (mesmo nome em locais diferentes). Vou MOVER pra /possiveis_duplicados/ — você revisa caso a caso.<br><br>
+⚠ 2 arquivos corrompidos (não consegui ler). Listados no log.<br><br>
+Aprova?
+</div>
+<p class="text-sm text-neutral-300">Letícia aprovou. 8 minutos depois Claude entregou o log. Nada foi apagado. Os 67 "duplicados" ela revisou em 20 min — 41 eram realmente duplicados (apagou), 26 eram homônimos de clientes diferentes (preservou).</p>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">🔀 Variações testadas</h3>
+<div class="space-y-3 text-sm text-neutral-300">
+<div><strong class="text-purple-400">A — Pasta de fotos do celular:</strong> mesma estrutura, mas categoria por EXIF (data, GPS), não por nome. Detecta "selfies" vs "documentos fotografados" via padrão visual.</div>
+<div><strong class="text-purple-400">B — Pasta de projetos do trabalho:</strong> categoria por CLIENTE (lê texto do .pdf primeiras 200 palavras pra inferir). Dry-run mostra "97% confiança" antes de mover.</div>
+<div><strong class="text-purple-400">C — Pasta de assinaturas digitais (com certificado):</strong> NÃO MEXE. Skill detecta arquivos sensíveis (.p12, .key, .pem) e pula explicitamente.</div>
+<div><strong class="text-purple-400">D — Email attachments salvos:</strong> cruza com info do remetente (pega do nome do arquivo) e organiza por contato.</div>
+</div>
+</div>
+
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-amber-400 mb-2">⚠ Erros comuns ao adaptar</h3>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li>• <strong>Pular o dry-run "por pressa"</strong> — esse passo evita 99% dos desastres. Pular = você vai aprender do jeito caro.</li>
+<li>• <strong>Confiar em "apaga duplicados"</strong> — duplicado por nome ≠ duplicado real. Hash MD5 ou comparação byte-a-byte é mínimo.</li>
+<li>• <strong>Não criar backup</strong> — "tenho Lixeira" não é backup. Lixeira esvazia, falha de FS acontece, "apagado por engano há 1 mês" não tem volta.</li>
+<li>• <strong>Não gerar log estruturado</strong> — sem log você não consegue auditar nem reverter.</li>
+</ul>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-purple-400 mb-2">📊 Métricas reais</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+<div><div class="text-2xl font-bold text-purple-400">8 min</div><div class="text-xs text-neutral-500">execução</div></div>
+<div><div class="text-2xl font-bold text-purple-400">~4h</div><div class="text-xs text-neutral-500">economizados<br>(fazer manual)</div></div>
+<div><div class="text-2xl font-bold text-purple-400">0</div><div class="text-xs text-neutral-500">arquivos perdidos</div></div>
+<div><div class="text-2xl font-bold text-purple-400">15min → 20s</div><div class="text-xs text-neutral-500">tempo de busca</div></div>
+</div>
+</div>
+</section>
+
+<!-- CASE 2 -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span><div><div class="text-xs font-bold text-purple-400 mb-1">CASE 2</div><h2 class="text-2xl font-bold">📊 Skill "Relatório Semanal de Cliente" — copiável e versionável</h2></div></div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Marcos toca uma micro-agência de marketing (3 funcionários, 11 clientes). Toda sexta-feira gasta 4 horas montando 11 relatórios semanais (1 por cliente). Cada um lê dados de Google Ads, Meta Ads, GA4 e Notion (onde marca os experimentos da semana). Junta tudo num PDF "esteticamente bonito" que cliente lê em 30 segundos.</p>
+<p class="text-neutral-300"><strong class="text-purple-400">Recursos:</strong> co-work, estrutura de pastas <code class="bg-dark-700 px-1 rounded">~/agencia/clientes/[cliente]/</code> já organizada, exports semanais dos ads platforms.</p>
+</div>
+
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-red-400 mb-2">❌ Primeira tentativa — sem template</h3>
+<p class="text-sm text-neutral-300">Marcos pediu "gera relatório semanal do cliente X". Claude fez. Mas cada um saía diferente — uma semana tinha gráfico, outra não. Tom oscilava. Métricas iam mudando de ordem. Cliente comentou: "às vezes vem completo, às vezes parece resumido demais. Tá padronizado?"</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-red-400">Por que falhou:</strong> "Relatório semanal" como prompt solto produz output não-determinístico. Sem template fixo + sem fontes especificadas + sem critério de inclusão = cada execução é uma nova decisão.</p>
+</div>
+
+<div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">✅ Skill final completa</h3>
+<p class="text-sm text-neutral-300 mb-2">Marcos escreveu skill em <code class="bg-dark-700 px-1 rounded">~/agencia/.claude/skills/relatorio-semanal-cliente.md</code>:</p>
+<div class="bg-dark-800/50 rounded p-4 prompt-block text-sm text-neutral-200">---
+name: relatorio-semanal-cliente
+description: Gera relatório semanal padronizado pra cliente de marketing. Pega dados dos exports + Notion. Saída em PDF na pasta do cliente.
+---
+
+# Como invocar
+"Roda skill relatorio-semanal-cliente. Cliente: [nome]. Semana: [DD/MM-DD/MM]."
+
+# Pré-requisitos
+- Pasta ~/agencia/clientes/[cliente]/ deve existir
+- Exports da semana em ~/agencia/clientes/[cliente]/exports/AAAA-WW/
+  - google-ads.csv
+  - meta-ads.csv
+  - ga4.csv
+- Notas de experimentos em ~/agencia/clientes/[cliente]/notion-sync/AAAA-WW.md
+
+# Passos da skill
+
+1. **Validar inputs**
+   - Se algum arquivo faltar, ABORTE e me liste o que falta. Não invente número.
+
+2. **Calcular agregados da semana**
+   - Investimento total (Google + Meta)
+   - CPL ponderado por plataforma
+   - ROAS por plataforma
+   - Variação vs semana anterior (lê pasta /AAAA-WW-anterior/ se existir)
+
+3. **Identificar destaque positivo e ponto de atenção**
+   - Destaque: maior melhoria vs semana anterior (qualquer métrica)
+   - Atenção: maior queda (mesmo critério). Se nenhum acima de 15% var, omita.
+
+4. **Cruzar com experimentos do Notion**
+   - Cada experimento ativo na semana: associar com métrica antes/depois quando possível
+   - Se experimento sem dado conclusivo: marcar "[inconclusivo — continuar próxima semana]"
+
+5. **Gerar PDF** usando ~/agencia/templates/relatorio-template.html como base
+   - Estrutura fixa:
+     * Header: logo + cliente + semana
+     * KPIs em cards (3): investido, CPL, ROAS — com setinha de variação
+     * Bloco "destaque da semana" (verde)
+     * Bloco "ponto de atenção" (amarelo) — só se houver
+     * Tabela de experimentos com status
+     * Próximos passos (puxa do Notion seção "próxima semana")
+     * Footer com data de geração e contato Marcos
+   - Salvar em ~/agencia/clientes/[cliente]/relatorios/AAAA-WW.pdf
+
+6. **Gerar texto pro WhatsApp pré-aprovado**
+   - 3 bullets de resumo + 1 frase "PDF completo anexado"
+   - Salvar em ~/agencia/clientes/[cliente]/relatorios/AAAA-WW-whatsapp.txt
+   - NÃO envia. Eu copio e mando.
+
+7. **Logar execução**
+   - Em ~/agencia/_logs/skill-relatorio-AAAA-WW.md
+   - Cliente, hora de execução, tempo gasto, alertas
+
+# Regras
+- NUNCA enviar nada sozinho (sem Slack/Email/WhatsApp via API)
+- Se algum dado parecer estranho (CPL 10x maior, ROAS negativo), MARQUE com 🚨 mas NÃO altere. Eu valido.
+- Linguagem do PDF: factual, sem hype. "Investimos R$ X, geramos Y leads, CPL caiu Z%." Sem "incrível", "extraordinário".</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">📤 Resultado</h3>
+<p class="text-sm text-neutral-300">Marcos ainda sexta de manhã, em vez de 4h, gasta 25 minutos:</p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
+<li>• 15 min — exportar dados das plataformas (manual, ainda)</li>
+<li>• 5 min — rodar skill 11 vezes (em paralelo no terminal)</li>
+<li>• 5 min — revisar os 11 PDFs (qualquer 🚨 chama atenção, ele valida)</li>
+</ul>
+<p class="text-sm text-neutral-300 mt-2">PDFs vão pra clientes 10h. 3h35 sobrando. Cliente que reclamou de "não padronizado" parou de reclamar — o "destaque + atenção" virou o que ele lê primeiro.</p>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">🔀 Variações testadas</h3>
+<div class="space-y-3 text-sm text-neutral-300">
+<div><strong class="text-purple-400">A — Cliente premium (relatório mensal denso):</strong> mesma skill, mas template muda pra "executive summary 1 página + apêndice técnico de 4". Roda 1x/mês.</div>
+<div><strong class="text-purple-400">B — Cliente self-service (relatório auto-leitura):</strong> versão mais educativa do texto, explicando o que é CPL e ROAS. Cliente entende sem ligação semanal.</div>
+<div><strong class="text-purple-400">C — Skill encadeada com /schedule:</strong> Marcos agenda "toda sexta 8h" — Claude roda automático SE os exports já estão na pasta. Se faltar, manda alerta.</div>
+<div><strong class="text-purple-400">D — Versão emergencial:</strong> "modo crise" pra quando cliente liga em pânico — relatório de 2 dias só, sem comparativo, foco no fogo atual.</div>
+</div>
+</div>
+
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-amber-400 mb-2">⚠ Erros ao adaptar</h3>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li>• <strong>Skill sem "abort on missing data"</strong> — Claude inventa quando dado falta. Sempre incluir "se faltar X, ABORTE e me avise".</li>
+<li>• <strong>Permitir envio automático no início</strong> — proibir comunicação externa até você confiar 100%. Depois você relaxa.</li>
+<li>• <strong>Skill sem versionamento</strong> — quando você ajustar (e vai), versione no git. Skill é código.</li>
+<li>• <strong>Pular o log de execução</strong> — sem log você não consegue auditar erros recorrentes nem refinar.</li>
+</ul>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-purple-400 mb-2">📊 Métricas reais</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+<div><div class="text-2xl font-bold text-purple-400">4h → 25min</div><div class="text-xs text-neutral-500">tempo semanal</div></div>
+<div><div class="text-2xl font-bold text-purple-400">11</div><div class="text-xs text-neutral-500">clientes/semana</div></div>
+<div><div class="text-2xl font-bold text-purple-400">0</div><div class="text-xs text-neutral-500">reclamações de padronização</div></div>
+<div><div class="text-2xl font-bold text-purple-400">+2 clientes</div><div class="text-xs text-neutral-500">atendidos com tempo poupado</div></div>
+</div>
+</div>
+</section>
+
+<!-- CASE 3 -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span><div><div class="text-xs font-bold text-purple-400 mb-1">CASE 3</div><h2 class="text-2xl font-bold">⏰ Briefing matinal agendado — e o limite que ninguém te conta</h2></div></div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Renata, COO numa fintech B2B, começa o dia em reunião 8h. Antes da reunião quer briefing de 1 página: PRs do dev abertos ontem, tickets críticos do suporte, métricas-chave da operação overnight, agenda do dia. Hoje ela gasta 20 minutos abrindo 5 abas e juntando manual.</p>
+<p class="text-neutral-300"><strong class="text-purple-400">Recursos:</strong> co-work + /schedule. Conectores: GitHub, Slack, GA4, Calendar.</p>
+</div>
+
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-red-400 mb-2">❌ Primeira tentativa — agendou e nada apareceu</h3>
+<p class="text-sm text-neutral-300">Renata configurou: <code class="bg-dark-700 px-1 rounded">/schedule "gerar briefing matinal" todo dia útil 6h30</code>. Confiante, foi dormir.</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-red-400">7h45, abriu o notebook:</strong> nada. Nenhum briefing. Skill não rodou.</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-red-400">A descoberta dolorida:</strong> <code class="bg-dark-700 px-1 rounded">/schedule</code> do co-work REQUER máquina ligada E desktop aberto. Notebook fechou às 23h. Nenhuma execução possível. Esse é o limite que separa N3 do N5 (onde routines em nuvem rodam mesmo com máquina off).</p>
+</div>
+
+<div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">✅ Adaptação realista no N3</h3>
+<p class="text-sm text-neutral-300 mb-3">Renata adaptou: roda manual ou automático MAS deixando notebook ligado + desktop aberto durante a noite. E criou skill com fallback.</p>
+<p class="text-sm text-neutral-300 mb-2">Skill em <code class="bg-dark-700 px-1 rounded">~/.claude/skills/briefing-matinal.md</code>:</p>
+<div class="bg-dark-800/50 rounded p-4 prompt-block text-sm text-neutral-200">---
+name: briefing-matinal
+description: Briefing matinal 1 página. Roda 6h30 dias úteis SE máquina ligada. Se eu rodar manual, executa imediatamente.
+---
+
+# Pré-requisitos
+- Conectores ativos: GitHub (org X), Slack (canais #suporte, #ops), GA4 (propriedade Y), Calendar (pessoal)
+- Máquina ligada + desktop aberto se /schedule
+
+# Passos
+
+1. **GitHub (últimas 12h)**
+   - PRs abertos ontem após 18h
+   - PRs com ≥2 dias sem review
+   - Issues marcadas como [urgent]
+
+2. **Slack (overnight, 18h ontem → agora)**
+   - Mensagens em #suporte com tag :rotating_light:
+   - Threads em #ops com mais de 5 respostas
+   - Menções diretas pra @renata
+
+3. **GA4 (últimas 24h)**
+   - Sessões, conversões, erros 500+ (se aplicável)
+   - Comparar com média dos últimos 7 dias
+   - Flag automático se variação > 25%
+
+4. **Calendar (hoje)**
+   - Cada reunião com: hora, título, participantes, link
+
+5. **Compor briefing**
+   - Estrutura fixa (template em ~/templates/briefing-matinal.md):
+     - 🔥 Atenção AGORA (até 3 itens, só se realmente urgente)
+     - 📊 Métricas overnight (4 números + variação)
+     - 📋 Decisões pendentes (PRs sem review, threads abertas)
+     - 📅 Agenda do dia (5 reuniões max, ordenadas)
+     - 🧘 "Hoje você pode focar em..." (1 frase com prioridade derivada)
+
+6. **Entregar**
+   - Salvar em ~/briefings/AAAA-MM-DD.md
+   - Abrir automaticamente no editor (open command)
+   - NÃO enviar Slack/email — Renata lê primeiro
+
+# Regras
+- Se algum conector falhar, gere briefing com o que conseguir + lista "fontes que falharam"
+- "Atenção AGORA" só com fato concreto. Sem "tudo parece bem" no vazio.
+- Máximo 1 página em A4. Se exceder, corta.
+
+# Fallback se /schedule não rodar (máquina off):
+"Renata, rode 'briefing-matinal AGORA' quando abrir o notebook."</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">📤 Output exemplo (briefing real de uma terça)</h3>
+<div class="bg-dark-700/50 rounded p-4 text-sm text-neutral-300">
+<strong>Briefing 13/05/2026 (terça)</strong> · gerado 6h31<br><br>
+🔥 <strong>Atenção AGORA</strong><br>
+- Suporte tem ticket #4419 sem resposta há 14h — cliente Tier 1 (Banco Y). Atribuir alguém antes da call das 9h.<br><br>
+📊 <strong>Métricas overnight</strong> (vs média 7d)<br>
+- Sessões: 12.4k (-3%) | Conversões: 287 (+8%) | Erros 5xx: 14 (estável) | Pagamentos falhos: 2 (normal)<br><br>
+📋 <strong>Decisões pendentes</strong><br>
+- PR #842 (refactor pricing) — 3 dias sem review. Tech lead viajou.<br>
+- Thread em #ops sobre limite de webhook chegou a 11 respostas — alguém precisa decidir.<br><br>
+📅 <strong>Hoje</strong><br>
+- 9h00 — All-hands semanal<br>
+- 11h00 — 1:1 com CFO (rever orçamento Q3)<br>
+- 14h00 — Call cliente Banco Y (atenção: ticket #4419 pode pegar nessa)<br>
+- 15h30 — Entrevista pra vaga Dev Sr<br>
+- 17h00 — Review jurídico contrato fornecedor Z<br><br>
+🧘 <strong>Foque em:</strong> resolver o ticket #4419 antes das 9h. Resto pode esperar.
+</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-purple-400 mb-3">🔀 Variações testadas</h3>
+<div class="space-y-3 text-sm text-neutral-300">
+<div><strong class="text-purple-400">A — Briefing pré-call de cliente:</strong> trigger por evento de Calendar 30min antes. Gera briefing focado no cliente específico (histórico, decisões, pendências).</div>
+<div><strong class="text-purple-400">B — Briefing semanal de domingo:</strong> em vez de diário, sumariza a semana toda. Renata roda manual antes da reunião de planejamento de segunda.</div>
+<div><strong class="text-purple-400">C — "Modo crise":</strong> roda na hora, ignora estrutura fixa, foca só no incidente atual com timeline.</div>
+<div><strong class="text-purple-400">D — Versão pro time:</strong> mesma estrutura, mas filtrada (sem detalhes sensíveis), gera versão pra postar no #ops todo dia 8h45.</div>
+</div>
+</div>
+
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-amber-400 mb-2">⚠ Erros ao adaptar</h3>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li>• <strong>Esquecer que /schedule do N3 precisa máquina ligada</strong> — vai te pegar logo. Pra rotina sem máquina, espere o N5.</li>
+<li>• <strong>Permitir envio automático no Slack/email logo de início</strong> — leia primeiro por 2 semanas antes de habilitar.</li>
+<li>• <strong>Tentar puxar de 8 conectores ao mesmo tempo</strong> — comece com 2-3, expanda depois. Mais conectores = mais ruído.</li>
+<li>• <strong>Briefing longo demais</strong> — se passa de 1 página, ninguém lê. Skill DEVE forçar corte.</li>
+</ul>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-purple-400 mb-2">📊 Métricas reais</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+<div><div class="text-2xl font-bold text-purple-400">20min → 0</div><div class="text-xs text-neutral-500">tempo manual/dia</div></div>
+<div><div class="text-2xl font-bold text-purple-400">~7h</div><div class="text-xs text-neutral-500">economizados/mês</div></div>
+<div><div class="text-2xl font-bold text-purple-400">3</div><div class="text-xs text-neutral-500">incidentes detectados<br>antes de virarem crise</div></div>
+<div><div class="text-2xl font-bold text-purple-400">100%</div><div class="text-xs text-neutral-500">manhãs com clareza<br>do que importa</div></div>
+</div>
+</div>
+</section>
+
+<!-- PADRÃO -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">★</span><h2 class="text-2xl font-bold">🧠 O padrão N3 por trás dos 3 cases</h2></div>
+<p class="text-neutral-300 mb-4">Quando Claude opera na sua máquina, os ingredientes mudam. Não é mais "papel + contexto + formato". É:</p>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<ol class="space-y-3 text-sm text-neutral-300">
+<li><strong class="text-purple-400">1. Dry-run sempre antes da primeira execução</strong> — Claude descreve plano, espera OK explícito. Pulou isso uma vez? Aprendeu do jeito caro.</li>
+<li><strong class="text-purple-400">2. Backup automático antes de operação destrutiva</strong> — independente de Lixeira/Trash. Backup = snapshot que você controla.</li>
+<li><strong class="text-purple-400">3. Permissão pra abortar com fonte faltante</strong> — "se faltar X, ABORTE e me avise" mata 80% das alucinações em skills.</li>
+<li><strong class="text-purple-400">4. Log estruturado obrigatório</strong> — sem log você não consegue auditar nem refinar. Skill sem log = caixa-preta.</li>
+<li><strong class="text-purple-400">5. Proibir comunicação externa automática até confiar</strong> — Claude gera, você manda. Quando confiança madura (50+ execuções limpas), aí relaxe.</li>
+</ol>
+</div>
+<p class="text-neutral-300 mt-4">Os 5 ingredientes do N1 ("papel + contexto + formato + restrição + saída") continuam valendo. Esses 5 do N3 são ADIÇÕES, não substituições.</p>
+</section>
+
+<!-- RESUMO -->
+<section class="mb-12">
+<div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Case 1 (Downloads):</strong> 5 regras de chão que evitam apagar contrato. Dry-run + backup + log + "nunca apagar, mover".</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Case 2 (Skill semanal):</strong> skill versionada com abort, regras anti-invenção e proibição de envio automático.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Case 3 (Briefing agendado):</strong> /schedule precisa máquina ligada — limite do N3. Fallback pra rodar manual quando ela esquece.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Padrão N3 — 5 ingredientes adicionais:</strong> dry-run, backup, abort com fonte faltante, log obrigatório, sem envio automático cedo.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Métricas reais:</strong> 4h→25min/semana, 20min→0/dia, 0 arquivos perdidos. ROI honesto.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-purple-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">3.5 — Walkthrough completo: como Bruno saiu de freelancer cobrando hora pra vender automação por R$ 12k + manutenção mensal.</p></div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
+<a href="modulo-3-5.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">Próximo Módulo →</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>

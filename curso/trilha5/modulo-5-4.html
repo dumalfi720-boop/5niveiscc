@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5.4 Cases completos | T5</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-700\/50{background-color:rgba(243,244,246,.5)}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .bg-teal-500\/10{background-color:rgba(15,118,110,.08)}html:not(.dark) .bg-teal-500\/20{background-color:rgba(15,118,110,.12)}html:not(.dark) .border-teal-500\/30{border-color:rgba(15,118,110,.3)}html:not(.dark) .bg-teal-600{background-color:#0f766e}html:not(.dark) .hover\:bg-teal-500:hover{background-color:#14b8a6}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-500\/10{background-color:rgba(185,28,28,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(185,28,28,.3)}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .bg-emerald-500\/10{background-color:rgba(4,120,87,.08)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(4,120,87,.3)}html:not(.dark) .hover\:text-emerald-400:hover{color:#047857}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(4,120,87,.08)}
+html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .hover\:text-blue-400:hover{color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500\/10:hover{background-color:rgba(29,78,216,.08)}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .hover\:text-purple-400:hover{color:#6d28d9}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(109,40,217,.08)}
+html:not(.dark) .hover\:text-amber-400:hover{color:#b45309}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(180,83,9,.08)}
+html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-400:hover{color:#be123c}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(190,18,60,.08)}
+.code-block{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;line-height:1.55}</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+<a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+<a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+<a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+<a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-teal-400 bg-teal-500/10"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+<a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-teal-400">Início</a> / <a href="index.html" class="hover:text-teal-400">Trilha 5</a> / <span class="text-neutral-300">Módulo 5.4</span></nav>
+
+<header class="mb-10">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-400 border border-teal-500/30 mb-3">MÓDULO 5.4 · CASES COMPLETOS · ~55 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎯 Cases reais de Routines, Hooks e Agent SDK</h1>
+<p class="text-lg text-neutral-300">3 cases onde o salto pra infra acontece de verdade: uma routine em produção há 90 dias, um hook que evitou perda catastrófica de dados, e o primeiro produto SaaS construído com Agent SDK. Cada um com decisões reais de segurança, custo e go-to-market.</p>
+<div class="mt-6 bg-teal-500/10 border-l-4 border-teal-500/30 rounded-lg p-4">
+<p class="text-sm text-neutral-300"><strong class="text-teal-400">⚠ N5 expõe a trava real:</strong> não é técnica. É confiança em sistema rodando enquanto você dorme. Cada case mostra como ela foi construída — gradualmente, com red lines explícitas.</p>
+</div>
+</header>
+
+<!-- CASE 1 -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">1</span><div><div class="text-xs font-bold text-teal-400 mb-1">CASE 1</div><h2 class="text-2xl font-bold">🤖 Routine "PR review 24/7" em produção há 90 dias</h2></div></div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Carla é CTO duma startup B2C de 14 devs. Code review humano vira gargalo: PRs ficam 8-24h esperando 1ª revisão. Devs reclamam. Carla decide configurar routine: <strong>todo PR aberto recebe revisão automática em &lt; 5min</strong>, com comentários inline. Humano ainda aprova merge, mas chega no PR com 1ª passada feita.</p>
+</div>
+
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-red-400 mb-2">❌ Versão ingênua que QUASE foi pra produção</h3>
+<p class="text-sm text-neutral-300 mb-2">Routine v0 do Carla: "todo GitHub event 'pull_request opened' → Claude lê diff completo + dispara comentários direto na PR".</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Os 4 problemas latentes:</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
+<li>• <strong>Sem token budget</strong> — PR grande (1k+ linhas) podia queimar R$ 80 sozinho. Sem cap, custo explode.</li>
+<li>• <strong>Sem rate limit</strong> — alguém abre 5 PRs em 2 minutos, 5 reviews simultâneos.</li>
+<li>• <strong>Sem distinção PR humano vs PR de bot/Dependabot</strong> — review automático em PR do Dependabot é gasto óbvio sem valor.</li>
+<li>• <strong>Comentário direto sem aprovação</strong> — autor vê comentário "errado" de Claude e perde confiança no time todo.</li>
+</ul>
+</div>
+
+<div class="bg-teal-500/10 border border-teal-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-teal-400 mb-3">✅ Versão de produção (depois de 4 iterações)</h3>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-teal-400">Trigger:</strong> GitHub webhook em PR opened/synchronize.</p>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-teal-400">Hooks de segurança (não-negociáveis):</strong></p>
+<div class="bg-dark-800/50 rounded p-4 code-block text-sm text-neutral-300 mb-3"># pre-routine-start hook
+- Se autor do PR é bot (dependabot, renovate, snyk-bot): ABORTA, log "skipped: bot author"
+- Se diff > 2.000 linhas: ABORTA + posta comment "PR muito grande pra revisão automática. Revisor humano será notificado."
+- Se contém arquivo em /db/migrations/, /infra/, /.github/workflows/: ABORTA + posta comment "Sensível. Apenas review humano."
+- Se já tem comment de "claude-reviewer" nesse PR (sync trigger): roda em modo INCREMENTAL (só diff novo desde última review)
+
+# task-budget hook
+- Cap total: 30k tokens por execução. Encerra graciosamente se aproximar do limite.
+- Cap mensal por repo: R$ 600. Se ultrapassar, pausa routine + alerta CTO.
+
+# post-routine-end hook
+- Posta comments em modo DRAFT (review pendente) — não em modo APPROVE
+- Pinga revisor humano designado pra arbitrar comments
+- Sempre adiciona disclaimer: "Revisão gerada por Claude. Humano confirma."</div>
+
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-teal-400">Prompt da routine:</strong></p>
+<div class="bg-dark-800/50 rounded p-4 code-block text-sm text-neutral-300">Você é code reviewer sênior dessa startup. Ler claude.md primeiro pra entender convenções.
+
+Para esse PR:
+1. Avalia se o objetivo está claro na descrição. Se não, comente pedindo contexto.
+2. Lê o diff inteiro com atenção em:
+   - Lógica que pode quebrar em edge case
+   - Padrão violado do claude.md (cite exatamente qual)
+   - Teste faltante pra mudança feita
+   - Naming inconsistente com convenção
+   - TODO esquecido, console.log esquecido, debug esquecido
+3. Para cada problema, comente INLINE no código com sugestão concreta. Use sufixo [auto].
+4. Use a feature de "suggested change" do GitHub quando aplicável — review humano pode aceitar em 1 click.
+5. Resumo final como overview do PR (status: approve / request changes / comment-only).
+
+REGRAS:
+- NÃO use tom "robotizado". Linguagem direta, técnica, como humano.
+- NÃO comente óbvio ("adicione um teste") sem dizer QUAL teste.
+- NÃO ataque o autor. Critique o código.
+- SEMPRE diga o motivo da sugestão.
+- Se algo está EXCELENTE, elogie em 1 linha (motiva autor).
+- Limite 8 comments por PR. Se tiver mais, escolha os 8 mais críticos + 1 overview citando "outros pontos menores na próxima passada".</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-teal-400 mb-3">📊 90 dias em produção — números reais</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center mb-4">
+<div><div class="text-2xl font-bold text-teal-400">1.247</div><div class="text-xs text-neutral-500">PRs revisados</div></div>
+<div><div class="text-2xl font-bold text-teal-400">3min 12s</div><div class="text-xs text-neutral-500">tempo médio até 1ª review</div></div>
+<div><div class="text-2xl font-bold text-teal-400">8.700</div><div class="text-xs text-neutral-500">comentários inline úteis</div></div>
+<div><div class="text-2xl font-bold text-teal-400">R$ 380</div><div class="text-xs text-neutral-500">custo médio/mês</div></div>
+</div>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-teal-400">Comentário do time interno após 90 dias:</strong> "PR fica mais polido antes de chegar pra mim. Eu reviso em metade do tempo. Carla criou tempo do nada."</p>
+<p class="text-sm text-neutral-300"><strong class="text-amber-400">2 incidentes que os hooks impediram:</strong> (1) dependabot abriu 38 PRs em 1h — todos pulados, R$ 0 gastos. (2) PR de migration esquemática foi tratada como "sensível" e não comentada (humano avaliou pessoalmente).</p>
+</div>
+</section>
+
+<!-- CASE 2 -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">2</span><div><div class="text-xs font-bold text-teal-400 mb-1">CASE 2</div><h2 class="text-2xl font-bold">🛡 O hook pre-tool-use que salvou de um DROP TABLE</h2></div></div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Equipe Felicidata (dataops B2B). Ricardo, dev, configurou routine pra Claude limpar tabelas temporárias do warehouse semanalmente. Por engano colou o nome <code class="bg-dark-700 px-1 rounded">_users_temp_2026_05_</code> errado na config — o nome real correto da tabela de produção é <code class="bg-dark-700 px-1 rounded">users</code> sem underscore. A routine, executando autonomamente, ia rodar <code class="bg-dark-700 px-1 rounded">DROP TABLE users</code> em produção.</p>
+</div>
+
+<div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-emerald-400 mb-3">✅ O hook que estava lá há 6 meses</h3>
+<p class="text-sm text-neutral-300 mb-3">Felicidata tinha um hook pre-tool-use que Ricardo nem lembrava direito ter configurado:</p>
+<div class="bg-dark-800/50 rounded p-4 code-block text-sm text-neutral-300 mb-3"># /.claude/hooks/pre-tool-use/database-guards.js
+
+module.exports = function(tool, context) {
+  if (tool.name !== 'sql_execute') return { allow: true };
+
+  const sql = tool.params.query.toUpperCase();
+
+  // BLOQUEIO ABSOLUTO sem exceção:
+  if (sql.match(/\bDROP\s+TABLE\b/) || sql.match(/\bTRUNCATE\b/)) {
+    if (!sql.includes('_TEMP_') && !sql.includes('_STAGING_')) {
+      return {
+        allow: false,
+        reason: 'DROP/TRUNCATE detectado em tabela sem sufixo _TEMP_ ou _STAGING_. Aprovação humana obrigatória.',
+        escalate_to: 'oncall@felicidata.io',
+        require_token: true  // requer Ricardo digitar token manual no painel
+      };
+    }
+  }
+
+  // BLOQUEIO em produção sem WHERE:
+  if (sql.match(/^DELETE FROM/) && !sql.includes('WHERE')) {
+    return {
+      allow: false,
+      reason: 'DELETE sem WHERE em produção.',
+      escalate_to: 'oncall@felicidata.io'
+    };
+  }
+
+  // Outros DROPs e DDLs: permitir mas LOGAR
+  if (sql.match(/\b(DROP|ALTER|TRUNCATE)\b/)) {
+    log({ type: 'sensitive_ddl', sql, agent: context.agent_id });
+  }
+
+  return { allow: true };
+};</div>
+<p class="text-sm text-neutral-300">Quando a routine rodou e tentou <code class="bg-dark-700 px-1 rounded">DROP TABLE users</code>, o hook DISPAROU. Bloqueou. Mandou alerta pro oncall. Ricardo recebeu Slack às 3h22 da madrugada (que ele só viu de manhã): "BLOCKED: DROP TABLE users — requer aprovação humana".</p>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-teal-400 mb-3">🧠 Análise post-mortem</h3>
+<div class="space-y-3 text-sm text-neutral-300">
+<div><strong class="text-teal-400">O que falhou na config:</strong> Ricardo havia digitado nome de tabela sem o sufixo <code class="bg-dark-700 px-1 rounded">_temp_</code> esperado. Erro humano simples — 4 caracteres faltando.</div>
+<div><strong class="text-teal-400">O que SALVOU:</strong> hook tinha regra explícita: "DROP sem sufixo _TEMP_/_STAGING_ = bloqueio absoluto". Não importa qual tabela.</div>
+<div><strong class="text-teal-400">Princípio:</strong> hooks não confiam em config humana. Operam como network firewall — black list por padrão, white list por exceção.</div>
+<div><strong class="text-teal-400">Custo evitado:</strong> recover de DROP TABLE users em produção = horas de downtime, perda de sessão, possível perda de dados não cobertos pelo backup das últimas 4h. Estimativa interna: R$ 80-180k.</div>
+</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-teal-400 mb-2">🛡 Outros hooks que valeriam no seu setup</h3>
+<ul class="text-sm text-neutral-300 space-y-2 ml-4">
+<li>• <strong>pre-tool-use:</strong> bloquear <code class="bg-dark-700 px-1 rounded">rm -rf</code> em path não-whitelist; bloquear <code class="bg-dark-700 px-1 rounded">git push --force</code> em main; bloquear comando que envia e-mail externo sem aprovação</li>
+<li>• <strong>post-edit:</strong> rodar linter/formatter em todo arquivo editado; verificar se commit não inclui secrets</li>
+<li>• <strong>stop:</strong> notificar Slack/email quando sessão longa termina; salvar resumo automático em /sessions/</li>
+<li>• <strong>response:</strong> badge no terminal quando Claude precisa de input humano (não fica passando despercebido)</li>
+</ul>
+</div>
+</section>
+
+<!-- CASE 3 -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span><div><div class="text-xs font-bold text-teal-400 mb-1">CASE 3</div><h2 class="text-2xl font-bold">🚀 Primeiro produto SaaS com Agent SDK — de prestador a builder</h2></div></div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Helena, dev solo, há 3 anos vende serviços de implementação (R$ 8-15k/projeto). Vê 80% dos clientes pedirem a MESMA coisa: importar lista de leads do LinkedIn, enriquecer com dados públicos (site, LinkedIn da empresa, notícias recentes), ranquear por fit ICP, exportar pra CSV pronto pro Outreach/Apollo. Helena pensa: <em>"se isso é a mesma coisa toda vez, virou produto."</em></p>
+<p class="text-neutral-300"><strong class="text-teal-400">A decisão:</strong> usar Agent SDK pra empacotar o que ela já faz manual em SaaS pequeno. Não quer competir com Apollo. Quer atender as 200 contas que pedem "uma camada de inteligência" e pagam R$ 200-500/mês.</p>
+</div>
+
+<div class="bg-teal-500/10 border border-teal-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-teal-400 mb-3">✅ MVP do produto "LeadFit"</h3>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-teal-400">Arquitetura:</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mb-3">
+<li>• Frontend simples (Next.js) — upload CSV, dashboard, export</li>
+<li>• Backend Node + Agent SDK (TypeScript) — orquestrador de agents</li>
+<li>• 3 agentes especializados:</li>
+<li class="ml-4">– <strong>Scraper:</strong> coleta dados de site/LinkedIn/notícias (com cache 7d pra mesma empresa)</li>
+<li class="ml-4">– <strong>ICP Matcher:</strong> avalia fit baseado nas regras ICP que cliente cadastrou</li>
+<li class="ml-4">– <strong>Enricher:</strong> gera nota de personalização pra cada lead (4-5 linhas pra usar no e-mail)</li>
+<li>• Postgres + Redis pra cache</li>
+<li>• Stripe pra cobrança</li>
+</ul>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-teal-400">Hooks essenciais do dia 1:</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4">
+<li>• Token budget por cliente/mês (cap rígido baseado no plano)</li>
+<li>• Rate limit por agente (pra não bater nos limites da API do scraping)</li>
+<li>• Fallback se 1 agente falhar (continua os outros, marca lead como "enriched: parcial")</li>
+<li>• Idempotência (mesmo CSV não re-processa)</li>
+</ul>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-teal-400 mb-3">📊 Os primeiros 6 meses</h3>
+<table class="w-full text-sm text-neutral-300 mb-3">
+<thead class="font-bold text-teal-400"><tr><th class="text-left p-2">Mês</th><th class="text-right p-2">Clientes</th><th class="text-right p-2">MRR</th><th class="text-right p-2">Custo infra+API</th><th class="text-right p-2">Margem</th></tr></thead>
+<tbody class="divide-y divide-dark-600">
+<tr><td class="p-2">M1</td><td class="text-right p-2">8 (beta grátis)</td><td class="text-right p-2">R$ 0</td><td class="text-right p-2">R$ 380</td><td class="text-right p-2">— (investimento)</td></tr>
+<tr><td class="p-2">M2</td><td class="text-right p-2">14 (8 pagantes)</td><td class="text-right p-2">R$ 1.940</td><td class="text-right p-2">R$ 540</td><td class="text-right p-2">R$ 1.400</td></tr>
+<tr><td class="p-2">M3</td><td class="text-right p-2">27 (22 pagantes)</td><td class="text-right p-2">R$ 5.380</td><td class="text-right p-2">R$ 980</td><td class="text-right p-2">R$ 4.400</td></tr>
+<tr><td class="p-2">M4</td><td class="text-right p-2">41</td><td class="text-right p-2">R$ 9.870</td><td class="text-right p-2">R$ 1.420</td><td class="text-right p-2">R$ 8.450</td></tr>
+<tr><td class="p-2">M5</td><td class="text-right p-2">58</td><td class="text-right p-2">R$ 13.940</td><td class="text-right p-2">R$ 1.980</td><td class="text-right p-2">R$ 11.960</td></tr>
+<tr><td class="p-2">M6</td><td class="text-right p-2">73</td><td class="text-right p-2">R$ 17.610</td><td class="text-right p-2">R$ 2.380</td><td class="text-right p-2">R$ 15.230</td></tr>
+</tbody></table>
+<p class="text-sm text-neutral-300">M6: Helena fechou o último contrato de implementação (era R$ 12k de prestação). Hoje vive 100% de SaaS. Trabalha 30h/semana. <strong class="text-teal-400">MRR &gt; renda de prestadora.</strong></p>
+</div>
+
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5">
+<h3 class="font-bold text-amber-400 mb-2">⚠ Lições do builder iniciante</h3>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li>• <strong>MVP precisa caber em 1 prompt mental.</strong> "Importa lead → enriquece → ranqueia → exporta" é simples. Helena não tentou virar "Apollo killer". Foco mata feature-creep.</li>
+<li>• <strong>Token budget por plano é essencial dia 1.</strong> Sem isso, primeiro cliente "espertinho" subindo CSV de 5k linhas zera margem do mês.</li>
+<li>• <strong>Pricing transparente sobre custo de IA.</strong> Helena coloca "até X leads/mês incluso, R$ Y por mil extras" — cliente entende, não brigam.</li>
+<li>• <strong>SDK não te livra de UX.</strong> 40% do tempo de Helena foi em UX/onboarding. Backend agentic é o "fácil" comparado a fazer cliente usar direito.</li>
+<li>• <strong>Conteúdo &gt; ads na fase pré-PMF.</strong> Helena escreveu 12 posts técnicos no Linkedin sobre lead enrichment. 64% dos clientes chegaram daí.</li>
+</ul>
+</div>
+</section>
+
+<!-- PADRÃO -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">★</span><h2 class="text-2xl font-bold">🧠 Padrão N5 dos 3 cases</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<ol class="space-y-3 text-sm text-neutral-300">
+<li><strong class="text-teal-400">1. Hooks NÃO confiam em config humana</strong> — operam como firewall. White list por exceção, não black list.</li>
+<li><strong class="text-teal-400">2. Token budget por execução E por mês</strong> — cap duplo. Sem isso, custo explode em 1 erro.</li>
+<li><strong class="text-teal-400">3. Routine com pre/post hooks claros</strong> — antes de rodar, decide se deve. Depois, audita. Visibilidade total.</li>
+<li><strong class="text-teal-400">4. Mode "draft" antes de "executor"</strong> — Claude posta sugestão, humano confirma. Por 4-8 semanas. Depois você relaxa.</li>
+<li><strong class="text-teal-400">5. SaaS com Agent SDK começa com MVP de 1 frase</strong> — "importa X → enriquece → exporta Y". Sem feature creep nos 6 primeiros meses.</li>
+</ol>
+</div>
+</section>
+
+<!-- RESUMO -->
+<section class="mb-12">
+<div class="bg-gradient-to-br from-teal-900/40 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Case 1 — Routine PR review 24/7:</strong> 1.247 PRs revisados em 90d, R$ 380/mês, hooks bloqueando bots e arquivos sensíveis.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Case 2 — Hook que evitou DROP TABLE users:</strong> bloqueio absoluto sem confiar em config, R$ 80-180k em recovery evitados.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Case 3 — Primeiro SaaS com Agent SDK:</strong> 0 → MRR R$ 17.6k em 6 meses. De prestador a builder.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Padrão N5:</strong> firewall em hooks, cap duplo de tokens, draft antes de executor, MVP de 1 frase.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-teal-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">5.5 — Walkthrough: como João, ex-tech lead, fechou primeiro cliente N5 pagante (R$ 12k/mês) em 21 dias, do zero.</p></div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
+<a href="modulo-5-5.html" class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition">Próximo Módulo →</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>

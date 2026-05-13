@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3.5 Walkthrough: freelancer → R$12k | T3</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .bg-purple-500\/10{background-color:rgba(109,40,217,.08)}html:not(.dark) .bg-purple-500\/20{background-color:rgba(109,40,217,.12)}html:not(.dark) .border-purple-500\/30{border-color:rgba(109,40,217,.3)}html:not(.dark) .bg-purple-600{background-color:#6d28d9}html:not(.dark) .hover\:bg-purple-500:hover{background-color:#7c3aed}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-500\/10{background-color:rgba(185,28,28,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(185,28,28,.3)}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .bg-emerald-500\/10{background-color:rgba(4,120,87,.08)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(4,120,87,.3)}
+.dialogue{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;line-height:1.55}
+.you{border-left:3px solid #FACC15;padding-left:1rem}
+.claude-says{border-left:3px solid #a855f7;padding-left:1rem}
+.cliente{border-left:3px solid #f59e0b;padding-left:1rem}</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+<a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+<a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-purple-400 bg-purple-500/10"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+<a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+<a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+<a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-purple-400">Início</a> / <a href="index.html" class="hover:text-purple-400">Trilha 3</a> / <span class="text-neutral-300">Módulo 3.5</span></nav>
+
+<header class="mb-10">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-3">MÓDULO 3.5 · WALKTHROUGH · ~55 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎬 De freelancer cobrando R$ 120/h a sistema vendido por R$ 12k + recorrente</h1>
+<p class="text-lg text-neutral-300">Acompanhe Bruno em 14 dias: da reunião desconfortável com a Dra. Carla (dona de uma clínica dental) até a assinatura do contrato. Você vê o pricing-reflex que custaria 60% do valor real, o discovery que descobriu a dor de R$ 4.4k/mês escondida, e o MVP construído em 1 dia que virou R$ 13.8k/ano recorrente.</p>
+<div class="mt-6 bg-purple-500/10 border-l-4 border-purple-500/30 rounded-lg p-4">
+<p class="text-sm text-neutral-300"><strong class="text-purple-400">⚠ Esse walkthrough é sobre VENDER, não construir.</strong> A construção técnica já foi coberta no 3.4. Aqui o foco é o movimento comercial que separa freelancer "horista" de prestador de sistema. Você sai sabendo precificar.</p>
+</div>
+</header>
+
+<!-- SETUP -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Setup — segunda-feira, 14h</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<p class="text-neutral-300 mb-3"><strong class="text-purple-400">Quem:</strong> Bruno, 31, dev freelancer há 5 anos. Faz CRUDs, dashboards, integrações pequenas. Cobra R$ 120/hora — ganha R$ 8-10k/mês, depende muito do volume da semana. Está cansado dessa montanha-russa.</p>
+<p class="text-neutral-300 mb-3"><strong class="text-purple-400">A oportunidade:</strong> conhece Dra. Carla, dentista, dona da clínica Sorri+ (3 dentistas, 1 recepcionista, 1 auxiliar) há 6 meses — Bruno fez o site dela. Hoje Carla mandou WhatsApp:</p>
+<blockquote class="border-l-4 border-amber-500/30 pl-4 italic text-neutral-300 my-3">"Bruno, tá disponível pra um café essa semana? Tô precisando organizar a vida da recepção, ela tá afogada. Talvez você consiga ajudar."</blockquote>
+<p class="text-neutral-300 mb-3"><strong class="text-purple-400">O que Bruno sabe (e ainda não sabe):</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
+<li>• Sabe que a recepcionista da Carla, Joana, gasta tempão respondendo paciente</li>
+<li>• Sabe que Carla é "do tipo que confia em quem entrega" — não vai pechinchar muito se a proposta fizer sentido</li>
+<li>• <strong>Não sabe</strong> ainda: 4 horas por dia de Joana são gastas em triagem de mensagens, custando R$ 4.4k/mês de tempo perdido</li>
+<li>• <strong>Não sabe</strong>: a tentação de cobrar R$ 4.8k (40 horas × R$ 120) vai aparecer e ele vai ter que resistir</li>
+</ul>
+</div>
+</section>
+
+<!-- ITER 0 -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-red-500/20 text-red-400 font-bold text-xl flex-shrink-0">0</span><h2 class="text-2xl font-bold">Tentativa 0 — o pricing-reflex (segunda à noite)</h2></div>
+<p class="text-neutral-300 mb-4">Bruno, animado, abre o Claude antes de marcar o café com a Carla. Quer "fazer a conta de quanto cobrar".</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">BRUNO →</div><div class="dialogue you text-sm text-neutral-200">Cliente vai pedir automação de triagem de mensagens da recepção. Acho que dá pra fazer em 30-40h de trabalho. Quanto cobrar?</div></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">A R$ 120/hora × 35h = **R$ 4.200**. Faixa razoável seria R$ 3.5k-R$ 5k, dependendo da complexidade real.</div></div>
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5">
+<h3 class="font-bold text-red-400 mb-2">😬 Esse é o pricing-reflex — e custa 60% do valor real</h3>
+<p class="text-sm text-neutral-300 mb-2">Bruno saiu satisfeito com a resposta. Iria propor R$ 4.5k pra Carla na quarta. Iria FECHAR. Iria entregar em 1 mês. E iria ter perdido <strong>R$ 7.5k em valor real</strong>.</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Por que o reflexo "horas × taxa" é ruim:</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
+<li>• Precifica o INSUMO (seu tempo), não o RESULTADO (dor que cliente tira)</li>
+<li>• Trata você como insumo substituível, não fornecedor de solução</li>
+<li>• Não captura valor recorrente — você entrega e some, cliente não paga manutenção</li>
+<li>• Não cria barreira pra concorrente "mais barato por hora"</li>
+</ul>
+</div>
+</section>
+
+<!-- ITER 1 -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">Iteração 1 — Bruno faz a pergunta certa pro Claude (terça)</h2></div>
+<p class="text-neutral-300 mb-4">Bruno, dormindo mal, acorda com a sensação de que algo está errado. Reabre a conversa:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">BRUNO →</div><div class="dialogue you text-sm text-neutral-200">Esqueça hora × taxa. Me ajuda a pensar:
+
+Se eu fizer essa automação certo, quanto a clínica VAI ECONOMIZAR ou GANHAR? Como eu calculo isso antes de saber tudo? E como eu cobro proporcional a esse valor, não ao meu tempo?</div></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">Excelente pergunta. Vou puxar 3 fios:
+
+**1. Cálculo de valor antes do discovery completo**
+Hipóteses pra confirmar com a Carla:
+- Quanto tempo/dia a recepcionista (Joana) gasta com mensagens? (estimar 2-4h)
+- Salário+encargos de Joana (R$ 2.5-3.5k típico em clínica pequena)
+- Custo por hora de Joana = (salário × 1.65) / 176h = ~R$ 30/h
+- Se economizar 3h/dia × 22 dias = 66h/mês = ~R$ 2.000/mês recuperado em capacidade
+- Mas há ganho indireto: paciente respondido em 5min agenda 2x mais que paciente respondido em 4h (estudos de healthcare confirmam). Valor incremental de receita: precisa estimar com Carla.
+
+**2. Modelos de precificação que não usam hora**
+- Outcome-based: % do valor mensal economizado (ex: 30% × R$ 2k/mês = R$ 600/mês, mas com setup fee)
+- Setup + manutenção: setup paga implementação (3-5x o "horas × taxa"), manutenção é recorrente
+- Value-pricing fixo: setup de R$ 10-15k baseado em "quanto vale resolver isso" + manutenção mensal R$ 1-2k
+
+**3. Estrutura de oferta que aumenta valor percebido**
+- Não venda "automação". Venda "Sorri+ Atendimento Inteligente": sistema com nome, marca, dashboard pra Carla ver. Concorrente cobra hora; você cobra produto.
+- Inclua treinamento da Joana (1h) — ela passa de "ameaçada pela automação" a "operadora do sistema".
+- Inclua mês 1 de "tuning" — você ajusta classificação conforme padrões aparecem.
+
+Antes do café com a Carla, sugiro discovery curto: peça pra ela trazer 1 semana real de mensagens (ela copia/imprime). Você analisa antes da reunião e chega COM diagnóstico, não pra ouvir problema.</div></div>
+<div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5">
+<h3 class="font-bold text-emerald-400 mb-2">✅ Aha moment</h3>
+<p class="text-sm text-neutral-300">Bruno sente que está no jogo certo. Pede pra Carla mandar 1 semana de mensagens. Carla manda print de 247 mensagens entre paciente↔clínica do whatsapp + 89 emails — uma semana inteira.</p>
+</div>
+</section>
+
+<!-- ITER 2 - DISCOVERY -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">Iteração 2 — Discovery via Claude (quarta de manhã)</h2></div>
+<p class="text-neutral-300 mb-4">Bruno cria projeto "Sorri+ — diagnóstico". Cola as 336 mensagens. Pede análise:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">BRUNO →</div><div class="dialogue you text-sm text-neutral-200">Analise essas 336 mensagens da semana da clínica Sorri+. Pra cada uma:
+
+1. Categorize a intenção do paciente (max 6 categorias)
+2. Identifique se exige resposta com agenda, com info pré-clínica, ou com humano obrigatório
+3. Tempo médio que recepcionista provavelmente gastou pra responder (estimativa baseada em tipo)
+4. % que poderia ter sido resolvida automaticamente sem perder qualidade
+
+Saída: tabela + gráfico mental + diagnóstico em 1 página pra eu apresentar na reunião amanhã.</div></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">**Diagnóstico Sorri+ — semana de 06/05 a 12/05**
+
+| Categoria | Mensagens | % do total | Tempo médio | % automatizável |
+|---|---|---|---|---|
+| Marcar/desmarcar consulta | 142 | 42% | 4-6 min | 95% |
+| Confirmar agendamento | 67 | 20% | 2-3 min | 100% |
+| Tirar dúvida pré-procedimento | 51 | 15% | 6-8 min | 70% (FAQ + escalar 30%) |
+| Dúvida sobre convênio/preço | 38 | 11% | 5-7 min | 80% (tabelas claras) |
+| Reclamação/urgência | 24 | 7% | 8-15 min | 0% (sempre humano) |
+| Outros (cumprimento, agradecimento) | 14 | 4% | 1-2 min | 100% |
+
+**Tempo total estimado: 4h12min/dia da Joana** (médio na semana, alta variabilidade).
+
+**Diagnóstico em 1 página:**
+- 81% das mensagens são automatizáveis sem perder qualidade
+- Joana hoje atua como "roteadora manual" — gasta cérebro em decisão repetitiva
+- Tempo recuperado se automatizar: 3h24/dia (4h12 × 81%)
+- Em R$/mês de capacidade liberada: 3h24 × 22 dias × ~R$ 30/h = **R$ 2.244**
+- Em valor de receita perdida (paciente que não retorna por demora): difícil precisar, mas estudos do setor sugerem 12-18% de leads perdidos por demora &gt; 1h — pra essa clínica seriam ~8-12 agendamentos/mês recuperados (R$ 200/agend = R$ 1.600-2.400/mês adicional).
+- **Valor mensal total atacável: R$ 3.844 - 4.644**
+
+**Risco principal:** os 7% "reclamação/urgência" precisam de roteamento HUMANO obrigatório. Errar isso = perder paciente. Sistema precisa ter triagem confiável + sinal de "urgente, pegar agora" pra Joana.
+
+Recomendação de oferta pra Carla:
+- **Setup: R$ 12.000** (sistema de triagem + integração WhatsApp + dashboard + treinamento Joana)
+- **Manutenção mensal: R$ 1.800** (ajustes de classificação, novos templates, métricas)
+- **ROI cliente:** R$ 4.000/mês de valor - R$ 1.800 de fee = **R$ 2.200/mês líquido pra Sorri+**
+- **Payback do setup:** ~5-6 meses</div></div>
+<p class="text-neutral-300 mt-2"><strong class="text-purple-400">Bruno chega no café quinta-feira já com diagnóstico impresso.</strong> Não vai "ouvir o problema da Carla". Vai "apresentar a solução pra um problema que ela ainda não tinha quantificado".</p>
+</section>
+
+<!-- ITER 3 - REUNIÃO -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">Iteração 3 — A reunião (quinta 9h30)</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-4">
+<p class="text-neutral-300 mb-3">Bruno mostra o diagnóstico de 1 página pra Dra. Carla:</p>
+<div class="dialogue cliente text-sm text-neutral-300 mb-3">
+<strong>Carla:</strong> "Espera, você analisou tudo isso em 1 dia? Como? Tô olhando aqui e... 4h por dia da Joana? Achei que era 1, 2 no máximo. R$ 4 mil por mês ESSE problema?"
+</div>
+<div class="dialogue you text-sm text-neutral-300 mb-3">
+<strong>Bruno:</strong> "Olha as 336 mensagens da semana que você me mandou. Categorizei cada uma. Os números saem disso. Posso te mostrar o detalhe se quiser auditar."
+</div>
+<div class="dialogue cliente text-sm text-neutral-300 mb-3">
+<strong>Carla:</strong> "Não, confio. Quanto custa resolver?"
+</div>
+<div class="dialogue you text-sm text-neutral-300 mb-3">
+<strong>Bruno:</strong> "Setup do sistema: R$ 12 mil. Manutenção mensal: R$ 1.800. Em 5-6 meses ele paga sozinho com o tempo que a Joana recupera. Depois disso é só economia. Quer que eu detalhe o que entra em cada parte?"
+</div>
+<div class="dialogue cliente text-sm text-neutral-300 mb-3">
+<strong>Carla:</strong> "...R$ 12 mil. Faz sentido. Quanto tempo demora?"
+</div>
+<div class="dialogue you text-sm text-neutral-300 mb-3">
+<strong>Bruno:</strong> "3 semanas pro sistema rodar. Mais 1 mês de tuning fino (incluído no setup). A Joana vai operar como 'analista' do sistema, não fazer triagem mecânica. O nome de tudo isso vai ser 'Sorri+ Atendimento Inteligente' — você manda pra quem quiser."
+</div>
+<p class="text-neutral-300 mt-3"><strong class="text-purple-400">Carla pede 2 dias pra pensar e conversar com a Joana.</strong> Sexta à tarde manda: "fechado. Manda o contrato."</p>
+</div>
+<div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5">
+<h3 class="font-bold text-emerald-400 mb-2">🎯 Por que não houve negociação pesada</h3>
+<p class="text-sm text-neutral-300">Bruno chegou com <strong>número defensável</strong> (R$ 4.000/mês de dor) e <strong>payback claro</strong> (5-6 meses). Carla pode até ter pensado "caro" no primeiro momento, mas a matemática dela mesma desarma. Quando você precifica em ROI, o cliente vira advogado da proposta dentro da própria cabeça.</p>
+</div>
+</section>
+
+<!-- ITER 4 - ENTREGA -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">Iteração 4 — Construção em co-work (semanas 1-3)</h2></div>
+<p class="text-neutral-300 mb-4">Bruno passa 3 semanas construindo no co-work. Tempo real: ~22 horas distribuídas em 21 dias. Detalhamento técnico está fora do escopo deste módulo (veja 3.4), mas o que ele entrega:</p>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<ol class="space-y-3 text-sm text-neutral-300">
+<li><strong class="text-purple-400">1. Skill principal de triagem</strong> — recebe webhook do WhatsApp Business, classifica em 6 categorias, gera resposta automática nas 81% automatizáveis, roteia pra Joana nas 19% restantes (com sinal "URGENTE" nas 7% reclamação).</li>
+<li><strong class="text-purple-400">2. Templates de resposta</strong> — 23 templates aprovados pela Carla (tom, vocabulário "doutor/doutora", restrições jurídicas).</li>
+<li><strong class="text-purple-400">3. Dashboard simples</strong> — Carla vê em tempo real: total mensagens, % auto-respondidas, ticket médio, alertas. Hospedado num artifact persistente, link compartilhado.</li>
+<li><strong class="text-purple-400">4. Runbook impresso</strong> — 8 páginas com: "o que o sistema faz", "o que NÃO faz", "como Joana opera o painel", "o que fazer se quebrar", "como entrar em contato com Bruno".</li>
+<li><strong class="text-purple-400">5. Treinamento Joana</strong> — 1 sessão de 1h presencial. Joana sai entendida e levemente aliviada (não foi substituída — virou "supervisora do sistema").</li>
+</ol>
+</div>
+</section>
+
+<!-- ENTREGA -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">✓</span><h2 class="text-2xl font-bold">Entrega + 90 dias depois</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<p class="text-neutral-300 mb-3"><strong class="text-purple-400">Métricas reais após 90 dias (4 ciclos de manutenção):</strong></p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center mb-4">
+<div><div class="text-2xl font-bold text-emerald-400">79%</div><div class="text-xs text-neutral-500">mensagens auto-respondidas</div></div>
+<div><div class="text-2xl font-bold text-emerald-400">3h22</div><div class="text-xs text-neutral-500">Joana recuperou/dia</div></div>
+<div><div class="text-2xl font-bold text-emerald-400">+11</div><div class="text-xs text-neutral-500">agendamentos extras/mês</div></div>
+<div><div class="text-2xl font-bold text-emerald-400">0</div><div class="text-xs text-neutral-500">paciente perdido por triagem errada</div></div>
+</div>
+<p class="text-neutral-300 mb-3">Joana foi promovida a "Coord. de Atendimento" — ganhou aumento de R$ 600/mês. Bruno virou referência no grupo de WhatsApp de empresários de saúde da região.</p>
+<p class="text-neutral-300 mb-3"><strong class="text-emerald-400">Dia 73 pós-entrega — Carla manda:</strong></p>
+<blockquote class="border-l-4 border-emerald-500/30 pl-4 italic text-neutral-300 my-3">"Bruno, falei do sistema com a Dra. Helena (clínica de fisioterapia em Pinheiros). Ela tem o mesmo problema, pior. Vou passar seu contato. Posso?"</blockquote>
+<p class="text-neutral-300"><strong class="text-purple-400">Bruno fechou Helena em 2 semanas:</strong> R$ 12k setup + R$ 1.8k/mês. Sem prospecção. Sem cold call.</p>
+</div>
+</section>
+
+<!-- ECONOMICS -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">💰</span><h2 class="text-2xl font-bold">A economia real, lado a lado</h2></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 overflow-x-auto">
+<table class="w-full text-sm">
+<thead class="text-purple-400 font-bold"><tr><th class="text-left p-2">Métrica</th><th class="text-right p-2">Modelo "horista"</th><th class="text-right p-2">Modelo "sistema"</th></tr></thead>
+<tbody class="text-neutral-300 divide-y divide-dark-600">
+<tr><td class="p-2">Setup</td><td class="p-2 text-right">R$ 4.200</td><td class="p-2 text-right">R$ 12.000</td></tr>
+<tr><td class="p-2">Recorrente/mês</td><td class="p-2 text-right">R$ 0</td><td class="p-2 text-right">R$ 1.800</td></tr>
+<tr><td class="p-2">Tempo de Bruno (h totais ano 1)</td><td class="p-2 text-right">35h</td><td class="p-2 text-right">~50h (22h setup + 2.5h/mês × 11 manut.)</td></tr>
+<tr><td class="p-2">Receita ano 1</td><td class="p-2 text-right">R$ 4.200</td><td class="p-2 text-right">R$ 31.800</td></tr>
+<tr><td class="p-2">Efetivo R$/hora ano 1</td><td class="p-2 text-right">R$ 120</td><td class="p-2 text-right">R$ 636</td></tr>
+<tr><td class="p-2">Cliente referenciou outro?</td><td class="p-2 text-right">Não típico</td><td class="p-2 text-right">Sim (sistema com marca + ROI)</td></tr>
+</tbody></table>
+</div>
+<p class="text-neutral-300 mt-4">Bruno saiu do mesmo trabalho cobrando 5,3x. Não porque foi "mais experiente". Porque <strong>vendeu sistema, não horas</strong>.</p>
+</section>
+
+<!-- LIÇÕES -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">★</span><h2 class="text-2xl font-bold">Lições da jornada</h2></div>
+<div class="space-y-4">
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-purple-400 mb-2">1. Pricing-reflex é o maior limitante do N3</h3><p class="text-sm text-neutral-300">"Horas × taxa" parece honesto, mas é o que te mantém freelancer. A pergunta certa: "quanto vale resolver isso pro cliente?" — não "quanto custa pra mim fazer?". Mude o ponto de partida da conta.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-purple-400 mb-2">2. Discovery quantitativo antes da proposta &gt; depois</h3><p class="text-sm text-neutral-300">Bruno chegou no café com diagnóstico de R$ 4k/mês. Carla não negociou porque a matemática DELA confirmava a proposta. Sem discovery, ele teria proposto R$ 4.2k e ela teria "fechado satisfeita" — ambos perdendo.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-purple-400 mb-2">3. Recorrente vale 3-5x o setup</h3><p class="text-sm text-neutral-300">R$ 1.800/mês × 12 = R$ 21.600. Mais que o setup. E não pede prospecção nova. É o que tira freelancer da montanha-russa de cash flow.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-purple-400 mb-2">4. Dê NOME ao sistema</h3><p class="text-sm text-neutral-300">"Sorri+ Atendimento Inteligente" é fácil de mandar pra outro empresário. "A automação que o Bruno fez" não é. Nome = produto. Produto referenciável.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-purple-400 mb-2">5. Inclua treinamento da pessoa "ameaçada"</h3><p class="text-sm text-neutral-300">A Joana podia ter sabotado o sistema (acidente "deixei errar pra Carla ver que não funciona"). Treinar Joana virou aliada — ela ganhou aumento por ser "supervisora do sistema". Sempre identifique quem pode boicotar e traga junto.</p></div>
+</div>
+</section>
+
+<!-- ADAPTAÇÕES -->
+<section class="mb-12">
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Adapte pro seu mercado</h2></div>
+<p class="text-neutral-300 mb-4">O movimento "horista → sistema com recorrente" funciona em qualquer setor onde existe dor mensurável e repetitiva:</p>
+<div class="grid sm:grid-cols-2 gap-4">
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-2">🏥 Saúde — outras clínicas</h3><p class="text-sm text-neutral-300">Replicar caso Sorri+ pra pediatras, fisios, psicólogos. Cada vertical com seus templates específicos. R$ 8-15k setup + R$ 1.2-2k/mês.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-2">🛒 E-commerce — triagem de SAC</h3><p class="text-sm text-neutral-300">Lojas com volume médio (200-2000 tickets/mês). Setup R$ 10-20k + R$ 2-3k/mês. ROI mensurável em capacidade de atendimento.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-2">🏠 Imobiliárias — qualificação de leads</h3><p class="text-sm text-neutral-300">Corretora gasta 4-6h/dia separando "curioso" de "comprador real". Setup R$ 8-12k + R$ 1.5k/mês.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-2">⚖ Escritórios de advocacia — triagem inicial</h3><p class="text-sm text-neutral-300">Escritórios pequenos perdem hora explicando "isso a gente não pega". Setup R$ 15-25k (compliance mais alta) + R$ 2.5-4k/mês.</p></div>
+</div>
+</section>
+
+<!-- RESUMO -->
+<section class="mb-12">
+<div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Mate o pricing-reflex</strong> — "horas × taxa" custa 60-80% do valor real.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Discovery quantitativo ANTES da proposta</strong> — cliente vira advogado do número quando a matemática dele confirma.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Setup + manutenção mensal</strong> — recorrente vale 3-5x o setup, mata montanha-russa de freelancer.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Dê nome ao sistema</strong> — produto é referenciável, "automação" não é.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Inclua o "ameaçado"</strong> — quem pode boicotar precisa ser aliado, não passageiro.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">5.3x R$/hora efetiva</strong> com o mesmo trabalho técnico — só mudou o modelo comercial.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-purple-400 mb-2">Próxima Trilha:</h3><p class="text-neutral-300">Trilha 4 — Avançado. Claude Code, claude.md, worktrees, plan mode. Quando o sistema fica grande demais pro co-work.</p></div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
+<a href="../trilha4/index.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">Próxima Trilha →</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>

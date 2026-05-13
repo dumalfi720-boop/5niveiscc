@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2.3 Cases completos | T2</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-700\/50{background-color:rgba(243,244,246,.5)}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
+html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
+html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .bg-blue-500\/10{background-color:rgba(29,78,216,.08)}html:not(.dark) .bg-blue-500\/20{background-color:rgba(29,78,216,.12)}html:not(.dark) .border-blue-500\/30{border-color:rgba(29,78,216,.3)}html:not(.dark) .bg-blue-600{background-color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500:hover{background-color:#2563eb}
+html:not(.dark) .text-red-400{color:#b91c1c}html:not(.dark) .bg-red-500\/10{background-color:rgba(185,28,28,.08)}html:not(.dark) .border-red-500\/30{border-color:rgba(185,28,28,.3)}
+html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .hover\:text-emerald-400:hover{color:#047857}html:not(.dark) .hover\:bg-emerald-500\/10:hover{background-color:rgba(4,120,87,.08)}
+html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .hover\:text-purple-400:hover{color:#6d28d9}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(109,40,217,.08)}
+html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .hover\:text-amber-400:hover{color:#b45309}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(180,83,9,.08)}
+html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .hover\:text-teal-400:hover{color:#0f766e}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(15,118,110,.08)}
+html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-400:hover{color:#be123c}html:not(.dark) .hover\:bg-rose-500\/10:hover{background-color:rgba(190,18,60,.08)}
+.prompt-block{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;line-height:1.55}</style></head><body class="text-neutral-100">
+
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+<a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-blue-400 bg-blue-500/10"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+<a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+<a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+<a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+<a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-blue-400">Início</a> / <a href="index.html" class="hover:text-blue-400">Trilha 2</a> / <span class="text-neutral-300">Módulo 2.3</span></nav>
+
+<header class="mb-10">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-3">MÓDULO 2.3 · CASES COMPLETOS · ~45 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎯 Cases reais de Projetos + Conectores + Memória</h1>
+<p class="text-lg text-neutral-300">3 montagens completas de Projeto N2, cada uma com a configuração errada inicial, ajuste exato que destravou, prompt-padrão final que vira ritual semanal, variações testadas e métricas reais.</p>
+<div class="mt-6 bg-blue-500/10 border-l-4 border-blue-500/30 rounded-lg p-4">
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">⚠ Diferente do N1.</strong> No N2 a construção é em duas camadas: <em>configuração do Projeto</em> (instrução fixa + docs + conectores) e <em>prompt-padrão</em> (o que você re-executa). Os cases mostram as duas — se errar a configuração, o melhor prompt do mundo não salva.</p>
+</div>
+</header>
+
+<!-- ============ CASE 1 ============ -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">1</span>
+<div><div class="text-xs font-bold text-blue-400 mb-1">CASE 1</div><h2 class="text-2xl font-bold">💼 Projeto "Outbound Vendas B2B" — do pitch genérico ao 1ª reunião marcada</h2></div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Felipe é AE numa SaaS de gestão financeira pra clínicas médicas. ICP é clínica com 5-20 médicos no Brasil. Meta: 4 reuniões/semana via outbound frio. Hoje ele tira 1.5 em média porque os e-mails dele são "muito padrão de SDR júnior".</p>
+<p class="text-neutral-300"><strong class="text-blue-400">Recursos disponíveis:</strong> doc do ICP detalhado (Drive), 12 e-mails que deram reunião nos últimos 6 meses (Gmail), Calendar com horários abertos.</p>
+</div>
+
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-red-400 mb-2">❌ Configuração inicial (o que NÃO funciona)</h3>
+<p class="text-sm text-neutral-300 mb-2"><strong>Projeto:</strong> "Vendas"<br><strong>Instrução fixa:</strong> "você é meu copywriter de vendas, me ajuda a escrever e-mails"<br><strong>Conectores:</strong> nenhum ativado<br><strong>Docs:</strong> nada anexado</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Output típico:</strong> e-mail correto na gramática, totalmente genérico ("vi que sua clínica cresceu, queremos te ajudar a..."), exatamente o que SDR júnior escreve. Resposta: 1.5%.</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-red-400">Por que falhou:</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
+<li>• Projeto "Vendas" é genérico demais — Claude não sabe pra qual ICP escrever</li>
+<li>• Sem ICP doc, Claude inventa dor que talvez não exista pra clínica</li>
+<li>• Sem amostras dos 12 e-mails que funcionaram, Claude não aprende o tom Felipe</li>
+<li>• Sem conector Gmail, Felipe copia e cola toda info de contexto</li>
+</ul>
+</div>
+
+<div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">✅ Configuração final que vira ritual semanal</h3>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-blue-400">Projeto:</strong> "Outbound Clínicas Médicas BR"</p>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-blue-400">Conectores ativos:</strong> Google Drive (pasta "outbound clínicas"), Gmail (label "vendas-ganhas-2026")</p>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-blue-400">Docs anexados ao knowledge:</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mb-4">
+<li>• <code class="bg-dark-700 px-1 rounded">icp-clinicas-medicas-v3.pdf</code> — perfil do cliente ideal</li>
+<li>• <code class="bg-dark-700 px-1 rounded">12-emails-ganhos-com-anotacoes.md</code> — os que deram reunião + análise do porquê</li>
+<li>• <code class="bg-dark-700 px-1 rounded">objecoes-comuns-resolvidas.md</code> — top 8 objeções com resposta</li>
+<li>• <code class="bg-dark-700 px-1 rounded">linguagem-veto.md</code> — "automatizar", "ganhar tempo", "transformar gestão" — palavras óbvias que MARCAM SDR júnior</li>
+</ul>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-blue-400">Instrução fixa do Projeto:</strong></p>
+<div class="bg-dark-800/50 rounded p-4 prompt-block text-sm text-neutral-200">Você é o Felipe, AE sênior de SaaS de gestão financeira pra clínicas médicas. Você escreve outbound frio que parece consultivo, não comercial.
+
+Sempre que eu pedir um e-mail:
+1. Leia primeiro o ICP doc — confirme que o destinatário se enquadra (se não, recuse e me avise)
+2. Releia 3 dos 12 e-mails-ganhos que pareçam mais próximos do contexto
+3. Use o tom desses — não invente novo tom
+4. Verifique a linguagem-veto: se sair "automatizar", "ganhar tempo", "transformar gestão", "alavancar resultados", REESCREVA
+5. Não prometa demonstração genérica — proponha conversa específica sobre 1 dor concreta do ICP
+
+Formato sempre:
+- Assunto (máx 7 palavras, sem "[empresa]" no início — clichê)
+- Corpo (máx 90 palavras)
+- CTA (uma pergunta concreta, não "podemos conversar?")
+
+Sempre que eu disser "modo análise", olhe os e-mails recentes do Gmail e me diga padrão de quem respondeu vs quem não. Não palpite, use só os dados.</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">📤 Prompt-padrão do ritual semanal</h3>
+<div class="bg-dark-700/50 rounded p-4 prompt-block text-sm text-neutral-200">Lista de prospects da semana abaixo. Pra cada um, escreva o e-mail seguindo a instrução do projeto.
+
+Antes de cada e-mail, em 1 linha: "porque esse lead se encaixa no ICP" + "qual e-mail-ganho está mais próximo".
+
+Prospects:
+- Dra. Mariana Silva — Clínica Cardio+, 8 médicos, São Paulo. LinkedIn diz que cresceu 40% em 2025. Site mostra que usam planilha Excel pra agenda.
+- Dr. Ricardo Oliveira — Centro Médico Beta, 14 médicos, Curitiba. Notícia local: receberam aporte. Site profissional, parece organizado.
+- [...]</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">📤 Output exemplo (1 dos 6 e-mails gerados)</h3>
+<div class="bg-dark-700/50 rounded p-4 text-sm text-neutral-300 italic">
+<strong>Encaixe ICP:</strong> Cardio+ tem 8 médicos (faixa-alvo), crescimento 40% sinaliza dor de processo escalável. E-mail-ganho mais próximo: o da Clínica DermaNova (cresceu 35%, também usavam Excel, fechou em 2 calls).<br><br>
+<strong>Assunto:</strong> Agenda no Excel quando dobrar o time<br><br>
+Dra. Mariana,<br><br>
+Vi que a Cardio+ cresceu 40% em 2025 — parabéns. Conversei recentemente com uma clínica de Belo Horizonte que tinha tamanho parecido e cresceu num ritmo similar; o ponto que travou primeiro pra eles foi a agenda em Excel deixar de comportar 4 secretárias editando junto.<br><br>
+Não vim oferecer demonstração. Tenho uma planilha curta com o cálculo de quando esse limite costuma estourar (baseado em 38 clínicas). Posso te mandar?<br><br>
+Felipe<br>
+[empresa]
+</div>
+<p class="text-sm text-neutral-400 mt-3">Diferente do "vi que sua clínica cresceu, queremos te ajudar a automatizar...". Tem dor específica, oferta de baixo compromisso (planilha &gt; demo), CTA fechado.</p>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">🔀 4 variações testadas</h3>
+<div class="space-y-3 text-sm text-neutral-300">
+<div><strong class="text-blue-400">A — Lead respondeu com objeção:</strong> "modo objeção: vamos checar objecoes-comuns-resolvidas.md, identificar qual é, e responder no mesmo tom dos e-mails-ganhos".</div>
+<div><strong class="text-blue-400">B — Follow-up de e-mail sem resposta (7 dias):</strong> conector Gmail busca o e-mail original, identifica ponto não respondido, gera follow-up que NÃO repete o pitch — adiciona valor novo.</div>
+<div><strong class="text-blue-400">C — Inbound (lead chegou via site):</strong> mesma instrução, mas troca "lead frio" por "lead morno", muda CTA de "posso te mandar?" pra "qual desses 3 horários funciona?".</div>
+<div><strong class="text-blue-400">D — Análise de pipeline mensal:</strong> "modo análise: busca Gmail, compara taxa de resposta por setor, dia da semana, horário. Sugere 2 ajustes pro mês que vem".</div>
+</div>
+</div>
+
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-amber-400 mb-2">⚠ Erros comuns ao adaptar</h3>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li>• <strong>Pular o doc de "e-mails ganhos com anotações"</strong> — sem isso, Claude inventa tom. Anotações explicando "por que esse funcionou" valem 10x mais que só os e-mails crus.</li>
+<li>• <strong>Esquecer a linguagem-veto</strong> — clichês de vendas voltam imediatamente. Lista explícita é obrigatória.</li>
+<li>• <strong>Não usar o conector Gmail pra "modo análise"</strong> — quem só usa pra gerar e-mail perde 50% do valor do Projeto.</li>
+<li>• <strong>Projeto "Vendas" em vez de "Outbound Clínicas Médicas BR"</strong> — escopo amplo é veneno no N2.</li>
+</ul>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-blue-400 mb-2">📊 Métricas reais (após 6 semanas)</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+<div><div class="text-2xl font-bold text-blue-400">15 min</div><div class="text-xs text-neutral-500">por sessão semanal</div></div>
+<div><div class="text-2xl font-bold text-blue-400">~2h30</div><div class="text-xs text-neutral-500">economizados/semana</div></div>
+<div><div class="text-2xl font-bold text-blue-400">1.5 → 3.8</div><div class="text-xs text-neutral-500">reuniões/semana</div></div>
+<div><div class="text-2xl font-bold text-blue-400">+18%</div><div class="text-xs text-neutral-500">taxa de resposta</div></div>
+</div>
+</div>
+</section>
+
+<!-- ============ CASE 2 ============ -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">2</span>
+<div><div class="text-xs font-bold text-blue-400 mb-1">CASE 2</div><h2 class="text-2xl font-bold">📸 Projeto "Conteúdo Instagram" — voz da marca que parece humana</h2></div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Júlia é dona de uma marca de cosmética natural artesanal (vende via Instagram, ~9k seguidores). Posta 3x/semana. Não tem orçamento pra agência. Hoje gasta 4h/semana criando posts — tom oscila entre "produto X com benefício Y" (vendedor) e "manhã ensolarada e gratidão" (templates motivacionais). Engajamento estagnou em 3.2%.</p>
+<p class="text-neutral-300"><strong class="text-blue-400">Recursos:</strong> 200+ posts antigos no IG, brand book PDF (escrito por designer há 2 anos), gravações de áudio da Júlia explicando produtos (autêntico).</p>
+</div>
+
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-red-400 mb-2">❌ Configuração inicial</h3>
+<p class="text-sm text-neutral-300 mb-2"><strong>Projeto:</strong> "Marketing"<br><strong>Instrução:</strong> "você é minha social media, escreve posts pro IG"<br><strong>Knowledge:</strong> só o brand book</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Output:</strong> posts genericamente "instagramáveis", emoji demais, "✨ a natureza nos abençoa..." — voz que parece de qualquer marca de cosmético natural.</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-red-400">Por que falhou:</strong> brand book PDF é tom <em>aspirational</em> escrito por designer; voz REAL da Júlia (autêntica, técnica, brava com greenwashing) está nos áudios e nos posts ganhos — que ninguém anexou.</p>
+</div>
+
+<div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">✅ Configuração final</h3>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-blue-400">Projeto:</strong> "IG @marca-natural — voz real da Júlia"</p>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-blue-400">Knowledge anexado (em ordem de importância):</strong></p>
+<ul class="text-sm text-neutral-300 space-y-1 ml-4 mb-3">
+<li>• <code class="bg-dark-700 px-1 rounded">top-20-posts-engajamento.md</code> — os 20 com melhor performance, com nota da Júlia: "esse aqui é a voz que eu quero pra sempre"</li>
+<li>• <code class="bg-dark-700 px-1 rounded">transcricao-audios-julia.md</code> — Júlia explicando 8 produtos por áudio, transcrito sem corte</li>
+<li>• <code class="bg-dark-700 px-1 rounded">tabu-list.md</code> — "✨", "manhã ensolarada", "energia", "alquimia", "feita com amor" — tudo o que NUNCA usar</li>
+<li>• <code class="bg-dark-700 px-1 rounded">brand-book.pdf</code> — referência secundária, não primária</li>
+<li>• <code class="bg-dark-700 px-1 rounded">linhas-de-produtos-2026.md</code> — ficha técnica real de cada item</li>
+</ul>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">Instrução fixa:</strong></p>
+<div class="bg-dark-800/50 rounded p-4 prompt-block text-sm text-neutral-200">Você é a Júlia escrevendo. Não é "social media da marca". É ELA.
+
+Toda vez que eu pedir um post:
+1. Releia 5 posts aleatórios dos top-20 e a transcrição dos áudios
+2. Capture o tom REAL: direto, técnico, levemente bravo com mentiras do mercado
+3. Cheque a tabu-list — se sair qualquer palavra dali, REESCREVA
+4. NÃO use emoji decorativo. Emoji técnico (📦 → frete, ⚠ → atenção) ok.
+5. Não terminar com "💚" / "✨" / "🌿"
+
+Formato post padrão:
+- Hook na primeira linha (máx 8 palavras, gera dúvida ou contra-intuitivo)
+- 2-3 parágrafos curtos (máx 4 linhas cada)
+- 1 prova (número, nome, fato verificável)
+- 1 ação clara no final (não "💚")
+
+Sempre que eu disser "modo crítica", olha o último post que eu publiquei e me diga em 3 bullets o que NÃO ficou na voz da Júlia.</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">📤 Output exemplo</h3>
+<div class="bg-dark-700/50 rounded p-4 text-sm text-neutral-300">
+<strong>Hook:</strong> "Cosmético natural" não significa que faz bem pra pele.<br><br>
+A indústria descobriu que esse rótulo vende. Hoje tem produto com 3% de ingrediente natural e 97% de químico básico que se autodeclara "natural" sem mentir tecnicamente.<br><br>
+A diferença real está na lista — não no rótulo, nem na vibe da embalagem.<br><br>
+Nosso hidratante facial tem 14 ingredientes. 13 são naturais identificados em INCI. O 14º é um conservante natural certificado (sem ele, fungo em 5 dias).<br><br>
+Quer ver a lista inteira antes de decidir? Stories de hoje tem.<br><br>
+— Júlia
+</div>
+<p class="text-sm text-neutral-400 mt-3">Voz da Júlia, prova específica (14 ingredientes), CTA real (stories). Engajamento desse post: 8.4%. Voz autêntica converte mais que "produto X com benefício Y".</p>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">🔀 4 variações testadas</h3>
+<div class="space-y-3 text-sm text-neutral-300">
+<div><strong class="text-blue-400">A — Carrossel (8 slides):</strong> mesmo tom, mas dividido. Slide 1 = hook expandido, slides 2-7 = um ponto cada, slide 8 = CTA.</div>
+<div><strong class="text-blue-400">B — Reel (roteiro):</strong> "modo reel": 30 segundos, primeira frase é gancho de 3s, ação visual sugerida, sem música motivacional.</div>
+<div><strong class="text-blue-400">C — Stories sequenciados (5):</strong> conta a história em 5 slides com cliffhanger pra próximo.</div>
+<div><strong class="text-blue-400">D — Lançamento de novo produto:</strong> usa ficha técnica do <code class="bg-dark-700 px-1 rounded">linhas-de-produtos</code> e cruza com voz da Júlia. Não vira release de imprensa.</div>
+</div>
+</div>
+
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-amber-400 mb-2">⚠ Erros ao adaptar</h3>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li>• <strong>Confiar no brand book como fonte primária de voz</strong> — brand book é aspirational, voz real está em posts/áudios. Use brand book como guarda-corpo, não como mapa.</li>
+<li>• <strong>Esquecer a tabu-list</strong> — clichês de Instagram são gravitacionais. Se não vetar, eles voltam.</li>
+<li>• <strong>Não anotar "por que esse post funcionou" nos top-20</strong> — sem anotação, Claude copia forma mas não capta intenção.</li>
+<li>• <strong>Pular o "modo crítica"</strong> — feedback no que SAIU é o que afina o tom no longo prazo.</li>
+</ul>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-blue-400 mb-2">📊 Métricas (após 8 semanas)</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+<div><div class="text-2xl font-bold text-blue-400">4h → 50min</div><div class="text-xs text-neutral-500">tempo/semana</div></div>
+<div><div class="text-2xl font-bold text-blue-400">3.2% → 6.8%</div><div class="text-xs text-neutral-500">engajamento médio</div></div>
+<div><div class="text-2xl font-bold text-blue-400">9k → 11.2k</div><div class="text-xs text-neutral-500">seguidores orgânicos</div></div>
+<div><div class="text-2xl font-bold text-blue-400">+34%</div><div class="text-xs text-neutral-500">vendas via IG</div></div>
+</div>
+</div>
+</section>
+
+<!-- ============ CASE 3 ============ -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">3</span>
+<div><div class="text-xs font-bold text-blue-400 mb-1">CASE 3</div><h2 class="text-2xl font-bold">🧠 Atendimento ao cliente com Memória + Busca em chats antigos</h2></div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="text-lg font-bold mb-3">Cenário</h3>
+<p class="text-neutral-300 mb-3">Rafa é dono de uma agência boutique de tráfego pago (5 funcionários, 18 clientes). Atende cliente principalmente por WhatsApp e Slack. Toda semana ele tem que re-explicar pro time: "lembra do cliente Y? a gente decidiu não usar Performance Max porque ele tem ICP de luxo, mas o time esquece e a campanha aparece duplicada".</p>
+<p class="text-neutral-300"><strong class="text-blue-400">Recursos:</strong> 6 meses de conversas no Slack #cliente-Y, drive com decisões registradas, Notion com playbooks.</p>
+</div>
+
+<div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-red-400 mb-2">❌ Configuração inicial</h3>
+<p class="text-sm text-neutral-300 mb-2"><strong>Projeto:</strong> "Clientes"<br><strong>Conectores:</strong> nenhum<br><strong>Memory:</strong> desativada<br><strong>Knowledge:</strong> 1 PDF gigante "todos os clientes"</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Output:</strong> respostas misturadas — quando Rafa pergunta sobre cliente Y, vem dado do cliente W. PDF gigante = Claude confunde.</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-red-400">Por que falhou:</strong> 1 projeto pra 18 clientes é caos. Memory off = re-explicar tudo a cada chat novo. Sem conector Slack/Drive, Rafa cola contexto manualmente.</p>
+</div>
+
+<div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">✅ Configuração final (regra de ouro: 1 projeto = 1 cliente)</h3>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-blue-400">Projetos:</strong> 18 — um por cliente. Nome: "Tráfego — [cliente] — ICP/restrição em 1 linha". Ex.: "Tráfego — Luxo Watches — ICP HNW, NUNCA usar PMax".</p>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-blue-400">Conectores por projeto:</strong> Slack (canal específico do cliente), Drive (pasta do cliente), Notion (playbook do cliente). Tudo escopado.</p>
+<p class="text-sm text-neutral-300 mb-3"><strong class="text-blue-400">Memory:</strong> ativada com regras explícitas — "lembre sempre: cliente Y nunca usa PMax, ICP é luxo, restrição é budget &lt; R$50k/mês".</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">Instrução fixa (mesma template pros 18, mudando 3 campos):</strong></p>
+<div class="bg-dark-800/50 rounded p-4 prompt-block text-sm text-neutral-200">Cliente: [NOME]
+ICP: [DESCRIÇÃO em 1 frase]
+Restrições não-negociáveis: [LISTA]
+
+Você é o gerente de conta sênior responsável por este cliente. Conhece histórico de decisões, sabe o que já tentamos e descartamos.
+
+Antes de responder qualquer pergunta:
+1. Cheque histórico no Slack #cliente-[NOME] dos últimos 90 dias
+2. Cheque decisões registradas em Drive/decisoes-cliente-[NOME].md
+3. Cheque playbook em Notion/cliente-[NOME]
+4. Se a pergunta toca em algo já decidido, CITE a decisão e quando foi tomada
+5. NUNCA sugira algo na lista de restrições não-negociáveis sem alertar
+
+Quando eu fizer pergunta nova, salve a decisão em memory pra próxima conversa não perder contexto.
+
+Modo /sumário: gere relatório mensal do cliente — performance, decisões, próximos passos.</div>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">📤 Output exemplo</h3>
+<p class="text-sm text-neutral-300 mb-2"><strong>Pergunta do Rafa:</strong> "Estamos pensando em testar Performance Max no Luxo Watches pra escalar. Faz sentido?"</p>
+<div class="bg-dark-700/50 rounded p-4 text-sm text-neutral-300 mt-2">
+🚨 Atenção: PMax está na lista de restrições NÃO-NEGOCIÁVEIS deste cliente.<br><br>
+Decisão original (Slack #luxo-watches, 14/fev/2026): você decidiu vetar PMax aqui porque ICP de HNW (high-net-worth) responde mal a posicionamento massificado, e PMax otimiza pra volume. Bruno (do time do cliente) tinha trazido essa preferência da diretoria.<br><br>
+Se a intenção é escalar, alternativas que se encaixam no veto:<br>
+1. Demand Gen (segmentação intent-based) — alinhado ao ICP, vimos teste pequeno em mar/26 com CPA aceitável<br>
+2. Search com keywords premium + lances manuais — mais controle, evita matching frouxo<br>
+3. YouTube com placement manual em canais alinhados (Forbes, Bloomberg) — opção mais cara mas alinha imagem<br><br>
+Quer que eu detalhe orçamento e ramp-up de uma dessas 3? Ou tem razão nova pra reabrir veto do PMax?
+</div>
+<p class="text-sm text-neutral-400 mt-3">Veja: Claude CITA a decisão original, alerta a restrição, oferece alternativas alinhadas, e abre porta pra reabrir o veto se houver razão. Isso é coworker, não buscador.</p>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-5">
+<h3 class="font-bold text-blue-400 mb-3">🔀 4 variações testadas</h3>
+<div class="space-y-3 text-sm text-neutral-300">
+<div><strong class="text-blue-400">A — Onboarding de funcionário novo:</strong> "modo briefing: novo membro do time pega o cliente X. Gere onboarding em 1 página com decisões-chave, restrições e contatos".</div>
+<div><strong class="text-blue-400">B — Renovação de contrato:</strong> "modo renovação: gere proposta de renovação com ROI demonstrado dos últimos 12 meses, riscos se sairmos, e 3 opções de upgrade".</div>
+<div><strong class="text-blue-400">C — Crise (campanha quebrou):</strong> "modo incidente: cliente reclamou às 22h. Resumir o que sabemos, 3 prováveis causas, ação imediata pra manhã".</div>
+<div><strong class="text-blue-400">D — Mensal pra cliente:</strong> "modo report: relatório mensal pro cliente. Tom: confiante, sem desculpar resultado ruim. Inclua próximos 3 testes".</div>
+</div>
+</div>
+
+<div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5 mb-5">
+<h3 class="font-bold text-amber-400 mb-2">⚠ Erros ao adaptar</h3>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li>• <strong>1 projeto pra muitos clientes</strong> — caos garantido. 1 projeto = 1 cliente é regra de ouro do N2 quando trabalho é por conta.</li>
+<li>• <strong>Memory desativada</strong> — desativada de propósito ou por esquecimento, é o ingrediente que mais reduz "re-explicação" repetitiva.</li>
+<li>• <strong>Não escrever as restrições NÃO-NEGOCIÁVEIS no nome do projeto</strong> — Rafa coloca no nome ("NUNCA PMax") porque é o que ele mais esquece. Memory ajuda, mas nome do projeto é fail-safe extra.</li>
+<li>• <strong>Não usar conector Slack</strong> — sem isso, você cola conversas manualmente. Conector reduz 80% do copy-paste.</li>
+</ul>
+</div>
+
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
+<h3 class="font-bold text-blue-400 mb-2">📊 Métricas (após 10 semanas, 18 clientes)</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+<div><div class="text-2xl font-bold text-blue-400">~6h</div><div class="text-xs text-neutral-500">economizados/semana</div></div>
+<div><div class="text-2xl font-bold text-blue-400">3 → 0</div><div class="text-xs text-neutral-500">"erros por cliente confundido"/mês</div></div>
+<div><div class="text-2xl font-bold text-blue-400">+2</div><div class="text-xs text-neutral-500">clientes atendidos no mesmo time</div></div>
+<div><div class="text-2xl font-bold text-blue-400">2 dias</div><div class="text-xs text-neutral-500">onboarding novo funcionário (era 10)</div></div>
+</div>
+</div>
+</section>
+
+<!-- ============ PADRÃO ABSTRAÍDO ============ -->
+<section class="mb-16">
+<div class="flex items-start space-x-4 mb-6">
+<span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">★</span>
+<h2 class="text-2xl font-bold">🧠 O padrão N2 por trás dos 3 cases</h2>
+</div>
+<p class="text-neutral-300 mb-4">Note que os 3 cases têm anatomia idêntica. É a fórmula que separa Projeto que funciona de Projeto morto-vivo:</p>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
+<ol class="space-y-3 text-sm text-neutral-300">
+<li><strong class="text-blue-400">1. Escopo cirúrgico no nome do projeto</strong> — "Outbound Clínicas Médicas BR", não "Vendas". "IG @marca-natural — voz real Júlia", não "Marketing". O nome é o primeiro filtro mental.</li>
+<li><strong class="text-blue-400">2. Knowledge em camadas de importância</strong> — top-20 posts &gt; brand book. E-mails ganhos &gt; ICP doc. Decisões reais &gt; playbook genérico. Anexar tudo na mesma ordem não funciona; priorize.</li>
+<li><strong class="text-blue-400">3. Tabu-list / linguagem-veto explícita</strong> — listar o que NUNCA usar é mais eficaz que listar o que usar. Clichês têm gravidade; vete por escrito.</li>
+<li><strong class="text-blue-400">4. Conectores ESCOPADOS ao projeto</strong> — Slack do canal certo, Drive da pasta certa. Conector amplo demais traz ruído.</li>
+<li><strong class="text-blue-400">5. Modos nomeados (/sumário, /análise, /crítica, /briefing)</strong> — você ensina Claude a entregar formatos diferentes da mesma config. Multiplica reuso.</li>
+</ol>
+</div>
+<p class="text-neutral-300 mt-4">Esses 5 sobrevivem em qualquer setor. Decora-os e seu próximo Projeto, em qualquer área, sai pronto em 30 min em vez de 3 horas.</p>
+</section>
+
+<!-- ============ RESUMO ============ -->
+<section class="mb-12">
+<div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Case 1 (Vendas B2B):</strong> ICP doc + e-mails ganhos COM anotações + linguagem-veto + modo análise via Gmail conector.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Case 2 (Conteúdo IG):</strong> brand book é secundário; top-20 posts + transcrição de áudios = voz REAL. Tabu-list mata clichê.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Case 3 (Atendimento N clientes):</strong> 1 projeto = 1 cliente. Memory ativa. Restrições não-negociáveis no NOME do projeto.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Padrão N2 dos 5 ingredientes</strong> — escopo no nome, knowledge em camadas, tabu-list, conectores escopados, modos nomeados.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Métricas reais</strong> — 2h30 a 6h economizadas/semana, qualidade mensurável (engajamento, taxa de resposta).</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-blue-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">2.4 — Walkthrough: da planilha de feedback bagunçada ao Artifact compartilhável pro time inteiro, em 2h30.</p></div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
+<a href="modulo-2-4.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition">Próximo Módulo →</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
+<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+</body></html>
