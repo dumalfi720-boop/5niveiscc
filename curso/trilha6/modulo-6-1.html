@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prova Final · 50 questões | T6</title>
+<title>Prova Final · Progressiva | T6</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -9,215 +9,320 @@ html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{backg
 html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
 html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .bg-rose-500\/10{background-color:rgba(190,18,60,.08)}html:not(.dark) .bg-rose-500\/20{background-color:rgba(190,18,60,.12)}html:not(.dark) .border-rose-500\/30{border-color:rgba(190,18,60,.3)}html:not(.dark) .bg-rose-600{background-color:#be123c}html:not(.dark) .hover\:bg-rose-500:hover{background-color:#e11d48}
 html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .text-teal-400{color:#0f766e}
-html:not(.dark) .bg-green-500\/10{background-color:rgba(16,185,129,.1)}html:not(.dark) .bg-red-500\/10{background-color:rgba(239,68,68,.1)}html:not(.dark) .border-green-500\/30{border-color:rgba(16,185,129,.3)}html:not(.dark) .border-red-500\/30{border-color:rgba(239,68,68,.3)}html:not(.dark) .text-green-400{color:#059669}html:not(.dark) .text-red-400{color:#dc2626}
+html:not(.dark) .bg-emerald-500\/10{background-color:rgba(4,120,87,.08)}html:not(.dark) .bg-emerald-500\/20{background-color:rgba(4,120,87,.12)}html:not(.dark) .border-emerald-500\/30{border-color:rgba(4,120,87,.3)}html:not(.dark) .bg-emerald-600{background-color:#047857}html:not(.dark) .hover\:bg-emerald-500:hover{background-color:#059669}
+html:not(.dark) .bg-blue-500\/10{background-color:rgba(29,78,216,.08)}html:not(.dark) .bg-blue-500\/20{background-color:rgba(29,78,216,.12)}html:not(.dark) .border-blue-500\/30{border-color:rgba(29,78,216,.3)}html:not(.dark) .bg-blue-600{background-color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500:hover{background-color:#2563eb}
+html:not(.dark) .bg-purple-500\/10{background-color:rgba(109,40,217,.08)}html:not(.dark) .bg-purple-500\/20{background-color:rgba(109,40,217,.12)}html:not(.dark) .border-purple-500\/30{border-color:rgba(109,40,217,.3)}html:not(.dark) .bg-purple-600{background-color:#6d28d9}html:not(.dark) .hover\:bg-purple-500:hover{background-color:#7c3aed}
+html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .bg-amber-500\/20{background-color:rgba(180,83,9,.12)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}html:not(.dark) .bg-amber-600{background-color:#b45309}html:not(.dark) .hover\:bg-amber-500:hover{background-color:#d97706}
+html:not(.dark) .bg-teal-500\/10{background-color:rgba(15,118,110,.08)}html:not(.dark) .bg-teal-500\/20{background-color:rgba(15,118,110,.12)}html:not(.dark) .border-teal-500\/30{border-color:rgba(15,118,110,.3)}html:not(.dark) .bg-teal-600{background-color:#0f766e}html:not(.dark) .hover\:bg-teal-500:hover{background-color:#14b8a6}
 .q-option{cursor:pointer;border:1px solid transparent}.q-option:hover{background-color:rgba(255,255,255,.03)}.q-option.selected{border-color:rgba(250,204,21,.5);background-color:rgba(250,204,21,.05)}
-.q-option.correct{border-color:rgba(16,185,129,.5);background-color:rgba(16,185,129,.08)}.q-option.incorrect{border-color:rgba(239,68,68,.5);background-color:rgba(239,68,68,.08)}</style></head><body class="text-neutral-100">
+.q-option.correct{border-color:rgba(16,185,129,.5);background-color:rgba(16,185,129,.08)}.q-option.incorrect{border-color:rgba(239,68,68,.5);background-color:rgba(239,68,68,.08)}
+.q-option.locked{cursor:default;pointer-events:none}
+.level-panel{transition:opacity .3s, max-height .5s}
+.level-panel.locked{opacity:.35;pointer-events:none;max-height:120px;overflow:hidden}
+.badge-status{transition:all .3s}</style></head><body class="text-neutral-100">
 
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-2"><a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-rose-400 bg-rose-500/10">T6</a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+  <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
+  <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
+  <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
+  <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
+  <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
+  <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-rose-400 bg-rose-500/10"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
+  <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+</div></div></div></nav>
 
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 <nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-rose-400">Início</a> / <a href="index.html" class="hover:text-rose-400">Trilha 6</a> / <span class="text-neutral-300">Prova</span></nav>
 
-<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-3">PROVA FINAL · 50 QUESTÕES</span>
-<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🏁 Em qual nível você está?</h1>
-<p class="text-lg text-neutral-300">Responda 10 questões por nível. Seu nível atual será o mais alto onde você acertar ≥8/10. Não trapaceie consigo mesmo.</p>
-<div class="mt-4 bg-dark-800 rounded-lg p-4 flex items-center justify-between">
-  <div><div class="text-xs text-neutral-500">Progresso</div><div id="progress-text" class="text-lg font-bold">0 / 50 respondidas</div></div>
-  <div class="w-32 bg-dark-700 rounded-full h-2"><div id="progress-bar" class="bg-rose-500 h-2 rounded-full transition-all" style="width:0%"></div></div>
-</div>
+<header class="mb-8"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-3">PROVA PROGRESSIVA · NÍVEL A NÍVEL</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🏁 Suba os 5 níveis, um por vez</h1>
+<p class="text-lg text-neutral-300">Comece pelo Nível 1. Acerte ≥ 8 de 10 questões pra liberar o próximo. Errou? Revise o módulo da resposta, tente de novo.</p>
 </header>
 
-<div id="quiz-container" class="space-y-10"></div>
+<!-- Status badges -->
+<div class="grid grid-cols-5 gap-2 mb-8" id="badges">
+  <div class="bg-dark-800 rounded-lg p-3 border border-emerald-500/30 text-center badge-status" data-badge="1"><div class="text-xs text-emerald-400 font-bold">N1</div><div class="text-xs text-neutral-400 mt-1" id="badge-text-1">Em andamento</div></div>
+  <div class="bg-dark-800 rounded-lg p-3 border border-dark-600 text-center badge-status" data-badge="2"><div class="text-xs text-neutral-500 font-bold">N2</div><div class="text-xs text-neutral-500 mt-1" id="badge-text-2">🔒 Bloqueado</div></div>
+  <div class="bg-dark-800 rounded-lg p-3 border border-dark-600 text-center badge-status" data-badge="3"><div class="text-xs text-neutral-500 font-bold">N3</div><div class="text-xs text-neutral-500 mt-1" id="badge-text-3">🔒 Bloqueado</div></div>
+  <div class="bg-dark-800 rounded-lg p-3 border border-dark-600 text-center badge-status" data-badge="4"><div class="text-xs text-neutral-500 font-bold">N4</div><div class="text-xs text-neutral-500 mt-1" id="badge-text-4">🔒 Bloqueado</div></div>
+  <div class="bg-dark-800 rounded-lg p-3 border border-dark-600 text-center badge-status" data-badge="5"><div class="text-xs text-neutral-500 font-bold">N5</div><div class="text-xs text-neutral-500 mt-1" id="badge-text-5">🔒 Bloqueado</div></div>
+</div>
 
-<section class="mt-10">
-<button id="submit-btn" class="w-full px-8 py-5 bg-rose-600 hover:bg-rose-500 text-white rounded-xl text-lg font-bold transition disabled:opacity-50 disabled:cursor-not-allowed" disabled>Calcular meu resultado</button>
-<p id="submit-hint" class="text-xs text-neutral-500 text-center mt-2">Responda todas as 50 perguntas pra liberar.</p>
-</section>
+<div id="levels-container"></div>
 
-<section id="results" class="hidden mt-12 mb-10"></section>
+<section id="final-cert" class="hidden mt-12"></section>
 
 </main>
 <footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
 
 <script>
-// Theme toggle
 const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;
 if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}
 tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});
 
-// 50 questões — 10 por nível
 const Q = [
-// ============ NÍVEL 1 (Entusiasta) ============
 {lvl:1,q:"Qual é o jeito mais subutilizado de dar input pro Claude no chat?",opts:["Texto formatado em markdown","Audio gravado","Screenshots colados","Cole tudo em base64"],correct:2,explain:"Claude lê imagens. Metade das pessoas no N1 digita o que um print resolveria em 2 segundos.",mod:"trilha1/modulo-1-1.html"},
-{lvl:1,q:"Quais 4 partes compõem um prompt bem estruturado?",opts:["Pergunta + contexto + traduzir + revisar","Papel + contexto + formato + restrição","Saudação + pergunta + agradecimento + assinatura","Tópico + dúvida + exemplos + conclusão"],correct:1,explain:"Papel ('aja como copywriter sênior') + Contexto + Formato + Restrição. Padrão que vale a vida toda.",mod:"trilha1/modulo-1-1.html"},
+{lvl:1,q:"Quais 4 partes compõem um prompt bem estruturado?",opts:["Pergunta + contexto + traduzir + revisar","Papel + contexto + formato + restrição","Saudação + pergunta + agradecimento + assinatura","Tópico + dúvida + exemplos + conclusão"],correct:1,explain:"Papel + Contexto + Formato + Restrição. Padrão que vale a vida toda.",mod:"trilha1/modulo-1-1.html"},
 {lvl:1,q:"Por que iterar (2ª pergunta) costuma valer mais que a 1ª?",opts:["Porque Claude memoriza melhor depois","Porque você refina contexto/restrição com base na 1ª resposta","Porque o modelo só processa direito após mensagem #2","Porque a 1ª resposta é sempre genérica"],correct:1,explain:"Você usa a 1ª pra ver onde Claude saiu do caminho e ajusta restrição/formato.",mod:"trilha1/modulo-1-1.html"},
-{lvl:1,q:"Qual destes NÃO é um dos 6 usos práticos do N1?",opts:["Resumir conteúdos","Criar pequenos scripts","Implementar aplicação completa em produção","Explicar assuntos difíceis"],correct:2,explain:"Implementar app inteira é N4+. N1 cobre tarefas atômicas: escrever, resumir, explicar, ideias, revisar, scripts curtos.",mod:"trilha1/modulo-1-1.html"},
-{lvl:1,q:"Qual é o erro mais comum que mantém pessoas no N1?",opts:["Não usar Claude em mobile","Tratar Claude como Google (3 palavras, 1 resposta)","Não atualizar pro Pro","Não usar voice mode"],correct:1,explain:"Maioria trata como buscador. Iterar e contextualizar dobra a qualidade sem mudar de ferramenta.",mod:"trilha1/modulo-1-1.html"},
-{lvl:1,q:"O cheat code do N1 pro N2 é:",opts:["Comprar o plano Pro","Criar o primeiro Projeto com instrução fixa + docs","Aprender markdown avançado","Configurar Claude Code no terminal"],correct:1,explain:"Projeto é a 'espinha' do N2. Configuração de 10 minutos destrava 6 features.",mod:"trilha1/modulo-1-2.html"},
-{lvl:1,q:"Pra extrair texto de uma planilha rapidamente sem digitar, o melhor é:",opts:["Pedir Claude pra abrir do Drive","Tirar print e colar","Descrever cada coluna em texto","Converter pra CSV manualmente"],correct:1,explain:"Print + 'transcreva em markdown' resolve em segundos. Habilidade central do N1.",mod:"trilha1/modulo-1-1.html"},
-{lvl:1,q:"Quando faz sentido FICAR no N1 (e não subir)?",opts:["Quando usa Claude só pra tarefas pontuais e descartáveis","Quando você ainda não pagou Pro","Quando ainda não decorou markdown","Quando trabalha só em mobile"],correct:0,explain:"N1 basta pra uso pontual. Subir só quando você repetir o mesmo tipo de pedido semanalmente.",mod:"trilha1/modulo-1-1.html"},
-{lvl:1,q:"O exercício prático de 1 semana do N1 serve pra:",opts:["Testar se Claude funciona offline","Descobrir qual padrão de tarefa vira candidato a Projeto","Treinar memória do modelo","Comparar com outros LLMs"],correct:1,explain:"Anotando suas tarefas, padrões repetidos aparecem — são candidatos diretos a virar Projeto no N2.",mod:"trilha1/modulo-1-1.html"},
-{lvl:1,q:"Qual destes é PROMPT BOM pra revisão de texto?",opts:["Revisa esse texto","Aponte erros de gramática e tom, mostre original riscado e correção em negrito, justifique cada mudança","Olha esse texto e diz o que achou","Faz ficar bom"],correct:1,explain:"Papel implícito + formato (riscado/negrito) + restrição (justificar). O resto é vago.",mod:"trilha1/modulo-1-1.html"},
+{lvl:1,q:"Qual destes NÃO é um dos 6 usos práticos do N1?",opts:["Resumir conteúdos","Criar pequenos scripts","Implementar aplicação completa em produção","Explicar assuntos difíceis"],correct:2,explain:"Implementar app inteira é N4+. N1 cobre tarefas atômicas.",mod:"trilha1/modulo-1-1.html"},
+{lvl:1,q:"Qual é o erro mais comum que mantém pessoas no N1?",opts:["Não usar Claude em mobile","Tratar Claude como Google (3 palavras, 1 resposta)","Não atualizar pro Pro","Não usar voice mode"],correct:1,explain:"Maioria trata como buscador. Iterar e contextualizar dobra a qualidade.",mod:"trilha1/modulo-1-1.html"},
+{lvl:1,q:"O cheat code do N1 pro N2 é:",opts:["Comprar o plano Pro","Criar o primeiro Projeto com instrução fixa + docs","Aprender markdown avançado","Configurar Claude Code no terminal"],correct:1,explain:"Projeto é a 'espinha' do N2. Configuração de 10 min destrava 6 features.",mod:"trilha1/modulo-1-2.html"},
+{lvl:1,q:"Pra extrair texto de uma planilha rapidamente sem digitar, o melhor é:",opts:["Pedir Claude pra abrir do Drive","Tirar print e colar","Descrever cada coluna em texto","Converter pra CSV manualmente"],correct:1,explain:"Print + 'transcreva em markdown' resolve em segundos.",mod:"trilha1/modulo-1-1.html"},
+{lvl:1,q:"Quando faz sentido FICAR no N1 (e não subir)?",opts:["Quando usa Claude só pra tarefas pontuais e descartáveis","Quando você ainda não pagou Pro","Quando ainda não decorou markdown","Quando trabalha só em mobile"],correct:0,explain:"N1 basta pra uso pontual. Subir só quando repetir tipo de pedido semanalmente.",mod:"trilha1/modulo-1-1.html"},
+{lvl:1,q:"O exercício prático de 1 semana do N1 serve pra:",opts:["Testar se Claude funciona offline","Descobrir qual padrão de tarefa vira candidato a Projeto","Treinar memória do modelo","Comparar com outros LLMs"],correct:1,explain:"Anotando suas tarefas, padrões repetidos viram candidatos a Projeto no N2.",mod:"trilha1/modulo-1-1.html"},
+{lvl:1,q:"Qual destes é PROMPT BOM pra revisão de texto?",opts:["Revisa esse texto","Aponte erros de gramática e tom, mostre original riscado e correção em negrito, justifique cada mudança","Olha esse texto e diz o que achou","Faz ficar bom"],correct:1,explain:"Papel implícito + formato + restrição. O resto é vago.",mod:"trilha1/modulo-1-1.html"},
 
-// ============ NÍVEL 2 (Iniciante) ============
-{lvl:2,q:"O que caracteriza o salto N1→N2?",opts:["Você passa a pagar Pro","Claude passa a ter continuidade entre conversas","Você troca de modelo Sonnet pra Opus","Você usa voice mode"],correct:1,explain:"Projetos + memória + busca = continuidade. Você nunca mais cola o mesmo briefing 2x.",mod:"trilha2/modulo-2-1.html"},
+{lvl:2,q:"O que caracteriza o salto N1→N2?",opts:["Você passa a pagar Pro","Claude passa a ter continuidade entre conversas","Você troca de Sonnet pra Opus","Você usa voice mode"],correct:1,explain:"Projetos + memória + busca = continuidade. Nunca mais cola o mesmo briefing 2x.",mod:"trilha2/modulo-2-1.html"},
 {lvl:2,q:"Memory é gratuita em todos os planos?",opts:["Não, só Pro","Sim, gratuita pra todos","Só com add-in do Office","Só na app mobile"],correct:1,explain:"Memory é free. Busca em chats antigos é Pro.",mod:"trilha2/modulo-2-1.html"},
-{lvl:2,q:"Quantos conectores oficiais Claude tem em 2026?",opts:["Cerca de 5","Cerca de 12","Mais de 50","Mais de 500"],correct:2,explain:"50+ conectores OAuth. Os 6 principais (Slack/Drive/Gmail/GitHub/Notion/Calendar) cobrem 80% dos casos.",mod:"trilha2/modulo-2-1.html"},
-{lvl:2,q:"Qual NÃO é arquivo que Claude cria nativamente?",opts:[".xlsx",".pptx",".dwg (AutoCAD)",".docx"],correct:2,explain:"Excel/PPT/Word/PDF são suportados nativamente. Formatos especiais como DWG não.",mod:"trilha2/modulo-2-1.html"},
-{lvl:2,q:"O que diferencia Artifacts com persistent storage de visuais inline?",opts:["Artifacts são apenas no mobile","Artifacts persistem dados entre sessões e podem ser publicados; visuais inline são efêmeros","Artifacts são pagos, inline é grátis","São a mesma coisa"],correct:1,explain:"Artifacts = mini-app com storage e link público. Visuais inline = gráficos vivos dentro do chat, não salvam.",mod:"trilha2/modulo-2-1.html"},
-{lvl:2,q:"Office add-ins permitem:",opts:["Apenas leitura de arquivos","Edição preservando dependências, citação cell-level, contexto cruzado entre Excel/PPT/Word","Apenas formatação automática","Só conversão de formato"],correct:1,explain:"Add-ins rodam dentro do app, com acesso completo ao master. Cross-context entre apps chegou em Abril/2026.",mod:"trilha2/modulo-2-1.html"},
+{lvl:2,q:"Quantos conectores oficiais Claude tem em 2026?",opts:["Cerca de 5","Cerca de 12","Mais de 50","Mais de 500"],correct:2,explain:"50+ conectores OAuth. Os 6 principais cobrem 80% dos casos.",mod:"trilha2/modulo-2-1.html"},
+{lvl:2,q:"Qual NÃO é arquivo que Claude cria nativamente?",opts:[".xlsx",".pptx",".dwg (AutoCAD)",".docx"],correct:2,explain:"Excel/PPT/Word/PDF nativos. DWG não.",mod:"trilha2/modulo-2-1.html"},
+{lvl:2,q:"O que diferencia Artifacts com persistent storage de visuais inline?",opts:["Artifacts são apenas no mobile","Artifacts persistem dados entre sessões e podem ser publicados; visuais inline são efêmeros","Artifacts são pagos, inline é grátis","São a mesma coisa"],correct:1,explain:"Artifacts = mini-app com storage e link público. Visuais inline = gráficos vivos no chat.",mod:"trilha2/modulo-2-1.html"},
+{lvl:2,q:"Office add-ins permitem:",opts:["Apenas leitura de arquivos","Edição preservando dependências, citação cell-level, contexto cruzado Excel/PPT/Word","Apenas formatação automática","Só conversão de formato"],correct:1,explain:"Add-ins rodam dentro do app, com acesso completo ao master. Cross-context em Abril/2026.",mod:"trilha2/modulo-2-1.html"},
 {lvl:2,q:"Receita certa pra produtividade no N2 é:",opts:["1 projeto gigante cobrindo tudo","1 projeto por ritual semanal + 1-2 conectores + 1 prompt-padrão","1 projeto + todos os 50 conectores","Sem projeto, só chat solto"],correct:1,explain:"1 escopo por projeto. Mais foco = melhor entrega.",mod:"trilha2/modulo-2-2.html"},
-{lvl:2,q:"Qual destes é ERRO típico do N2?",opts:["Criar instrução fixa","Anexar documentos de referência","Misturar 3 assuntos diferentes no mesmo projeto","Usar memory"],correct:2,explain:"Regra de ouro: 1 projeto = 1 escopo. Misturar destrói o ROI da configuração.",mod:"trilha2/modulo-2-2.html"},
-{lvl:2,q:"Sinal de que o N2 não é mais suficiente:",opts:["Você quer rodar comandos no seu computador","Você cansou do chat","Acabou os tokens","Migrou pra mobile"],correct:0,explain:"Quando você quer Claude executando no seu sistema (organizar arquivos, processar pastas), é hora do co-work (N3).",mod:"trilha2/modulo-2-2.html"},
+{lvl:2,q:"Qual destes é ERRO típico do N2?",opts:["Criar instrução fixa","Anexar documentos de referência","Misturar 3 assuntos diferentes no mesmo projeto","Usar memory"],correct:2,explain:"Regra de ouro: 1 projeto = 1 escopo.",mod:"trilha2/modulo-2-2.html"},
+{lvl:2,q:"Sinal de que o N2 não é mais suficiente:",opts:["Você quer rodar comandos no seu computador","Você cansou do chat","Acabou os tokens","Migrou pra mobile"],correct:0,explain:"Quando quer Claude executando no sistema, é hora do co-work (N3).",mod:"trilha2/modulo-2-2.html"},
 {lvl:2,q:"Pré-trabalho que ajuda na transição pro N3 é:",opts:["Migrar pra Linux","Criar estrutura de pastas numerada (00_sobre_mim, 01_templates, etc.)","Aprender Python","Comprar mais RAM"],correct:1,explain:"Estrutura de pastas + regras de chão transforma co-work em coworker confiável.",mod:"trilha2/modulo-2-2.html"},
 
-// ============ NÍVEL 3 (Intermediário) ============
-{lvl:3,q:"Co-work roda código:",opts:["Direto no seu sistema operacional sem isolamento","Numa VM isolada com permissões granulares","Apenas em sandbox limitado a 100MB","Só remotamente, na infra da Anthropic"],correct:1,explain:"VM isolada com read/write apenas nas pastas autorizadas. Princípio do menor privilégio.",mod:"trilha3/modulo-3-1.html"},
-{lvl:3,q:"Skills são definidas em:",opts:["Python","JavaScript","Markdown simples","JSON estrito"],correct:2,explain:"Skills = arquivo .md com instruções. Markdown legível, versionável, compartilhável.",mod:"trilha3/modulo-3-1.html"},
-{lvl:3,q:"O comando /schedule:",opts:["Salva tarefa pra rodar na nuvem (laptop pode estar desligado)","Salva tarefa pra rodar com sua máquina ligada e desktop aberto","É só pra Claude Code, não co-work","Não existe"],correct:1,explain:"/schedule do co-work exige máquina ligada. Routines em nuvem (sem máquina) só no N5.",mod:"trilha3/modulo-3-1.html"},
-{lvl:3,q:"Dispatch é:",opts:["Sistema de filas","Pareamento celular ↔ desktop pra mandar tarefas remotas","Plugin de notificação","Compilador de skills"],correct:1,explain:"Você manda tarefa do celular, ela roda no seu desktop, você recebe ping quando termina.",mod:"trilha3/modulo-3-1.html"},
-{lvl:3,q:"Claude Design serve pra:",opts:["Substituir Photoshop","Descrever em linguagem natural deck/landing/one-pager + design system extraído da marca","Edição de vídeo","Compor música"],correct:1,explain:"Produto separado, incluso no Pro. Lê seu repo/brand book, extrai design system, gera consistente.",mod:"trilha3/modulo-3-1.html"},
-{lvl:3,q:"Computer Use deve ser usado:",opts:["Como primeira escolha pra tudo","Apenas quando NÃO há conector nativo ou CLI possível","Em vez de conectores oficiais","Para evitar custos"],correct:1,explain:"Última escolha. Lento, caro em tokens, mais errado. Bom só pra apps legados sem alternativa.",mod:"trilha3/modulo-3-1.html"},
-{lvl:3,q:"Por que numerar pastas (00_sobre_mim, 01_templates, etc.)?",opts:["Pra ficar bonito","Pra Claude ler em ordem e ter mapa mental claro","Por convenção do Linux","Pra ordenar alfabeticamente"],correct:1,explain:"Numeração obriga ordem. Claude segue fluxo entrada → processamento → saída sem inventar.",mod:"trilha3/modulo-3-2.html"},
-{lvl:3,q:"Regra de chão essencial em co-work é:",opts:["Permitir tudo pra não atrapalhar","Confirmar antes de apagar QUALQUER arquivo","Sempre executar sem perguntar","Não criar logs"],correct:1,explain:"Confirmação antes de operações destrutivas. Junto com backup e dry-run, evita 90% dos acidentes.",mod:"trilha3/modulo-3-2.html"},
-{lvl:3,q:"Antes de automatizar uma tarefa, o critério MAIS importante é:",opts:["Que seja criativa","Que seja recorrente, mecânica, com entrada e saída claras","Que ninguém mais saiba fazer","Que seja secreta"],correct:1,explain:"Tarefa criativa não deve ser automatizada. Tarefas mecânicas com I/O claro são as candidatas perfeitas.",mod:"trilha3/modulo-3-3.html"},
-{lvl:3,q:"Modelo de cobrança pra automação como serviço no N3:",opts:["Sempre por hora trabalhada","Pelo valor entregue ao cliente (horas economizadas × custo da hora)","Sempre o mesmo preço","De graça pra ganhar reputação"],correct:1,explain:"R$ 5-15k por projeto, cobrando pelo valor (h poupadas × custo). Por hora desvaloriza você.",mod:"trilha3/modulo-3-3.html"},
+{lvl:3,q:"Co-work roda código:",opts:["Direto no seu OS sem isolamento","Numa VM isolada com permissões granulares","Apenas em sandbox de 100MB","Só remotamente, na Anthropic"],correct:1,explain:"VM isolada com read/write apenas nas pastas autorizadas. Princípio do menor privilégio.",mod:"trilha3/modulo-3-1.html"},
+{lvl:3,q:"Skills são definidas em:",opts:["Python","JavaScript","Markdown simples","JSON estrito"],correct:2,explain:"Skills = arquivo .md. Legível, versionável, compartilhável.",mod:"trilha3/modulo-3-1.html"},
+{lvl:3,q:"O comando /schedule:",opts:["Salva tarefa pra rodar na nuvem","Salva tarefa pra rodar com sua máquina ligada e desktop aberto","É só pra Claude Code","Não existe"],correct:1,explain:"/schedule do co-work exige máquina ligada. Routines em nuvem só no N5.",mod:"trilha3/modulo-3-1.html"},
+{lvl:3,q:"Dispatch é:",opts:["Sistema de filas","Pareamento celular ↔ desktop pra mandar tarefas remotas","Plugin de notificação","Compilador de skills"],correct:1,explain:"Manda tarefa do celular, roda no desktop, ping quando termina.",mod:"trilha3/modulo-3-1.html"},
+{lvl:3,q:"Claude Design serve pra:",opts:["Substituir Photoshop","Descrever em natural deck/landing + design system extraído da marca","Edição de vídeo","Compor música"],correct:1,explain:"Produto separado, no Pro. Extrai design system, gera consistente.",mod:"trilha3/modulo-3-1.html"},
+{lvl:3,q:"Computer Use deve ser usado:",opts:["Como primeira escolha pra tudo","Apenas quando NÃO há conector nativo ou CLI possível","Em vez de conectores oficiais","Para evitar custos"],correct:1,explain:"Última escolha. Lento, caro, errado. Bom só pra apps legados.",mod:"trilha3/modulo-3-1.html"},
+{lvl:3,q:"Por que numerar pastas (00_sobre_mim, 01_templates, etc.)?",opts:["Pra ficar bonito","Pra Claude ler em ordem e ter mapa mental claro","Convenção do Linux","Pra ordenar alfabeticamente"],correct:1,explain:"Numeração obriga ordem. Claude segue fluxo sem inventar.",mod:"trilha3/modulo-3-2.html"},
+{lvl:3,q:"Regra de chão essencial em co-work é:",opts:["Permitir tudo","Confirmar antes de apagar QUALQUER arquivo","Executar sem perguntar","Não criar logs"],correct:1,explain:"Confirmação antes de destrutivas evita 90% dos acidentes.",mod:"trilha3/modulo-3-2.html"},
+{lvl:3,q:"Antes de automatizar uma tarefa, o critério MAIS importante é:",opts:["Que seja criativa","Recorrente, mecânica, com entrada e saída claras","Que ninguém saiba fazer","Que seja secreta"],correct:1,explain:"Criativa NÃO automatize. Mecânica com I/O claro = candidata perfeita.",mod:"trilha3/modulo-3-3.html"},
+{lvl:3,q:"Modelo de cobrança pra automação como serviço no N3:",opts:["Sempre por hora trabalhada","Pelo valor entregue (h × custo)","Sempre o mesmo preço","De graça pra ganhar reputação"],correct:1,explain:"R$ 5-15k por projeto, cobrando pelo valor. Por hora desvaloriza você.",mod:"trilha3/modulo-3-3.html"},
 
-// ============ NÍVEL 4 (Avançado) ============
-{lvl:4,q:"O claude.md ideal tem:",opts:["Quanto mais detalhes possível","Até ~200 linhas + @arquivo pra detalhes longos","Apenas comandos bash","Configuração JSON estrita"],correct:1,explain:"~200 linhas. Pra detalhes, use @arquivo.md — Claude lê só quando precisa.",mod:"trilha4/modulo-4-1.html"},
-{lvl:4,q:"Plan mode ativa com:",opts:["Comando /plan","Shift+Tab duas vezes","Ctrl+P","É automático sempre"],correct:1,explain:"Shift+Tab×2. Claude apresenta plano detalhado e espera aprovação humana antes de executar.",mod:"trilha4/modulo-4-1.html"},
-{lvl:4,q:"Opus Plan setting faz:",opts:["Opus planeja e executa tudo","Opus planeja, Sonnet executa — custo de Sonnet, qualidade de Opus","Sonnet planeja e Opus executa","Não existe"],correct:1,explain:"Opus na parte que importa (planejamento), Sonnet na execução. Reduz custo pela metade.",mod:"trilha4/modulo-4-1.html"},
-{lvl:4,q:"Subagentes especializados se comunicam:",opts:["Diretamente uns com os outros","Apenas através da main session","Por arquivo compartilhado","Não se comunicam"],correct:1,explain:"Subagentes (N4) comunicam via main session. Agent teams (N5) são os que se mensagem entre si.",mod:"trilha4/modulo-4-1.html"},
-{lvl:4,q:"Worktrees permitem:",opts:["3-4 Claudes rodando em paralelo em branches isoladas","Backup automático","Sincronização com cloud","Compartilhar contexto entre sessões"],correct:0,explain:"Cada worktree = workspace git isolado em branch própria. Sem conflito de arquivos.",mod:"trilha4/modulo-4-1.html"},
-{lvl:4,q:"Hierarquia oficial recomendada pela Anthropic é:",opts:["MCP > Skill > API > CLI","CLI > API > Skill > MCP","Tudo MCP","Skill > MCP > CLI"],correct:1,explain:"CLI primeiro (60-70% menos tokens). API depois. Skills em seguida. MCP só quando nada cobre.",mod:"trilha4/modulo-4-1.html"},
-{lvl:4,q:"/compact deve ser usado:",opts:["Só quando aparece warning de contexto","Proativamente, antes da janela ficar 'sloppy' (depois de 50%)","Nunca","Apenas em emergência"],correct:1,explain:"Proativo. Quando warning aparece já é tarde. Pareia com /context pra ver onde tokens estão indo.",mod:"trilha4/modulo-4-2.html"},
-{lvl:4,q:"Hábito mais importante do N4 segundo Boris Cherny é:",opts:["Atualizar claude.md","Loop de verificação — Claude testa o próprio trabalho","Usar mais Opus","Sempre rodar em paralelo"],correct:1,explain:"Boris diz: 'dobra ou triplica a qualidade do output'. Pareie com extensão Chrome pra Claude validar UI.",mod:"trilha4/modulo-4-2.html"},
-{lvl:4,q:"Slash commands customizados ficam em:",opts:["~/.claude/global","./.claude/commands/","/etc/claude","Em qualquer .md raiz"],correct:1,explain:"Em .claude/commands/ do projeto. Versionados em git, compartilháveis com o time.",mod:"trilha4/modulo-4-2.html"},
-{lvl:4,q:"O salto N4 → N5 é principalmente:",opts:["Técnico (aprender SDK)","Psicológico (confiança em sistema rodando enquanto você dorme)","Financeiro","De hardware"],correct:1,explain:"Quase todos conseguem CRIAR rotina. A trava é HABILITAR. Confiança constrói com baixo risco repetido.",mod:"trilha4/modulo-4-3.html"},
+{lvl:4,q:"O claude.md ideal tem:",opts:["Quanto mais detalhes possível","Até ~200 linhas + @arquivo pra detalhes longos","Apenas comandos bash","Configuração JSON estrita"],correct:1,explain:"~200 linhas. Pra detalhes, @arquivo.md — Claude lê só quando precisa.",mod:"trilha4/modulo-4-1.html"},
+{lvl:4,q:"Plan mode ativa com:",opts:["Comando /plan","Shift+Tab duas vezes","Ctrl+P","É automático sempre"],correct:1,explain:"Shift+Tab×2. Claude apresenta plano e espera aprovação humana.",mod:"trilha4/modulo-4-1.html"},
+{lvl:4,q:"Opus Plan setting faz:",opts:["Opus planeja e executa","Opus planeja, Sonnet executa","Sonnet planeja, Opus executa","Não existe"],correct:1,explain:"Custo de Sonnet, qualidade de Opus. Reduz gasto pela metade.",mod:"trilha4/modulo-4-1.html"},
+{lvl:4,q:"Subagentes especializados se comunicam:",opts:["Diretamente uns com os outros","Apenas através da main session","Por arquivo compartilhado","Não se comunicam"],correct:1,explain:"Subagentes (N4) via main session. Agent teams (N5) é que se mensagem.",mod:"trilha4/modulo-4-1.html"},
+{lvl:4,q:"Worktrees permitem:",opts:["3-4 Claudes rodando em paralelo em branches isoladas","Backup automático","Sincronização com cloud","Compartilhar contexto"],correct:0,explain:"Cada worktree = workspace git isolado em branch própria. Sem conflito.",mod:"trilha4/modulo-4-1.html"},
+{lvl:4,q:"Hierarquia oficial recomendada pela Anthropic é:",opts:["MCP > Skill > API > CLI","CLI > API > Skill > MCP","Tudo MCP","Skill > MCP > CLI"],correct:1,explain:"CLI primeiro (60-70% menos tokens). MCP só quando nada cobre.",mod:"trilha4/modulo-4-1.html"},
+{lvl:4,q:"/compact deve ser usado:",opts:["Só quando aparece warning","Proativamente, antes da janela ficar sloppy (50%+)","Nunca","Apenas em emergência"],correct:1,explain:"Proativo. Quando warning aparece já é tarde.",mod:"trilha4/modulo-4-2.html"},
+{lvl:4,q:"Hábito mais importante do N4 segundo Boris Cherny é:",opts:["Atualizar claude.md","Loop de verificação — Claude testa o próprio trabalho","Usar mais Opus","Sempre rodar em paralelo"],correct:1,explain:"Boris diz: 'dobra ou triplica a qualidade do output'.",mod:"trilha4/modulo-4-2.html"},
+{lvl:4,q:"Slash commands customizados ficam em:",opts:["~/.claude/global","./.claude/commands/","/etc/claude","Em qualquer .md raiz"],correct:1,explain:".claude/commands/ do projeto. Versionados em git, compartilháveis.",mod:"trilha4/modulo-4-2.html"},
+{lvl:4,q:"O salto N4 → N5 é principalmente:",opts:["Técnico (aprender SDK)","Psicológico (confiança em sistema rodando enquanto você dorme)","Financeiro","De hardware"],correct:1,explain:"Quase todos conseguem CRIAR rotina. A trava é HABILITAR.",mod:"trilha4/modulo-4-3.html"},
 
-// ============ NÍVEL 5 (Arquiteto) ============
-{lvl:5,q:"Routines (no sentido N5) rodam:",opts:["No seu laptop com ele ligado","Na infraestrutura da Anthropic, laptop pode estar desligado","Apenas no servidor da empresa","Só em Docker"],correct:1,explain:"Esse é o salto do N5: laptop desligado, Anthropic infra. Diferente de /schedule do N3.",mod:"trilha5/modulo-5-1.html"},
+{lvl:5,q:"Routines (sentido N5) rodam:",opts:["No seu laptop ligado","Na infra da Anthropic, laptop pode estar desligado","Apenas no servidor da empresa","Só em Docker"],correct:1,explain:"Salto do N5: laptop desligado, Anthropic infra.",mod:"trilha5/modulo-5-1.html"},
 {lvl:5,q:"Quais são os 3 triggers de routines?",opts:["Cron / API call / GitHub event","Sempre cron","Cron / SMS / e-mail","Cron / mouse-move / keyboard"],correct:0,explain:"Cron pra rituais, API pra integração, GitHub event pra dev pipeline.",mod:"trilha5/modulo-5-1.html"},
-{lvl:5,q:"Pre-tool-use hook serve pra:",opts:["Formatar arquivos editados","Bloquear comando perigoso ANTES dele rodar","Notificar Slack","Compilar TypeScript"],correct:1,explain:"Pre-tool-use = veto antes da execução. Ex: bloquear rm -rf, force push em main, drop table.",mod:"trilha5/modulo-5-1.html"},
-{lvl:5,q:"Channels 2-way permitem:",opts:["Apenas alertas pra você","Você texta Claude do celular, ele opera no codebase remoto","Streaming de vídeo","Compartilhamento de contexto entre sessões"],correct:1,explain:"2-way: você controla Claude de fora (Slack/Telegram/iMessage). 1-way: evento externo dispara Claude.",mod:"trilha5/modulo-5-1.html"},
-{lvl:5,q:"Headless mode (claude -p):",opts:["Roda Claude Code sem sessão humana, pipe-friendly","É só pra debug","Requer cookie","Não existe"],correct:0,explain:"claude -p \"faz X\" retorna saída no stdout. Componível em pipelines maiores.",mod:"trilha5/modulo-5-1.html"},
-{lvl:5,q:"Agent SDK serve pra:",opts:["Configurar settings.json","Construir produto próprio em cima do engine do Claude Code","Apenas instalar plugins","Atualizar modelo"],correct:1,explain:"Python e TypeScript. Você vira BUILDER, não só USER. Embed em SaaS, tools customizadas, streaming.",mod:"trilha5/modulo-5-1.html"},
-{lvl:5,q:"Task budgets servem pra:",opts:["Cap total de tokens da rotina — thinking + tools + output","Limite mensal de uso","Tempo máximo de execução","Número máximo de PRs"],correct:0,explain:"Cap estrito. Modelo se auto-regula e encerra graciosamente. API only em maio/2026.",mod:"trilha5/modulo-5-2.html"},
-{lvl:5,q:"Diferença entre subagentes (N4) e agent teams (N5):",opts:["São a mesma coisa","Agent teams têm channel compartilhado, debatem, têm task list comum — subagentes não","Subagentes são caros, teams são grátis","Agent teams só em mobile"],correct:1,explain:"Teams se mensagem direto, debatem. Subagentes só comunicam via main session.",mod:"trilha5/modulo-5-2.html"},
-{lvl:5,q:"Antes de habilitar qualquer routine, a prática segura é:",opts:["Sair direto pra produção","Rodar manual por dias até confiar; dry-run paralelo; kill switch + alçada; só você como destinatário inicial","Pedir 5 amigos pra testar","Confiar no modelo"],correct:1,explain:"Trust ladder. Confiança constrói com baixo risco repetido. Pular = primeira falha quebra o cliente.",mod:"trilha5/modulo-5-2.html"},
-{lvl:5,q:"Skill de maior alavancagem do N5 é:",opts:["Construir tudo do zero","Descobrir e adaptar o que a comunidade já fez (5k+ skills, 800+ MCPs, 3k+ marketplaces)","Aprender Rust","Migrar pra outro provider"],correct:1,explain:"Reinventar é caro. Garimpar marketplaces / GitHub / X é o que separa N5 produtivo de N5 lento.",mod:"trilha5/modulo-5-3.html"},
+{lvl:5,q:"Pre-tool-use hook serve pra:",opts:["Formatar arquivos editados","Bloquear comando perigoso ANTES dele rodar","Notificar Slack","Compilar TypeScript"],correct:1,explain:"Pre-tool-use = veto antes da execução. Ex: bloquear rm -rf.",mod:"trilha5/modulo-5-1.html"},
+{lvl:5,q:"Channels 2-way permitem:",opts:["Apenas alertas pra você","Você texta Claude do celular, ele opera no codebase remoto","Streaming de vídeo","Compartilhamento de contexto"],correct:1,explain:"2-way: controla Claude de fora. 1-way: evento externo dispara Claude.",mod:"trilha5/modulo-5-1.html"},
+{lvl:5,q:"Headless mode (claude -p):",opts:["Roda Claude Code sem sessão humana, pipe-friendly","É só pra debug","Requer cookie","Não existe"],correct:0,explain:"claude -p retorna saída no stdout. Componível em pipelines.",mod:"trilha5/modulo-5-1.html"},
+{lvl:5,q:"Agent SDK serve pra:",opts:["Configurar settings.json","Construir produto próprio em cima do engine do Claude Code","Apenas instalar plugins","Atualizar modelo"],correct:1,explain:"Python e TypeScript. Você vira BUILDER, não só USER.",mod:"trilha5/modulo-5-1.html"},
+{lvl:5,q:"Task budgets servem pra:",opts:["Cap total de tokens da rotina","Limite mensal","Tempo máximo","Número máximo de PRs"],correct:0,explain:"Cap estrito. Modelo se auto-regula e encerra graciosamente.",mod:"trilha5/modulo-5-2.html"},
+{lvl:5,q:"Diferença entre subagentes (N4) e agent teams (N5):",opts:["São a mesma coisa","Agent teams têm channel compartilhado, debatem, têm task list comum","Subagentes são caros, teams grátis","Agent teams só em mobile"],correct:1,explain:"Teams se mensagem direto, debatem. Subagentes via main session.",mod:"trilha5/modulo-5-2.html"},
+{lvl:5,q:"Antes de habilitar qualquer routine, a prática segura é:",opts:["Direto pra produção","Rodar manual por dias até confiar; dry-run paralelo; kill switch + alçada","Pedir 5 amigos pra testar","Confiar no modelo"],correct:1,explain:"Trust ladder. Confiança constrói com baixo risco repetido.",mod:"trilha5/modulo-5-2.html"},
+{lvl:5,q:"Skill de maior alavancagem do N5 é:",opts:["Construir tudo do zero","Descobrir e adaptar o que a comunidade já fez (5k+ skills)","Aprender Rust","Migrar pra outro provider"],correct:1,explain:"Reinventar é caro. Garimpar marketplaces é o que separa N5 produtivo de lento.",mod:"trilha5/modulo-5-3.html"},
 ];
 
-const total = Q.length;
-const container = document.getElementById('quiz-container');
-const submitBtn = document.getElementById('submit-btn');
-const progressText = document.getElementById('progress-text');
-const progressBar = document.getElementById('progress-bar');
-const answers = {};
-const levelColors = {1:'emerald',2:'blue',3:'purple',4:'amber',5:'teal'};
-const levelNames = {1:'Entusiasta',2:'Iniciante',3:'Intermediário',4:'Avançado',5:'Arquiteto'};
+const meta = {
+  1:{color:'emerald', name:'Entusiasta', emoji:'💬'},
+  2:{color:'blue', name:'Iniciante', emoji:'📁'},
+  3:{color:'purple', name:'Intermediário', emoji:'🖥'},
+  4:{color:'amber', name:'Avançado', emoji:'⚙'},
+  5:{color:'teal', name:'Arquiteto', emoji:'🛰'}
+};
 
-// Render
-let currentLvl = 0;
-Q.forEach((item, i) => {
-  if (item.lvl !== currentLvl) {
-    currentLvl = item.lvl;
-    const color = levelColors[currentLvl];
-    container.insertAdjacentHTML('beforeend', `<div class="border-t border-dark-600 pt-6"><h2 class="text-2xl font-bold mb-2"><span class="text-${color}-400">Bloco ${currentLvl}</span> — Nível ${currentLvl} (${levelNames[currentLvl]})</h2><p class="text-sm text-neutral-500 mb-4">Acerte pelo menos 8 dessas 10 pra "passar" no nível.</p></div>`);
-  }
+let currentLevel = 1;
+const passed = {1:false,2:false,3:false,4:false,5:false};
+const scores = {1:null,2:null,3:null,4:null,5:null};
+const answers = {1:{}, 2:{}, 3:{}, 4:{}, 5:{}};
+
+function renderLevel(lvl) {
+  const m = meta[lvl];
+  const questions = Q.filter(q => q.lvl === lvl);
   const html = `
-    <div class="bg-dark-800 rounded-xl border border-dark-600 p-5" id="q-${i}">
-      <div class="flex items-start space-x-3 mb-3">
-        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-${levelColors[item.lvl]}-500/20 text-${levelColors[item.lvl]}-400 font-bold text-sm flex items-center justify-center">${i+1}</span>
-        <h3 class="font-semibold pt-1">${item.q}</h3>
-      </div>
-      <div class="space-y-2 ml-11">
-        ${item.opts.map((o, oi) => `
-          <div class="q-option rounded-lg p-3 text-sm" data-q="${i}" data-opt="${oi}" onclick="selectOpt(${i}, ${oi})">
-            <strong class="mr-2 text-neutral-500">${String.fromCharCode(65+oi)}.</strong>${o}
-          </div>`).join('')}
-        <div class="q-option rounded-lg p-3 text-sm text-neutral-500 italic" data-q="${i}" data-opt="-1" onclick="selectOpt(${i}, -1)">
-          <strong class="mr-2">—</strong>Não sei (preferível a chutar)
+    <section id="level-${lvl}" class="level-panel mb-10 bg-dark-800 rounded-xl border border-${m.color}-500/30 p-6 ${lvl > currentLevel ? 'locked' : ''}">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-${m.color}-500/20 text-${m.color}-400 border border-${m.color}-500/30 mb-2">BLOCO ${lvl} · NÍVEL ${lvl}</span>
+          <h2 class="text-2xl font-bold">${m.emoji} ${m.name}</h2>
+        </div>
+        <div class="text-right">
+          <div class="text-xs text-neutral-500">Meta</div>
+          <div class="text-lg font-bold text-${m.color}-400">≥ 8/10</div>
         </div>
       </div>
-      <div class="explanation hidden mt-4 ml-11 p-4 rounded-lg text-sm"></div>
-    </div>`;
-  container.insertAdjacentHTML('beforeend', html);
-});
+      <div id="qs-${lvl}" class="space-y-4">
+        ${questions.map((item, qi) => {
+          const globalIdx = Q.indexOf(item);
+          return `
+          <div class="bg-dark-700/50 rounded-lg p-4" id="q-${globalIdx}">
+            <div class="flex items-start space-x-3 mb-3">
+              <span class="flex-shrink-0 w-7 h-7 rounded-full bg-${m.color}-500/20 text-${m.color}-400 font-bold text-sm flex items-center justify-center">${qi+1}</span>
+              <h3 class="font-semibold text-sm pt-0.5">${item.q}</h3>
+            </div>
+            <div class="space-y-2 ml-10">
+              ${item.opts.map((o, oi) => `
+                <div class="q-option rounded-lg p-3 text-sm" data-q="${globalIdx}" data-lvl="${lvl}" data-opt="${oi}" onclick="selectOpt(${globalIdx}, ${lvl}, ${oi})">
+                  <strong class="mr-2 text-neutral-500">${String.fromCharCode(65+oi)}.</strong>${o}
+                </div>`).join('')}
+              <div class="q-option rounded-lg p-3 text-sm text-neutral-500 italic" data-q="${globalIdx}" data-lvl="${lvl}" data-opt="-1" onclick="selectOpt(${globalIdx}, ${lvl}, -1)">
+                <strong class="mr-2">—</strong>Não sei
+              </div>
+            </div>
+            <div class="explanation hidden mt-3 ml-10 p-3 rounded-lg text-xs"></div>
+          </div>`;
+        }).join('')}
+      </div>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3 items-center justify-between">
+        <p class="text-xs text-neutral-500" id="hint-${lvl}">Responda todas as 10 pra liberar o botão.</p>
+        <button onclick="submitLevel(${lvl})" id="btn-${lvl}" class="px-6 py-3 bg-${m.color}-600 hover:bg-${m.color}-500 text-white rounded-lg font-bold transition disabled:opacity-50 disabled:cursor-not-allowed" disabled>Finalizar Nível ${lvl}</button>
+      </div>
+      <div id="result-${lvl}" class="hidden mt-6"></div>
+    </section>`;
+  document.getElementById('levels-container').insertAdjacentHTML('beforeend', html);
+}
 
-function selectOpt(qi, oi) {
-  answers[qi] = oi;
+function selectOpt(qi, lvl, oi) {
+  if (passed[lvl] || (scores[lvl] !== null && !passed[lvl])) return; // locked after submit
+  if (lvl !== currentLevel) return;
+  answers[lvl][qi] = oi;
   const card = document.getElementById('q-' + qi);
   card.querySelectorAll('.q-option').forEach(el => el.classList.remove('selected'));
   card.querySelector(`[data-q="${qi}"][data-opt="${oi}"]`).classList.add('selected');
-  const answered = Object.keys(answers).length;
-  progressText.textContent = answered + ' / ' + total + ' respondidas';
-  progressBar.style.width = (answered / total * 100) + '%';
-  if (answered === total) {
-    submitBtn.disabled = false;
-    document.getElementById('submit-hint').textContent = '✓ Pronto pra calcular';
+  const answered = Object.keys(answers[lvl]).length;
+  if (answered === 10) {
+    document.getElementById('btn-' + lvl).disabled = false;
+    document.getElementById('hint-' + lvl).textContent = '✓ Pronto pra finalizar Nível ' + lvl;
+  } else {
+    document.getElementById('hint-' + lvl).textContent = answered + '/10 respondidas';
   }
 }
 
-submitBtn.addEventListener('click', () => {
-  const scores = {1:0, 2:0, 3:0, 4:0, 5:0};
-  Q.forEach((item, i) => {
-    if (answers[i] === item.correct) scores[item.lvl]++;
-  });
-  // Reveal answers visually
-  Q.forEach((item, i) => {
-    const card = document.getElementById('q-' + i);
+function submitLevel(lvl) {
+  const questions = Q.filter(q => q.lvl === lvl);
+  let correct = 0;
+  questions.forEach(item => {
+    const idx = Q.indexOf(item);
+    if (answers[lvl][idx] === item.correct) correct++;
+    const card = document.getElementById('q-' + idx);
     card.querySelectorAll('.q-option').forEach(el => {
       const oi = parseInt(el.dataset.opt);
+      el.classList.add('locked');
       if (oi === item.correct) el.classList.add('correct');
-      else if (oi === answers[i] && oi !== item.correct) el.classList.add('incorrect');
+      else if (oi === answers[lvl][idx] && oi !== item.correct) el.classList.add('incorrect');
     });
+    const isCorrect = answers[lvl][idx] === item.correct;
     const exp = card.querySelector('.explanation');
-    const correct = answers[i] === item.correct;
     exp.classList.remove('hidden');
-    exp.className = 'explanation mt-4 ml-11 p-4 rounded-lg text-sm ' + (correct ? 'bg-green-500/10 border border-green-500/30' : 'bg-red-500/10 border border-red-500/30');
-    exp.innerHTML = `<strong class="${correct ? 'text-green-400' : 'text-red-400'}">${correct ? '✓ Correto' : '✗ Incorreto'}.</strong> ${item.explain} <a href="../${item.mod}" class="text-rose-400 hover:underline ml-1">Revisar módulo →</a>`;
+    exp.className = 'explanation mt-3 ml-10 p-3 rounded-lg text-xs ' + (isCorrect ? 'bg-emerald-500/10 border border-emerald-500/30' : 'bg-rose-500/10 border border-rose-500/30');
+    exp.innerHTML = `<strong class="${isCorrect ? 'text-emerald-400' : 'text-rose-400'}">${isCorrect ? '✓ Correto' : '✗ Incorreto'}.</strong> ${item.explain} <a href="../${item.mod}" target="_blank" class="text-rose-400 hover:underline ml-1">Revisar módulo →</a>`;
   });
 
-  // Compute level
-  let nivel = 0;
-  for (let n = 1; n <= 5; n++) {
-    if (scores[n] >= 8) nivel = n;
-    else break;
+  scores[lvl] = correct;
+  const passed_now = correct >= 8;
+  passed[lvl] = passed_now;
+
+  const m = meta[lvl];
+  const result = document.getElementById('result-' + lvl);
+  result.classList.remove('hidden');
+  document.getElementById('btn-' + lvl).disabled = true;
+  document.getElementById('btn-' + lvl).textContent = '✓ Finalizado';
+
+  // Update badge
+  const badge = document.querySelector(`[data-badge="${lvl}"]`);
+  badge.querySelector('.font-bold').classList.remove('text-neutral-500');
+  badge.querySelector('.font-bold').classList.add(`text-${m.color}-400`);
+  badge.classList.remove('border-dark-600');
+  badge.classList.add(`border-${m.color}-500/30`);
+  document.getElementById('badge-text-' + lvl).textContent = passed_now ? `✅ ${correct}/10 — Passou!` : `❌ ${correct}/10 — Tentar de novo`;
+  document.getElementById('badge-text-' + lvl).classList.remove('text-neutral-500');
+
+  if (passed_now) {
+    result.innerHTML = `
+      <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-6 text-center">
+        <div class="text-4xl mb-2">🎉</div>
+        <h3 class="text-xl font-bold text-emerald-400 mb-2">Nível ${lvl} conquistado!</h3>
+        <p class="text-neutral-300 mb-4">${correct}/10 acertos. Você dominou o nível ${m.name}.</p>
+        ${lvl < 5 ? `<button onclick="unlockNext(${lvl})" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-bold transition">▶ Liberar Nível ${lvl+1} (${meta[lvl+1].name})</button>` : `<button onclick="showCertificate()" class="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white rounded-lg font-bold transition">🏆 Ver Certificação Final</button>`}
+      </div>`;
+  } else {
+    // Compute wrong questions for revision links
+    const wrongs = questions.map(item => ({item, idx: Q.indexOf(item), wrong: answers[lvl][Q.indexOf(item)] !== item.correct})).filter(x => x.wrong);
+    result.innerHTML = `
+      <div class="bg-rose-500/10 border border-rose-500/30 rounded-xl p-6">
+        <div class="flex items-start space-x-3 mb-4">
+          <div class="text-3xl">😬</div>
+          <div>
+            <h3 class="text-xl font-bold text-rose-400 mb-1">Quase! Você acertou ${correct}/10</h3>
+            <p class="text-sm text-neutral-300">Meta: 8/10. Revise os módulos das questões erradas e tente de novo — sem pressa.</p>
+          </div>
+        </div>
+        <div class="bg-dark-800 rounded-lg p-4 mb-4">
+          <h4 class="font-semibold text-rose-400 text-sm mb-2">📚 Módulos pra revisar:</h4>
+          <ul class="text-xs text-neutral-300 space-y-1">
+            ${[...new Set(wrongs.map(w => w.item.mod))].map(mod => `<li>• <a href="../${mod}" target="_blank" class="text-rose-400 hover:underline">${mod}</a></li>`).join('')}
+          </ul>
+        </div>
+        <button onclick="retryLevel(${lvl})" class="w-full px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white rounded-lg font-bold transition">🔄 Tentar Nível ${lvl} de novo</button>
+      </div>`;
   }
-  const cor = nivel === 0 ? 'rose' : levelColors[nivel];
-  const nome = nivel === 0 ? 'Pré-Nível 1' : levelNames[nivel];
-  const msg = {
-    0: 'Você ainda usa Claude como busca. Comece pela Trilha 1 — em 45min você sai daí.',
-    1: 'Você domina o básico. Próximo: configurar seu primeiro Projeto. Trilha 2.',
-    2: 'Boa! Você já economiza horas/semana. Próximo: deixar Claude trabalhar na sua máquina. Trilha 3.',
-    3: 'Coworker pronto. Hora de virar engenheiro: claude.md, worktrees, subagentes. Trilha 4.',
-    4: 'Você opera como time de engenharia. Falta o salto de confiança pra autônomos. Trilha 5.',
-    5: 'Você é Arquiteto. Pense em vender o sistema. Use os 6 modelos de oferta do módulo 5.3.'
-  };
-  const results = document.getElementById('results');
-  results.classList.remove('hidden');
-  results.innerHTML = `
-    <div class="bg-gradient-to-br from-${cor}-900/40 via-dark-800 to-dark-800 rounded-xl border border-${cor}-500/30 p-8 mb-6">
-      <div class="text-sm font-bold text-${cor}-400 mb-2">SEU NÍVEL ATUAL</div>
-      <div class="text-4xl font-extrabold mb-3">Nível ${nivel} — ${nome}</div>
-      <p class="text-neutral-300 mb-6">${msg[nivel]}</p>
-      <div class="grid grid-cols-5 gap-3 mb-6">
-        ${[1,2,3,4,5].map(n => `
-          <div class="bg-dark-800 rounded-lg p-3 text-center">
-            <div class="text-xs text-${levelColors[n]}-400 font-bold">N${n}</div>
-            <div class="text-2xl font-extrabold ${scores[n] >= 8 ? 'text-green-400' : 'text-neutral-300'}">${scores[n]}/10</div>
-            <div class="text-xs text-neutral-500">${scores[n] >= 8 ? '✓ Passou' : 'Estudar'}</div>
-          </div>`).join('')}
+  document.getElementById('level-' + lvl).scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function unlockNext(lvl) {
+  const next = lvl + 1;
+  currentLevel = next;
+  const panel = document.getElementById('level-' + next);
+  panel.classList.remove('locked');
+  // Update badge of next level
+  const nm = meta[next];
+  const badge = document.querySelector(`[data-badge="${next}"]`);
+  badge.querySelector('.font-bold').classList.remove('text-neutral-500');
+  badge.querySelector('.font-bold').classList.add(`text-${nm.color}-400`);
+  badge.classList.remove('border-dark-600');
+  badge.classList.add(`border-${nm.color}-500/30`);
+  document.getElementById('badge-text-' + next).textContent = 'Em andamento';
+  document.getElementById('badge-text-' + next).classList.remove('text-neutral-500');
+  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function retryLevel(lvl) {
+  // Reset
+  answers[lvl] = {};
+  scores[lvl] = null;
+  const questions = Q.filter(q => q.lvl === lvl);
+  questions.forEach(item => {
+    const idx = Q.indexOf(item);
+    const card = document.getElementById('q-' + idx);
+    card.querySelectorAll('.q-option').forEach(el => {
+      el.classList.remove('selected','correct','incorrect','locked');
+    });
+    card.querySelector('.explanation').classList.add('hidden');
+  });
+  document.getElementById('result-' + lvl).classList.add('hidden');
+  document.getElementById('btn-' + lvl).textContent = 'Finalizar Nível ' + lvl;
+  document.getElementById('btn-' + lvl).disabled = true;
+  document.getElementById('hint-' + lvl).textContent = 'Responda todas as 10 pra liberar o botão.';
+  // Reset badge
+  const m = meta[lvl];
+  document.getElementById('badge-text-' + lvl).textContent = 'Em andamento';
+  document.getElementById('level-' + lvl).scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function showCertificate() {
+  const cert = document.getElementById('final-cert');
+  cert.classList.remove('hidden');
+  cert.innerHTML = `
+    <div class="bg-gradient-to-br from-rose-900/40 via-dark-800 to-dark-800 rounded-xl border-2 border-primary p-8 text-center">
+      <div class="text-6xl mb-4">🏆</div>
+      <div class="text-xs font-bold text-primary mb-2 tracking-wider">CERTIFICAÇÃO INTERNA</div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold mb-3">Você é Arquiteto</h2>
+      <p class="text-neutral-300 mb-6">Passou os 5 níveis da Prova. Os scores ficaram:</p>
+      <div class="grid grid-cols-5 gap-2 mb-6">
+        ${[1,2,3,4,5].map(n => `<div class="bg-dark-800 rounded-lg p-3"><div class="text-xs text-${meta[n].color}-400 font-bold">N${n}</div><div class="text-2xl font-extrabold text-emerald-400">${scores[n]}/10</div></div>`).join('')}
       </div>
-      <a href="../trilha${nivel === 0 ? 1 : Math.min(nivel + 1, 5)}/index.html" class="inline-block px-5 py-2.5 bg-${cor}-500/20 text-${cor}-400 border border-${cor}-500/30 rounded-lg font-semibold hover:bg-${cor}-500/30 transition">▶ Ir pra próxima trilha (Trilha ${nivel === 0 ? 1 : Math.min(nivel + 1, 5)})</a>
-    </div>
-    <h2 class="text-2xl font-bold mb-4">📋 Gabarito comentado</h2>
-    <p class="text-sm text-neutral-400 mb-4">Cada questão acima agora mostra a resposta correta e explicação. Clique nos links pra revisar os módulos das perguntas que você errou.</p>
-  `;
-  results.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  submitBtn.disabled = true;
-  submitBtn.textContent = '✓ Resultado calculado — role pra cima pra ver gabarito';
-});
+      <p class="text-sm text-neutral-400 mb-6">Próximo passo: implemente. Pegue uma das 6 ofertas vendáveis do módulo 5.3 e teste em um cliente real.</p>
+      <a href="../../index.html" class="inline-block px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:opacity-90 transition">🏠 Voltar pra capa do curso</a>
+    </div>`;
+  cert.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Render all 5 levels (locked from 2 onwards)
+for (let n = 1; n <= 5; n++) renderLevel(n);
 </script>
 </body></html>
