@@ -1,101 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3.2 Estrutura de pastas | T3</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+html
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>3.2 Folder structure | T3</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
 body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
 html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
 html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .bg-purple-500\/10{background-color:rgba(109,40,217,.08)}html:not(.dark) .bg-purple-500\/20{background-color:rgba(109,40,217,.12)}html:not(.dark) .border-purple-500\/30{border-color:rgba(109,40,217,.3)}html:not(.dark) .bg-purple-600{background-color:#6d28d9}html:not(.dark) .hover\:bg-purple-500:hover{background-color:#7c3aed}
 </style></head><body class="text-neutral-100">
-
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a><a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a><a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-purple-400 bg-purple-500/10"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a><a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a><a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a><a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
-
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-purple-400 bg-purple-500/10" href="index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a><button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button></div></div></div></nav>
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-purple-400">Início</a> / <a href="index.html" class="hover:text-purple-400">Trilha 3</a> / <span class="text-neutral-300">Módulo 3.2</span></nav>
-
-<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-3">MÓDULO 3.2 · ~20 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">📂 Estrutura de pastas que faz Claude virar coworker</h1><p class="text-lg text-neutral-300">A diferença entre "Claude executor confiável" e "Claude imprevisível" não é o modelo — é a organização das pastas e as regras de chão.</p></header>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🏗 O padrão de 7 pastas</h2></div>
-<p class="text-neutral-300 mb-4">Numeração obriga Claude a "ler em ordem" e cria mapa mental claro:</p>
+<nav class="text-sm text-neutral-500 mb-6"><a class="hover:text-purple-400" href="../../index.html">Start</a> / <a class="hover:text-purple-400" href="index.html">Track 3</a> / <span class="text-neutral-300">Module 3.2</span></nav>
+<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-3">MODULE 3.2 · ~20 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">📂 Folder structure that makes Claude become a coworker</h1><p class="text-lg text-neutral-300">The difference between "reliable doer Claude" and "unpredictable Claude" isn't the model — it's the organization of the folders and the ground rules.</p></header>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🏗 The 7-folder pattern</h2></div>
+<p class="text-neutral-300 mb-4">Numbering forces Claude to "read in order" and creates clear mind map:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5 font-mono text-sm text-neutral-300 mb-4">~/work/<br/>
+├── <strong class="text-purple-400">00_about_me/</strong>← your role, preferences, context<br/>
+├── <strong class="text-purple-400">01_templates/</strong>← protected models (NEVER edit)<br/>
+├── <strong class="text-purple-400">02_projects/</strong>← one per client/initiative<br/>
+├── <strong class="text-purple-400">03_entries/</strong>← raw files to process<br/>
+├── <strong class="text-purple-400">04_processing/</strong>← work in progress<br/>
+├── <strong class="text-purple-400">05_outputs/</strong>← final deliveries (versioned)<br/>
+└── <strong class="text-purple-400">06_file/</strong>← closed history</div>
+<p class="text-neutral-300">Each folder has a unique purpose. Claude follows the flow input → processing → output without inventing.</p>
+</section>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">📜 Floor rules</h2></div>
+<p class="text-neutral-300 mb-4">3-5 non-negotiable rules prevent 90% of accidents. Paste at the beginning of any co-working conversation:</p>
 <div class="bg-dark-800 rounded-lg border border-dark-600 p-5 font-mono text-sm text-neutral-300 mb-4">
-~/trabalho/<br>
-├── <strong class="text-purple-400">00_sobre_mim/</strong>     ← seu papel, preferências, contexto<br>
-├── <strong class="text-purple-400">01_templates/</strong>     ← modelos protegidos (NUNCA editar)<br>
-├── <strong class="text-purple-400">02_projetos/</strong>      ← um por cliente/iniciativa<br>
-├── <strong class="text-purple-400">03_entradas/</strong>      ← arquivos brutos pra processar<br>
-├── <strong class="text-purple-400">04_processando/</strong>   ← trabalho em andamento<br>
-├── <strong class="text-purple-400">05_outputs/</strong>       ← entregas finais (versionadas)<br>
-└── <strong class="text-purple-400">06_arquivo/</strong>       ← histórico fechado
-</div>
-<p class="text-neutral-300">Cada pasta tem propósito único. Claude segue o fluxo entrada → processamento → saída sem inventar.</p>
+<strong class="text-purple-400">Ground rules (non-negotiable):</strong><br/><br/>1. Read 00_about_me/ before doing any task.<br/>2. Never edit 01_templates/. Use as a reference.<br/>3. Always delivered in 05_outputs/ with ISO timestamp.<br/>4. Confirm before deleting ANY files.<br/>5. At the end, write log in 04_processando/_log.md</div>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">📜 Regras de chão</h2></div>
-<p class="text-neutral-300 mb-4">3-5 regras inegociáveis evitam 90% dos acidentes. Cole no início de qualquer conversa de co-work:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5 font-mono text-sm text-neutral-300 mb-4">
-<strong class="text-purple-400">Regras de chão (não-negociáveis):</strong><br><br>
-1. Leia 00_sobre_mim/ antes de qualquer tarefa.<br>
-2. Nunca edite 01_templates/. Use como referência.<br>
-3. Sempre entregue em 05_outputs/ com timestamp ISO.<br>
-4. Confirme antes de apagar QUALQUER arquivo.<br>
-5. Ao final, escreva log em 04_processando/_log.md
-</div>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">📦 Community skills and marketplace</h2></div>
+<p class="text-neutral-300 mb-4">More than 100 skills available: Anthropic officers + community. Frontend, PDF, Excel, accounting, marketing, advertising. Don't start from scratch — research, install, customize.</p>
+<p class="text-neutral-300 mb-4"><strong class="text-purple-400">Where to find:</strong>Anthropic's official marketplace · GitHub (search "claude skill") · X (search "claude code skill") · Reddit r/ClaudeAI.</p>
+<p class="text-neutral-300"><strong class="text-purple-400">Security rule:</strong>read the skill markdown before installing. Check requested permissions. Prefer official sources and well-known accounts.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">📦 Skills da comunidade e marketplace</h2></div>
-<p class="text-neutral-300 mb-4">Mais de 100 skills disponíveis: oficiais da Anthropic + comunidade. Frontend, PDF, Excel, contabilidade, marketing, advertising. Não comece do zero — pesquise, instale, customize.</p>
-<p class="text-neutral-300 mb-4"><strong class="text-purple-400">Onde achar:</strong> marketplace oficial da Anthropic · GitHub (search "claude skill") · X (busque "claude code skill") · Reddit r/ClaudeAI.</p>
-<p class="text-neutral-300"><strong class="text-purple-400">Regra de segurança:</strong> leia o markdown da skill antes de instalar. Verifique permissões pedidas. Prefira fontes oficiais e contas conhecidas.</p>
-</section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">🎯 5 exemplos reais de co-work</h2></div>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">🎯 5 real examples of co-working</h2></div>
 <div class="space-y-3">
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">1. Organizar downloads</h3><p class="text-sm text-neutral-300">"Renomeie tudo em ~/Downloads pelo padrão {ano-mês-tipo-resumo}.ext. Mova pra subpastas por tipo. Não apague nada. Faça resumo do que mudou."</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">2. Relatório semanal a partir de planilhas</h3><p class="text-sm text-neutral-300">"Pega as 3 planilhas em 03_entradas/. Calcula MRR, churn e LTV. Gera Excel em 05_outputs/ com aba executiva + abas brutas."</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">3. Briefing pré-reunião</h3><p class="text-sm text-neutral-300">"Olha minha agenda das próximas 2h. Pra cada reunião com cliente, gera briefing de 1 página com histórico, pendências e perguntas-chave."</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">4. Deck a partir de notas</h3><p class="text-sm text-neutral-300">"Lê 03_entradas/notas-cliente-X.md. Cria deck de 8 slides em 05_outputs usando 01_templates/master-empresa.pptx."</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">5. Fluxo de atendimento</h3><p class="text-sm text-neutral-300">"Toda manhã, pega tickets novos do Slack #suporte. Cruza com FAQ em 01_templates. Gera respostas-rascunho em 04_processando."</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">1. Organize downloads</h3><p class="text-sm text-neutral-300">"Rename everything in ~/Downloads to the pattern {year-month-type-summary}.ext. Move to subfolders by type. Don't delete anything. Summarize what changed."</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">2. Weekly report from spreadsheets</h3><p class="text-sm text-neutral-300">"Get the 3 spreadsheets in 03_entradas/. Calculate MRR, churn and LTV. Generate Excel in 05_outputs/ with executive tab + raw tabs."</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">3. Pre-meeting briefing</h3><p class="text-sm text-neutral-300">"Look at my agenda for the next 2 hours. For each meeting with a client, it generates a 1-page briefing with history, pending issues and key questions."</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">4. Deck from notes</h3><p class="text-sm text-neutral-300">"Reads 03_entradas/notas-cliente-X.md. Creates 8-slide deck in 05_outputs using 01_templates/master-empresa.pptx."</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-purple-400 mb-1">5. Service flow</h3><p class="text-sm text-neutral-300">"Every morning, get new tickets from Slack #support. Cross-reference them with FAQs in 01_templates. Generate draft responses in 04_processing."</p></div>
 </div>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">⚠ Cuidados não-negociáveis</h2></div>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">⚠ Non-negotiable care</h2></div>
 <ul class="text-sm text-neutral-300 space-y-2 ml-4">
-  <li>• <strong class="text-purple-400">Princípio do menor privilégio</strong> — dê só o que a tarefa precisa</li>
-  <li>• <strong class="text-purple-400">Backup antes de operação destrutiva</strong> — sempre</li>
-  <li>• <strong class="text-purple-400">Dry-run primeiro</strong> — peça pra Claude descrever sem executar</li>
-  <li>• <strong class="text-purple-400">Log obrigatório</strong> — pra revisão posterior</li>
-  <li>• <strong class="text-purple-400">Tarefas de baixo risco primeiro</strong> — confiança se constrói</li>
+<li>• <strong class="text-purple-400">Principle of least privilege</strong>— give only what the task needs</li>
+<li>• <strong class="text-purple-400">Backup before destructive operation</strong>— always</li>
+<li>• <strong class="text-purple-400">Dry-run first</strong>— ask Claude to describe without executing</li>
+<li>• <strong class="text-purple-400">Mandatory logging</strong>— for later review</li>
+<li>• <strong class="text-purple-400">Low-risk tasks first</strong>— trust is built</li>
 </ul>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">✅ Sinais de domínio (e o teto)</h2></div>
-<p class="text-neutral-300 mb-3"><strong class="text-purple-400">Você domina o N3 quando:</strong></p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">✅ Signs of dominance (and the ceiling)</h2></div>
+<p class="text-neutral-300 mb-3"><strong class="text-purple-400">You master N3 when:</strong></p>
 <ul class="text-sm text-neutral-300 space-y-1 ml-4 mb-4">
-  <li>• Tem 5+ skills próprias salvas</li>
-  <li>• Executa rituais semanais sem digitar contexto novo</li>
-  <li>• Entregou pelo menos 1 trabalho real pra cliente via co-work</li>
-  <li>• Confia em deixar Claude executar tarefas com baixo monitoramento</li>
+<li>• Has 5+ own skills saved</li>
+<li>• Perform weekly rituals without entering new context</li>
+<li>• Delivered at least 1 real job to the client via co-work</li>
+<li>• Relies on letting Claude perform tasks with low monitoring</li>
 </ul>
-<p class="text-neutral-300"><strong class="text-purple-400">Teto:</strong> você precisa de git, sessões paralelas, plan mode, ou clientes pagando R$ 25k+. Aí é Claude Code (N4).</p>
+<p class="text-neutral-300"><strong class="text-purple-400">Roof:</strong>you need git, parallel sessions, plan mode, or clients paying R$25k+. That's Claude Code (N4).</p>
 </section>
-
 <section class="mb-12"><div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span> Resumo do Módulo</h2>
-  <div class="space-y-3 mb-6 text-sm">
-    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">7 pastas numeradas</strong> — mapa mental claro.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">5 regras de chão</strong> — não-negociáveis, evitam 90% dos acidentes.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">100+ skills da comunidade</strong> — busque antes de criar.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">5 casos âncora</strong> — downloads, relatório, briefing, deck, atendimento.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Cuidados</strong> — menor privilégio, backup, dry-run, log, baixo risco primeiro.</div></div>
-  </div>
-  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-purple-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">3.3 — Cheat Code: a tarefa repetida vai virar automação</p></div>
-  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="modulo-3-3.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">Próximo Módulo →</a></div>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span>Module Summary</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">7 numbered folders</strong>— clear mind map.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">5 floor rules</strong>— non-negotiable, they prevent 90% of accidents.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">100+ community skills</strong>— search before creating.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">5 anchor cases</strong>— downloads, report, briefing, deck, service.</div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Care</strong>— least privilege, backup, dry-run, log, low risk first.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-purple-400 mb-2">Next Module:</h3><p class="text-neutral-300">3.3 — Cheat Code: the repeated task will become automation</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="index.html">← Back to Trail</a><a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition" href="modulo-3-3.html">Next Module →</a></div>
 </div></section>
-
 </main>
-<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
-<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a></div></footer>
+<script data-notranslate="True">const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
 </body></html>
