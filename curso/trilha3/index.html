@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trilha 3 — Intermediário | 5 Níveis do Claude</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trail 3 — Intermediate | 5 Claude Levels</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
 body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 .topic-explanation{display:none}.topic-explanation.active{display:block}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-700\/50{background-color:rgba(243,244,246,.5)}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) .border-dark-700{border-color:#e5e7eb}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
@@ -20,242 +20,205 @@ html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-4
 </style>
 </head>
 <body class="text-neutral-100">
-
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
-    <div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
-    <div class="flex items-center space-x-1 sm:space-x-2">
-      <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
-      <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
-      <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-purple-400 bg-purple-500/10"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
-      <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
-      <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
-      <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
-      <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
-    </div>
-  </div></div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+<div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-purple-400 bg-purple-500/10" href="index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a>
+<button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button>
+</div>
+</div></div>
 </nav>
-
 <section class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-3">TRILHA 3</span>
-    <h1 class="text-3xl sm:text-5xl font-extrabold mb-3">🖥 Nível 3 — Intermediário</h1>
-    <p class="text-lg text-neutral-300 max-w-3xl mb-6">Claude para de ser ferramenta em uma aba e vira coworker na sua máquina. Lê seus arquivos, organiza pastas, executa skills reutilizáveis, agenda tarefas, controla pelo celular. É onde freelancers começam a vender automação como serviço.</p>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">3</div><div class="text-xs text-neutral-400">Módulos</div></div>
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">19</div><div class="text-xs text-neutral-400">Tópicos</div></div>
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">~70min</div><div class="text-xs text-neutral-400">Duração</div></div>
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">10h/sem</div><div class="text-xs text-neutral-400">Economia</div></div>
-    </div>
-  </div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 mb-3">TRACK 3</span>
+<h1 class="text-3xl sm:text-5xl font-extrabold mb-3">🖥 Level 3 — Intermediate</h1>
+<p class="text-lg text-neutral-300 max-w-3xl mb-6">Claude stops being a tool on a tab and becomes a coworker on his machine. Read your files, organize folders, execute reusable skills, schedule tasks, control from your cell phone. This is where freelancers start selling automation as a service.</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">3</div><div class="text-xs text-neutral-400">Modules</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">19</div><div class="text-xs text-neutral-400">Topics</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">~70min</div><div class="text-xs text-neutral-400">Duration</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-purple-400">10h/week</div><div class="text-xs text-neutral-400">Economy</div></div>
+</div>
+</div>
 </section>
-
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
 <section class="mb-12">
-  <h2 class="text-2xl font-bold mb-6">🗺 Mapa da trilha</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-    <a href="#modulo-3-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.1</span><span class="text-xs text-neutral-500">~25 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🖥 Co-work: Claude na sua máquina</h3><p class="text-xs text-neutral-400">7 tópicos: VM isolada, filesystem, skills, /schedule, Dispatch, Claude Design, Computer Use</p></a>
-    <a href="#modulo-3-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.2</span><span class="text-xs text-neutral-500">~20 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">📂 Estrutura de pastas que faz Claude virar coworker</h3><p class="text-xs text-neutral-400">6 tópicos: padrão de pastas, regras, exemplos práticos, cuidados</p></a>
-    <a href="#modulo-3-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.3</span><span class="text-xs text-neutral-500">~25 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🚀 Cheat Code: tarefa repetida → automação</h3><p class="text-xs text-neutral-400">6 tópicos: encontrar bottleneck, vender, R$ 5-15k, sinal pro N4</p></a>
-    <a href="#modulo-3-4" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.4</span><span class="text-xs text-neutral-500">~50 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🎯 Cases de Co-work + Skills + Agendamento</h3><p class="text-xs text-neutral-400">3 cases reais: organizando Downloads, skill semanal, briefing matinal. 5 regras de chão que evitam desastre.</p></a>
-    <a href="#modulo-3-5" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.5</span><span class="text-xs text-neutral-500">~55 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🎬 Walkthrough: freelancer → R$ 12k</h3><p class="text-xs text-neutral-400">Bruno em 14 dias: do pricing reflex (R$4.2k) à venda de sistema (R$12k + R$1.8k/mês). 5,3x R$/hora efetiva.</p></a>
-  </div>
+<h2 class="text-2xl font-bold mb-6">🗺 Trail map</h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition" href="#modulo-3-1"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.1</span><span class="text-xs text-neutral-500">~25 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🖥 Co-work: Claude on his machine</h3><p class="text-xs text-neutral-400">7 topics: Isolated VM, filesystem, skills, /schedule, Dispatch, Claude Design, Computer Use</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition" href="#modulo-3-2"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.2</span><span class="text-xs text-neutral-500">~20 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">📂 Folder structure that makes Claude become a coworker</h3><p class="text-xs text-neutral-400">6 topics: folder patterns, rules, practical examples, precautions</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition" href="#modulo-3-3"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.3</span><span class="text-xs text-neutral-500">~25 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🚀 Cheat Code: repeated task → automation</h3><p class="text-xs text-neutral-400">6 topics: find bottleneck, sell, R$ 5-15k, signal for N4</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition" href="#modulo-3-4"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.4</span><span class="text-xs text-neutral-500">~50 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🎯 Co-work Cases + Skills + Scheduling</h3><p class="text-xs text-neutral-400">3 real cases: organizing Downloads, weekly skill, morning briefing. 5 floor rules that avoid disaster.</p></a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition" href="#modulo-3-5"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.5</span><span class="text-xs text-neutral-500">~55 min</span></div><h3 class="font-semibold mb-1 group-hover:text-purple-400 transition">🎬 Walkthrough: freelancer → R$ 12k</h3><p class="text-xs text-neutral-400">Bruno in 14 days: from reflex pricing (R$4.2k) to system sales (R$12k + R$1.8k/month). 5.3x R$/effective hour.</p></a>
+</div>
 </section>
-
 <div class="border-t border-dark-600 my-10"></div>
-<h2 class="text-2xl font-bold mb-8">📚 Conteúdo detalhado</h2>
-
-<div id="modulo-3-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600">
-    <div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
-    <h3 class="text-2xl font-bold mb-2">🖥 Co-work: Claude na sua máquina</h3>
-    <p class="text-neutral-400 text-sm">Os 7 recursos que transformam Claude em coworker com acesso real ao seu sistema.</p>
-  </div>
-  <div class="divide-y divide-dark-700">
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🏠</span><div><span class="font-medium">O que é co-work e como difere do chat</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Aba "Code/Co-work" no Claude Desktop. Roda código numa VM isolada com leitura/escrita nas pastas que VOCÊ autorizou. Você descreve o resultado, Claude descobre os passos.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Mata o "preciso copiar tudo manualmente". É onde freelancers começam a vender automação como serviço.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">VM isolada · Pastas autorizadas · Read/write real · Outcome > steps · Paid (Pro/Max/Team/Enterprise).</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📂</span><div><span class="font-medium">Filesystem access com segurança</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Permissão granular: você escolhe pasta a pasta o que Claude pode ler e o que pode escrever. Nunca toca no que você não autorizou.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A diferença entre "Claude que assustadora" e "Claude que confiável" é a precisão das permissões.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Read-only por padrão · Pasta-por-pasta · Lista de exclusão · Sempre confirmar antes de apagar.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🧩</span><div><span class="font-medium">Skills reutilizáveis</span><span class="text-neutral-500 text-sm ml-2">— defina 1 vez, use sempre</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Workflow reutilizável definido em markdown simples. Define 1 vez ("relatório semanal de clientes") e chama com 1 comando. Mais de 100 skills publicadas — oficiais da Anthropic + comunidade.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Skills somam: cada uma é um "preset de coworker". 5 skills bem feitas = 5x menos explicação repetida.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">.md com instruções · Skills oficiais (~16) · Marketplace · Funciona em co-work + chat + Claude Code · Cuidado com origem.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">⏰</span><div><span class="font-medium">Tarefas agendadas (/schedule)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Digite /schedule em qualquer conversa do co-work e defina a cadência (diário 8h, semanal segunda, etc.). Caveat: máquina e app desktop precisam estar abertos.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o pré-N5: te acostuma com automação supervisionada antes de rotinas em nuvem (N5).</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Cron simples · Máquina ligada · Histórico de execuções · Ideal pra stand-ups, briefs, lembretes.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">📱</span><div><span class="font-medium">Controle pelo celular (Dispatch)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Parear celular com desktop. Você manda tarefa do trânsito, da academia, da reunião. Claude roda no seu desktop, você recebe ping quando termina.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É quando co-work para de ser ferramenta e vira "coworker real" — trabalha pra você enquanto você não está.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">QR pairing · Notificações · Tarefas de bolso · Mesma sessão.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🎨</span><div><span class="font-medium">Claude Design</span><span class="text-neutral-500 text-sm ml-2">— do brief ao protótipo com brand</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Produto separado da Anthropic Labs, incluso no Pro. Você descreve um deck, landing ou one-pager e Claude desenha. Lê seu repo/brand book e cria design system automático.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Não-coder cria frontend de verdade. Manda direto pro Claude Code (N4) pra colocar em produção.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Design system extraído da marca · Handoff bundle pro Code · Edição por conversa · Free de "AI slop".</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span><span class="text-lg">🖱</span><div><span class="font-medium">Computer Use</span><span class="text-neutral-500 text-sm ml-2">— pra apps sem conector</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Claude opera apps visualmente como humano: clica, digita, navega menus. Útil quando não há conector nativo. Mac e Windows.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Conector quebra ou não existe? Computer Use cobre. Mas é mais lento e errado — use só quando precisa.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Última escolha · Lento · Caro em tokens · Bom pra apps legados ou intranets.</p></div>
-    </div></div></div>
-
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-3-1.html" class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-3-1')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+<h2 class="text-2xl font-bold mb-8">📚 Detailed content</h2>
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-3-1">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
+<h3 class="text-2xl font-bold mb-2">🖥 Co-work: Claude on his machine</h3>
+<p class="text-neutral-400 text-sm">The 7 features that transform Claude into a coworker with real access to your system.</p>
 </div>
-
-<div id="modulo-3-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600">
-    <div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.2</span><span class="text-xs text-neutral-500">~20 min</span></div>
-    <h3 class="text-2xl font-bold mb-2">📂 Estrutura de pastas que faz Claude virar coworker</h3>
-    <p class="text-neutral-400 text-sm">A diferença entre coworker confiável e VA imprevisível.</p>
-  </div>
-  <div class="divide-y divide-dark-700">
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🏗</span><div><span class="font-medium">O padrão de 7 pastas</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">00_sobre_mim, 01_templates, 02_projetos, 03_entradas, 04_processando, 05_outputs, 06_arquivo. Numerada pra Claude ler em ordem.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem estrutura, Claude inventa onde salvar. Com estrutura, ele segue regras claras e previsíveis.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Numeração obriga ordem · Pasta sobre você · Templates intocáveis · Outputs versionados.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📜</span><div><span class="font-medium">Regras de chão que Claude deve respeitar</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Diga: "Leia 00_sobre_mim primeiro. Nunca edite 01_templates. Sempre entregue em 05_outputs com timestamp. Confirme antes de apagar qualquer coisa."</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">3-5 regras de chão evitam 90% dos acidentes.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sempre/nunca explícitos · Confirmação obrigatória · Timestamp em outputs · Backup antes de mexer em massa.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">📦</span><div><span class="font-medium">Skills da comunidade (100+) e marketplace</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Mais de 100 skills publicadas. 16+ oficiais da Anthropic, resto da comunidade. Frontend, PDF, Excel, marketing, contabilidade, advertising — tem pra tudo.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Não comece do zero. Busque, instale, customize.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Marketplace oficial · GitHub · Origem conhecida · Adapte antes de usar · Plugins = bundles de skills+conectores.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🎯</span><div><span class="font-medium">5 exemplos reais de co-work</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">(1) Organizar downloads (renomear/categorizar) · (2) Relatório semanal a partir de planilhas · (3) Briefing pré-reunião lendo agenda+docs · (4) Deck a partir de notas · (5) Fluxo de atendimento (FAQ + tickets).</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">São os "casos âncora" do N3. Domina os 5 → vê todos os outros como variações.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Cada caso = receita repetível · Permissões mínimas · Output sempre nomeado · Log do que foi feito.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">⚠</span><div><span class="font-medium">Cuidados não-negociáveis</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Permissões com escopo mínimo · templates protegidos · confirmação antes de apagar · relatório final ("o que fiz, o que não fiz, o que pulei") · começar com tarefas de baixo risco.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o que separa "automação que ajuda" de "automação que destrói trabalho".</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Princípio do menor privilégio · Backup antes · Dry-run primeiro · Log obrigatório.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">✅</span><div><span class="font-medium">Sinais de domínio (e o teto)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Domínio: você tem 5+ skills suas, executa rituais semanais sem digitar contexto, entrega trabalhos pra clientes feitos no co-work. Teto: você precisa de versionamento, rigor de engenharia, ou clientes que pagariam R$ 25k+.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Reconhecer o teto = saber quando pular pra Claude Code (N4).</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Co-work é amigável, não preciso · Engenharia rigorosa quer Code · Sinal: "queria git aqui".</p></div>
-    </div></div></div>
-
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-3-2.html" class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-3-2')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+<div class="divide-y divide-dark-700">
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🏠</span><div><span class="font-medium">What is co-working and how does it differ from chat</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">"Code/Co-work" tab in Claude Desktop. Run code in an isolated VM with read/write in folders that YOU authorized. You describe the result, Claude discovers the steps.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Kills the "I need to copy everything manually". This is where freelancers start selling automation as a service.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Isolated VM · Authorized folders · Real read/write · Outcome &gt; steps · Paid (Pro/Max/Team/Enterprise).</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📂</span><div><span class="font-medium">Filesystem access securely</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Granular permission: you choose on a folder-by-folder basis what Claude can read and what he can write. Never touch anything you didn't authorize.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">The difference between "Claude how scary" and "Claude how trustworthy" is the accuracy of the permissions.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Read-only by default · Folder-by-folder · Exclusion list · Always confirm before deleting.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🧩</span><div><span class="font-medium">Reusable Skills</span><span class="text-neutral-500 text-sm ml-2">— set 1 time, use every time</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Reusable workflow defined in simple markdown. Defines 1 time ("weekly customer report") and calls with 1 command. More than 100 published skills — official from Anthropic + community.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Skills add up: each one is a “coworker preset”. 5 well-made skills = 5x less repeated explanation.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">.md with instructions · Official skills (~16) · Marketplace · Works in co-work + chat + Claude Code · Be careful with the origin.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">⏰</span><div><span class="font-medium">Scheduled tasks (/schedule)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Type /schedule in any co-work conversation and set the cadence (daily 8am, weekly Monday, etc.). Caveat: machine and desktop app must be open.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's pre-N5: you get used to supervised automation before cloud routines (N5).</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Simple cron · Machine on · Execution history · Ideal for stand-ups, briefs, reminders.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">📱</span><div><span class="font-medium">Control via cell phone (Dispatch)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Pair cell phone with desktop. You send a task for traffic, the gym, the meeting. Claude runs on your desktop, you get pinged when it's finished.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">That's when co-work stops being a tool and becomes a "real coworker" — it works for you while you're away.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">QR pairing · Notifications · Pocket tasks · Same session.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">🎨</span><div><span class="font-medium">Claude Design</span><span class="text-neutral-500 text-sm ml-2">— from brief to branded prototype</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Separate product from Anthropic Labs, included with Pro. You describe a deck, landing or one-pager and Claude draws it. Reads your repo/brand book and creates automatic design system.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Non-coder creates real frontend. Send it directly to Claude Code (N4) to put it into production.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Design system extracted from the brand · Handoff bundle pro Code · Conversational editing · Free from "AI slop".</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span><span class="text-lg">🖱</span><div><span class="font-medium">Computer Use</span><span class="text-neutral-500 text-sm ml-2">— for apps without a connector</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Claude operates apps visually like a human: clicks, types, navigates menus. Useful when there is no native connector. Mac and Windows.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Connector breaks or does not exist? Computer Use covers. But it's slower and wrong — only use it when you need it.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Last choice · Slow · Expensive in tokens · Good for legacy apps or intranets.</p></div>
+</div></div></div>
 </div>
-
-<div id="modulo-3-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600">
-    <div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.3</span><span class="text-xs text-neutral-500">~25 min</span></div>
-    <h3 class="text-2xl font-bold mb-2">🚀 Cheat Code: a tarefa repetida vai virar automação</h3>
-    <p class="text-neutral-400 text-sm">Como achar a tarefa-bottleneck da semana e vender automação como serviço.</p>
-  </div>
-  <div class="divide-y divide-dark-700">
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🔍</span><div><span class="font-medium">Achar a tarefa-bottleneck da semana</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">A tarefa que você executa toda semana, gasta tempo, é mecânica, e tem entrada/saída clara. Esses 4 critérios juntos = candidata perfeita.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Automatizar a errada = trabalho jogado fora. A certa = ROI brutal.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Recorrência semanal · Mecânica · Entrada clara · Saída clara · Não-criativa.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🎯</span><div><span class="font-medium">Precisão > amigável daqui em diante</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">No N3 você ainda pode "conversar". Daqui pra cima, precisão importa mais que amigabilidade. Texto curto, regras explícitas, formato fixo.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Automação que aceita ambiguidade = automação quebrada.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sem floreio · Schema de entrada/saída · Critério de sucesso explícito · Fail-fast.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🔄</span><div><span class="font-medium">Quando trocar co-work por Claude Code</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Você precisa de git, sessões paralelas, planejamento antes de execução, ou clientes pagando R$ 25k+. Co-work não cobre — Claude Code sim.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Saber quando subir evita "espremer" co-work até cansar.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Git · Worktrees · Plan mode · Sub-agentes · Output styles · Clientes premium.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">⚠</span><div><span class="font-medium">Erros que travam quem fica no N3</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Dar permissão total · não fazer dry-run · não revisar logs · automatizar criativo · cobrar barato.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada erro destrói confiança do cliente (e a sua na ferramenta).</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Princípio do menor privilégio · Dry-run primeiro · Log review semanal · Não automatize "decidir" · Cobre pelo resultado.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">💰</span><div><span class="font-medium">Vendendo automação como serviço (R$ 5-15k/projeto)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Receita: ache cliente com tarefa repetida que custa 10h+ /sem, prove em 1 dia, monte com co-work + skills + /schedule, entregue com runbook simples. Cobre por resultado, não por hora.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o primeiro nível em que dá pra vender com tese clara, sem precisar ser dev.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ICP claro · Antes/depois mensurável · Entregável + runbook · Manutenção mensal · Preço por valor.</p></div>
-    </div></div></div>
-
-    <div class="topic-item"><button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📋</span><div><span class="font-medium">Checklist de transição → N4</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-      <div><span class="text-purple-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Você tem 5+ skills, 2+ rituais agendados, 1 entrega real pra cliente, e está sentindo necessidade de versionamento. Pronto pro Claude Code.</p></div>
-      <div><span class="text-purple-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Subir sem isso = abrir terminal e travar.</p></div>
-      <div><span class="text-purple-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Skills próprias · Rituais funcionando · Cliente real · Demand por git/PR/branches.</p></div>
-    </div></div></div>
-
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-3-3.html" class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-3-3')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition" href="modulo-3-1.html">📖 See Full</a><button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-3-1')">⚡ View in Modal</button></div>
 </div>
-
-<div id="modulo-3-4" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.4</span><span class="text-xs text-neutral-500">~50 min · CASES COMPLETOS</span></div><h3 class="text-2xl font-bold mb-2">🎯 Cases de Co-work + Skills + Agendamento</h3><p class="text-neutral-400 text-sm mb-3">3 cenários reais com Claude operando na sua máquina. Tentativa que QUASE deu errado + regras de chão que destravaram + skill final copia-e-cola.</p></div>
-  <div class="p-6 space-y-4">
-    <div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">📂 Case 1 — Organizando 3 anos de Downloads</h4><p class="text-sm text-neutral-300">Letícia, contadora, 4.847 arquivos. Quase apagou um contrato. 5 regras de chão: dry-run, backup, log, nunca apagar.</p></div>
-    <div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">📊 Case 2 — Skill "Relatório Semanal de Cliente"</h4><p class="text-sm text-neutral-300">Marcos, micro-agência. 4h → 25min/semana com skill versionada que aborta quando falta dado e proíbe envio automático.</p></div>
-    <div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">⏰ Case 3 — Briefing matinal + o limite escondido</h4><p class="text-sm text-neutral-300">Renata, COO. Descoberta dolorida: /schedule do N3 precisa máquina ligada. Fallback inteligente pra rodar manual.</p></div>
-    <div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-4"><h4 class="font-semibold text-purple-400 mb-1">🧠 Bônus — padrão N3 dos 5 ingredientes adicionais</h4><p class="text-sm text-neutral-300">Dry-run, backup, abort com fonte faltante, log obrigatório, sem comunicação externa cedo.</p></div>
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-3-4.html" class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-3-4')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-3-2">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.2</span><span class="text-xs text-neutral-500">~20 min</span></div>
+<h3 class="text-2xl font-bold mb-2">📂 Folder structure that makes Claude become a coworker</h3>
+<p class="text-neutral-400 text-sm">The difference between a reliable coworker and an unpredictable VA.</p>
 </div>
-
-<div id="modulo-3-5" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.5</span><span class="text-xs text-neutral-500">~55 min · WALKTHROUGH CINEMATOGRÁFICO</span></div><h3 class="text-2xl font-bold mb-2">🎬 Freelancer → R$12k (sistema, não horas)</h3><p class="text-neutral-400 text-sm mb-3">Bruno em 14 dias: do pricing-reflex que ia custar 60% do valor real à venda do "Sorri+ Atendimento Inteligente" por R$ 12k setup + R$ 1.8k/mês manutenção.</p></div>
-  <div class="p-6 space-y-3">
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-red-500/30"><strong class="text-red-400 text-sm">Iter 0 — Pricing-reflex:</strong><span class="text-sm text-neutral-300"> R$ 120/h × 35h = R$ 4.200. Aceitável, mas custa 60% do valor real.</span></div>
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-amber-500/30"><strong class="text-amber-400 text-sm">Iter 1 — Pergunta certa:</strong><span class="text-sm text-neutral-300"> "Quanto vale resolver isso pro cliente?". 3 modelos de pricing que não usam hora.</span></div>
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-purple-500/30"><strong class="text-purple-400 text-sm">Iter 2 — Discovery quantitativo:</strong><span class="text-sm text-neutral-300"> 336 mensagens analisadas. R$ 4.000/mês de dor descoberta antes do café.</span></div>
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-purple-500/30"><strong class="text-purple-400 text-sm">Iter 3 — A reunião:</strong><span class="text-sm text-neutral-300"> Sem negociação pesada. R$ 12k + R$ 1.8k/mês. Carla fecha em 2 dias.</span></div>
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-emerald-500/30"><strong class="text-emerald-400 text-sm">90 dias depois:</strong><span class="text-sm text-neutral-300"> 79% mensagens auto-respondidas, Joana promovida, Carla referenciou Dra. Helena. Bruno fechou 2º cliente sem prospecção.</span></div>
-    <div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-3"><strong class="text-purple-400 text-sm">📊 Economics:</strong><span class="text-sm text-neutral-300"> Mesmo trabalho técnico. Modelo horista: R$ 120/h. Modelo sistema: <strong>R$ 636/h efetiva</strong> (5,3x).</span></div>
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a href="modulo-3-5.html" class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">📖 Ver Completo</a><button onclick="openModal('modal-3-5')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button></div>
+<div class="divide-y divide-dark-700">
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🏗</span><div><span class="font-medium">The 7-folder pattern</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">00_about_me, 01_templates, 02_projects, 03_inputs, 04_processing, 05_outputs, 06_file. Numbered for Claude to read in order.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without structure, Claude invents where to save. With structure, it follows clear and predictable rules.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Numbering forces order · Folder about you · Untouchable templates · Versioned outputs.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">📜</span><div><span class="font-medium">Floor rules that Claude must respect</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Say: "Read 00_about_me first. Never edit 01_templates. Always deliver in 05_outputs with timestamp. Confirm before deleting anything."</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">3-5 floor rules prevent 90% of accidents.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Always/never explicit · Mandatory confirmation · Timestamp on outputs · Backup before moving in bulk.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">📦</span><div><span class="font-medium">Community skills (100+) and marketplace</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">More than 100 skills published. 16+ Anthropic officers, rest from the community. Frontend, PDF, Excel, marketing, accounting, advertising — there’s something for everything.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Don't start from scratch. Search, install, customize.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Official marketplace · GitHub · Known origin · Adapt before use · Plugins = skill+connector bundles.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">🎯</span><div><span class="font-medium">5 real examples of co-working</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">(1) Organize downloads (rename/categorize) · (2) Weekly report from spreadsheets · (3) Pre-meeting briefing by reading agenda+docs · (4) Deck from notes · (5) Service flow (FAQ + tickets).</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">These are the "anchor cases" of N3. Masters the 5 → sees all others as variations.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Each case = repeatable recipe · Minimum permissions · Always named output · Log of what was done.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">⚠</span><div><span class="font-medium">Non-negotiable care</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Minimum scope permissions · protected templates · confirmation before deleting · final report ("what I did, what I didn't do, what I skipped") · start with low-risk tasks.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's what separates "automation that helps" from "automation that destroys work."</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Principle of least privilege · Backup first · Dry-run first · Mandatory logging.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">✅</span><div><span class="font-medium">Signs of Dominance (and the Ceiling)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Domain: you have 5+ skills, perform weekly rituals without typing context, deliver work to clients done in co-work. Ceiling: you need versioning, engineering rigor, or customers who would pay R$25k+.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Recognize the ceiling = know when to jump to Claude Code (N4).</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Co-work is friendly, I don't need · Rigorous engineering wants Code · Signal: "I wanted git here".</p></div>
+</div></div></div>
 </div>
-
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition" href="modulo-3-2.html">📖 See Full</a><button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-3-2')">⚡ View in Modal</button></div>
+</div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-3-3">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.3</span><span class="text-xs text-neutral-500">~25 min</span></div>
+<h3 class="text-2xl font-bold mb-2">🚀 Cheat Code: the repeated task will become automation</h3>
+<p class="text-neutral-400 text-sm">How to find the bottleneck task of the week and sell automation as a service.</p>
+</div>
+<div class="divide-y divide-dark-700">
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span><span class="text-lg">🔍</span><div><span class="font-medium">Find the bottleneck task of the week</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">The task you perform every week takes time, is mechanical, and has a clear input/output. These 4 criteria together = perfect candidate.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Automate the wrong one = wasted work. The right one = brutal ROI.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Weekly recurrence · Mechanical · Clear entry · Clear exit · Non-creative.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span><span class="text-lg">🎯</span><div><span class="font-medium">Precision &gt; friendly from now on</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">On N3 you can still "chat". From here on out, precision matters more than friendliness. Short text, explicit rules, fixed format.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Automation that accepts ambiguity = broken automation.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">No flourish · Input/output schema · Explicit success criteria · Fail-fast.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span><span class="text-lg">🔄</span><div><span class="font-medium">When to exchange co-work for Claude Code</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">You need git, parallel sessions, planning before execution, or customers paying R$25k+. Co-work doesn't cover it — Claude Code does.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Knowing when to go up avoids "squeezing" co-work until you get tired.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Git · Worktrees · Plan mode · Sub-agents · Output styles · Premium clients.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span><span class="text-lg">⚠</span><div><span class="font-medium">Errors that stop those who stay on N3</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Give full permission · do not dry-run · do not review logs · automate creative · charge cheaply.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Each error destroys the customer's trust (and yours in the tool).</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Principle of least privilege · Dry-run first · Weekly log review · Don't automate "deciding" · Charge for the result.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span><span class="text-lg">💰</span><div><span class="font-medium">Selling automation as a service (R$5-15k/project)</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Recipe: find a client with a repeated task that costs 10h+ /week, prove it in 1 day, set it up with co-work + skills + /schedule, delivered with a simple runbook. Charge by result, not by hour.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's the first level where you can sell with a clear thesis, without needing to be a dev.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Clear ICP · Measurable before/after · Deliverable + runbook · Monthly maintenance · Value pricing.</p></div>
+</div></div></div>
+<div class="topic-item"><button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)"><span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span><span class="text-lg">📋</span><div><span class="font-medium">Transition checklist → N4</span></div></button><div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-purple-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">You have 5+ skills, 2+ rituals scheduled, 1 actual delivery to the client, and you are feeling the need for versioning. Ready for Claude Code.</p></div>
+<div><span class="text-purple-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Going up without this = opening terminal and crashing.</p></div>
+<div><span class="text-purple-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Own skills · Working rituals · Real customer · Demand for git/PR/branches.</p></div>
+</div></div></div>
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition" href="modulo-3-3.html">📖 See Full</a><button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-3-3')">⚡ View in Modal</button></div>
+</div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-3-4">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.4</span><span class="text-xs text-neutral-500">~50 min · COMPLETE CASES</span></div><h3 class="text-2xl font-bold mb-2">🎯 Co-work Cases + Skills + Scheduling</h3><p class="text-neutral-400 text-sm mb-3">3 real scenarios with Claude operating his machine. Attempt that ALMOST went wrong + ground rules that unlocked + copy-and-paste final skill.</p></div>
+<div class="p-6 space-y-4">
+<div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">📂 Case 1 — Organizing 3 years of Downloads</h4><p class="text-sm text-neutral-300">Letícia, accountant, 4,847 files. He almost erased a contract. 5 ground rules: dry-run, backup, log, never delete.</p></div>
+<div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">📊 Case 2 — Skill "Weekly Customer Report"</h4><p class="text-sm text-neutral-300">Marcos, micro-agency. 4h → 25min/week with versioned skill that aborts when data is missing and prohibits automatic sending.</p></div>
+<div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">⏰ Case 3 — Morning briefing + the hidden limit</h4><p class="text-sm text-neutral-300">Renata, COO. Painful discovery: N3's /schedule needs machine turned on. Intelligent fallback to run manually.</p></div>
+<div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-4"><h4 class="font-semibold text-purple-400 mb-1">🧠 Bonus — N3 standard of the 5 additional ingredients</h4><p class="text-sm text-neutral-300">Dry-run, backup, abort with missing source, mandatory logging, no early external communication.</p></div>
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition" href="modulo-3-4.html">📖 See Full</a><button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-3-4')">⚡ View in Modal</button></div>
+</div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-3-5">
+<div class="p-6 border-b border-dark-600"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.5</span><span class="text-xs text-neutral-500">~55 min · CINEMATOGRAPHIC WALKTHROUGH</span></div><h3 class="text-2xl font-bold mb-2">🎬 Freelancer → R$12k (system, not hours)</h3><p class="text-neutral-400 text-sm mb-3">Bruno in 14 days: from the pricing-reflex that would cost 60% of the real value to the sale of "Sorri+ Atendimento Inteligente" for R$ 12k setup + R$ 1.8k/month maintenance.</p></div>
+<div class="p-6 space-y-3">
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-red-500/30"><strong class="text-red-400 text-sm">Iter 0 — Pricing-reflex:</strong><span class="text-sm text-neutral-300">R$120/h × 35h = R$4,200. Acceptable, but costs 60% of the real value.</span></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-amber-500/30"><strong class="text-amber-400 text-sm">Iter 1 — Right question:</strong><span class="text-sm text-neutral-300">“How much is it worth to resolve this for the customer?” 3 pricing models that don’t use time.</span></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-purple-500/30"><strong class="text-purple-400 text-sm">Iter 2 — Quantitative discovery:</strong><span class="text-sm text-neutral-300">336 messages analyzed. R$4,000/month of pain discovered before coffee.</span></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-purple-500/30"><strong class="text-purple-400 text-sm">Iter 3 — The meeting:</strong><span class="text-sm text-neutral-300">No heavy negotiation. R$ 12k + R$ 1.8k/month. Carla closes in 2 days.</span></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-emerald-500/30"><strong class="text-emerald-400 text-sm">90 days later:</strong><span class="text-sm text-neutral-300">79% self-answered messages, Joana promoted, Carla referred to Dr. Helena. Bruno closed his 2nd client without prospecting.</span></div>
+<div class="bg-purple-500/10 border border-purple-500/30 rounded-lg p-3"><strong class="text-purple-400 text-sm">📊 Economics:</strong><span class="text-sm text-neutral-300">Same technical work. Hourly model: R$120/h. System model:<strong>R$ 636/h effective</strong>(5.3x).</span></div>
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3"><a class="px-5 py-2.5 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition" href="modulo-3-5.html">📖 See Full</a><button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-3-5')">⚡ View in Modal</button></div>
+</div>
 <div class="flex flex-col sm:flex-row gap-4 mt-8">
-  <a href="../trilha2/index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Trilha Anterior: Iniciante</a>
-  <a href="../trilha4/index.html" class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition">Próxima Trilha: Avançado →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="../trilha2/index.html">← Previous Trail: Beginner</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition" href="../trilha4/index.html">Next Track: Advanced →</a>
 </div>
-
 </main>
-
-<footer class="border-t border-dark-600 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 5 Níveis do Claude Code</div></footer>
-
-<div id="modal-3-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.1</span><span class="font-semibold">Co-work: Claude na sua máquina</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-3-1.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
-<div id="modal-3-2" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.2</span><span class="font-semibold">Estrutura de pastas</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-3-2.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
-<div id="modal-3-3" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.3</span><span class="font-semibold">Cheat Code: automação como serviço</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-3-3.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
-<div id="modal-3-4" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.4</span><span class="font-semibold">Cases Co-work + Skills + Agenda</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-3-4.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
-<div id="modal-3-5" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.5</span><span class="font-semibold">Walkthrough: freelancer → R$12k</span></div><button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl">&times;</button></div><iframe src="modulo-3-5.html" class="flex-1 w-full rounded-b-xl"></iframe></div></div>
-
-<script>
+<footer class="border-t border-dark-600 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a>· 5 Claude Code Levels</div></footer>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-3-1" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.1</span><span class="font-semibold">Co-work: Claude on his machine</span></div><button class="text-neutral-400 hover:text-white text-2xl" onclick="closeModal()">×</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-3-1.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-3-2" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.2</span><span class="font-semibold">Folder structure</span></div><button class="text-neutral-400 hover:text-white text-2xl" onclick="closeModal()">×</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-3-2.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-3-3" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.3</span><span class="font-semibold">Cheat Code: automation as a service</span></div><button class="text-neutral-400 hover:text-white text-2xl" onclick="closeModal()">×</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-3-3.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-3-4" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.4</span><span class="font-semibold">Co-work Cases + Skills + Agenda</span></div><button class="text-neutral-400 hover:text-white text-2xl" onclick="closeModal()">×</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-3-4.html"></iframe></div></div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-3-5" onclick="if(event.target===this) closeModal()"><div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600"><div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.5</span><span class="font-semibold">Walkthrough: freelancer → R$12k</span></div><button class="text-neutral-400 hover:text-white text-2xl" onclick="closeModal()">×</button></div><iframe class="flex-1 w-full rounded-b-xl" src="modulo-3-5.html"></iframe></div></div>
+<script data-notranslate="True">
 const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;
 if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}
 tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});
