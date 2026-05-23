@@ -1,244 +1,220 @@
-# Nível 1 — Entusiasta
+# Level 1 — Enthusiast
 
-O **Nível 1** é o estágio inicial de uso do Claude. Aqui, a pessoa usa a IA como um **chat inteligente para tarefas rápidas**, sem ainda aproveitar recursos mais avançados como projetos, memória, conectores, automações ou organização de contexto.
+**Level 1** is the initial stage of using Claude. Here, the person uses AI as a **smart chat for quick tasks**, without taking advantage of more advanced features such as projects, memory, connectors, automations or context organization.
 
-É o uso mais simples, mas já pode gerar muito ganho se for bem aplicado.
+It is the simplest use, but it can generate a lot of gains if applied correctly.
 
-## O que caracteriza o Nível 1
+## What characterizes Level 1
 
-No Nível 1, você normalmente faz algo assim:
+At Level 1, you typically do something like this:
 
-Abre o Claude, digita uma pergunta, recebe uma resposta, copia o que precisa e fecha a conversa.
+Open Claude, type a question, receive an answer, copy what you need and close the conversation.
 
-É um uso parecido com:
+It's a usage similar to:
 
-- “Me ajude a escrever isso.”
-- “Explique esse texto.”
-- “Resuma esse conteúdo.”
-- “Crie uma ideia para mim.”
-- “Corrija esse e-mail.”
-- “Faça um roteiro simples.”
+- “Help me write this.”
+- “Explain this text.”
+- “Summarize this content.”
+- “Create an idea for me.”
+- “Correct this email.”
+- “Make a simple script.”
 
-Ou seja, Claude funciona como um **assistente pontual**, usado sob demanda.
+In other words, Claude works as a **one-off assistant**, used on demand.
 
-## Para que serve na prática
+## What is it for in practice
 
-### 1. Escrever melhor
+### 1. Write better
 
-Você pode usar Claude para transformar ideias soltas em textos mais claros.
+You can use Claude to transform loose ideas into clearer texts.
 
-Exemplos práticos:
+Practical examples:
 
-- “Escreva uma mensagem educada para responder um cliente.”
-- “Transforme essas ideias em um e-mail profissional.”
-- “Reescreva esse texto de forma mais simples.”
-- “Melhore esse parágrafo sem mudar o sentido.”
-- “Faça uma versão mais curta e direta.”
+- “Write a polite message to respond to a customer.”
+- “Turn these ideas into a professional email.”
+- “Rewrite this text in a simpler way.”
+- “Improve this paragraph without changing the meaning.”
+- “Make a shorter and more direct version.”
 
-Uso real: você escreve de forma bruta, Claude organiza, melhora o tom e deixa pronto para enviar.
+Real use: you write rough, Claude organizes it, improves the tone and leaves it ready to send.
 
-### 2. Resumir conteúdos
+### 2. Summarize content
 
-Você pode colar textos, transcrições, artigos, PDFs curtos ou anotações e pedir um resumo.
+You can paste texts, transcripts, articles, short PDFs or notes and ask for a summary.
 
-Exemplos:
+Examples:
 
-- “Resuma esse texto em tópicos.”
-- “Me diga as ideias principais.”
-- “Explique como se eu fosse iniciante.”
-- “Transforme isso em um checklist.”
-- “Separe o que é importante do que é secundário.”
+- “Summarize this text into topics.”
+- “Tell me the main ideas.”
+- “Explain as if I were a beginner.”
+- “Turn this into a checklist.”
+- “Separate what is important from what is secondary.”
 
-Uso real: em vez de ler tudo com atenção desde o começo, você pede uma visão geral e depois aprofunda onde importa.
+Actual usage: Instead of reading everything carefully from the beginning, you ask for an overview and then delve deeper where it matters.
 
-### 3. Explicar assuntos difíceis
+### 3. Explain difficult subjects
 
-Claude pode funcionar como um professor particular.
+Claude can work as a private tutor.
 
-Exemplos:
+Examples:
 
-- “Explique isso de forma simples.”
-- “Me dê uma analogia.”
-- “Explique passo a passo.”
-- “Qual é a diferença entre esses dois conceitos?”
-- “Me dê exemplos práticos.”
+- “Explain this simply.”
+- “Give me an analogy.”
+- “Explain step by step.”
+- “What is the difference between these two concepts?”
+- “Give me practical examples.”
 
-Uso real: quando você encontra um termo técnico, uma ideia confusa ou um texto complexo, Claude simplifica.
+Actual use: When you encounter a technical term, confusing idea, or complex text, Claude makes it simple.
 
-### 4. Criar ideias
+### 4. Create ideas
 
-Claude pode ajudar em brainstorms rápidos.
+Claude can help with quick brainstorms.
 
-Exemplos:
+Examples:
 
-- “Me dê 10 ideias de posts sobre esse tema.”
-- “Crie nomes para uma série de vídeos.”
-- “Sugira títulos para uma apresentação.”
-- “Crie ideias de imagens para esse conteúdo.”
-- “Me ajude a pensar em uma campanha simples.”
+- “Give me 10 post ideas on this topic.”
+- “Create names for a series of videos.”
+- “Suggest titles for a presentation.”
+- “Create image ideas for this content.”
+- “Help me think of a simple campaign.”
 
-Uso real: você usa Claude para sair do bloqueio criativo e começar com várias opções.
+Actual use: You use Claude to get out of writer's block and start with several options.
 
-### 5. Corrigir e revisar
+### 5. Correct and revise
 
-Você pode pedir revisão de textos.
+You can ask for text revision.
 
-Exemplos:
+Examples:
 
-- “Corrija erros de português.”
-- “Deixe esse texto mais profissional.”
-- “Melhore a clareza.”
-- “Remova repetições.”
-- “Deixe mais persuasivo.”
+- “Correct Portuguese mistakes.”
+- “Make this text more professional.”
+- “Improve clarity.”
+- “Remove repetitions.”
+- “Make it more persuasive.”
 
-Uso real: Claude vira um revisor rápido antes de você publicar, enviar ou apresentar algo.
+Actual use: Claude becomes a quick proofreader before you publish, submit or present something.
 
-### 6. Criar pequenos scripts ou fórmulas
+### 6. Create small scripts or formulas
 
-Mesmo no Nível 1, Claude pode ajudar com coisas técnicas simples.
+Even at Level 1, Claude can help with simple technical things.
 
-Exemplos:
+Examples:
 
-- “Crie uma fórmula de Excel para calcular comissão.”
-- “Faça um script simples para renomear arquivos.”
-- “Explique esse erro.”
-- “Me ajude a montar uma planilha básica.”
+- “Create an Excel formula to calculate commission.”
+- “Make a simple script to rename files.”
+- “Explain this error.”
+- “Help me put together a basic spreadsheet.”
 
-Uso real: você resolve pequenos problemas sem depender de alguém técnico.
+Real use: you solve small problems without depending on someone technical.
 
-## O maior erro do Nível 1
+## The biggest mistake in Level 1
 
-O erro comum é usar Claude como se fosse apenas um Google melhorado.
+The common mistake is to use Claude as if he were just an improved Google.
 
-A pessoa pergunta algo genérico, recebe uma resposta genérica e para ali.
+The person asks something generic, receives a generic answer and stops there.
 
-Exemplo fraco:
+Weak example:
 
-> “Me ajude com marketing.”
+> “Help me with marketing.”
 
-Exemplo melhor:
+Better example:
 
-> “Tenho uma pequena empresa local. Quero divulgar um serviço novo no Instagram. Crie 5 ideias de posts com tom simples, direto e voltado para clientes que ainda não conhecem a solução.”
+> “I have a small local business. I want to promote a new service on Instagram. Create 5 post ideas with a simple, direct tone and aimed at customers who don't yet know the solution.”
 
-A diferença está no **contexto**.
+The difference is in the **context**.
 
-Quanto mais contexto você dá, melhor a resposta.
+The more context you give, the better the answer.
 
-## Como usar bem no Nível 1
+## How to use it well in Level 1
 
-Use esta estrutura:
+Use this structure:
 
-**Contexto + objetivo + formato + tom + restrições**
+**Context + objective + format + tone + restrictions**
 
-Exemplo:
+Example:
 
-> “Eu preciso responder um cliente que reclamou de atraso na entrega. Quero uma mensagem educada, curta e profissional. O objetivo é pedir desculpas, explicar que estamos verificando e prometer retorno ainda hoje. Não quero parecer defensivo.”
+> “I need to respond to a customer who complained about late delivery. I want a polite, short and professional message. The goal is to apologize, explain that we are checking and promise to get back to you today. I don't want to seem defensive.”
 
-Esse prompt é muito melhor do que:
+This prompt is much better than:
 
-> “Responda esse cliente.”
+> “Answer this customer.”
 
-## Exemplos prontos para usar
+## Ready-to-use examples
 
-### Para e-mail
-
-```text
+### To email```text
 Escreva um e-mail profissional para [pessoa] dizendo que [situação].
 Quero um tom educado, direto e cordial.
 Termine com uma chamada para resposta.
-```
-
-### Para resumo
-
-```text
+```### For summary```text
 Resuma o texto abaixo em 5 tópicos principais.
 Depois, destaque as 3 ações práticas que eu deveria tomar.
-```
-
-### Para explicação
-
-```text
+```### For explanation```text
 Explique esse assunto como se eu fosse iniciante.
 Use uma analogia simples e depois dê um exemplo prático.
-```
-
-### Para ideias
-
-```text
+```### For ideas```text
 Crie 10 ideias de conteúdo sobre [tema] para [público].
 Quero ideias simples, úteis e com títulos chamativos.
-```
-
-### Para revisão
-
-```text
+```### For review```text
 Revise o texto abaixo.
 Corrija erros, melhore a clareza e mantenha meu estilo natural.
-```
-
-### Para transformar conteúdo
-
-```text
+```### To transform content```text
 Transforme esse texto em um roteiro curto para vídeo de até 60 segundos,
 com abertura forte, desenvolvimento e fechamento.
-```
+```## The most important tip for Level 1: use screenshots
 
-## A dica mais importante do Nível 1: usar screenshots
+Many people waste time typing what they see on the screen.
 
-Muita gente perde tempo digitando o que está vendo na tela.
+Instead, send a screenshot and ask:
 
-Em vez disso, envie uma captura de tela e peça:
+- “Analyze this screen and tell me what’s wrong.”
+- “Explain what appears in this image.”
+- “Turn this screen into a checklist.”
+- “Help me respond based on this conversation.”
+- “Summarize the data from this image.”
 
-- “Analise essa tela e me diga o que está errado.”
-- “Explique o que aparece nessa imagem.”
-- “Transforme essa tela em um checklist.”
-- “Me ajude a responder com base nessa conversa.”
-- “Resuma os dados dessa imagem.”
+This saves time because Claude can interpret images, visual texts, tables, interfaces and prints.
 
-Isso economiza tempo porque Claude consegue interpretar imagens, textos visuais, tabelas, interfaces e prints.
+## What can you already earn at this level
 
-## O que você já consegue ganhar nesse nível
+Even without using advanced features, you can save time by:
 
-Mesmo sem usar recursos avançados, você já pode economizar tempo em:
+- email responses;
+- creation of texts;
+- summaries;
+- content review;
+- ideas for posts;
+- explanations;
+- organization of thoughts;
+- small technical tasks.
 
-- respostas de e-mail;
-- criação de textos;
-- resumos;
-- revisão de conteúdo;
-- ideias para posts;
-- explicações;
-- organização de pensamentos;
-- pequenas tarefas técnicas.
+A well-organized user at Level 1 can easily save **20 to 30 minutes per day**.
 
-Um usuário bem organizado no Nível 1 pode economizar facilmente **20 a 30 minutos por dia**.
+## Level 1 Limit
 
-## Limite do Nível 1
+The problem is that everything depends on you repeating context every time.
 
-O problema é que tudo depende de você repetir contexto toda vez.
+You need to explain again:
 
-Você precisa explicar novamente:
+- who you are;
+- what is your business;
+- which tone do you prefer;
+- which project you are working on;
+- what decisions you have already made;
+- which documents are important.
 
-- quem você é;
-- qual é seu negócio;
-- qual tom prefere;
-- qual projeto está trabalhando;
-- quais decisões já tomou;
-- quais documentos são importantes.
+Therefore, Level 1 is good for quick tasks, but bad for continuous work.
 
-Por isso, o Nível 1 é bom para tarefas rápidas, mas ruim para trabalhos contínuos.
+When you realize that you are always typing the same instructions, it is a sign that it is time to move on to **Level 2: Projects, memory and integrations**.
 
-Quando você percebe que está digitando sempre as mesmas instruções, é sinal de que chegou a hora de ir para o **Nível 2: Projetos, memória e integrações**.
+## Practical exercise to master Level 1
 
-## Exercício prático para dominar o Nível 1
+During a day, use Claude for 5 small tasks:
 
-Durante um dia, use Claude para 5 tarefas pequenas:
+1. Rewrite a message.
+2. Summarize a text.
+3. Create 5 ideas.
+4. Explain a subject.
+5. Analyze a print.
 
-1. Reescrever uma mensagem.
-2. Resumir um texto.
-3. Criar 5 ideias.
-4. Explicar um assunto.
-5. Analisar um print.
+Then see which tasks actually saved you time.
 
-Depois veja quais tarefas realmente economizaram tempo.
-
-Essas tarefas repetidas viram candidatas para o próximo nível.
+These repeated tasks become candidates for the next level.
