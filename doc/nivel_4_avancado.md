@@ -1,63 +1,61 @@
-# Nível 4 — Avançado
+# Level 4 — Advanced
 
-O **Nível 4** começa quando Claude deixa de ser apenas um executor de tarefas e passa a funcionar como uma **equipe técnica coordenada**, especialmente usando **Claude Code**.
+**Level 4** begins when Claude stops being just a task performer and starts functioning as a **coordinated technical team**, especially using **Claude Code**.
 
-Aqui, o foco não é mais só pedir respostas, criar arquivos ou organizar pastas. O foco passa a ser construir, revisar, testar, versionar e melhorar sistemas reais.
+Here, the focus is no longer just asking for answers, creating files or organizing folders. The focus becomes building, reviewing, testing, versioning and improving real systems.
 
-> No Nível 3, Claude faz tarefas no computador.  
-> No Nível 4, Claude trabalha como uma equipe técnica em projetos estruturados.
+> In Level 3, Claude does computer tasks.  
+> At Level 4, Claude works as a technical team on structured projects.
 
-## O que caracteriza o Nível 4
+## What characterizes Level 4
 
-O Nível 4 é marcado por:
+Level 4 is marked by:
 
-- Claude Code;
-- trabalho em projetos de software;
-- controle de versão;
-- planejamento antes da execução;
-- múltiplas sessões em paralelo;
-- subagentes especializados;
-- testes e validação;
-- comandos personalizados;
-- melhoria contínua do contexto do projeto.
+-Claude Code;
+- work on software projects;
+- version control;
+- planning before execution;
+- multiple sessions in parallel;
+- specialized subagents;
+- testing and validation;
+- custom commands;
+- continuous improvement of the project context.
 
-Aqui Claude deixa de ser “um assistente” e começa a parecer uma pequena equipe de engenharia.
+Here Claude stops being “an assistant” and starts to look like a small engineering team.
 
-## A grande mudança do Nível 4
+## The big change from Level 4
 
-A mudança principal é sair de:
+The main change is to move away from:
 
-> “Claude, execute esta tarefa.”
+> “Claude, perform this task.”
 
-Para:
+For:
 
-> “Claude, planeje, implemente, teste, valide e me entregue uma solução revisável.”
+> “Claude, plan, implement, test, validate and deliver me a reviewable solution.”
 
-No Nível 3, você delega tarefas.  
-No Nível 4, você delega **ciclos técnicos completos**.
+At Level 3, you delegate tasks.  
+At Level 4, you delegate **complete technical cycles**.
 
-## Para que serve na prática
+## What is it for in practice
 
-### 1. Criar sistemas e ferramentas reais
+### 1. Create real systems and tools
 
-Exemplos:
+Examples:
 
 - dashboards;
-- sites;
+- websites;
 - landing pages;
-- sistemas internos;
-- automações com backend;
-- integrações com APIs;
-- aplicativos simples;
-- painéis administrativos;
-- ferramentas para clientes;
-- scripts robustos;
-- extensões;
-- protótipos funcionais.
+- internal systems;
+- automations with backend;
+- integrations with APIs;
+- simple applications;
+- administrative panels;
+- tools for customers;
+- robust scripts;
+- extensions;
+- functional prototypes.
 
-Exemplo de pedido:
-
-```text
+Order example:```text
 Crie uma ferramenta interna para controlar propostas comerciais.
 
 Preciso de:
@@ -69,26 +67,22 @@ Preciso de:
 6. Exportação em CSV
 
 Antes de implementar, analise a estrutura do projeto e me apresente um plano.
-```
+```### 2. Work with planning before execution
 
-### 2. Trabalhar com planejamento antes da execução
+A common mistake is to ask Claude to leave the code immediately.
 
-Um erro comum é pedir para Claude sair codando imediatamente.
+At Level 4, you use **planning mode**.
 
-No Nível 4, você usa **modo de planejamento**.
+The logic is:
 
-A lógica é:
+1. Claude analyzes the project.
+2. Identifies relevant files.
+3. Propose a plan.
+4. Ask questions if necessary.
+5. You approve.
+6. Only then does he execute.
 
-1. Claude analisa o projeto.
-2. Identifica arquivos relevantes.
-3. Propõe um plano.
-4. Faz perguntas se necessário.
-5. Você aprova.
-6. Só então ele executa.
-
-Prompt prático:
-
-```text
+Practical prompt:```text
 Antes de alterar qualquer arquivo, entre em modo planejamento.
 
 Analise o projeto e me entregue:
@@ -99,17 +93,15 @@ Analise o projeto e me entregue:
 5. Plano passo a passo
 
 Não implemente nada até eu aprovar.
-```
+```This reduces errors, unnecessary changes and rework.
 
-Isso reduz erros, alterações desnecessárias e retrabalho.
+## 3. Use the file`claude.md`
 
-## 3. Usar o arquivo `claude.md`
+O `claude.md`It is one of the most important elements of Level 4.
 
-O `claude.md` é um dos elementos mais importantes do Nível 4.
+It works like a **project manual** that Claude reads at the beginning of each session.
 
-Ele funciona como um **manual do projeto** que Claude lê no início de cada sessão.
-
-### O que colocar no `claude.md`
+### What to put in`claude.md`
 
 ```markdown
 # Projeto
@@ -148,72 +140,52 @@ Ajudar consultores a registrar clientes, acompanhar propostas e visualizar oport
 - Sempre rodar testes quando possível
 - Sempre explicar o que foi alterado
 - Não usar dados fictícios em produção
-```
+```### Rule of thumb
 
-### Regra prática
+Keep the`claude.md`short.
 
-Mantenha o `claude.md` curto.
+Ideally:
 
-Idealmente:
+- clear;
+- objective;
+- updated;
+- with less than 200 lines;
+- no excess details.
 
-- claro;
-- objetivo;
-- atualizado;
-- com menos de 200 linhas;
-- sem excesso de detalhes.
-
-Se tiver informações longas, coloque em arquivos separados, por exemplo:
-
-```text
+If you have long information, put it in separate files, for example:```text
 /docs/regras-de-negocio.md
 /docs/design-system.md
 /docs/api.md
-```
-
-E no `claude.md`, apenas referencie:
-
-```markdown
+```And in`claude.md`, just reference:```markdown
 Para regras de negócio detalhadas, consulte @docs/regras-de-negocio.md.
-```
+```## 4. Update`claude.md`when Claude makes a mistake
 
-## 4. Atualizar o `claude.md` quando Claude errar
-
-Sempre que Claude cometer um erro repetível, peça:
-
-```text
+Whenever Claude makes a repeatable mistake, ask:```text
 Atualize o claude.md com uma regra para evitar esse erro no futuro.
-```
-
-Exemplo:
-
-```text
+```Example:```text
 Você criou este componente na pasta errada.
 
 Atualize o claude.md dizendo que componentes reutilizáveis devem ficar em /src/components e páginas completas devem ficar em /src/pages.
-```
+```Over time, the project gets smarter and Claude makes fewer mistakes.
 
-Com o tempo, o projeto fica mais inteligente e Claude erra menos.
+## 5. Use specialized subagents
 
-## 5. Usar subagentes especializados
+Subagents are like experts within the team.
 
-Subagentes são como especialistas dentro da equipe.
+You can have agents to:
 
-Você pode ter agentes para:
-
-- testes;
-- segurança;
-- documentação;
-- revisão de código;
+- tests;
+- security;
+- documentation;
+- code review;
 - UX;
 - performance;
-- acessibilidade;
-- arquitetura;
-- banco de dados;
-- integração com APIs.
+- accessibility;
+- architecture;
+- database;
+- integration with APIs.
 
-Exemplo prático:
-
-```text
+Practical example:```text
 Use um subagente de revisão de código para analisar esta implementação.
 
 Ele deve verificar:
@@ -222,77 +194,57 @@ Ele deve verificar:
 3. Código duplicado
 4. Falhas de performance
 5. Pontos que precisam de testes
-```
-
-Outro exemplo:
-
-```text
+```Another example:```text
 Use um subagente de documentação para criar uma explicação clara de como este módulo funciona.
-```
+```## 6. Work with parallel sessions
 
-## 6. Trabalhar com sessões paralelas
+At Level 4, you can have multiple sessions of Claude working at the same time, each on an isolated task.
 
-No Nível 4, você pode ter várias sessões de Claude trabalhando ao mesmo tempo, cada uma em uma tarefa isolada.
+Example:
 
-Exemplo:
+- session 1: creates new feature;
+- session 2: fixes bug;
+- session 3: write tests;
+- session 4: improve documentation;
+- session 5: reviews security.
 
-- sessão 1: cria nova feature;
-- sessão 2: corrige bug;
-- sessão 3: escreve testes;
-- sessão 4: melhora documentação;
-- sessão 5: revisa segurança.
+This greatly increases productivity, but requires organization.
 
-Isso aumenta muito a produtividade, mas exige organização.
+## 7. Use worktrees
 
-## 7. Usar worktrees
+Worktrees allow each session to work in an isolated space, without overwriting files from another session.
 
-Worktrees permitem que cada sessão trabalhe em um espaço isolado, sem sobrescrever arquivos de outra sessão.
-
-Exemplo:
-
-```text
+Example:```text
 claude-worktree nova-feature-clientes
 claude-worktree corrigir-bug-login
 claude-worktree testes-dashboard
-```
+```This prevents two sessions from touching the same files at the same time.
 
-Com isso, você evita que duas sessões mexam nos mesmos arquivos ao mesmo tempo.
+## 8. Use branches clearly
 
-## 8. Usar branches com clareza
-
-Exemplos de nomes:
-
-```text
+Name examples:```text
 feature/dashboard-clientes
 fix/login-error
 docs/api-readme
 test/propostas-flow
 refactor/components-table
-```
-
-Prompt útil:
-
-```text
+```Helpful prompt:```text
 Crie uma branch para esta tarefa com nome claro.
 Implemente a mudança nela.
 Ao terminar, gere um resumo para pull request.
-```
+```## 9. Create better pull requests
 
-## 9. Criar pull requests melhores
+Ask Claude to generate:
 
-Peça para Claude gerar:
+- summary of the change;
+- changed files;
+- reason for the change;
+- risks;
+- how to test;
+- screenshots, if applicable;
+- next steps.
 
-- resumo da mudança;
-- arquivos alterados;
-- motivo da alteração;
-- riscos;
-- como testar;
-- screenshots, se aplicável;
-- próximos passos.
-
-Modelo prático:
-
-```text
+Practical model:```text
 Prepare a descrição do pull request com:
 
 1. Resumo
@@ -301,28 +253,20 @@ Prepare a descrição do pull request com:
 4. Como testar
 5. Riscos conhecidos
 6. Checklist final
-```
+```## 10. Use check loop
 
-## 10. Usar loop de verificação
+The **verification loop** is essential.
 
-O **loop de verificação** é essencial.
+It's not enough for Claude to say he's finished. He needs to test.
 
-Não basta Claude dizer que terminou. Ele precisa testar.
-
-Peça sempre:
-
-```text
+Always ask for:```text
 Antes de me entregar, verifique seu próprio trabalho.
 
 Rode os testes disponíveis.
 Se for interface, abra no navegador, confira visualmente e tire screenshots.
 Se encontrar erro, corrija e teste novamente.
 Só me entregue quando passar na validação.
-```
-
-Exemplo:
-
-```text
+```Example:```text
 Implemente a tela de cadastro de clientes.
 
 Depois:
@@ -332,24 +276,18 @@ Depois:
 4. Teste o fluxo manualmente
 5. Verifique se não quebrou a tela de propostas
 6. Gere um resumo final com evidências
-```
+```## 11. Use custom commands
 
-## 11. Usar comandos personalizados
+If you repeat a prompt more than twice, turn it into a command.
 
-Se você repete um prompt mais de duas vezes, transforme em comando.
-
-Exemplos:
-
-```text
+Examples:```text
 /revisar-codigo
 /criar-pr
 /gerar-testes
 /documentar-modulo
 /verificar-seguranca
 /commit-push-pr
-```
-
-Exemplo de comando `/criar-pr`:
+```Command example`/criar-pr`:
 
 ```markdown
 Crie uma descrição de pull request com:
@@ -363,118 +301,64 @@ Crie uma descrição de pull request com:
 7. Próximos passos
 
 Use linguagem objetiva e profissional.
-```
+```## 12. Use`/compact`to control context
 
-## 12. Usar `/compact` para controlar contexto
+Long sessions get heavy.
 
-Sessões longas ficam pesadas.
+Use before the context is full.
 
-Use antes de o contexto ficar cheio.
-
-Exemplo:
-
-```text
+Example:```text
 Compacte o histórico mantendo:
 1. Objetivo do projeto
 2. Decisões tomadas
 3. Arquivos alterados
 4. Pendências
 5. Regras importantes
-```
-
-## 13. Usar `/context`
-
-Use quando a sessão parecer pesada ou confusa.
-
-```text
+```## 13. Use`/context`Use when the session feels heavy or confusing.```text
 Mostre onde o contexto está sendo consumido e sugira o que pode ser compactado ou movido para documentação.
-```
+```## 14. Use`/rewind`when the attempt went wrong
 
-## 14. Usar `/rewind` quando a tentativa deu errado
+When Claude takes a bad turn, go back to the previous point instead of endlessly correcting within the same context.
 
-Quando Claude entra por um caminho ruim, volte ao ponto anterior em vez de corrigir infinitamente dentro do mesmo contexto.
-
-## 15. Usar `/branch` para testar alternativas
-
-```text
+## 15. Use`/branch`to test alternatives```text
 Crie uma branch para testar uma solução simples.
 Depois criaremos outra branch para testar uma solução mais robusta.
-```
-
-## 16. Usar `/btw` para perguntas paralelas
-
-```text
+```## 16. Use`/btw`for parallel questions```text
 /btw O que esta função faz?
-```
+```This way you can resolve a doubt without changing the direction of the main task.
 
-Assim você tira uma dúvida sem mudar a direção da tarefa principal.
+## 17. Use output styles
 
-## 17. Usar output styles
+You can adapt your response style depending on the task.
 
-Você pode adaptar o estilo de resposta conforme a tarefa.
+Examples:
 
-Exemplos:
+- code reviewer;
+- technical architect;
+- teacher;
+- direct mode;
+- documenter;
+- security analyst.
 
-- revisor de código;
-- arquiteto técnico;
-- professor;
-- modo direto;
-- documentador;
-- analista de segurança.
-
-Exemplo:
-
-```text
+Example:```text
 Use um estilo de resposta como revisor técnico sênior: direto, crítico e focado em riscos.
-```
+```## Ideal process for a task at Level 4
 
-## Processo ideal para uma tarefa no Nível 4
-
-### Etapa 1 — Preparar contexto
-
-```text
+### Step 1 — Prepare context```text
 Leia o claude.md e os arquivos relevantes antes de responder.
-```
-
-### Etapa 2 — Planejar
-
-```text
+```### Step 2 — Plan```text
 Antes de implementar, apresente o plano e espere minha aprovação.
-```
-
-### Etapa 3 — Implementar
-
-```text
+```### Step 3 — Implement```text
 Implemente somente o que foi aprovado.
-```
-
-### Etapa 4 — Testar
-
-```text
+```### Step 4 — Test```text
 Rode testes, lint e verificações disponíveis.
-```
-
-### Etapa 5 — Revisar
-
-```text
+```### Step 5 — Review```text
 Revise seu próprio trabalho e corrija problemas encontrados.
-```
-
-### Etapa 6 — Documentar
-
-```text
+```### Step 6 — Document```text
 Atualize documentação se necessário.
-```
-
-### Etapa 7 — Entregar
-
-```text
+```### Step 7 — Deliver```text
 Entregue um resumo final com arquivos alterados, testes feitos e próximos passos.
-```
-
-## Prompt completo para Claude Code
-
-```text
+```## Complete prompt for Claude Code```text
 Leia o claude.md antes de começar.
 
 Tarefa:
@@ -496,13 +380,9 @@ Depois que eu aprovar:
 5. Gere uma descrição de PR.
 6. Atualize documentação se necessário.
 7. Entregue um resumo final.
-```
+```## Practical examples of use
 
-## Exemplos práticos de uso
-
-### Exemplo 1: Criar uma feature
-
-```text
+### Example 1: Create a feature```text
 Crie uma área de clientes no sistema.
 
 Requisitos:
@@ -513,11 +393,7 @@ Requisitos:
 5. Salvar no banco atual
 
 Antes de implementar, analise a arquitetura e proponha o plano.
-```
-
-### Exemplo 2: Corrigir bug
-
-```text
+```### Example 2: Fix bug```text
 Existe um erro no login quando o usuário tenta recuperar senha.
 
 Investigue:
@@ -527,11 +403,7 @@ Investigue:
 4. Como corrigir com o menor impacto
 
 Depois implemente a correção e rode os testes.
-```
-
-### Exemplo 3: Criar testes
-
-```text
+```### Example 3: Create tests```text
 Crie testes para o fluxo de propostas.
 
 Inclua:
@@ -541,11 +413,7 @@ Inclua:
 4. Filtro por cliente
 
 Não altere a lógica principal sem justificar.
-```
-
-### Exemplo 4: Revisão de segurança
-
-```text
+```### Example 4: Security Review```text
 Revise este módulo como especialista em segurança.
 
 Verifique:
@@ -556,11 +424,7 @@ Verifique:
 5. Logs indevidos
 
 Entregue recomendações priorizadas por risco.
-```
-
-### Exemplo 5: Refatoração
-
-```text
+```### Example 5: Refactoring```text
 Refatore este componente sem alterar o comportamento.
 
 Objetivos:
@@ -569,93 +433,91 @@ Objetivos:
 3. Separar responsabilidades
 4. Manter compatibilidade
 5. Garantir que os testes continuem passando
-```
+```## Checklist before letting Claude change code
 
-## Checklist antes de deixar Claude alterar código
+Before approving a task, check:
 
-Antes de aprovar uma tarefa, confira:
+- Claude read the`claude.md`;
+- he understood the objective;
+- presented a plan;
+- listed files that will change;
+- explained risks;
+- created branch or worktree;
+- knows how to test;
+- will not move outside the scope;
+- will not add dependencies without permission;
+- will deliver final summary.
 
-- Claude leu o `claude.md`;
-- ele entendeu o objetivo;
-- apresentou plano;
-- listou arquivos que vai alterar;
-- explicou riscos;
-- criou branch ou worktree;
-- sabe como testar;
-- não vai mexer fora do escopo;
-- não vai adicionar dependências sem permissão;
-- vai entregar resumo final.
+## How this helps when working with clients
 
-## Como isso ajuda em trabalho com clientes
+At Level 4, you can already deliver higher value work, because you leave the field of “simple automation” and enter **complete systems**.
 
-No Nível 4, você já consegue entregar trabalhos de valor maior, porque sai do campo de “automação simples” e entra em **sistemas completos**.
+Examples of salable deliveries:
 
-Exemplos de entregas vendáveis:
+- internal system for service control;
+- indicator panel;
+- automation with API;
+- simple customer portal;
+- sales dashboard;
+- integration between tools;
+- chatbot with knowledge base;
+- functional prototype;
+- improvement of existing system;
+- technical project review.
 
-- sistema interno para controle de atendimento;
-- painel de indicadores;
-- automação com API;
-- portal simples para cliente;
-- dashboard de vendas;
-- integração entre ferramentas;
-- chatbot com base de conhecimento;
-- protótipo funcional;
-- melhoria de sistema existente;
-- revisão técnica de projeto.
+## Common errors at Level 4
 
-## Erros comuns no Nível 4
+1. Leave Claude to code without a plan.
+2. Using too long a session.
+3. Not testing.
+4. Mixing too many tasks.
+5. Don't use version control.
+6. Not documenting decisions.
+7. Not updating`claude.md`.
 
-1. Deixar Claude codar sem plano.
-2. Usar uma sessão longa demais.
-3. Não testar.
-4. Misturar muitas tarefas.
-5. Não usar controle de versão.
-6. Não documentar decisões.
-7. Não atualizar o `claude.md`.
+## How to know that you have mastered Level 4
 
-## Como saber que você domina o Nível 4
+You are at Level 4 when:
 
-Você está no Nível 4 quando:
+- uses Claude Code with real projects;
+- he has`claude.md`in projects;
+- asks for a plan before execution;
+- works with branches or worktrees;
+- uses subagents for review, testing and documentation;
+- runs validations before accepting deliveries;
+- creates custom commands;
+- can work with several sessions in parallel;
+- generates well-described PRs;
+- maintains updated project documentation;
+- uses Claude as a coaching staff, not just an assistant.
 
-- usa Claude Code com projetos reais;
-- tem `claude.md` nos projetos;
-- pede plano antes de execução;
-- trabalha com branches ou worktrees;
-- usa subagentes para revisão, testes e documentação;
-- roda validações antes de aceitar entregas;
-- cria comandos personalizados;
-- consegue trabalhar com várias sessões em paralelo;
-- gera PRs bem descritos;
-- mantém documentação do projeto atualizada;
-- usa Claude como uma equipe técnica, não apenas como assistente.
+## Expected result
 
-## Resultado esperado
+At Level 4, you gain:
 
-No Nível 4, você ganha:
+- development speed;
+- technical quality;
+- more complete deliveries;
+- ability to work in parallel;
+- reduction of rework;
+- better documentation;
+- more structured review;
+- higher value salable projects.
 
-- velocidade de desenvolvimento;
-- qualidade técnica;
-- entregas mais completas;
-- capacidade de trabalhar em paralelo;
-- redução de retrabalho;
-- documentação melhor;
-- revisão mais estruturada;
-- projetos vendáveis de maior valor.
+The promise of this level is to move away from small tasks and start building **real systems**.
 
-A promessa deste nível é sair de pequenas tarefas e começar a construir **sistemas reais**.
+## Level 4 Limit
 
-## Limite do Nível 4
+The limit of Level 4 is that you still coordinate everything manually.
 
-O limite do Nível 4 é que você ainda coordena tudo manualmente.
+You need:
 
-Você precisa:
+- start sessions;
+- approve steps;
+- review results;
+- trigger commands;
+- monitor PRs;
+- request audits;
+- track recurring tasks.
 
-- iniciar sessões;
-- aprovar etapas;
-- revisar resultados;
-- disparar comandos;
-- monitorar PRs;
-- pedir auditorias;
-- acompanhar tarefas recorrentes.
-
-Quando você percebe que está repetindo sempre os mesmos ciclos técnicos, chega o momento de avançar para o **Nível 5 — Arquiteto**, onde entram rotinas na nuvem, hooks, agentes autônomos e automações que rodam mesmo quando você não está presente.
+When you realize that you are always repeating the same technical cycles, it is time to advance to **Level 5 — Architect**, where cloud routines, hooks, autonomous agents and automations that run even when you are not present come into play.
