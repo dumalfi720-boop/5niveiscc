@@ -1,12 +1,10 @@
-# Os 5 Níveis do Claude Code
+# The 5 Levels of the Claude Code
 
-Curso completo em PT-BR cobrindo os 5 níveis de domínio do Claude — do Entusiasta ao Arquiteto — com cheat codes entre cada nível e uma prova final de 50 questões.
+Complete course in PT-BR covering Claude's 5 levels of mastery — from Enthusiast to Architect — with cheat codes between each level and a final test of 50 questions.
 
-Formato visual: **INEMA.CLUB** (dark-first, responsivo, light mode obrigatório, tailwindcss via CDN, sem build).
+Visual format: **duclub** (dark-first, responsive, light mode required, tailwindcss via CDN, no build).
 
-## Estrutura
-
-```
+## Structure```
 index.html                    # Capa + diagnóstico de 10 perguntas + cards das 6 trilhas
 assets/capa.png               # Imagem da capa
 curso/
@@ -36,22 +34,19 @@ curso/
 └── trilha6/  (Rose)          # Prova Final
     ├── index.html            # Briefing da prova
     └── modulo-6-1.html       # 50 questões interativas + gabarito comentado
-```
+```## How to open
 
-## Como abrir
+Abra`index.html`in the browser. No build, no server, no dependencies.
 
-Abra `index.html` no navegador. Sem build, sem servidor, sem dependências.
+## Content
 
-## Conteúdo
-
-- **20 páginas HTML** (1 landing + 6 trilhas + 13 módulos)
-- **80+ tópicos** com 3 seções cada (O que é / Por que aprender / Conceitos-chave)
-- **Diagnóstico inicial** (10 perguntas) que aponta a trilha de entrada
-- **Prova final** (50 questões, 10 por nível) com gabarito comentado e link pra módulo da resposta errada
+- **20 HTML pages** (1 landing + 6 tracks + 13 modules)
+- **80+ topics** with 3 sections each (What is / Why learn / Key concepts)
+- **Initial diagnosis** (10 questions) that points out the entry path
+- **Final test** (50 questions, 10 per level) with commented answer sheet and link to the wrong answer module
 
 ## Base
 
-- "Every Level of Claude Explained" (transcript em `/doc/resumo.txt`)
-- Versões PT-BR em `/doc/nivel_*.md`
-- Validação web (Maio/2026): Code w/ Claude, hooks, routines, dreaming, outcomes
-- Design system [INEMA.CLUB](https://inema.club)
+- "Every Level of Claude Explained" (transcribed in`/doc/resumo.txt`)
+- PT-BR versions in`/doc/nivel_*.md`- Web validation (May/2026): Code w/ Claude, hooks, routines, dreaming, outcomes
+- Design system [duclub](https://duclub)
