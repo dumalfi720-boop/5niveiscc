@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2.1 Projetos, Memória, Conectores | T2</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2.1 Projects, Memory, Connectors | T2</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
 body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
 html:not(.dark) .text-primary{color:#a16207}html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
@@ -14,104 +14,91 @@ html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .bg-blue-500\/10{ba
 </style>
 </head>
 <body class="text-neutral-100">
-
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a><a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-blue-400 bg-blue-500/10"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a><a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a><a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a><a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a><a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
-
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-blue-400 bg-blue-500/10" href="index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a><button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button></div></div></div></nav>
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-blue-400">Início</a> / <a href="index.html" class="hover:text-blue-400">Trilha 2</a> / <span class="text-neutral-300">Módulo 2.1</span></nav>
-
+<nav class="text-sm text-neutral-500 mb-6"><a class="hover:text-blue-400" href="../../index.html">Start</a> / <a class="hover:text-blue-400" href="index.html">Track 2</a> / <span class="text-neutral-300">Module 2.1</span></nav>
 <header class="mb-10">
-  <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-3">MÓDULO 2.1 · ~30 min</span>
-  <h1 class="text-3xl sm:text-4xl font-extrabold mb-3">📁 Projetos, Memória e Conectores</h1>
-  <p class="text-lg text-neutral-300">As 8 features que transformam chat sem estado em ferramenta com continuidade real. Quem domina essas 8 economiza 5h/semana com Claude pagando por si.</p>
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-3">MODULE 2.1 · ~30 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">📁 Projects, Memory and Connectors</h1>
+<p class="text-lg text-neutral-300">The 8 features that transform stateless chat into a tool with real continuity. Whoever masters these 8 saves 5 hours/week with Claude paying for himself.</p>
 </header>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🔄 A grande mudança: chat com continuidade</h2></div>
-<p class="text-neutral-300 mb-4">Imagine: você abre uma conversa nova na terça-feira dentro de um projeto e pergunta "o que decidimos sobre o lançamento Q2 semana passada?". Claude pesquisa o histórico, cita a conversa, e continua dali. Não é mais ferramenta sem estado — é algo com continuidade.</p>
-<p class="text-neutral-300 mb-4">A diferença com N1 é qualitativa. No N1 você cola contexto toda vez. No N2 o contexto vive no projeto. Você só fala o que mudou.</p>
-<div class="bg-blue-500/10 border-l-4 border-blue-500/30 rounded-lg p-4"><p class="text-sm text-neutral-300"><strong class="text-blue-400">💡 Sinal de domínio:</strong> Você nunca mais cola o mesmo briefing duas vezes — porque ele vive no projeto, e Claude o lê sozinho a cada conversa nova.</p></div>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🔄 The big change: chat with continuity</h2></div>
+<p class="text-neutral-300 mb-4">Imagine: you open a new conversation on Tuesday within a project and ask "what did we decide about the Q2 release last week?". Claude researches the history, quotes the conversation, and continues from there. It's no longer a stateless tool — it's something with continuity.</p>
+<p class="text-neutral-300 mb-4">The difference with N1 is qualitative. In N1 you paste context every time. In N2 the context lives in the project. You only say what changed.</p>
+<div class="bg-blue-500/10 border-l-4 border-blue-500/30 rounded-lg p-4"><p class="text-sm text-neutral-300"><strong class="text-blue-400">💡 Domain Signal:</strong>You never paste the same brief twice again — because it lives in the project, and Claude reads it himself with each new conversation.</p></div>
 </section>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">🧠 Memória + busca em conversas anteriores</h2></div>
-<p class="text-neutral-300 mb-4">Duas features distintas que se combinam:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5 mb-4"><h3 class="font-semibold text-blue-400 mb-2">Memória (free, em todos os planos)</h3><p class="text-sm text-neutral-300">Claude lembra fatos sobre você entre conversas: seu papel, preferências, decisões. Diga "lembre que eu prefiro respostas em bullets" e isso passa a valer pra sempre.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-blue-400 mb-2">Busca em conversas anteriores (paid)</h3><p class="text-sm text-neutral-300">Você pesquisa por trecho de texto e Claude resgata a conversa exata, com link. Combina com knowledge base do projeto pra eliminar "começar do zero".</p></div>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">🧠 Memory + search in previous conversations</h2></div>
+<p class="text-neutral-300 mb-4">Two distinct features that combine:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5 mb-4"><h3 class="font-semibold text-blue-400 mb-2">Memory (free, on all plans)</h3><p class="text-sm text-neutral-300">Claude remembers facts about you between conversations: your role, preferences, decisions. Say "remember that I prefer answers in bullets" and that will apply forever.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-blue-400 mb-2">Search in previous conversations (paid)</h3><p class="text-sm text-neutral-300">You search for a text excerpt and Claude retrieves the exact conversation, with a link. Combines with project knowledge base to eliminate “starting from scratch”.</p></div>
 </section>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🔌 Conectores nativos (50+)</h2></div>
-<p class="text-neutral-300 mb-4">Os 6 principais que cobrem 80% dos casos:</p>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🔌 Native Connectors (50+)</h2></div>
+<p class="text-neutral-300 mb-4">Top 6 that cover 80% of cases:</p>
 <div class="grid sm:grid-cols-2 gap-3 mb-4">
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Slack</strong><p class="text-sm text-neutral-300 mt-1">"Resuma threads de #vendas dos últimos 7 dias"</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Google Drive</strong><p class="text-sm text-neutral-300 mt-1">"Pega o doc de spec mais recente e me dá os pontos abertos"</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Gmail</strong><p class="text-sm text-neutral-300 mt-1">"E-mails não respondidos do cliente X esta semana"</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">GitHub</strong><p class="text-sm text-neutral-300 mt-1">"Issues abertas no repo Y com tag bug"</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Notion</strong><p class="text-sm text-neutral-300 mt-1">"Status atual do projeto Z"</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Calendar</strong><p class="text-sm text-neutral-300 mt-1">"O que tem na minha agenda quinta?"</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Slack</strong><p class="text-sm text-neutral-300 mt-1">"Summarize #sales threads from the last 7 days"</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Google Drive</strong><p class="text-sm text-neutral-300 mt-1">"Get the latest spec doc and give me the open points"</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Gmail</strong><p class="text-sm text-neutral-300 mt-1">"Unanswered emails from customer X this week"</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">GitHub</strong><p class="text-sm text-neutral-300 mt-1">"Issues open in repo Y with bug tag"</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Notion</strong><p class="text-sm text-neutral-300 mt-1">"Current status of project Z"</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Calendar</strong><p class="text-sm text-neutral-300 mt-1">"What's on my agenda Thursday?"</p></div>
 </div>
-<div class="bg-blue-500/10 border-l-4 border-blue-500/30 rounded-lg p-4"><p class="text-sm text-neutral-300"><strong class="text-blue-400">🔐 Segurança:</strong> Conectores são OAuth read-only por padrão. Você dá permissão granular por escopo. Pode revogar a qualquer momento nas configs.</p></div>
+<div class="bg-blue-500/10 border-l-4 border-blue-500/30 rounded-lg p-4"><p class="text-sm text-neutral-300"><strong class="text-blue-400">🔐 Security:</strong>OAuth connectors are read-only by default. You give granular permission by scope. You can revoke it at any time in the settings.</p></div>
 </section>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">📊 Criação de arquivos reais</h2></div>
-<p class="text-neutral-300 mb-4">Quatro formatos disponíveis pra todos (inclusive free):</p>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">📊 Real file creation</h2></div>
+<p class="text-neutral-300 mb-4">Four formats available to everyone (including free):</p>
 <ul class="text-sm text-neutral-300 space-y-2 ml-4 mb-4">
-  <li>• <strong class="text-blue-400">.xlsx</strong> — Excel com fórmulas funcionais, pivot tables, formatação condicional</li>
-  <li>• <strong class="text-blue-400">.pptx</strong> — PowerPoint que respeita brand master (cole 1 slide de exemplo)</li>
-  <li>• <strong class="text-blue-400">.docx</strong> — Word com estilos, sumário, tabelas</li>
-  <li>• <strong class="text-blue-400">.pdf</strong> — exportação direta com layout limpo</li>
+<li>• <strong class="text-blue-400">.xlsx</strong>— Excel with functional formulas, pivot tables, conditional formatting</li>
+<li>• <strong class="text-blue-400">.pptx</strong>— PowerPoint that respects brand master (paste 1 example slide)</li>
+<li>• <strong class="text-blue-400">.docx</strong>— Word with styles, table of contents, tables</li>
+<li>• <strong class="text-blue-400">.pdf</strong>— direct export with clean layout</li>
 </ul>
-<p class="text-neutral-300">O chat para de ser brainstorm e vira fábrica de entregas. Você fala "gera um deck de 8 slides resumindo isso" — e baixa o .pptx pronto pra mandar pro cliente.</p>
+<p class="text-neutral-300">Chat stops being a brainstorm and becomes a delivery factory. You say "generate a deck of 8 slides summarizing this" — and download the .pptx ready to send to the client.</p>
 </section>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">🎨 Artifacts com armazenamento persistente</h2></div>
-<p class="text-neutral-300 mb-4">Artifacts são mini-apps interativos no painel lateral. Agora com 2 capacidades novas:</p>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">🎨 Artifacts with persistent storage</h2></div>
+<p class="text-neutral-300 mb-4">Artifacts are interactive mini-apps in the side panel. Now with 2 new capabilities:</p>
 <div class="space-y-3">
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Storage persistente</strong><p class="text-sm text-neutral-300 mt-1">Dados ficam entre sessões. Você cria um tracker de feedback hoje, abre amanhã, os dados estão lá.</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">API key do Claude embutida</strong><p class="text-sm text-neutral-300 mt-1">O artifact pode chamar a API direto — ele "pensa" sozinho, sem você intermediar.</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Link público</strong><p class="text-sm text-neutral-300 mt-1">Publica e manda pro time. Eles abrem no browser, usam, sem cadastro.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Persistent storage</strong><p class="text-sm text-neutral-300 mt-1">Data remains between sessions. You create a feedback tracker today, open it tomorrow, the data is there.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Built-in Claude API key</strong><p class="text-sm text-neutral-300 mt-1">The artifact can call the API directly — it "thinks" on its own, without you intermediating.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-blue-400">Public link</strong><p class="text-sm text-neutral-300 mt-1">Publish and send to the team. They open it in the browser, use it, without registering.</p></div>
 </div>
-<p class="text-neutral-300 mt-4">Resultado: você (sem código) cria uma ferramenta pra um cliente em 10 min, manda o link, ele usa. É a era do "conversa entrega produto".</p>
+<p class="text-neutral-300 mt-4">Result: you (without code) create a tool for a client in 10 minutes, send them the link, they use it. It's the era of "talk delivers product".</p>
 </section>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📈 Visuais inline (gráficos, diagramas)</h2></div>
-<p class="text-neutral-300 mb-4">Diferentes dos artifacts: vivos dentro do chat, efêmeros, sem virar arquivo. Servem pra raciocínio rápido.</p>
-<p class="text-neutral-300 mb-4">Use quando: você quer comparar 2 opções, validar uma hipótese, ou explicar um conceito que texto não cobre bem. Cole um CSV e peça "gráfico de barras agrupado por mês". Clique e troque pra linha. Peça "agora compare com o ano anterior".</p>
-<p class="text-neutral-300">Não use quando: você precisa do gráfico fora do chat — aí use criação de arquivos.</p>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📈 Inline visuals (charts, diagrams)</h2></div>
+<p class="text-neutral-300 mb-4">Different from artifacts: alive within the chat, ephemeral, without becoming an archive. They are used for quick thinking.</p>
+<p class="text-neutral-300 mb-4">Use when: you want to compare 2 options, validate a hypothesis, or explain a concept that the text doesn't cover well. Paste a CSV and ask for "bar chart grouped by month". Click and switch to line. Ask "now compare to last year".</p>
+<p class="text-neutral-300">Don't use it when: you need the graphic outside the chat — then use file creation.</p>
 </section>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">📑 Add-ins do Microsoft Office</h2></div>
-<p class="text-neutral-300 mb-4">Pro+: Claude vive dentro de Excel, PowerPoint e Word como add-in nativo. Não é Claude lendo arquivo — é Claude operando o app.</p>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">📑 Microsoft Office Add-ins</h2></div>
+<p class="text-neutral-300 mb-4">Pro+: Claude lives inside Excel, PowerPoint and Word as a native add-in. It's not Claude reading the file — it's Claude operating the app.</p>
 <ul class="text-sm text-neutral-300 space-y-2 ml-4 mb-4">
-  <li>• <strong class="text-blue-400">Excel:</strong> lê workbook multi-aba, explica fórmulas com citação cell-level, edita preservando todas as dependências</li>
-  <li>• <strong class="text-blue-400">PowerPoint:</strong> lê seu master, suas fontes, suas cores — gera slides que parecem feitos no padrão da marca</li>
-  <li>• <strong class="text-blue-400">Word:</strong> respeita estilos, sumário, formatação de captions e referências</li>
-  <li>• <strong class="text-blue-400">Contexto cruzado (Abril/2026):</strong> análise no Excel vira deck no PPT na sequência</li>
+<li>• <strong class="text-blue-400">Excel:</strong>reads multi-tab workbook, explains formulas with cell-level citation, edits while preserving all dependencies</li>
+<li>• <strong class="text-blue-400">Power point:</strong>reads your master, your fonts, your colors — generates slides that look like they were made to the brand’s standard</li>
+<li>• <strong class="text-blue-400">Word:</strong>respects styles, summary, caption formatting and references</li>
+<li>• <strong class="text-blue-400">Cross context (April/2026):</strong>analysis in Excel becomes a deck in PPT in the sequence</li>
 </ul>
-<p class="text-neutral-300">Se seu dia é Office, esse é O ponto de impacto do N2.</p>
+<p class="text-neutral-300">If your day is Office, this is N2's point of impact.</p>
 </section>
-
-<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">💳 Free vs Pro: o que vale upgrade</h2></div>
+<section class="mb-16"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">💳 Free vs Pro: what’s worth upgrading</h2></div>
 <div class="grid sm:grid-cols-2 gap-4 mb-4">
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">Free entrega</h3><ul class="text-sm text-neutral-300 space-y-1"><li>• Memory</li><li>• Criação de arquivos</li><li>• Visuais inline</li><li>• Projetos (limitados)</li><li>• Alguns conectores</li></ul></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">Pro destrava</h3><ul class="text-sm text-neutral-300 space-y-1"><li>• Busca em chats antigos</li><li>• Artifacts persistentes</li><li>• Office add-ins</li><li>• Mais uso de Opus</li><li>• Todos os conectores</li></ul></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">Free delivery</h3><ul class="text-sm text-neutral-300 space-y-1"><li>• Memory</li><li>• File creation</li><li>• Inline visuals</li><li>• Projects (limited)</li><li>• Some connectors</li></ul></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">Pro unlocks</h3><ul class="text-sm text-neutral-300 space-y-1"><li>• Search old chats</li><li>• Persistent artifacts</li><li>• Office add-ins</li><li>• More use of Opus</li><li>• All connectors</li></ul></div>
 </div>
-<p class="text-neutral-300">Estratégia: teste 1 semana no free com o básico. Se bater o teto, sobe pro Pro. Pro paga por si em ~2 semanas pra heavy user.</p>
+<p class="text-neutral-300">Strategy: test 1 week free with the basics. If you hit the ceiling, go up to Pro. Pro pays for itself in ~2 weeks for heavy users.</p>
 </section>
-
 <section class="mb-12"><div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span> Resumo do Módulo</h2>
-  <div class="space-y-3 mb-6 text-sm">
-    <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Continuidade é o ganho qualitativo do N2</strong> — não mais começar do zero.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Memória (free) + busca (paid)</strong> matam o "estado zero".</div></div>
-    <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">50+ conectores OAuth</strong> — Slack/Drive/Gmail/GitHub/Notion/Calendar cobrem 80%.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Arquivos reais</strong> (.xlsx/.pptx/.docx/.pdf) — chat vira fábrica.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Artifacts persistentes</strong> — não-coder cria ferramenta + link público.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Office add-ins</strong> (Pro) — se seu dia é Office, é O ponto.</div></div>
-  </div>
-  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-blue-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">2.2 — Cheat Code: parar de copiar e colar</p></div>
-  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="modulo-2-2.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition">Próximo Módulo →</a></div>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span>Module Summary</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Continuity is the qualitative gain of N2</strong>— no more starting from scratch.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Memory (free) + search (paid)</strong>kill the "zero state".</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">50+ OAuth connectors</strong>— Slack/Drive/Gmail/GitHub/Notion/Calendar cover 80%.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Real files</strong>(.xlsx/.pptx/.docx/.pdf) — chat becomes a factory.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Persistent artifacts</strong>— non-coder creates tool + public link.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Office add-ins</strong>(Pro) — if your day is Office, it's THE point.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-blue-400 mb-2">Next Module:</h3><p class="text-neutral-300">2.2 — Cheat Code: stop copying and pasting</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="index.html">← Back to Trail</a><a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition" href="modulo-2-2.html">Next Module →</a></div>
 </div></section>
-
 </main>
-<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
-<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a></div></footer>
+<script data-notranslate="True">const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
 </body></html>
