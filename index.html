@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Os 5 Níveis do Claude Code | INEMA.CLUB</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The 5 Levels of the Claude Code | duclub</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">
 tailwind.config = {
   darkMode: 'class',
   theme: { extend: { colors: {
@@ -14,8 +14,8 @@ tailwind.config = {
   }}}
 }
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
 body { font-family: 'Inter', sans-serif; }
 .dark body { background-color: #0a0f1c; }
 html:not(.dark) body { background-color: #f8fafc; }
@@ -69,152 +69,137 @@ html:not(.dark) .hover\:text-rose-400:hover { color: #be123c; }
 </style>
 </head>
 <body class="text-neutral-100">
-
-<!-- NAV -->
+NAV
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-14">
-      <div class="flex items-center space-x-4">
-        <a href="index.html" class="flex items-center space-x-2">
-          <span class="text-2xl">🪜</span>
-          <span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude Code</span>
-        </a>
-        <span class="text-neutral-600">|</span>
-        <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-      </div>
-      <div class="flex items-center space-x-1 sm:space-x-2">
-        <a href="curso/trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
-        <a href="curso/trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
-        <a href="curso/trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
-        <a href="curso/trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
-        <a href="curso/trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
-        <a href="curso/trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
-        <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1">
-          <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
-          <svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-14">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2" href="index.html">
+<span class="text-2xl">🪜</span>
+<span class="font-bold text-lg hidden sm:inline">5 Claude Code Levels</span>
+</a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="curso/trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="curso/trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="curso/trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="curso/trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="curso/trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors" href="curso/trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a>
+<button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-1" id="theme-toggle">
+<svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+<svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+</div>
+</div>
 </nav>
-
-<!-- HERO -->
+HERO
 <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
-  <div class="grid lg:grid-cols-2 gap-8 items-center">
-    <div>
-      <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary border border-primary/40 mb-4">CURSO COMPLETO • PT-BR</span>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">Em qual <span class="text-primary">nível</span> do Claude você está hoje?</h1>
-      <p class="text-lg text-neutral-300 mb-6">Da conversa simples à automação autônoma. Cinco níveis, um caminho claro, cheat codes entre cada um — e uma prova final pra você se posicionar com honestidade.</p>
-      <div class="flex flex-col sm:flex-row gap-3">
-        <a href="#diagnostico" class="px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:opacity-90 transition text-center">▶ Fazer o diagnóstico</a>
-        <a href="#trilhas" class="px-6 py-3 bg-dark-700 text-neutral-100 font-semibold rounded-lg hover:bg-dark-600 transition text-center border border-dark-600">Ver as 6 trilhas</a>
-      </div>
-      <p class="text-sm text-neutral-500 mt-4">⏱ ~6h de conteúdo · 13 módulos · 80+ tópicos · prova final</p>
-    </div>
-    <div>
-      <img src="assets/capa.png" alt="Os 5 Níveis do Claude" class="w-full rounded-xl border border-dark-600 shadow-2xl">
-    </div>
-  </div>
+<div class="grid lg:grid-cols-2 gap-8 items-center">
+<div>
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary border border-primary/40 mb-4">COMPLETE COURSE • PT-BR</span>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">In which<span class="text-primary">level</span>Claude are you today?</h1>
+<p class="text-lg text-neutral-300 mb-6">From simple conversation to autonomous automation. Five levels, a clear path, cheat codes between each one — and a final test for you to position yourself honestly.</p>
+<div class="flex flex-col sm:flex-row gap-3">
+<a class="px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:opacity-90 transition text-center" href="#diagnostico">▶ Make the diagnosis</a>
+<a class="px-6 py-3 bg-dark-700 text-neutral-100 font-semibold rounded-lg hover:bg-dark-600 transition text-center border border-dark-600" href="#trilhas">See the 6 trails</a>
+</div>
+<p class="text-sm text-neutral-500 mt-4">⏱ ~6h of content · 13 modules · 80+ topics · final exam</p>
+</div>
+<div>
+<img alt="Os 5 Níveis do Claude" class="w-full rounded-xl border border-dark-600 shadow-2xl" src="assets/capa.png"/>
+</div>
+</div>
 </section>
-
-<!-- PROVOCAÇÃO -->
+PROVOCATION
 <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <div class="bg-gradient-to-br from-primary/10 via-dark-800 to-dark-800 rounded-xl border border-primary/40 p-8">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-4">⚡ Não adianta pular níveis — adianta saber em qual você travou.</h2>
-    <p class="text-neutral-300 text-lg mb-2">Todo mundo trata Claude como busca. 90% trava no Nível 1 sem perceber. Quem chega ao Nível 5 acorda com PRs já revisados, briefings prontos e relatórios entregues — máquina desligada.</p>
-    <p class="text-neutral-300 text-lg">O salto entre níveis tem um <strong class="text-primary">"cheat code"</strong> em cada um. Esse curso te dá os 5.</p>
-  </div>
+<div class="bg-gradient-to-br from-primary/10 via-dark-800 to-dark-800 rounded-xl border border-primary/40 p-8">
+<h2 class="text-2xl sm:text-3xl font-bold mb-4">⚡ There's no point skipping levels — there's no point knowing which one you got stuck on.</h2>
+<p class="text-neutral-300 text-lg mb-2">Everyone treats Claude as a quest. 90% crash at Level 1 without realizing it. Those who reach Level 5 wake up with PRs already reviewed, briefings ready and reports delivered — machine turned off.</p>
+<p class="text-neutral-300 text-lg">Jumping between levels has a<strong class="text-primary">"cheat code"</strong>in each one. This course gives you 5.</p>
+</div>
 </section>
-
-<!-- DIAGNÓSTICO -->
-<section id="diagnostico" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <div class="text-center mb-10">
-    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-3">DIAGNÓSTICO RÁPIDO</span>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-3">📊 Em 10 perguntas, eu te digo seu nível</h2>
-    <p class="text-neutral-400">Marque apenas o que você JÁ FAZ hoje (não o que pretende fazer).</p>
-  </div>
-  <div id="quiz" class="bg-dark-800 rounded-xl border border-dark-600 p-6 sm:p-8 max-w-3xl mx-auto">
-    <div id="quiz-questions" class="space-y-3"></div>
-    <button id="quiz-submit" class="w-full mt-6 px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:opacity-90 transition">Calcular meu nível</button>
-    <div id="quiz-result" class="hidden mt-6"></div>
-  </div>
+DIAGNOSIS
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="diagnostico">
+<div class="text-center mb-10">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-3">QUICK DIAGNOSIS</span>
+<h2 class="text-3xl sm:text-4xl font-bold mb-3">📊 In 10 questions, I tell you your level</h2>
+<p class="text-neutral-400">Only mark what you ALREADY DO today (not what you intend to do).</p>
+</div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-6 sm:p-8 max-w-3xl mx-auto" id="quiz">
+<div class="space-y-3" id="quiz-questions"></div>
+<button class="w-full mt-6 px-6 py-3 bg-primary text-dark-900 font-bold rounded-lg hover:opacity-90 transition" id="quiz-submit">Calculate my level</button>
+<div class="hidden mt-6" id="quiz-result"></div>
+</div>
 </section>
-
-<!-- TRILHAS -->
-<section id="trilhas" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <div class="text-center mb-10">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-3">🗺 As 6 trilhas do curso</h2>
-    <p class="text-neutral-400">5 níveis + 1 prova final. Cada trilha tem cor própria — siga em ordem ou pule pra onde você está.</p>
-  </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-    <a href="curso/trilha1/index.html" class="group bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all">
-      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-emerald-500/20 text-emerald-400">TRILHA 1</span><span class="text-neutral-500 text-xs">~45min</span></div>
-      <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">💬 Entusiasta</h3>
-      <p class="text-sm text-neutral-400 mb-4">Você usa Claude como uma busca inteligente. Aprenda a sair daí.</p>
-      <ul class="text-xs text-neutral-500 space-y-1"><li>• Prompts que entregam</li><li>• Screenshots como input</li><li>• Cheat code: 1º projeto</li></ul>
-    </a>
-
-    <a href="curso/trilha2/index.html" class="group bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all">
-      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-blue-500/20 text-blue-400">TRILHA 2</span><span class="text-neutral-500 text-xs">~50min</span></div>
-      <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">📁 Iniciante</h3>
-      <p class="text-sm text-neutral-400 mb-4">Projetos, memória, conectores e arquivos reais. 5h economizadas por semana.</p>
-      <ul class="text-xs text-neutral-500 space-y-1"><li>• Projects + system prompts</li><li>• Slack/Drive/Gmail/Notion</li><li>• Excel, PPT, PDF do chat</li></ul>
-    </a>
-
-    <a href="curso/trilha3/index.html" class="group bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all">
-      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-purple-500/20 text-purple-400">TRILHA 3</span><span class="text-neutral-500 text-xs">~70min</span></div>
-      <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition">🖥 Intermediário</h3>
-      <p class="text-sm text-neutral-400 mb-4">Co-work, skills, tarefas agendadas. Claude vira coworker na sua máquina.</p>
-      <ul class="text-xs text-neutral-500 space-y-1"><li>• Filesystem access seguro</li><li>• Skills + /schedule</li><li>• Claude Design</li></ul>
-    </a>
-
-    <a href="curso/trilha4/index.html" class="group bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all">
-      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-amber-500/20 text-amber-400">TRILHA 4</span><span class="text-neutral-500 text-xs">~80min</span></div>
-      <h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition">⚙ Avançado</h3>
-      <p class="text-sm text-neutral-400 mb-4">Claude Code, claude.md, worktrees, subagentes. Projetos R$ 25–75k.</p>
-      <ul class="text-xs text-neutral-500 space-y-1"><li>• Plan mode + Opus Plan</li><li>• 3–4 sessões paralelas</li><li>• Slash commands custom</li></ul>
-    </a>
-
-    <a href="curso/trilha5/index.html" class="group bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all">
-      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-teal-500/20 text-teal-400">TRILHA 5</span><span class="text-neutral-500 text-xs">~90min</span></div>
-      <h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition">🛰 Arquiteto</h3>
-      <p class="text-sm text-neutral-400 mb-4">Routines, hooks, agent SDK. Claude trabalha enquanto você dorme.</p>
-      <ul class="text-xs text-neutral-500 space-y-1"><li>• Cloud routines + triggers</li><li>• Hooks como trilhos</li><li>• Agent teams + autodream</li></ul>
-    </a>
-
-    <a href="curso/trilha6/index.html" class="group bg-gradient-to-br from-rose-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-rose-500/30 p-6 transition-all">
-      <div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-rose-500/20 text-rose-400">TRILHA 6</span><span class="text-neutral-500 text-xs">~30min</span></div>
-      <h3 class="text-xl font-bold mb-2 group-hover:text-rose-400 transition">🏁 Prova Final</h3>
-      <p class="text-sm text-neutral-400 mb-4">Avaliação dos 5 níveis. Honestidade sem trapaça — descubra onde você realmente está.</p>
-      <ul class="text-xs text-neutral-500 space-y-1"><li>• 50 questões</li><li>• Score por nível</li><li>• Certificado interno</li></ul>
-    </a>
-
-  </div>
+TRAILS
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="trilhas">
+<div class="text-center mb-10">
+<h2 class="text-3xl sm:text-4xl font-bold mb-3">🗺 The 6 trails of the course</h2>
+<p class="text-neutral-400">5 levels + 1 final test. Each trail has its own color — follow in order or skip to where you are.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+<a class="group bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all" href="curso/trilha1/index.html">
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-emerald-500/20 text-emerald-400">TRACK 1</span><span class="text-neutral-500 text-xs">~45min</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">💬 Enthusiastic</h3>
+<p class="text-sm text-neutral-400 mb-4">You use Claude as a smart quest. Learn how to get out of there.</p>
+<ul class="text-xs text-neutral-500 space-y-1"><li>• Prompts that deliver</li><li>• Screenshots as input</li><li>• Cheat code: 1st project</li></ul>
+</a>
+<a class="group bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all" href="curso/trilha2/index.html">
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-blue-500/20 text-blue-400">TRACK 2</span><span class="text-neutral-500 text-xs">~50min</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">📁 Beginner</h3>
+<p class="text-sm text-neutral-400 mb-4">Projects, memory, connectors and real files. 5 hours saved per week.</p>
+<ul class="text-xs text-neutral-500 space-y-1"><li>• Projects + system prompts</li><li>• Slack/Drive/Gmail/Notion</li><li>• Excel, PPT, PDF of the chat</li></ul>
+</a>
+<a class="group bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all" href="curso/trilha3/index.html">
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-purple-500/20 text-purple-400">TRACK 3</span><span class="text-neutral-500 text-xs">~70min</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-purple-400 transition">🖥 Intermediate</h3>
+<p class="text-sm text-neutral-400 mb-4">Co-work, skills, scheduled tasks. Claude becomes a coworker at his machine.</p>
+<ul class="text-xs text-neutral-500 space-y-1"><li>• Secure filesystem access</li><li>• Skills + /schedule</li><li>• Claude Design</li></ul>
+</a>
+<a class="group bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all" href="curso/trilha4/index.html">
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-amber-500/20 text-amber-400">TRACK 4</span><span class="text-neutral-500 text-xs">~80min</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-amber-400 transition">⚙ Advanced</h3>
+<p class="text-sm text-neutral-400 mb-4">Claude Code, claude.md, worktrees, subagents. Projects R$25–75k.</p>
+<ul class="text-xs text-neutral-500 space-y-1"><li>• Plan mode + Opus Plan</li><li>• 3–4 parallel sessions</li><li>• Slash custom commands</li></ul>
+</a>
+<a class="group bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all" href="curso/trilha5/index.html">
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-teal-500/20 text-teal-400">TRACK 5</span><span class="text-neutral-500 text-xs">~90min</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-teal-400 transition">🛰 Architect</h3>
+<p class="text-sm text-neutral-400 mb-4">Routines, hooks, agent SDK. Claude works while you sleep.</p>
+<ul class="text-xs text-neutral-500 space-y-1"><li>• Cloud routines + triggers</li><li>• Hooks as rails</li><li>• Agent teams + autodream</li></ul>
+</a>
+<a class="group bg-gradient-to-br from-rose-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 hover:border-rose-500/30 p-6 transition-all" href="curso/trilha6/index.html">
+<div class="flex items-center justify-between mb-3"><span class="px-2 py-1 rounded text-xs font-bold bg-rose-500/20 text-rose-400">TRACK 6</span><span class="text-neutral-500 text-xs">~30min</span></div>
+<h3 class="text-xl font-bold mb-2 group-hover:text-rose-400 transition">🏁 Final Test</h3>
+<p class="text-sm text-neutral-400 mb-4">Assessment of the 5 levels. Honesty without cheating — find out where you really stand.</p>
+<ul class="text-xs text-neutral-500 space-y-1"><li>• 50 questions</li><li>• Score by level</li><li>• Internal certificate</li></ul>
+</a>
+</div>
 </section>
-
-<!-- CAMINHO -->
+PATH
 <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <div class="bg-dark-800 rounded-xl border border-dark-600 p-8">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">🧭 Como funciona o caminho</h2>
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-      <div class="text-center"><div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">1</div><strong>Chat</strong><p class="text-xs text-neutral-400 mt-1">Pergunta-resposta</p></div>
-      <div class="text-center"><div class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">2</div><strong>Projetos</strong><p class="text-xs text-neutral-400 mt-1">Contexto contínuo</p></div>
-      <div class="text-center"><div class="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">3</div><strong>Co-work</strong><p class="text-xs text-neutral-400 mt-1">Sua máquina</p></div>
-      <div class="text-center"><div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">4</div><strong>Claude Code</strong><p class="text-xs text-neutral-400 mt-1">Time paralelo</p></div>
-      <div class="text-center"><div class="w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">5</div><strong>Nuvem</strong><p class="text-xs text-neutral-400 mt-1">Infra 24/7</p></div>
-    </div>
-  </div>
+<div class="bg-dark-800 rounded-xl border border-dark-600 p-8">
+<h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">🧭 How the path works</h2>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<div class="text-center"><div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">1</div><strong>Chat</strong><p class="text-xs text-neutral-400 mt-1">Question-answer</p></div>
+<div class="text-center"><div class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">2</div><strong>Projects</strong><p class="text-xs text-neutral-400 mt-1">Continuous context</p></div>
+<div class="text-center"><div class="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">3</div><strong>Co-working</strong><p class="text-xs text-neutral-400 mt-1">Your machine</p></div>
+<div class="text-center"><div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">4</div><strong>Claude Code</strong><p class="text-xs text-neutral-400 mt-1">Parallel team</p></div>
+<div class="text-center"><div class="w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex items-center justify-center mx-auto mb-2">5</div><strong>Cloud</strong><p class="text-xs text-neutral-400 mt-1">Infra 24/7</p></div>
+</div>
+</div>
 </section>
-
-<!-- FOOTER -->
+FOOTER
 <footer class="border-t border-dark-600 mt-12 py-8">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-neutral-500">
-    <p>Curso desenvolvido por <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · Baseado em "Every Level of Claude Explained" · Atualizado em Maio/2026</p>
-  </div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-neutral-500">
+<p>Course developed by<a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a>· Based on "Every Level of Claude Explained" · Updated May/2026</p>
+</div>
 </footer>
-
-<script>
+<script data-notranslate="True">
 // Theme toggle
 const themeToggle = document.getElementById('theme-toggle');
 const darkIcon = document.getElementById('theme-toggle-dark-icon');
