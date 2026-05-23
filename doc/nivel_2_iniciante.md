@@ -1,126 +1,124 @@
-# Nível 2 — Iniciante
+# Level 2 — Beginner
 
-O **Nível 2** começa quando você para de usar Claude apenas como um chat solto e passa a organizar o trabalho em **projetos, contexto, memória e integrações**.
+**Level 2** starts when you stop using Claude just as a loose chat and start organizing your work into **projects, context, memory and integrations**.
 
-Aqui, Claude deixa de ser um assistente que responde perguntas isoladas e começa a funcionar como um **assistente com continuidade**.
+Here, Claude stops being an assistant who answers isolated questions and starts working as an **assistant with continuity**.
 
-## O que caracteriza o Nível 2
+## What characterizes Level 2
 
-No Nível 1, você precisa explicar tudo de novo em cada conversa.
+At Level 1, you need to explain everything again in each conversation.
 
-No Nível 2, você começa a criar ambientes organizados para cada tipo de trabalho.
+At Level 2, you start to create organized environments for each type of work.
 
-Exemplo:
+Example:
 
-- um projeto para sua empresa;
-- um projeto para criação de conteúdo;
-- um projeto para atendimento a clientes;
-- um projeto para estudo;
-- um projeto para automações;
-- um projeto para propostas comerciais.
+- a project for your company;
+- a project to create content;
+- a project for customer service;
+- a project for study;
+- a project for automations;
+- a project for commercial proposals.
 
-Dentro de cada projeto, Claude já entende melhor o contexto, os documentos, o objetivo e o estilo esperado.
+Within each project, Claude already better understands the context, documents, objective and expected style.
 
-## A grande mudança do Nível 2
+## The big change from Level 2
 
-A mudança principal é sair disso:
+The main change is to get out of this:
 
-> “Claude, vou explicar tudo de novo…”
+> “Claude, I’m going to explain everything again…”
 
-E passar para isso:
+And move on to this:
 
-> “Claude, continue a partir do que já combinamos no projeto.”
+> “Claude, continue based on what we have already agreed on in the project.”
 
-Esse é o ponto em que Claude começa a economizar tempo de verdade, porque você reduz a repetição.
+This is the point where Claude starts to really save time, because you reduce repetition.
 
-## Para que serve na prática
+## What is it for in practice
 
-### 1. Criar projetos por área de trabalho
+### 1. Create projects by workspace
 
-Projetos são como pastas inteligentes.
+Projects are like smart folders.
 
-Você pode separar seu uso por tema.
+You can separate its use by theme.
 
-Exemplos práticos:
+Practical examples:
 
-**Projeto: Conteúdo**
+**Project: Content**
 
-- ideias de posts;
-- roteiros de vídeos;
-- legendas;
-- calendários editoriais;
-- resumo de lives;
-- adaptação de conteúdo longo em conteúdo curto.
+- post ideas;
+- video scripts;
+- subtitles;
+- editorial calendars;
+- summary of lives;
+- adaptation of long content into short content.
 
-**Projeto: Clientes**
+**Project: Clients**
 
-- propostas;
-- respostas;
-- histórico de necessidades;
-- modelos de mensagens;
-- documentos de briefing.
+- proposals;
+- answers;
+- history of needs;
+- message templates;
+- briefing documents.
 
-**Projeto: Negócio**
+**Project: Business**
 
-- planejamento;
-- processos;
-- estratégias;
-- análises;
-- documentos de referência.
+- planning;
+- processes;
+- strategies;
+- analyses;
+- reference documents.
 
-**Projeto: Estudos**
+**Project: Studies**
 
-- resumos;
-- exercícios;
-- explicações;
-- mapas mentais;
-- revisões.
+- summaries;
+- exercises;
+- explanations;
+- mind maps;
+- reviews.
 
-A vantagem é que cada projeto pode ter seu próprio contexto.
+The advantage is that each project can have its own context.
 
-### 2. Adicionar documentos de referência
+### 2. Add reference documents
 
-No Nível 2, você começa a alimentar Claude com materiais importantes.
+In Level 2, you start feeding Claude important materials.
 
-Exemplos:
+Examples:
 
 - PDFs;
-- manuais;
-- apresentações;
-- transcrições;
-- planilhas;
-- documentos de estratégia;
-- guias de marca;
-- modelos de proposta;
-- políticas internas;
-- perguntas frequentes;
-- textos antigos.
+- manuals;
+- presentations;
+- transcriptions;
+- spreadsheets;
+- strategy documents;
+- brand guides;
+- proposal templates;
+- internal policies;
+- frequently asked questions;
+- ancient texts.
 
-Com isso, Claude passa a responder com base nos seus próprios materiais, não apenas em conhecimento genérico.
+With this, Claude starts to respond based on his own materials, not just generic knowledge.
 
-Exemplo prático:
+Practical example:
 
-Você adiciona um documento com a descrição dos seus serviços.
+You add a document describing your services.
 
-Depois pede:
+Then ask:
 
-> “Crie uma proposta comercial para um cliente de pequeno porte usando os serviços descritos no material do projeto.”
+> “Create a commercial proposal for a small client using the services described in the project material.”
 
-A resposta tende a ficar muito mais alinhada.
+The answer tends to be much more aligned.
 
-### 3. Criar uma instrução fixa do projeto
+### 3. Create a fixed project statement
 
-Cada projeto deve ter uma orientação clara.
+Each project must have clear guidance.
 
-Você pode escrever algo como:
+You can write something like:
 
-> “Você é meu assistente para criação de conteúdo. Responda em português do Brasil, com tom claro, direto e profissional. Sempre que eu pedir um roteiro, organize em abertura, desenvolvimento e chamada final. Evite linguagem exagerada. Priorize exemplos práticos.”
+> “You are my assistant for content creation. Respond in Brazilian Portuguese, with a clear, direct and professional tone. Whenever I ask for a script, organize it into opening, development and final call. Avoid exaggerated language. Prioritize practical examples.”
 
-Isso evita repetir preferências toda vez.
+This avoids repeating preferences every time.
 
-## Modelo prático de instrução para projeto
-
-```text
+## Practical project instruction model```text
 Você é meu assistente para [área do projeto].
 
 Contexto:
@@ -146,44 +144,42 @@ Formatos úteis:
 - Planos de ação
 - Tabelas simples
 - Mensagens prontas
-```
+```## Level 2 Key Features
 
-## Recursos principais do Nível 2
+### 1. Memory
 
-### 1. Memória
+Memory allows Claude to remember preferences, work style and recurring information.
 
-A memória permite que Claude lembre preferências, estilo de trabalho e informações recorrentes.
+Useful examples:
 
-Exemplos úteis:
+- you prefer answers in Portuguese;
+- you like practical explanations;
+- you work with certain types of projects;
+- you prefer direct texts;
+- you usually create content in script format;
+- you want to avoid very technical language.
 
-- você prefere respostas em português;
-- você gosta de explicações práticas;
-- você trabalha com determinados tipos de projeto;
-- você prefere textos diretos;
-- você costuma criar conteúdo em formato de roteiro;
-- você quer evitar linguagem muito técnica.
+Practical use:
 
-Uso prático:
+> “Remember that I prefer answers with practical examples and no nonsense.”
 
-> “Lembre que eu prefiro respostas com exemplos práticos e sem enrolação.”
+### 2. Search previous conversations
 
-### 2. Busca em conversas anteriores
+On paid plans, Claude can search for information in old conversations.
 
-Em planos pagos, Claude pode buscar informações em conversas antigas.
+Examples:
 
-Exemplos:
+- “What was the proposal structure we created last week?”
+- “Recall the automation roadmap idea we discussed.”
+- “What did we decide about project X?”
 
-- “Qual foi a estrutura de proposta que criamos na semana passada?”
-- “Recupere a ideia de roteiro sobre automação que discutimos.”
-- “O que decidimos sobre o projeto X?”
+This feature greatly reduces rework.
 
-Esse recurso reduz muito o retrabalho.
+### 3. Connectors
 
-### 3. Conectores
+Connectors allow you to connect Claude to external tools.
 
-Conectores permitem ligar Claude a ferramentas externas.
-
-Exemplos:
+Examples:
 
 - Google Drive;
 - Gmail;
@@ -192,154 +188,152 @@ Exemplos:
 - Notion;
 - Calendar.
 
-Uso prático:
+Practical use:
 
-- “Procure no Drive o documento mais recente sobre esse projeto e resuma os pontos principais.”
-- “Verifique meus e-mails sobre esse cliente e me diga o histórico.”
-- “Resuma as mensagens recentes do canal do projeto.”
+- “Search Drive for the most recent document about this project and summarize the main points.”
+- “Check my emails about this client and tell me the background.”
+- “Summarize recent messages from the project channel.”
 
-A grande vantagem é parar de copiar e colar tudo manualmente.
+The big advantage is to stop copying and pasting everything manually.
 
-### 4. Criação de arquivos
+### 4. File creation
 
-No Nível 2, Claude pode ajudar a gerar entregáveis reais.
+At Level 2, Claude can help generate real deliverables.
 
-Exemplos:
+Examples:
 
-- documentos;
+- documents;
 - PDFs;
-- apresentações;
-- planilhas;
-- relatórios;
-- propostas;
+- presentations;
+- spreadsheets;
+- reports;
+- proposals;
 - checklists;
-- roteiros;
-- modelos de e-mail.
+- itineraries;
+- email templates.
 
-Uso prático:
+Practical use:
 
-- “Crie uma proposta comercial em formato de documento com base neste briefing.”
-- “Monte uma planilha de controle de leads.”
-- “Crie uma apresentação com 8 slides sobre esse tema.”
+- “Create a commercial proposal in document format based on this brief.”
+- “Set up a lead control spreadsheet.”
+- “Create a presentation with 8 slides on this topic.”
 
-Aqui Claude começa a deixar de ser apenas conversa e vira ferramenta de produção.
+Here Claude starts to stop being just a conversation and becomes a production tool.
 
 ### 5. Artifacts
 
-Artifacts são espaços onde Claude pode criar algo mais estruturado, como:
+Artifacts are spaces where Claude can create something more structured, such as:
 
-- páginas simples;
-- protótipos;
-- calculadoras;
+- simple pages;
+- prototypes;
+- calculators;
 - dashboards;
-- ferramentas internas;
-- checklists interativos;
-- modelos reutilizáveis.
+- internal tools;
+- interactive checklists;
+- reusable models.
 
-Exemplos:
+Examples:
 
-- “Crie um painel simples para eu acompanhar tarefas de clientes.”
-- “Crie uma calculadora de orçamento para meus serviços.”
+- “Create a simple dashboard for me to track client tasks.”
+- “Create a quote calculator for my services.”
 
-### 6. Visuais e gráficos
+### 6. Visuals and graphics
 
-Claude pode ajudar a criar gráficos, comparações e diagramas.
+Claude can help create graphs, comparisons and diagrams.
 
-Exemplos:
+Examples:
 
-- “Transforme essa tabela em um gráfico.”
-- “Crie um diagrama mostrando esse processo.”
-- “Compare essas três opções em uma matriz.”
-- “Monte um fluxo visual de atendimento ao cliente.”
+- “Turn this table into a graph.”
+- “Create a diagram showing this process.”
+- “Compare these three options in a matrix.”
+- “Set up a visual customer service flow.”
 
-Isso é útil para apresentações, decisões e explicações.
+This is useful for presentations, decisions and explanations.
 
-## Como usar o Nível 2 no dia a dia
+## How to use Level 2 in everyday life
 
-### Exemplo 1: Projeto de conteúdo
+### Example 1: Content design
 
-Você cria um projeto chamado **Conteúdo IA**.
+You create a project called **IA Content**.
 
-Adiciona:
+Adds:
 
-- sua bio;
-- exemplos de posts;
-- temas principais;
-- tom de voz;
-- público-alvo.
+- your bio;
+- examples of posts;
+- main themes;
+- tone of voice;
+- target audience.
 
-Depois pode pedir:
+Then you can ask:
 
-- “Crie 5 posts sobre automação para pequenos negócios seguindo meu estilo.”
-- “Transforme esse vídeo em 3 posts e 1 roteiro curto.”
-- “Monte um calendário editorial para a próxima semana.”
+- “Create 5 posts about automation for small businesses following my style.”
+- “Turn this video into 3 posts and 1 short script.”
+- “Put together an editorial calendar for next week.”
 
-### Exemplo 2: Projeto de clientes
+### Example 2: Customer project
 
-Você cria um projeto chamado **Propostas Comerciais**.
+You create a project called **Commercial Proposals**.
 
-Adiciona:
+Adds:
 
-- modelo de proposta;
-- lista de serviços;
-- preços;
-- diferenciais;
-- perguntas frequentes;
-- exemplos de propostas antigas.
+- proposal model;
+- list of services;
+- prices;
+- differentials;
+- frequently asked questions;
+- examples of old proposals.
 
-Depois pede:
+Then ask:
 
-- “Crie uma proposta para um cliente que precisa organizar atendimento com IA.”
-- “Adapte essa proposta para um cliente pequeno, com linguagem mais simples.”
-- “Gere uma versão curta para WhatsApp.”
+- “Create a proposal for a client who needs to organize service with AI.”
+- “Adapt this proposal for a small client, with simpler language.”
+- “Generate a short version for WhatsApp.”
 
-### Exemplo 3: Projeto de estudos
+### Example 3: Study project
 
-Você cria um projeto chamado **Estudos de IA**.
+You create a project called **AI Studies**.
 
-Adiciona:
+Adds:
 
 - PDFs;
-- transcrições;
-- anotações;
-- livros;
-- aulas.
+- transcriptions;
+- notes;
+- books;
+- classes.
 
-Depois pede:
+Then ask:
 
-- “Resuma este material em linguagem simples.”
-- “Crie perguntas para eu revisar.”
-- “Monte um plano de estudo de 7 dias.”
-- “Explique os conceitos mais difíceis com exemplos.”
+- “Summarize this material in simple language.”
+- “Create questions for me to review.”
+- “Put together a 7-day study plan.”
+- “Explain the most difficult concepts with examples.”
 
-## Checklist para configurar bem o Nível 2
+## Checklist to configure Level 2 well
 
-Crie pelo menos 1 projeto com:
+Create at least 1 project with:
 
-1. **Nome claro**  
-   Exemplo: “Conteúdo”, “Clientes”, “Estudos”, “Propostas”.
+1. **Clear name**  
+   Example: “Content”, “Clients”, “Studies”, “Proposals”.
 
-2. **Objetivo do projeto**  
-   Explique para que aquele projeto existe.
+2. **Project objective**  
+   Explain why that project exists.
 
-3. **Instruções fixas**  
-   Diga como Claude deve responder.
+3. **Fixed instructions**  
+   Tell how Claude should respond.
 
-4. **Documentos de referência**  
-   Adicione materiais que Claude deve usar.
+4. **Reference documents**  
+   Add materials that Claude should use.
 
-5. **Formatos preferidos**  
-   Exemplo: resumo, checklist, roteiro, tabela, plano de ação.
+5. **Preferred Formats**  
+   Example: summary, checklist, script, table, action plan.
 
-6. **Tom de voz**  
-   Exemplo: direto, profissional, simples, persuasivo, didático.
+6. **Tone of voice**  
+   Example: direct, professional, simple, persuasive, didactic.
 
-7. **Regras do que evitar**  
-   Exemplo: não usar linguagem exagerada, não inventar dados, não escrever textos longos demais.
+7. **Rules of what to avoid**  
+   Example: do not use exaggerated language, do not invent data, do not write excessively long texts.
 
-## Prompt prático para começar o Nível 2
-
-```text
+## Practical prompt to start Level 2```text
 Quero configurar este projeto para trabalhar de forma contínua.
 
 Primeiro, me ajude a organizar o contexto ideal.
@@ -356,97 +350,95 @@ Quero que você me ajude principalmente com:
 Meu tom preferido é: [tom].
 
 Antes de começar a produzir, faça uma lista dos documentos e informações que eu deveria adicionar a este projeto.
-```
+```## Common errors at Level 2
 
-## Erros comuns no Nível 2
+### 1. Create projects that are too generic
 
-### 1. Criar projetos genéricos demais
+Bad:
 
-Ruim:
+> “My general project”
 
-> “Meu projeto geral”
+Best:
 
-Melhor:
+- “Content for Instagram”
+- “Automation proposals”
+- “Studies on Claude”
+- “Internal processes”
 
-- “Conteúdo para Instagram”
-- “Propostas de automação”
-- “Estudos sobre Claude”
-- “Processos internos”
+The more specific, the better.
 
-Quanto mais específico, melhor.
+### 2. Do not add documents
 
-### 2. Não adicionar documentos
+A project without documents becomes almost a common chat.
 
-Um projeto sem documentos vira quase um chat comum.
+The ideal is to place materials that serve as a base.
 
-O ideal é colocar materiais que sirvam como base.
+### 3. Don't write fixed instructions
 
-### 3. Não escrever instruções fixas
+Without instruction, Claude may respond inconsistently.
 
-Sem instrução, Claude pode responder de forma inconsistente.
+You need to explain:
 
-Você precisa explicar:
+- what is the objective;
+- what is the tone;
+- which formats do you prefer;
+- what to avoid.
 
-- qual é o objetivo;
-- qual é o tom;
-- quais formatos prefere;
-- o que deve evitar.
+### 4. Mix different subjects in the same project
 
-### 4. Misturar assuntos diferentes no mesmo projeto
+Avoid putting everything in the same place.
 
-Evite colocar tudo no mesmo lugar.
+One project for content, another for clients, another for studies.
 
-Um projeto para conteúdo, outro para clientes, outro para estudos.
+This keeps the context clean.
 
-Isso mantém o contexto limpo.
+### 5. Not reviewing the results
 
-### 5. Não revisar os resultados
+Even with context, you must validate what Claude produced.
 
-Mesmo com contexto, você deve validar o que Claude produziu.
+Level 2 improves quality but does not eliminate supervision.
 
-O Nível 2 melhora qualidade, mas não elimina supervisão.
+## How to know that you have mastered Level 2
 
-## Como saber que você domina o Nível 2
+You are mastering this level when:
 
-Você está dominando este nível quando:
+- you don’t need to repeat the same context every time;
+- your projects have useful documents;
+- Claude already responds in his style;
+- you can recover old ideas;
+- you generate files and deliverables faster;
+- your answers become more consistent;
+- you use Claude as a work environment, not just as a chat.
 
-- não precisa repetir o mesmo contexto toda hora;
-- seus projetos têm documentos úteis;
-- Claude já responde no seu estilo;
-- você consegue recuperar ideias antigas;
-- você gera arquivos e entregáveis com mais rapidez;
-- suas respostas ficam mais consistentes;
-- você usa Claude como ambiente de trabalho, não apenas como chat.
+## Expected result
 
-## Resultado esperado
+At Level 2, Claude starts saving **5 hours or more per week** because you stop manually reconstructing context.
 
-No Nível 2, Claude começa a economizar **5 horas ou mais por semana**, porque você deixa de reconstruir contexto manualmente.
+You mainly gain:
 
-Você ganha principalmente:
+- speed;
+- consistency;
+- organization;
+- reuse of knowledge;
+- production of files;
+- integration with tools;
+- less rework.
 
-- velocidade;
-- consistência;
-- organização;
-- reaproveitamento de conhecimento;
-- produção de arquivos;
-- integração com ferramentas;
-- menos retrabalho.
+## Path to Level 3
 
-## Caminho para o Nível 3
+The limit of Level 2 is that Claude still relies heavily on you to perform tasks outside of chat.
 
-O limite do Nível 2 é que Claude ainda depende muito de você para executar tarefas fora do chat.
+You still need:
 
-Você ainda precisa:
+- download files;
+- move documents;
+- copy answers;
+- paste on tools;
+- organize folders;
+- perform actions manually.
 
-- baixar arquivos;
-- mover documentos;
-- copiar respostas;
-- colar em ferramentas;
-- organizar pastas;
-- executar ações manualmente.
+When you start thinking:
 
-Quando você começar a pensar:
+> “I wish Claude would just do this on my computer…”
 
-> “Eu queria que Claude simplesmente fizesse isso no meu computador…”
-
-você está pronto para o **Nível 3 — Intermediário**, onde entram acesso a arquivos, execução de tarefas, skills e automações locais.
+you are ready for **Level 3 — Intermediate**, which includes access to files, task execution, skills and local automations.
