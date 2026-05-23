@@ -1,98 +1,86 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>5.2 Autônomos com responsabilidade | T5</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>5.2 Responsible freelancers | T5</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
 html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
 html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .bg-teal-500\/10{background-color:rgba(15,118,110,.08)}html:not(.dark) .bg-teal-500\/20{background-color:rgba(15,118,110,.12)}html:not(.dark) .border-teal-500\/30{border-color:rgba(15,118,110,.3)}html:not(.dark) .bg-teal-600{background-color:#0f766e}html:not(.dark) .hover\:bg-teal-500:hover{background-color:#14b8a6}</style></head><body class="text-neutral-100">
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a><a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a><a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a><a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a><a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-teal-400 bg-teal-500/10"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a><a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
-
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-teal-400 bg-teal-500/10" href="index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a><button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button></div></div></div></nav>
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-teal-400">Início</a> / <a href="index.html" class="hover:text-teal-400">Trilha 5</a> / <span class="text-neutral-300">Módulo 5.2</span></nav>
-
-<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-400 border border-teal-500/30 mb-3">MÓDULO 5.2 · ~30 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🛡 Operando autônomos com responsabilidade</h1><p class="text-lg text-neutral-300">A trava do N5 é confiança, não técnica. Esse módulo te ensina como construir confiança gradualmente — exatamente como você aprendeu a dirigir.</p></header>
-
+<nav class="text-sm text-neutral-500 mb-6"><a class="hover:text-teal-400" href="../../index.html">Start</a> / <a class="hover:text-teal-400" href="index.html">Track 5</a> / <span class="text-neutral-300">Module 5.2</span></nav>
+<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-teal-500/20 text-teal-400 border border-teal-500/30 mb-3">MODULE 5.2 · ~30 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🛡 Operating autonomously responsibly</h1><p class="text-lg text-neutral-300">The N5's lock is confidence, not technique. This module teaches you how to build confidence gradually — just like you learned to drive.</p></header>
 <section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">💰 Task budgets (Opus 4.7 beta)</h2></div>
-<p class="text-neutral-300 mb-4">Você define orçamento total de tokens pra rotina inteira — thinking, tools, output entram no cap. O modelo vê o budget e se auto-regula, encerrando graciosamente quando vê que vai estourar.</p>
-<p class="text-neutral-300">É o lever mais subestimado pra controle de custo em autônomos. Sem ele, agente "viaja" e queima conta. Atualmente API only — mas chegará a Code e co-work.</p>
+<p class="text-neutral-300 mb-4">You define the total token budget for the entire routine — thinking, tools, output are included in the chapter. The model sees the budget and regulates itself, ending gracefully when it sees that it is going to run out.</p>
+<p class="text-neutral-300">It is the most underrated lever for cost control in self-employed. Without it, agents "travel" and burn accounts. Currently API only — but will come to Code and co-work.</p>
 </section>
-
 <section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">👥 Agent teams (experimental)</h2></div>
-<p class="text-neutral-300 mb-4">Múltiplos Claudes coordenados por agente "lead". Diferente de subagentes (N4): aqui se mensagem, têm channel compartilhado, debatem, tem task list comum.</p>
-<p class="text-neutral-300 mb-4">Use quando vê que tem orçamento de tokens sobrando — agent teams gastam muito. Spin up, peça pra debaterem uma decisão, escolha o melhor argumento.</p>
-<p class="text-neutral-300"><strong class="text-teal-400">Protocolos:</strong> MCP pra tools (já vimos), Ato pra agent-to-agent (novo, padrão da Anthropic+Google de 2025).</p>
+<p class="text-neutral-300 mb-4">Multiple Claudes coordinated by "lead" agent. Different from subagents (N4): here they message, have a shared channel, debate, have a common task list.</p>
+<p class="text-neutral-300 mb-4">Use it when you see that you have a spare token budget — agent teams spend a lot. Spin up, ask them to debate a decision, choose the best argument.</p>
+<p class="text-neutral-300"><strong class="text-teal-400">Protocols:</strong>MCP for tools (we've already seen), Ato for agent-to-agent (new, Anthropic+Google standard from 2025).</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">✅ Outcomes — validação automática multi-agente</h2></div>
-<p class="text-neutral-300 mb-4">Feature 2026: você define <strong class="text-teal-400">outcome explícito</strong> (sucesso = X, Y, Z). Um agente validator checa antes da entrega chegar em você. Se falha, dispara nova iteração.</p>
-<p class="text-neutral-300">Mata o "Claude entregou mas não tá bom". Confiança constrói com PASS automático repetido.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">✅ Outcomes — automatic multi-agent validation</h2></div>
+<p class="text-neutral-300 mb-4">Feature 2026: you define<strong class="text-teal-400">explicit outcome</strong>(success = X, Y, Z). A validator agent checks it before the delivery reaches you. If it fails, it triggers a new iteration.</p>
+<p class="text-neutral-300">Kill "Claude delivered it but it's not good". Confidence builds with repeated automatic PASS.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">📅 Plano 7 dias — confiança gradual</h2></div>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">📅 7-day plan — gradual confidence</h2></div>
 <div class="bg-dark-800 rounded-lg border border-dark-600 p-5 mb-4">
-  <ul class="text-sm text-neutral-300 space-y-2">
-    <li><strong class="text-teal-400">Dia 1:</strong> escolha rotina de baixíssimo risco (resumo só pra você).</li>
-    <li><strong class="text-teal-400">Dia 2:</strong> defina escopo — fontes, formato, critério de sucesso.</li>
-    <li><strong class="text-teal-400">Dia 3:</strong> crie formato de saída ideal.</li>
-    <li><strong class="text-teal-400">Dia 4:</strong> adicione notificação (Slack, e-mail) com link pro output.</li>
-    <li><strong class="text-teal-400">Dia 5:</strong> rode manual 3-5 vezes. Refine.</li>
-    <li><strong class="text-teal-400">Dia 6:</strong> agende em routine, com supervisão (você revisa cada output).</li>
-    <li><strong class="text-teal-400">Dia 7:</strong> revise logs. Se todas as 7 execuções estavam boas, deixe rodar sozinho. Senão, mais 5 dias.</li>
-  </ul>
+<ul class="text-sm text-neutral-300 space-y-2">
+<li><strong class="text-teal-400">Day 1:</strong>choose a very low-risk routine (summary just for you).</li>
+<li><strong class="text-teal-400">Day 2:</strong>define scope — sources, format, success criteria.</li>
+<li><strong class="text-teal-400">Day 3:</strong>create optimal output format.</li>
+<li><strong class="text-teal-400">Day 4:</strong>add notification (Slack, email) with link to output.</li>
+<li><strong class="text-teal-400">Day 5:</strong>rotate manual 3-5 times. Refine.</li>
+<li><strong class="text-teal-400">Day 6:</strong>schedule on a routine basis, with supervision (you review each output).</li>
+<li><strong class="text-teal-400">Day 7:</strong>review logs. If all 7 runs were good, let it run alone. Otherwise, 5 more days.</li>
+</ul>
 </div>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">🎯 3 exemplos prontos completos</h2></div>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">🎯 3 complete ready-made examples</h2></div>
 <div class="space-y-4">
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-teal-400 mb-2">Revisão automática de PR</h3><p class="text-sm text-neutral-300 mb-2"><strong>Trigger:</strong> GitHub event "PR aberta"<br><strong>Fluxo:</strong> Claude lê diff → roda testes → analisa lógica → posta comments inline → resume no Slack #dev<br><strong>Segurança:</strong> Read-only no repo. Não merge. Não comenta com tom rude. Não bloqueia ninguém.</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-teal-400 mb-2">Briefing pré-reunião</h3><p class="text-sm text-neutral-300 mb-2"><strong>Trigger:</strong> Calendar event começa em 1h<br><strong>Fluxo:</strong> Identifica participantes → busca histórico Notion/Slack → resume contexto + pendências + perguntas-chave → envia e-mail<br><strong>Segurança:</strong> Só lê fontes autorizadas. Não responde e-mail por você.</p></div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-teal-400 mb-2">Relatório semanal autônomo</h3><p class="text-sm text-neutral-300"><strong>Trigger:</strong> Cron sexta 17h<br><strong>Fluxo:</strong> Lê GitHub (PRs/issues), Notion (decisões), Slack (#geral) → compõe markdown com 3 partes (feito, em andamento, riscos) → entrega no canal #weekly<br><strong>Segurança:</strong> Não cita decisões confidenciais. Não atribui falha a pessoa específica.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-teal-400 mb-2">Automatic PR Review</h3><p class="text-sm text-neutral-300 mb-2"><strong>Trigger:</strong>GitHub event "PR open"<br/><strong>Flow:</strong>Claude reads diff → runs tests → analyzes logic → posts inline comments → summarizes on Slack #dev<br/><strong>Security:</strong>Read-only in the repo. Don't merge. Do not comment with a rude tone. It doesn't block anyone.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-teal-400 mb-2">Pre-meeting briefing</h3><p class="text-sm text-neutral-300 mb-2"><strong>Trigger:</strong>Calendar event starts at 1h<br/><strong>Flow:</strong>Identifies participants → Notion/Slack history search → summarizes context + pending issues + key questions → sends email<br/><strong>Security:</strong>Only read authorized sources. Does not respond to emails for you.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-semibold text-teal-400 mb-2">Standalone weekly report</h3><p class="text-sm text-neutral-300"><strong>Trigger:</strong>Cron Friday 5pm<br/><strong>Flow:</strong>Reads GitHub (PRs/issues), Notion (decisions), Slack (#general) → composes markdown with 3 parts (done, in progress, risks) → delivers to the #weekly channel<br/><strong>Security:</strong>It does not cite confidential decisions. It does not attribute failure to a specific person.</p></div>
 </div>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📋 Checklist de segurança</h2></div>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📋 Security checklist</h2></div>
 <div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><ul class="text-sm text-neutral-300 space-y-2">
-  <li>☐ <strong class="text-teal-400">Logs estruturados</strong> — cada execução grava: input, tools usadas, output, tokens.</li>
-  <li>☐ <strong class="text-teal-400">Dry-run paralelo</strong> por 1 semana — rotina roda em modo "simulação" antes do real.</li>
-  <li>☐ <strong class="text-teal-400">Kill switch</strong> acessível — comando ou botão pra pausar.</li>
-  <li>☐ <strong class="text-teal-400">Alçada explícita</strong> — "até R$ X / quantidade Y, executa; acima, pede aprovação humana".</li>
-  <li>☐ <strong class="text-teal-400">Read-only por padrão</strong> — write apenas onde indispensável.</li>
-  <li>☐ <strong class="text-teal-400">Token budget</strong> — cap estrito.</li>
-  <li>☐ <strong class="text-teal-400">Alert de falha</strong> — qualquer erro vira mensagem pra você imediatamente.</li>
+<li>☐ <strong class="text-teal-400">Structured logs</strong>— each execution records: input, tools used, output, tokens.</li>
+<li>☐ <strong class="text-teal-400">Parallel dry-run</strong>for 1 week — routine runs in "simulation" mode before the real one.</li>
+<li>☐ <strong class="text-teal-400">kill switch</strong>accessible — command or button to pause.</li>
+<li>☐ <strong class="text-teal-400">Explicit jurisdiction</strong>— "up to R$X / quantity Y, execute; above, ask for human approval".</li>
+<li>☐ <strong class="text-teal-400">Read-only by default</strong>— write only where necessary.</li>
+<li>☐ <strong class="text-teal-400">Token budget</strong>— strict cap.</li>
+<li>☐ <strong class="text-teal-400">Failure alert</strong>— any error will be sent to you immediately.</li>
 </ul></div>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">🪜 Trust ladder: N4→N5 é psicológico</h2></div>
-<p class="text-neutral-300 mb-4">Quase todo mundo no N4 consegue construir rotina tecnicamente. Mas não habilita. A trava é confiança em sistema que roda enquanto você dorme.</p>
-<p class="text-neutral-300">Fix é igual a aprender a dirigir: estacionamento vazio primeiro. Rotina baixíssimo risco, só pra você, 10 runs perfeitas = primeira confiança. Mais 100 = segunda. Não pule.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">🪜 Trust ladder: N4→N5 is psychological</h2></div>
+<p class="text-neutral-300 mb-4">Almost everyone in N4 can technically build a routine. But it doesn't enable. The lock is trust in a system that runs while you sleep.</p>
+<p class="text-neutral-300">Fix is ​​the same as learning to drive: empty parking lot first. Very low risk routine, just for you, 10 perfect runs = first confidence. Plus 100 = second. Don't jump.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">⚖ Determinístico vs não-determinístico</h2></div>
-<p class="text-neutral-300 mb-4">Automação determinística (ETL clássico, "se X então Y") = entrada → saída fixa. Confiável.</p>
-<p class="text-neutral-300 mb-4">Skills/agentes Claude = não-determinísticos. Mais poderosos, mas exigem validação. Misture os dois: ETL determinístico transporta, LLM no meio só onde julgamento criativo é necessário.</p>
-<p class="text-neutral-300">Não-determinístico sem validador = receita pra desastre. Outcomes automáticos resolvem.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">⚖ Deterministic vs non-deterministic</h2></div>
+<p class="text-neutral-300 mb-4">Deterministic automation (classic ETL, “if X then Y”) = input → fixed output. Reliable.</p>
+<p class="text-neutral-300 mb-4">Claude skills/agents = non-deterministic. More powerful, but require validation. Mix the two: deterministic ETL carries over, LLM in between only where creative judgment is needed.</p>
+<p class="text-neutral-300">Non-deterministic without validator = recipe for disaster. Automatic outcomes do the trick.</p>
 </section>
-
 <section class="mb-12"><div class="bg-gradient-to-br from-teal-900/40 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
-  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span> Resumo do Módulo</h2>
-  <div class="space-y-3 mb-6 text-sm">
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Task budgets</strong> capam tokens.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Agent teams</strong> — debate entre Claudes.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Outcomes</strong> — validador automático.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Plano 7 dias</strong> — confiança gradual.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">3 exemplos completos</strong> — PR, briefing, relatório.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Checklist de segurança</strong> — logs, dry-run, kill switch, alçada.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Trust ladder</strong> — N4→N5 é psicológico.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Determinístico + não-determinístico</strong> = misture.</div></div>
-  </div>
-  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-teal-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">5.3 — O que vender e como descobrir o que já existe.</p></div>
-  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="modulo-5-3.html" class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition">Próximo Módulo →</a></div>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span>Module Summary</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Task budgets</strong>cover tokens.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Agent teams</strong>— debate between Claudes.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Outcomes</strong>— automatic validator.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">7 day plan</strong>— gradual confidence.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">3 complete examples</strong>— PR, briefing, report.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Security checklist</strong>— logs, dry-run, kill switch, authority.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Trust ladder</strong>— N4→N5 is psychological.</div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Deterministic + non-deterministic</strong>= mix.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-teal-400 mb-2">Next Module:</h3><p class="text-neutral-300">5.3 — What to sell and how to find out what already exists.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="index.html">← Back to Trail</a><a class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition" href="modulo-5-3.html">Next Module →</a></div>
 </div></section>
-
 </main>
-<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
-<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a></div></footer>
+<script data-notranslate="True">const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
 </body></html>
