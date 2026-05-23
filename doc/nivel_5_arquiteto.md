@@ -1,61 +1,59 @@
-# Nível 5 — Arquiteto
+# Level 5 — Architect
 
-O **Nível 5** é quando Claude deixa de ser apenas uma ferramenta que você abre para trabalhar e passa a funcionar como **infraestrutura autônoma**.
+**Level 5** is when Claude stops being just a tool that you open to work and starts functioning as an **autonomous infrastructure**.
 
-Aqui, Claude pode rodar tarefas mesmo quando você não está na frente do computador, reagir a eventos, executar rotinas, revisar código, enviar notificações e coordenar agentes.
+Here, Claude can run tasks even when you're not in front of the computer, react to events, execute routines, review code, send notifications and coordinate agents.
 
-> No Nível 4, Claude trabalha como uma equipe técnica quando você aciona.  
-> No Nível 5, Claude trabalha como um sistema autônomo, com regras, gatilhos e supervisão.
+> At Level 4, Claude works as a technical team when you trigger.  
+> At Level 5, Claude works as an autonomous system, with rules, triggers and supervision.
 
-## O que caracteriza o Nível 5
+## What characterizes Level 5
 
-O Nível 5 é marcado por:
+Level 5 is marked by:
 
-- rotinas na nuvem;
-- automações acionadas por eventos;
-- hooks de segurança;
-- canais externos de controle;
-- execução sem interface humana;
-- agentes especializados;
-- controle de orçamento;
-- monitoramento;
-- confiança gradual.
+- routines in the cloud;
+- automations triggered by events;
+- security hooks;
+- external control channels;
+- execution without human interface;
+- specialized agents;
+- budget control;
+- monitoring;
+- gradual confidence.
 
-Esse é o nível em que Claude vira uma espécie de **operação sempre ligada**.
+This is the level at which Claude becomes a kind of **always on operation**.
 
-## A grande mudança do Nível 5
+## The big change from Level 5
 
-A mudança principal é sair de:
+The main change is to move away from:
 
-> “Claude, faça esta tarefa agora.”
+> “Claude, do this task now.”
 
-Para:
+For:
 
-> “Claude, execute esta tarefa automaticamente quando este evento acontecer.”
+> “Claude, run this task automatically when this event happens.”
 
-Exemplos:
+Examples:
 
-- quando abrirem um pull request, Claude revisa;
-- toda segunda-feira, Claude faz auditoria de dependências;
-- todo dia às 8h, Claude gera um resumo do backlog;
-- quando uma reunião for marcada, Claude prepara um briefing;
-- quando um relatório chegar, Claude processa e envia um resumo.
+- when a pull request is opened, Claude reviews it;
+- every Monday, Claude audits dependencies;
+- every day at 8am, Claude generates a backlog summary;
+- when a meeting is scheduled, Claude prepares a briefing;
+- when a report arrives, Claude processes it and sends a summary.
 
-Aqui você deixa de operar Claude manualmente e passa a desenhar **sistemas de trabalho autônomos**.
+Here you stop operating Claude manually and start designing **autonomous work systems**.
 
-## Para que serve na prática
+## What is it for in practice
 
-### 1. Rodar rotinas na nuvem
+### 1. Run routines in the cloud
 
-As **Cloud Routines** são configurações salvas que rodam no ambiente da nuvem, sem depender do seu computador ligado.
+**Cloud Routines** are saved configurations that run in the cloud environment, without depending on your computer being turned on.
 
-No Nível 3, tarefas agendadas ainda dependiam do desktop aberto.
+At Level 3, scheduled tasks still depended on the open desktop.
 
-No Nível 5, a rotina pode rodar independentemente.
+At Level 5, the routine can run independently.
 
-Exemplos práticos:
-
-```text
+Practical examples:```text
 Toda segunda-feira às 8h, revise as dependências do projeto e gere um relatório.
 ```
 
@@ -65,220 +63,180 @@ Todo dia às 17h, resuma o que mudou no repositório e envie para mim.
 
 ```text
 Toda sexta-feira, analise tarefas pendentes e gere uma lista de prioridades para a próxima semana.
-```
+```Actual use: Claude starts performing predictable routines without you needing to remember.
 
-Uso real: Claude passa a executar rotinas previsíveis sem você precisar lembrar.
+### 2. Trigger Claude by events
 
-### 2. Acionar Claude por eventos
+At Level 5, Claude can be triggered by external events.
 
-No Nível 5, Claude pode ser acionado por acontecimentos externos.
+Examples:
 
-Exemplos:
+- new pull request on GitHub;
+- new issue;
+- new file in a folder;
+- new line in a spreadsheet;
+- new email received;
+- completed form;
+- meeting created in the calendar;
+- API call;
+- message in a channel.
 
-- novo pull request no GitHub;
-- nova issue;
-- novo arquivo em uma pasta;
-- nova linha em uma planilha;
-- novo e-mail recebido;
-- formulário preenchido;
-- reunião criada no calendário;
-- chamada de API;
-- mensagem em um canal.
-
-Exemplo prático:
-
-```text
+Practical example:```text
 Quando um novo pull request for aberto, revise o código e publique comentários com:
 1. Possíveis bugs
 2. Problemas de segurança
 3. Pontos de melhoria
 4. Sugestões de testes
-```
+```This type of automation changes Claude's role: he stops being reactive to you and starts being reactive to the system.
 
-Esse tipo de automação muda o papel de Claude: ele deixa de ser reativo a você e passa a ser reativo ao sistema.
+## 3. Use hooks as safety rails
 
-## 3. Usar hooks como trilhos de segurança
+**Hooks** are rules that fire before, during or after certain actions.
 
-**Hooks** são regras que disparam antes, durante ou depois de certas ações.
-
-Eles servem para controlar riscos.
+They serve to control risks.
 
 ### Pre-tool-use hook
 
-Roda antes de Claude usar uma ferramenta ou executar um comando.
+Runs before Claude uses a tool or executes a command.
 
-Serve para bloquear ações perigosas.
-
-```text
+It serves to block dangerous actions.```text
 Antes de qualquer comando que apague arquivos, peça confirmação humana.
 Bloqueie automaticamente comandos como rm -rf, delete recursive ou reset hard.
-```
+```### Post-edit hook
 
-### Post-edit hook
+Runs after Claude edits files.
 
-Roda depois que Claude edita arquivos.
-
-Serve para formatar, validar ou registrar mudanças.
-
-```text
+Used to format, validate or record changes.```text
 Depois de qualquer edição de código:
 1. Rode o formatador
 2. Rode lint
 3. Registre os arquivos alterados
-```
+```### Stop hook
 
-### Stop hook
+Runs when a task finishes.
 
-Roda quando uma tarefa termina.
-
-Serve para notificar você.
-
-```text
+It serves to notify you.```text
 Quando a tarefa terminar, envie uma mensagem no Slack com:
 1. O que foi feito
 2. Arquivos alterados
 3. Testes executados
 4. Pendências
-```
+```### Response hook
 
-### Response hook
+Wheels when Claude responds.
 
-Roda quando Claude responde.
-
-Serve para alertar você quando precisa voltar à sessão.
-
-```text
+This is to alert you when you need to return to the session.```text
 Quando Claude precisar de aprovação humana, envie uma notificação.
-```
+```## 4. Create control channels
 
-## 4. Criar canais de controle
+**Channels** allow you to control Claude outside of the terminal or the main app.
 
-**Channels** permitem controlar Claude fora do terminal ou do app principal.
-
-Exemplos de canais:
+Channel examples:
 
 - Discord;
 - Telegram;
 - iMessage;
 - Slack;
 - webhooks;
-- painel interno;
-- app próprio.
+- internal panel;
+- own app.
 
-### Canal de mão única
+### One-way channel
 
-Um evento externo aciona Claude.
-
-```text
+An external event triggers Claude.```text
 Quando uma reunião for criada no calendário, acione Claude para preparar um briefing.
-```
+```### Two-way channel
 
-### Canal de mão dupla
+You talk to Claude through another channel.
 
-Você conversa com Claude por outro canal.
-
-Exemplo no Telegram:
-
-```text
+Example on Telegram:```text
 Revise o PR mais recente do projeto X e me mande um resumo.
-```
+```Claude executes in the configured environment and responds on the channel itself.
 
-Claude executa no ambiente configurado e responde no próprio canal.
+## 5. Run in headless mode
 
-## 5. Rodar em modo headless
+**Headless mode** means running Claude without an open chat interface.
 
-**Headless mode** significa rodar Claude sem uma interface de conversa aberta.
+You pass an instruction, Claude executes it, returns results and can forward it to another system.
 
-Você passa uma instrução, Claude executa, devolve resultado e pode encaminhar para outro sistema.
-
-Exemplo conceitual:
-
-```text
+Conceptual example:```text
 claude -p "Analise os erros do log e gere um resumo"
-```
+```Possible uses:
 
-Possíveis usos:
+- send results to Slack;
+- save to file;
+- feed another agent;
+- create report;
+- update panel;
+- register in monitoring system.
 
-- enviar resultado para Slack;
-- gravar em arquivo;
-- alimentar outro agente;
-- criar relatório;
-- atualizar painel;
-- registrar em sistema de monitoramento.
+This format is useful when Claude becomes part of an automated flow.
 
-Esse formato é útil quando Claude vira parte de um fluxo automatizado.
+## 6. Use Agent SDK
 
-## 6. Usar Agent SDK
+The **Agent SDK** allows you to create your own products or systems using Claude as the engine.
 
-O **Agent SDK** permite criar produtos ou sistemas próprios usando Claude como motor.
+Instead of just using Claude as a user, you start building tools on top of him.
 
-Em vez de usar Claude apenas como usuário, você passa a construir ferramentas sobre ele.
+Examples:
 
-Exemplos:
+- customer service agent;
+- document analysis agent;
+- code review agent;
+- financial agent;
+- reporting agent;
+- research agent;
+- internal operations agent.
 
-- agente de atendimento;
-- agente de análise documental;
-- agente de revisão de código;
-- agente financeiro;
-- agente de relatórios;
-- agente de pesquisa;
-- agente de operações internas.
+Practical example:
 
-Exemplo prático:
+You create a system where the user sends a PDF, and the agent:
 
-Você cria um sistema onde o usuário envia um PDF, e o agente:
+1. read the document;
+2. extracts important information;
+3. compares with an internal policy;
+4. generates opinion;
+5. saves result;
+6. notify the person responsible.
 
-1. lê o documento;
-2. extrai informações importantes;
-3. compara com uma política interna;
-4. gera parecer;
-5. salva resultado;
-6. avisa o responsável.
+## 7. Use remote control
 
-## 7. Usar controle remoto
+Remote control allows you to follow or trigger sessions from another device.
 
-O controle remoto permite acompanhar ou acionar sessões a partir de outro dispositivo.
+Examples:
 
-Exemplos:
+- start a task via cell phone;
+- monitor execution in the browser;
+- approve a step outside the computer;
+- receive QR code or access link;
+- continue monitoring while away.
 
-- iniciar tarefa pelo celular;
-- acompanhar execução no navegador;
-- aprovar uma etapa fora do computador;
-- receber QR code ou link de acesso;
-- continuar monitorando enquanto está longe.
-
-Uso real:
-
-```text
+Actual usage:```text
 Verifique se os testes passaram e me avise se precisar de aprovação.
-```
+```## 8. Consolidate memory
 
-## 8. Consolidar memória
+At Level 5, poorly organized memory becomes a risk.
 
-No Nível 5, memória mal organizada vira risco.
+Over time, agents can accumulate:
 
-Com o tempo, agentes podem acumular:
+- contradictory information;
+- old data;
+- duplicates;
+- outdated decisions;
+- vague references like “yesterday” or “last week”.
 
-- informações contraditórias;
-- dados antigos;
-- duplicatas;
-- decisões ultrapassadas;
-- referências vagas como “ontem” ou “semana passada”.
+Memory consolidation serves to clean up and organize this.
 
-A consolidação de memória serve para limpar e organizar isso.
+Examples of what she does:
 
-Exemplos do que ela faz:
+- removes contradictory facts;
+- joins duplicate information;
+- transforms relative dates into real dates;
+- archives obsolete information;
+- maintains only useful rules;
+- reduces noise between sessions.
 
-- remove fatos contraditórios;
-- junta informações duplicadas;
-- transforma datas relativas em datas reais;
-- arquiva informações obsoletas;
-- mantém apenas regras úteis;
-- reduz ruído entre sessões.
-
-Prompt prático:
-
-```text
+Practical prompt:```text
 Revise os arquivos de memória deste projeto.
 
 Tarefas:
@@ -287,52 +245,44 @@ Tarefas:
 3. Atualize datas relativas para datas absolutas.
 4. Separe fatos atuais de históricos.
 5. Gere um resumo das mudanças.
-```
+```## 9. Set task budget
 
-## 9. Definir orçamento de tarefa
+In autonomous agents, cost and time can get out of control.
 
-Em agentes autônomos, custo e tempo podem sair do controle.
+Therefore, Level 5 requires **task budgets**: limits for an execution.
 
-Por isso, o Nível 5 exige **task budgets**: limites para uma execução.
-
-Exemplo:
-
-```text
+Example:```text
 Execute esta análise com orçamento máximo de 80.000 tokens.
 Priorize:
 1. Segurança
 2. Bugs críticos
 3. Testes ausentes
 4. Documentação apenas se sobrar orçamento
-```
+```The idea is to make the agent self-regulate:
 
-A ideia é fazer o agente se autorregular:
+- think better at the beginning;
+- avoid loops;
+- prioritize the most important;
+- close with summary;
+- don't spend indefinitely.
 
-- pensar melhor no início;
-- evitar loops;
-- priorizar o mais importante;
-- encerrar com resumo;
-- não gastar indefinidamente.
+## 10. Create agent teams
 
-## 10. Criar equipes de agentes
+At Level 5, you can use multiple specialized agents coordinated by a lead agent.
 
-No Nível 5, você pode usar múltiplos agentes especializados coordenados por um agente líder.
+Team example:
 
-Exemplo de equipe:
+- lead agent;
+- security officer;
+- testing agent;
+- documentation agent;
+- UX agent;
+- performance agent;
+- architecture agent.
 
-- agente líder;
-- agente de segurança;
-- agente de testes;
-- agente de documentação;
-- agente de UX;
-- agente de performance;
-- agente de arquitetura.
+Unlike simple subagents, a team can share findings, divide tasks, and compare conclusions.
 
-Diferente de subagentes simples, uma equipe pode compartilhar descobertas, dividir tarefas e comparar conclusões.
-
-Exemplo prático:
-
-```text
+Practical example:```text
 Monte uma equipe de agentes para revisar este novo módulo.
 
 Papéis:
@@ -343,147 +293,123 @@ Papéis:
 5. Documentação: confere clareza
 
 O agente líder deve consolidar as conclusões e entregar um plano priorizado.
-```
+```## 11. Discover and reuse what already exists
 
-## 11. Descobrir e reaproveitar o que já existe
+At Level 5, the most important skill is not creating everything from scratch.
 
-No Nível 5, a habilidade mais importante não é criar tudo do zero.
+It’s knowing how to find and adapt:
 
-É saber encontrar e adaptar:
-
-- skills existentes;
+- existing skills;
 - MCP servers;
 - templates;
-- automações prontas;
-- repositórios open-source;
-- exemplos de agentes;
-- integrações comunitárias.
+- ready-made automations;
+- open-source repositories;
+- examples of agents;
+- community integrations.
 
-A lógica é:
+The logic is:
 
-> Primeiro descubra se já existe algo parecido. Depois adapte ao seu contexto.
+> First find out if something similar already exists. Then adapt it to your context.
 
-Isso economiza tempo e reduz erro.
+This saves time and reduces errors.
 
-## Como implementar o Nível 5 com segurança
+## How to implement Level 5 safely
 
-O maior desafio do Nível 5 não é técnico.
+The biggest challenge at Level 5 is not technical.
 
-É **confiança**.
+It's **confidence**.
 
-Você não deve começar dando autonomia total para Claude em tarefas críticas.
+You shouldn't start by giving Claude full autonomy on critical tasks.
 
-Comece pequeno.
+Start small.
 
-### Etapa 1 — Rotina de baixo risco
+### Step 1 — Low-risk routine
 
-Exemplo:
-
-```text
+Example:```text
 Todo dia às 8h, gere um resumo das tarefas pendentes e envie apenas para mim.
-```
+```Characteristics of a good first routine:
 
-Características de uma boa primeira rotina:
+- does not send anything to customers;
+- does not change important files;
+- does not erase anything;
+- does not deploy;
+- just read, summarize and inform.
 
-- não envia nada para clientes;
-- não altera arquivos importantes;
-- não apaga nada;
-- não faz deploy;
-- apenas lê, resume e informa.
+### Step 2 — Routine with human validation
 
-### Etapa 2 — Rotina com validação humana
-
-Exemplo:
-
-```text
+Example:```text
 Quando um pull request for aberto:
 1. Revise o código.
 2. Gere comentários sugeridos.
 3. Não publique automaticamente.
 4. Envie para minha aprovação.
-```
+```Claude works here, but you approve it first.
 
-Aqui Claude trabalha, mas você aprova antes.
+### Step 3 — Limited Automatic Action
 
-### Etapa 3 — Ação automática limitada
-
-Exemplo:
-
-```text
+Example:```text
 Quando uma tarefa for concluída:
 1. Atualize o status no quadro.
 2. Envie resumo para o canal interno.
 3. Não altere código.
 4. Não envie mensagem externa.
-```
+```### Step 4 — Greater autonomy
 
-### Etapa 4 — Autonomia maior
+Only after weeks of reliable execution do you release stronger actions.
 
-Somente depois de semanas de execução confiável, você libera ações mais fortes.
-
-Exemplo:
-
-```text
+Example:```text
 Se o PR alterar apenas documentação:
 1. Revise automaticamente.
 2. Rode checks.
 3. Comente aprovação se tudo estiver correto.
-```
+```## Complete practical example: automatic PR review
 
-## Exemplo prático completo: revisão automática de PR
+### Objective
 
-### Objetivo
+Claude automatically reviews pull requests.
 
-Claude revisar pull requests automaticamente.
+### Trigger
 
-### Gatilho
+New PR opened on GitHub.
 
-Novo PR aberto no GitHub.
+### Flow
 
-### Fluxo
+1. Claude receives PR event.
+2. Reads changed files.
+3. Checks for risks.
+4. Run review checklist.
+5. Generates comments.
+6. Submit for human or public approval as per rule.
+7. Record summary.
 
-1. Claude recebe evento do PR.
-2. Lê arquivos alterados.
-3. Verifica riscos.
-4. Roda checklist de revisão.
-5. Gera comentários.
-6. Envia para aprovação humana ou publica conforme regra.
-7. Registra resumo.
-
-### Regras de segurança
-
-```text
+### Security rules```text
 Regras:
 1. Nunca aprove PRs automaticamente se houver alteração em autenticação, pagamento ou permissões.
 2. Nunca rode comandos destrutivos.
 3. Se detectar segredo, token ou credencial, pare e avise imediatamente.
 4. Se houver mudança em banco de dados, peça revisão humana.
 5. Se os testes falharem, não aprove.
-```
+```## Complete practical example: automatic meeting briefing
 
-## Exemplo prático completo: briefing automático de reunião
+### Objective
 
-### Objetivo
+Prepare briefing before meetings.
 
-Preparar briefing antes de reuniões.
+### Trigger
 
-### Gatilho
+New meeting on the calendar or meeting for the next day.
 
-Nova reunião no calendário ou reunião do dia seguinte.
+### Flow
 
-### Fluxo
+1. Claude identifies participants.
+2. Search related documents.
+3. Summary of history.
+4. To-do list.
+5. Suggests questions.
+6. Generate a briefing.
+7. Sends it to you before the meeting.
 
-1. Claude identifica participantes.
-2. Busca documentos relacionados.
-3. Resume histórico.
-4. Lista pendências.
-5. Sugere perguntas.
-6. Gera um briefing.
-7. Envia para você antes da reunião.
-
-### Prompt da rotina
-
-```text
+### Routine prompt```text
 Para cada reunião de amanhã, gere um briefing com:
 
 1. Nome da reunião
@@ -496,30 +422,26 @@ Para cada reunião de amanhã, gere um briefing com:
 8. Próximos passos sugeridos
 
 Envie apenas para mim.
-```
+```## Complete practical example: standalone weekly report
 
-## Exemplo prático completo: relatório semanal autônomo
+### Objective
 
-### Objetivo
+Generate weekly report without manual intervention.
 
-Gerar relatório semanal sem intervenção manual.
+### Trigger
 
-### Gatilho
+Every Friday at 4pm.
 
-Toda sexta-feira às 16h.
+### Flow
 
-### Fluxo
+1. Check completed tasks.
+2. Check pending issues.
+3. Group by project.
+4. Highlight risks.
+5. Generate report.
+6. Submit for review.
 
-1. Verificar tarefas concluídas.
-2. Verificar pendências.
-3. Agrupar por projeto.
-4. Destacar riscos.
-5. Gerar relatório.
-6. Enviar para revisão.
-
-### Prompt da rotina
-
-```text
+### Routine prompt```text
 Toda sexta-feira às 16h, gere um relatório semanal.
 
 Formato:
@@ -531,28 +453,24 @@ Formato:
 6. Itens que precisam da minha decisão
 
 Não envie para clientes. Envie apenas para mim.
-```
+```## Level 5 security checklist
 
-## Checklist de segurança do Nível 5
+Before putting an autonomous routine to run, confirm:
 
-Antes de colocar uma rotina autônoma para rodar, confirme:
+- what is the trigger;
+- what is the scope;
+- what data it can access;
+- what actions it can perform;
+- what actions are prohibited;
+- when to ask for human approval;
+- how you will be notified;
+- where the logs will be saved;
+- how to interrupt the routine;
+- how to review history;
+- what is the token budget;
+- what is the plan in case of error.
 
-- qual é o gatilho;
-- qual é o escopo;
-- quais dados ela pode acessar;
-- quais ações ela pode executar;
-- quais ações são proibidas;
-- quando deve pedir aprovação humana;
-- como você será notificado;
-- onde os logs serão salvos;
-- como interromper a rotina;
-- como revisar o histórico;
-- qual é o orçamento de tokens;
-- qual é o plano em caso de erro.
-
-## Regras práticas para automações autônomas
-
-```text
+## Rules of thumb for autonomous automations```text
 Regras gerais:
 1. Nunca apague arquivos sem aprovação humana.
 2. Nunca envie mensagens externas sem aprovação humana.
@@ -562,150 +480,138 @@ Regras gerais:
 6. Sempre avise quando encontrar erro.
 7. Sempre pare em caso de dúvida.
 8. Sempre respeite o escopo definido.
-```
+```## Where Level 5 generates the most value
 
-## Onde o Nível 5 gera mais valor
+Level 5 is especially useful for:
 
-O Nível 5 é especialmente útil para:
+- technical teams;
+- agencies;
+- advanced freelancers;
+- companies with many repetitive processes;
+- teams that receive many PRs;
+- businesses with recurring reports;
+- operations with customer service and documents;
+- projects that need constant monitoring.
 
-- equipes técnicas;
-- agências;
-- freelancers avançados;
-- empresas com muitos processos repetitivos;
-- times que recebem muitos PRs;
-- negócios com relatórios recorrentes;
-- operações com atendimento e documentos;
-- projetos que precisam de monitoramento constante.
+## What to sell at Level 5
 
-## O que vender no Nível 5
+If you work with services, Level 5 allows you to sell more strategic solutions.
 
-Se você trabalha com serviços, o Nível 5 permite vender soluções mais estratégicas.
+Examples:
 
-Exemplos:
+- automatic review of PRs;
+- weekly report agent;
+- meeting briefing agent;
+- monitor of pending tasks;
+- dependency auditor;
+- automatic ticket sorting;
+- documentation agent;
+- onboarding automation;
+- document analysis agent;
+- intelligent alert system.
 
-- revisão automática de PRs;
-- agente de relatório semanal;
-- agente de briefing de reuniões;
-- monitor de tarefas pendentes;
-- auditor de dependências;
-- triagem automática de tickets;
-- agente de documentação;
-- automação de onboarding;
-- agente de análise de documentos;
-- sistema de alertas inteligentes.
+Here you don’t sell “prompt”.
 
-Aqui você não vende “prompt”.
+You sell **work infrastructure**.
 
-Você vende **infraestrutura de trabalho**.
+## Common mistakes at Level 5
 
-## Erros comuns no Nível 5
+1. Giving too much autonomy too soon.
+2. Not having logs.
+3. No stop button.
+4. Do not separate environments.
+5. Don't set limits.
+6. Trust without observing.
+7. Automate bad processes.
 
-1. Dar autonomia demais cedo demais.
-2. Não ter logs.
-3. Não ter botão de parada.
-4. Não separar ambientes.
-5. Não definir limites.
-6. Confiar sem observar.
-7. Automatizar processos ruins.
+## How to know that you have mastered Level 5
 
-## Como saber que você domina o Nível 5
+You are at Level 5 when:
 
-Você está no Nível 5 quando:
+- there are routines that run without you starting them manually;
+- Claude reacts to events;
+- there are security hooks;
+- tasks have logs and notifications;
+- you use external channels to trigger or follow up;
+- agents have clear scope;
+- there are budget limits;
+- you start with low risk and gradually increase autonomy;
+- Claude works even when you are not there;
+- you think in systems, not conversations.
 
-- tem rotinas que rodam sem você iniciar manualmente;
-- Claude reage a eventos;
-- existem hooks de segurança;
-- tarefas têm logs e notificações;
-- você usa canais externos para acionar ou acompanhar;
-- agentes têm escopo claro;
-- existem limites de orçamento;
-- você começa com baixo risco e aumenta autonomia aos poucos;
-- Claude trabalha mesmo quando você não está presente;
-- você pensa em sistemas, não em conversas.
+## Expected result
 
-## Resultado esperado
+At Level 5, you gain:
 
-No Nível 5, você ganha:
+- continuous automation;
+- reduction of repetitive tasks;
+- active monitoring;
+- faster responses to events;
+- constant technical review;
+- automatic reports;
+- more scalable operation;
+- less dependence on your presence;
+- ability to create more advanced products and services.
 
-- automação contínua;
-- redução de tarefas repetitivas;
-- monitoramento ativo;
-- respostas mais rápidas a eventos;
-- revisão técnica constante;
-- relatórios automáticos;
-- operação mais escalável;
-- menos dependência da sua presença;
-- capacidade de criar produtos e serviços mais avançados.
+This is the level at which Claude becomes an infrastructure layer within the work.
 
-Esse é o nível em que Claude passa a ser uma camada de infraestrutura dentro do trabalho.
+## Practical 7-day plan to start Level 5
 
-## Plano prático de 7 dias para começar o Nível 5
+### Day 1 — Choose a simple routine
 
-### Dia 1 — Escolha uma rotina simples
+Choose something low risk.
 
-Escolha algo de baixo risco.
-
-Exemplo:
-
-```text
+Example:```text
 Resumo diário das tarefas pendentes.
-```
+```### Day 2 — Define scope
 
-### Dia 2 — Defina escopo
+Write:
 
-Escreva:
+- what you can read;
+- what you can do;
+- what you cannot do;
+- when to stop.
 
-- o que pode ler;
-- o que pode fazer;
-- o que não pode fazer;
-- quando deve parar.
+### Day 3 — Create the output format
 
-### Dia 3 — Crie o formato de saída
+Define a fixed model.
 
-Defina um modelo fixo.
-
-Exemplo:
-
-```text
+Example:```text
 1. Resumo do dia
 2. Pendências
 3. Riscos
 4. Ações recomendadas
-```
+```### Day 4 — Add notification
 
-### Dia 4 — Adicione notificação
+Choose where to receive:
 
-Escolha onde receber:
-
-- e-mail;
+- email;
 - Slack;
 - Telegram;
-- arquivo;
-- painel.
+- file;
+- panel.
 
-### Dia 5 — Rode manualmente
+### Day 5 — Rotate manually
 
-Antes de automatizar, execute como teste.
+Before automating, run as a test.
 
-### Dia 6 — Agende com supervisão
+### Day 6 — Schedule with supervision
 
-Faça rodar automaticamente, mas sem enviar para terceiros.
+Make it run automatically, but without sending it to third parties.
 
-### Dia 7 — Revise logs
+### Day 7 — Review logs
 
-Veja:
+See:
 
-- acertou?
-- exagerou?
-- esqueceu algo?
-- inventou algo?
-- precisa de regra nova?
+- did you get it right?
+- exaggerated?
+- forgot something?
+- did you invent something?
+- do you need a new rule?
 
-Depois disso, ajuste e repita por algumas semanas.
+After that, adjust and repeat for a few weeks.
 
-## Prompt-base para criar uma rotina Nível 5
-
-```text
+## Base prompt to create a Level 5 routine```text
 Quero transformar esta tarefa em uma rotina autônoma.
 
 Tarefa:
@@ -739,31 +645,29 @@ Limite:
 [tempo, tokens ou escopo]
 
 Antes de configurar, revise os riscos e sugira regras de segurança.
-```
+```## Level 5 Summary
 
-## Resumo do Nível 5
+Level 5 is the stage where Claude stops being “something you use” and becomes “something you operate”.
 
-O Nível 5 é o estágio em que Claude deixa de ser “algo que você usa” e passa a ser “algo que opera”.
+He can:
 
-Ele pode:
+- run in the cloud;
+- respond to events;
+- trigger flows;
+- review code;
+- generate reports;
+- prepare meetings;
+- send alerts;
+- coordinate agents;
+- function as infrastructure.
 
-- rodar na nuvem;
-- responder a eventos;
-- acionar fluxos;
-- revisar código;
-- gerar relatórios;
-- preparar reuniões;
-- enviar alertas;
-- coordenar agentes;
-- funcionar como infraestrutura.
+But progress must be gradual.
 
-Mas o avanço deve ser gradual.
+First reading.  
+Then draft.  
+Then action with approval.  
+Only then controlled autonomy.
 
-Primeiro leitura.  
-Depois rascunho.  
-Depois ação com aprovação.  
-Só então autonomia controlada.
+The goal is not to let the AI ​​run wild.
 
-O objetivo não é deixar a IA solta.
-
-O objetivo é construir um sistema confiável, com regras, limites, logs e supervisão.
+The goal is to build a reliable system, with rules, limits, logs and supervision.
