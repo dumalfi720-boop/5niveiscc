@@ -1,100 +1,80 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>4.2 Movimentos de alto impacto | T4</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>4.2 High impact movements | T4</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
 html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
 html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .bg-amber-500\/20{background-color:rgba(180,83,9,.12)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}html:not(.dark) .bg-amber-600{background-color:#b45309}html:not(.dark) .hover\:bg-amber-500:hover{background-color:#d97706}</style></head><body class="text-neutral-100">
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a><a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a><a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a><a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-amber-400 bg-amber-500/10"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a><a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a><a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
-
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a><button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button></div></div></div></nav>
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-amber-400">Início</a> / <a href="index.html" class="hover:text-amber-400">Trilha 4</a> / <span class="text-neutral-300">Módulo 4.2</span></nav>
-
-<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-3">MÓDULO 4.2 · ~30 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🚀 Movimentos de alto impacto</h1><p class="text-lg text-neutral-300">Os 8 hábitos que separam usuário casual de power-user. Quem domina os 8 cobra R$ 25k+ por projeto com tranquilidade.</p></header>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">📐 Master do context window</h2></div>
-<p class="text-neutral-300 mb-4">Janela de 1M no Opus 4.7 ainda fica "sloppy" depois de 50% de uso. Dois comandos resolvem:</p>
+<nav class="text-sm text-neutral-500 mb-6"><a class="hover:text-amber-400" href="../../index.html">Start</a> / <a class="hover:text-amber-400" href="index.html">Track 4</a> / <span class="text-neutral-300">Module 4.2</span></nav>
+<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-3">MODULE 4.2 · ~30 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🚀 High-impact movements</h1><p class="text-lg text-neutral-300">The 8 habits that separate casual users from power users. Those who master the 8 charge R$25k+ per project with ease.</p></header>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">📐 Context window master</h2></div>
+<p class="text-neutral-300 mb-4">1M window on Opus 4.7 still looks "sloppy" after 50% usage. Two commands resolve:</p>
 <ul class="text-sm text-neutral-300 space-y-2 ml-4 mb-4">
-  <li>• <code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400">/compact</code> — resume o histórico antigo em sumário tight. <strong>Rode proativamente</strong>, não quando aparecer o warning (já é tarde).</li>
-  <li>• <code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400">/context</code> — mostra onde seus tokens estão. Identifica vilões: file longo, MCP overhead, histórico inflado.</li>
+<li>• <code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400" data-notranslate="True">/compact</code>— summarizes past history in tight summary.<strong>Rotate proactively</strong>, not when the warning appears (it's too late).</li>
+<li>• <code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400" data-notranslate="True">/context</code>— shows where your tokens are. Identifies villains: long file, MCP overhead, inflated history.</li>
 </ul>
-<p class="text-neutral-300">Combinado com prompt caching (automático no Claude Code): redução de 60-90% em sessões longas.</p>
+<p class="text-neutral-300">Combined with prompt caching (automatic in Claude Code): 60-90% reduction in long sessions.</p>
 </section>
-
 <section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">⚡ Auto mode + /focus</h2></div>
-<p class="text-neutral-300 mb-4"><strong class="text-amber-400">Auto mode:</strong> Shift+Tab cicla entre manual/auto. Em auto, comandos seguros passam por classifier interno em vez de pedir "yes" a cada passo. <strong class="text-amber-400">/focus:</strong> oculta os passos intermediários, mostra só o resultado final.</p>
-<p class="text-neutral-300">Os 2 juntos: você dispara uma sessão, troca pra outra worktree, volta quando ela termina. É exatamente como Boris roda 5 paralelas todo dia.</p>
+<p class="text-neutral-300 mb-4"><strong class="text-amber-400">Auto mode:</strong>Shift+Tab cycles between manual/auto. In auto, safe commands go through the internal classifier instead of asking for "yes" at each step.<strong class="text-amber-400">/focus:</strong>hides the intermediate steps, shows only the final result.</p>
+<p class="text-neutral-300">Both together: you trigger a session, switch to another worktree, come back when it ends. It's exactly like Boris runs 5 parallels every day.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🔍 Loop de verificação — Claude testa o próprio trabalho</h2></div>
-<p class="text-neutral-300 mb-4">Boris Cherny diz: <em>"é o hábito mais importante do N4."</em> Dê a Claude jeito de checar o que entrega:</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🔍 Verification loop — Claude tests his own work</h2></div>
+<p class="text-neutral-300 mb-4">Boris Cherny says:<em>"It's the most important N4 habit."</em>Give Claude a way to check what he delivers:</p>
 <ul class="text-sm text-neutral-300 space-y-2 ml-4 mb-4">
-  <li>• Pareie Claude Code com extensão Chrome — ele abre o browser, testa a UI, itera</li>
-  <li>• Peça screenshots da feature funcionando</li>
-  <li>• "Não me chame até os testes passarem"</li>
-  <li>• Defina critério de sucesso explícito antes de começar</li>
+<li>• Pair Claude Code with Chrome extension — it opens the browser, tests the UI, iterates</li>
+<li>• Ask for screenshots of the feature working</li>
+<li>• "Don't call me until the tests pass"</li>
+<li>• Define explicit success criteria before starting</li>
 </ul>
-<p class="text-neutral-300">Boris diz que esse hábito sozinho 2-3x a qualidade do output.</p>
+<p class="text-neutral-300">Boris says this habit alone 2-3x the quality of the output.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">⌨ Slash commands customizados</h2></div>
-<p class="text-neutral-300 mb-4">Se você digitou o mesmo prompt 2x, vire slash command. Vivem em <code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400">.claude/commands/</code>:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 font-mono text-sm text-neutral-300 mb-4">
-.claude/commands/commit-push-pr.md:<br><br>
-Roda os testes. Se passarem:<br>
-1. git add .<br>
-2. git commit com mensagem usando convenção do projeto<br>
-3. git push -u origin HEAD<br>
-4. gh pr create com template padrão<br>
-5. Cole o link da PR
-</div>
-<p class="text-neutral-300">Boris usa /commit-push-pr dezenas de vezes/dia. Comandos podem ser compartilhados (versionados em git) com o time inteiro.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">⌨ Custom slash commands</h2></div>
+<p class="text-neutral-300 mb-4">If you typed the same prompt twice, use slash command. Live in<code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400" data-notranslate="True">.claude/commands/</code>:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 font-mono text-sm text-neutral-300 mb-4">.claude/commands/commit-push-pr.md:<br/><br/>Run the tests. If they pass:<br/>1. git add .<br/>2. git commit with message using project convention<br/>3. git push -u origin HEAD<br/>4. gh pr create with default template<br/>5. Paste the PR link</div>
+<p class="text-neutral-300">Boris uses /commit-push-pr dozens of times/day. Commands can be shared (versioned in git) with the entire team.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">🔄 /rewind, /btw, /branch — git pra conversa</h2></div>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">🔄 /rewind, /btw, /branch — git for conversation</h2></div>
 <div class="space-y-3">
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-amber-400">/rewind</strong> (ou Esc Esc) — descarta tentativa falha completamente, sem deixar correções poluindo o contexto. Volta pra uma mensagem anterior limpa.</div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-amber-400">/btw</strong> — faz pergunta paralela ("o que essa função faz mesmo?") sem quebrar o fluxo principal.</div>
-  <div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-amber-400">/branch</strong> — bifurca conversa em ponto exato. Testa caminho A, volta, testa B. É git pra raciocínio. Pareia perfeitamente com worktrees: um pra arquivos, outro pra pensamento.</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-amber-400">/rewind</strong>(or Esc Esc) — discards failed attempt completely, without leaving corrections polluting the context. Returns to a previous clean message.</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-amber-400">/btw</strong>— asks a parallel question (“what does this function actually do?”) without breaking the main flow.</div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><strong class="text-amber-400">/branch</strong>— the conversation forks at an exact point. Test path A, come back, test B. It's git for reasoning. It pairs perfectly with worktrees: one for files, one for thoughts.</div>
 </div>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📊 /insights — relatório mensal do seu uso</h2></div>
-<p class="text-neutral-300 mb-4">Comando subestimado: lê seu último mês e gera relatório com padrões, gastos de tokens, prompts que você repetiu e regras candidatas a entrar no claude.md.</p>
-<p class="text-neutral-300">Rode 1x/mês. Vira mapa de melhoria personalizado. Você descobre: <em>"eu reescrevi essa instrução 12 vezes em 4 semanas — deveria ser skill"</em>.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">📊 /insights — monthly report on your usage</h2></div>
+<p class="text-neutral-300 mb-4">Underrated command: reads your last month and generates report with patterns, token spending, prompts you repeated and candidate rules to enter claude.md.</p>
+<p class="text-neutral-300">Rotate 1x/month. Turns into a personalized improvement map. You discover:<em>"I rewrote this instruction 12 times in 4 weeks — it should be skill"</em>.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">🎭 Output styles — 10 jobs com mesmo Claude</h2></div>
-<p class="text-neutral-300 mb-4"><code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400">/output-style new</code> cria personalidade nova. Built-ins: default, explanatory, learning. Custom comum: <em>code reviewer mode</em>, <em>no-fluff</em>, <em>docs writer</em>, <em>juniors-friendly</em>.</p>
-<p class="text-neutral-300">Mesma ferramenta cobre 10 papéis diferentes sem misturar. Útil quando o mesmo projeto pede saídas formatadas pra audiências distintas.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">🎭 Output styles — 10 jobs with the same Claude</h2></div>
+<p class="text-neutral-300 mb-4"><code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400" data-notranslate="True">/output-style new</code>creates new personality. Built-ins: default, explanatory, learning. Common Custom:<em>code reviewer mode</em>, <em>no-fluff</em>, <em>docs writer</em>, <em>juniors-friendly</em>.</p>
+<p class="text-neutral-300">Same tool covers 10 different papers without mixing. Useful when the same project requires output formatted for different audiences.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">🔀 PRs melhores e revisão sistemática</h2></div>
-<p class="text-neutral-300 mb-4">PR N4 carrega: <strong class="text-amber-400">contexto do problema</strong>, <strong class="text-amber-400">plano executado</strong>, <strong class="text-amber-400">arquivos alterados com motivo</strong>, <strong class="text-amber-400">evidência de testes</strong>, <strong class="text-amber-400">riscos conhecidos</strong>. Esse padrão deve estar no claude.md.</p>
-<p class="text-neutral-300 mb-4">Use subagente "code-reviewer" pra revisão automática antes de pedir review humano. Resultado: PR já chega com auto-crítica e principais issues mitigadas.</p>
-<p class="text-neutral-300">É o que separa "Claude Code fez código" de "Claude Code fez engenharia". Cliente premium vê e paga.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">🔀 Better PRs and systematic review</h2></div>
+<p class="text-neutral-300 mb-4">PR N4 carries:<strong class="text-amber-400">context of the problem</strong>, <strong class="text-amber-400">plan executed</strong>, <strong class="text-amber-400">files changed with reason</strong>, <strong class="text-amber-400">evidence of testing</strong>, <strong class="text-amber-400">known risks</strong>. This pattern must be in claude.md.</p>
+<p class="text-neutral-300 mb-4">Use "code-reviewer" sub-agent for automatic review before asking for human review. Result: PR arrives with self-criticism and main issues mitigated.</p>
+<p class="text-neutral-300">It's what separates "Claude Code did code" from "Claude Code did engineering." Premium customer sees and pays.</p>
 </section>
-
 <section class="mb-12"><div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span> Resumo do Módulo</h2>
-  <div class="space-y-3 mb-6 text-sm">
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">/compact proativo + /context</strong> — controle de janela de 1M.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Auto mode + /focus</strong> = paralelo real.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Loop de verificação</strong> 2-3x qualidade do output.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Slash commands</strong> = macros versionadas.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">/rewind, /btw, /branch</strong> = git pra conversa.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">/insights mensal</strong> = mapa de melhoria.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Output styles</strong> = 10 jobs em 1 ferramenta.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">PR padrão N4</strong> + subagente reviewer = cliente premium.</div></div>
-  </div>
-  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-amber-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">4.3 — Cheat Code: parar de babar Claude.</p></div>
-  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="modulo-4-3.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition">Próximo Módulo →</a></div>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span>Module Summary</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">/compact proactive + /context</strong>— 1M window control.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Auto mode + /focus</strong>= real parallel.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Check loop</strong>2-3x output quality.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">slash commands</strong>= versioned macros.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">/rewind, /btw, /branch</strong>= git for conversation.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">/monthly insights</strong>= improvement map.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Output styles</strong>= 10 jobs on 1 tool.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Standard PR N4</strong>+ reviewer subagent = premium client.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-amber-400 mb-2">Next Module:</h3><p class="text-neutral-300">4.3 — Cheat Code: stop drooling Claude.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="index.html">← Back to Trail</a><a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition" href="modulo-4-3.html">Next Module →</a></div>
 </div></section>
-
 </main>
-<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
-<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a></div></footer>
+<script data-notranslate="True">const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
 </body></html>
