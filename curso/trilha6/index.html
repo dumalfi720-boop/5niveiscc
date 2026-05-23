@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trilha 6 — Prova Final | 5 Níveis do Claude</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Track 6 — Final Test | 5 Claude Levels</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
 html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
 html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .bg-rose-500\/10{background-color:rgba(190,18,60,.08)}html:not(.dark) .bg-rose-500\/20{background-color:rgba(190,18,60,.12)}html:not(.dark) .border-rose-500\/30{border-color:rgba(190,18,60,.3)}html:not(.dark) .bg-rose-600{background-color:#be123c}html:not(.dark) .hover\:bg-rose-500:hover{background-color:#e11d48}
@@ -13,73 +13,63 @@ html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .hover\:text-blue-4
 html:not(.dark) .text-purple-400{color:#6d28d9}html:not(.dark) .hover\:text-purple-400:hover{color:#6d28d9}html:not(.dark) .hover\:bg-purple-500\/10:hover{background-color:rgba(109,40,217,.08)}
 html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .hover\:text-amber-400:hover{color:#b45309}html:not(.dark) .hover\:bg-amber-500\/10:hover{background-color:rgba(180,83,9,.08)}
 html:not(.dark) .text-teal-400{color:#0f766e}html:not(.dark) .hover\:text-teal-400:hover{color:#0f766e}html:not(.dark) .hover\:bg-teal-500\/10:hover{background-color:rgba(15,118,110,.08)}</style></head><body class="text-neutral-100">
-
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div>
 <div class="flex items-center space-x-1 sm:space-x-2">
-  <a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
-  <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
-  <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
-  <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
-  <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
-  <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-rose-400 bg-rose-500/10"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
-  <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-rose-400 bg-rose-500/10" href="index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a>
+<button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button>
 </div></div></div></nav>
-
 <section class="bg-gradient-to-br from-rose-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-3">TRILHA 6 · PROVA FINAL</span>
-<h1 class="text-3xl sm:text-5xl font-extrabold mb-3">🏁 Prova dos 5 Níveis</h1>
-<p class="text-lg text-neutral-300 max-w-3xl mb-6">50 questões (10 por nível) com gabarito. Responda honestamente — sem trapaça. Você descobre exatamente em qual nível você está e quais lacunas fechar primeiro.</p>
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30 mb-3">TRACK 6 · FINAL TEST</span>
+<h1 class="text-3xl sm:text-5xl font-extrabold mb-3">🏁 5 Levels Test</h1>
+<p class="text-lg text-neutral-300 max-w-3xl mb-6">50 questions (10 per level) with answer key. Answer honestly—no cheating. You find out exactly what level you are at and which gaps to close first.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">50</div><div class="text-xs text-neutral-400">Questões</div></div>
-<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">5 níveis</div><div class="text-xs text-neutral-400">Score por nível</div></div>
-<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">~20min</div><div class="text-xs text-neutral-400">Duração</div></div>
-<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">Honesto</div><div class="text-xs text-neutral-400">Sem trapaça</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">50</div><div class="text-xs text-neutral-400">Questions</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">5 levels</div><div class="text-xs text-neutral-400">Score by level</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">~20min</div><div class="text-xs text-neutral-400">Duration</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-rose-400">Honest</div><div class="text-xs text-neutral-400">No cheating</div></div>
 </div>
 </div>
 </section>
-
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
 <section class="mb-10">
-<h2 class="text-2xl font-bold mb-4">📜 Como funciona</h2>
+<h2 class="text-2xl font-bold mb-4">📜 How it works</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6"><ul class="text-sm text-neutral-300 space-y-3">
-<li>• <strong class="text-rose-400">10 questões por nível</strong> — 50 no total. Cada uma com 4 alternativas, 1 correta.</li>
-<li>• <strong class="text-rose-400">Score por nível</strong> — você vê quantas acertou em cada um dos 5.</li>
-<li>• <strong class="text-rose-400">Regra:</strong> seu nível atual = o MAIS ALTO em que acertou ≥8/10. Ex.: 9 acertos em N1+N2+N3, 6 em N4, 2 em N5 → você está no N3.</li>
-<li>• <strong class="text-rose-400">Gabarito comentado</strong> — ao final, cada questão errada vem com explicação e link pro módulo da trilha que cobre.</li>
-<li>• <strong class="text-rose-400">Sem login</strong> — score fica só no seu browser. Você pode fazer quantas vezes quiser.</li>
+<li>• <strong class="text-rose-400">10 questions per level</strong>— 50 in total. Each with 4 alternatives, 1 correct.</li>
+<li>• <strong class="text-rose-400">Score by level</strong>— you see how many you got right in each of the 5.</li>
+<li>• <strong class="text-rose-400">Rule:</strong>your current level = the HIGHEST you got ≥8/10 right. Ex.: 9 hits in N1+N2+N3, 6 in N4, 2 in N5 → you are in N3.</li>
+<li>• <strong class="text-rose-400">Commented feedback</strong>— at the end, each wrong question comes with an explanation and link to the track module it covers.</li>
+<li>• <strong class="text-rose-400">No login</strong>— score is only in your browser. You can do it as many times as you want.</li>
 </ul></div>
 </section>
-
 <section class="mb-10">
-<h2 class="text-2xl font-bold mb-4">⚠ Antes de começar — leia</h2>
+<h2 class="text-2xl font-bold mb-4">⚠ Before you start — read</h2>
 <div class="bg-rose-500/10 border-l-4 border-rose-500/30 rounded-lg p-5">
-<p class="text-sm text-neutral-300 mb-2"><strong class="text-rose-400">Não trapaceie consigo mesmo.</strong> O objetivo não é "passar" — é descobrir onde você realmente está. Quem cola o questionário no ChatGPT e cola a resposta perde 100% do valor.</p>
-<p class="text-sm text-neutral-300">Marque apenas o que você efetivamente entende, não o que <em>parece</em> certo. Em dúvida real: marque "não sei" (sempre disponível). Total honesto &gt; total alto.</p>
+<p class="text-sm text-neutral-300 mb-2"><strong class="text-rose-400">Don't cheat on yourself.</strong>The goal isn't to "get through" — it's to find out where you really are. Anyone who pastes the questionnaire into ChatGPT and pastes the answer loses 100% of the value.</p>
+<p class="text-sm text-neutral-300">Mark only what you actually understand, not what<em>it seems</em>right. If in real doubt: select "I don't know" (always available). Honest total &gt; high total.</p>
 </div>
 </section>
-
 <section class="mb-10">
-<h2 class="text-2xl font-bold mb-4">🗺 Estrutura da prova</h2>
+<h2 class="text-2xl font-bold mb-4">🗺 Test structure</h2>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">Bloco 1</span><span class="text-xs text-neutral-500">10 questões</span></div><h3 class="font-semibold mb-1">💬 Nível 1 — Entusiasta</h3><p class="text-xs text-neutral-400">Prompts, screenshots, usos básicos, erros, sinais</p></div>
-<div class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">Bloco 2</span><span class="text-xs text-neutral-500">10 questões</span></div><h3 class="font-semibold mb-1">📁 Nível 2 — Iniciante</h3><p class="text-xs text-neutral-400">Projetos, memória, conectores, arquivos, artifacts</p></div>
-<div class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">Bloco 3</span><span class="text-xs text-neutral-500">10 questões</span></div><h3 class="font-semibold mb-1">🖥 Nível 3 — Intermediário</h3><p class="text-xs text-neutral-400">Co-work, skills, /schedule, pastas, Design</p></div>
-<div class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">Bloco 4</span><span class="text-xs text-neutral-500">10 questões</span></div><h3 class="font-semibold mb-1">⚙ Nível 4 — Avançado</h3><p class="text-xs text-neutral-400">claude.md, plan mode, worktrees, /compact, MCP</p></div>
-<div class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5 sm:col-span-2"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">Bloco 5</span><span class="text-xs text-neutral-500">10 questões</span></div><h3 class="font-semibold mb-1">🛰 Nível 5 — Arquiteto</h3><p class="text-xs text-neutral-400">Routines, hooks, channels, SDK, agent teams, segurança</p></div>
+<div class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">Block 1</span><span class="text-xs text-neutral-500">10 questions</span></div><h3 class="font-semibold mb-1">💬 Level 1 — Enthusiast</h3><p class="text-xs text-neutral-400">Prompts, screenshots, basic uses, errors, signals</p></div>
+<div class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">Block 2</span><span class="text-xs text-neutral-500">10 questions</span></div><h3 class="font-semibold mb-1">📁 Level 2 — Beginner</h3><p class="text-xs text-neutral-400">Projects, memory, connectors, files, artifacts</p></div>
+<div class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">Block 3</span><span class="text-xs text-neutral-500">10 questions</span></div><h3 class="font-semibold mb-1">🖥 Level 3 — Intermediate</h3><p class="text-xs text-neutral-400">Co-work, skills, /schedule, folders, Design</p></div>
+<div class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5"><div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">Block 4</span><span class="text-xs text-neutral-500">10 questions</span></div><h3 class="font-semibold mb-1">⚙ Level 4 — Advanced</h3><p class="text-xs text-neutral-400">claude.md, plan mode, worktrees, /compact, MCP</p></div>
+<div class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 rounded-xl border border-dark-600 p-5 sm:col-span-2"><div class="flex items-center justify-between mb-2"><span class="text-teal-400 font-bold text-sm">Block 5</span><span class="text-xs text-neutral-500">10 questions</span></div><h3 class="font-semibold mb-1">🛰 Level 5 — Architect</h3><p class="text-xs text-neutral-400">Routines, hooks, channels, SDK, agent teams, security</p></div>
 </div>
 </section>
-
-<section class="mb-10"><a href="modulo-6-1.html" class="block w-full text-center px-8 py-6 bg-rose-600 hover:bg-rose-500 text-white rounded-xl text-xl font-bold transition">▶ Começar a Prova Final</a></section>
-
+<section class="mb-10"><a class="block w-full text-center px-8 py-6 bg-rose-600 hover:bg-rose-500 text-white rounded-xl text-xl font-bold transition" href="modulo-6-1.html">▶ Start the Final Test</a></section>
 <div class="flex flex-col sm:flex-row gap-4 mt-8">
-<a href="../trilha5/index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Trilha Anterior: Arquiteto</a>
-<a href="../../index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">🏠 Voltar para Capa</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="../trilha5/index.html">← Previous Track: Architect</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="../../index.html">🏠 Back to Cover</a>
 </div>
-
 </main>
-<footer class="border-t border-dark-600 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 5 Níveis do Claude Code</div></footer>
-
-<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+<footer class="border-t border-dark-600 mt-12 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a>· 5 Claude Code Levels</div></footer>
+<script data-notranslate="True">const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
 </body></html>
