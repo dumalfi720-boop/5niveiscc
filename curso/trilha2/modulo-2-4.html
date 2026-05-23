@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2.4 Walkthrough: da planilha ao Artifact | T2</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2.4 Walkthrough: from spreadsheet to Artifact | T2</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
 html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
 html:not(.dark) .text-blue-400{color:#1d4ed8}html:not(.dark) .bg-blue-500\/10{background-color:rgba(29,78,216,.08)}html:not(.dark) .bg-blue-500\/20{background-color:rgba(29,78,216,.12)}html:not(.dark) .border-blue-500\/30{border-color:rgba(29,78,216,.3)}html:not(.dark) .bg-blue-600{background-color:#1d4ed8}html:not(.dark) .hover\:bg-blue-500:hover{background-color:#2563eb}
@@ -14,296 +14,281 @@ html:not(.dark) .text-emerald-400{color:#047857}html:not(.dark) .bg-emerald-500\
 .dialogue{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;line-height:1.55}
 .you{border-left:3px solid #FACC15;padding-left:1rem}
 .claude-says{border-left:3px solid #3b82f6;padding-left:1rem}</style></head><body class="text-neutral-100">
-
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div>
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div>
 <div class="flex items-center space-x-1 sm:space-x-2">
-<a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
-<a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-blue-400 bg-blue-500/10"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
-<a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
-<a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
-<a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
-<a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
-<button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-blue-400 bg-blue-500/10" href="index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a>
+<button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button>
 </div></div></div></nav>
-
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-blue-400">Início</a> / <a href="index.html" class="hover:text-blue-400">Trilha 2</a> / <span class="text-neutral-300">Módulo 2.4</span></nav>
-
+<nav class="text-sm text-neutral-500 mb-6"><a class="hover:text-blue-400" href="../../index.html">Start</a> / <a class="hover:text-blue-400" href="index.html">Track 2</a> / <span class="text-neutral-300">Module 2.4</span></nav>
 <header class="mb-10">
-<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-3">MÓDULO 2.4 · WALKTHROUGH · ~50 min</span>
-<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎬 Das 247 respostas bagunçadas ao Artifact que virou o ritual do time</h1>
-<p class="text-lg text-neutral-300">Pedro, head de produto numa edtech B2B, sai de uma sexta tensa com 247 respostas de NPS em texto livre e o CEO querendo "insights na segunda 9h". Você acompanha as 5 iterações até ele entregar não um relatório, mas uma ferramenta interativa que o time inteiro passa a usar.</p>
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-3">MODULE 2.4 · WALKTHROUGH · ~50 min</span>
+<h1 class="text-3xl sm:text-4xl font-extrabold mb-3">🎬 Of the 247 messy responses to the Artifact that became the team's ritual</h1>
+<p class="text-lg text-neutral-300">Pedro, head of product at a B2B edtech, leaves a tense Friday with 247 NPS responses in free text and the CEO wanting "insights on Monday at 9am". You follow the 5 iterations until it delivers not a report, but an interactive tool that the entire team starts using.</p>
 <div class="mt-6 bg-blue-500/10 border-l-4 border-blue-500/30 rounded-lg p-4">
-<p class="text-sm text-neutral-300"><strong class="text-blue-400">⚠ Atenção:</strong> esse walkthrough mostra um movimento que separa N2 de N1: <em>parar de gerar relatórios estáticos e começar a entregar artefatos vivos</em>. Quem domina isso entrega 5x o valor com a mesma sessão.</p>
+<p class="text-sm text-neutral-300"><strong class="text-blue-400">⚠ Attention:</strong>This walkthrough shows a movement that separates N2 from N1:<em>stop generating static reports and start delivering living artifacts</em>. Whoever masters this delivers 5x the value with the same session.</p>
 </div>
 </header>
-
-<!-- SETUP -->
+SETUP
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Setup — sexta-feira, 17h22</h2></div>
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Setup — Friday, 5:22 pm</h2></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-3"><strong class="text-blue-400">Quem:</strong> Pedro, 36, head de produto numa edtech B2B que vende sistema de gestão escolar (250 clientes, ticket médio R$ 2.4k/mês). Já está no N2 — tem Projeto "Edtech NPS" configurado, com conector Drive.</p>
-<p class="text-neutral-300 mb-3"><strong class="text-blue-400">O que aconteceu:</strong> NPS trimestral fechou ontem. 247 respostas, das quais 189 com texto livre. Promotores 31%, Detratores 24%, Neutros 45% — NPS = 7. Caiu 6 pontos vs trimestre anterior.</p>
-<p class="text-neutral-300 mb-3"><strong class="text-blue-400">A pressão:</strong> CEO mandou Slack 16h:</p>
-<blockquote class="border-l-4 border-red-500/30 pl-4 italic text-neutral-300 my-3">"Pedro, NPS caiu 6 pontos. Segunda 9h tem all-hands. Preciso que toda liderança entre nessa reunião sabendo: (a) o que está doendo no produto, (b) onde está concentrado, (c) o que dá pra mexer em 30 dias. Não me manda relatório de 40 slides."</blockquote>
-<p class="text-neutral-300"><strong class="text-blue-400">Stakes:</strong> Pedro tem fim de semana inteiro (e quer aproveitar com a família). Cada hora hoje à noite vale duas hoje no domingo. CEO pede insight acionável, não dashboard bonito.</p>
+<p class="text-neutral-300 mb-3"><strong class="text-blue-400">Who:</strong>Pedro, 36, head of product at a B2B edtech that sells school management systems (250 customers, average ticket R$2.4k/month). It's already on N2 — it has the "Edtech NPS" Project configured, with a Drive connector.</p>
+<p class="text-neutral-300 mb-3"><strong class="text-blue-400">What happened:</strong>Quarterly NPS closed yesterday. 247 responses, 189 of which were free text. Promoters 31%, Detractors 24%, Neutrals 45% — NPS = 7. Dropped 6 points vs. previous quarter.</p>
+<p class="text-neutral-300 mb-3"><strong class="text-blue-400">Pressure:</strong>CEO sent Slack 4pm:</p>
+<blockquote class="border-l-4 border-red-500/30 pl-4 italic text-neutral-300 my-3">"Pedro, NPS dropped 6 points. Monday 9am has all-hands. I need all leadership to enter this meeting knowing: (a) what is hurting the product, (b) where it is concentrated, (c) what can be changed in 30 days. Don't send me a 40-slide report."</blockquote>
+<p class="text-neutral-300"><strong class="text-blue-400">Stakes:</strong>Pedro has a whole weekend (and wants to enjoy it with his family). Every hour tonight is worth two today on Sunday. CEO asks for actionable insight, not pretty dashboard.</p>
 </div>
 </section>
-
-<!-- ITERAÇÃO 0 -->
+ITERATION 0
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-red-500/20 text-red-400 font-bold text-xl flex-shrink-0">0</span><h2 class="text-2xl font-bold">Tentativa 0 — o reflexo de PM ansioso (17h28)</h2></div>
-<p class="text-neutral-300 mb-4">Pedro abre o Projeto, cola o CSV (189 respostas em texto livre), digita:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PEDRO →</div><div class="dialogue you text-sm text-neutral-200">Analise essas respostas de NPS e me dá insights pro CEO. Foca no que tá ruim.</div></div>
-<p class="text-neutral-300 mb-4"><strong class="text-blue-400">Claude devolve:</strong></p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">Após análise, identifiquei alguns temas principais nas respostas:
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-red-500/20 text-red-400 font-bold text-xl flex-shrink-0">0</span><h2 class="text-2xl font-bold">Attempt 0 — the anxious PM reflex (5:28 p.m.)</h2></div>
+<p class="text-neutral-300 mb-4">Pedro opens the Project, pastes the CSV (189 responses in free text), types:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PETER →</div><div class="dialogue you text-sm text-neutral-200">Analyze these NPS responses and give me insights for the CEO. Focus on what's bad.</div></div>
+<p class="text-neutral-300 mb-4"><strong class="text-blue-400">Claude returns:</strong></p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">After analysis, I identified some main themes in the responses:
 
-1. **Performance:** muitos usuários mencionaram lentidão
-2. **Suporte:** alguns clientes expressaram insatisfação com o atendimento
-3. **Funcionalidades:** há solicitações por novas features
-4. **Onboarding:** clientes novos relataram dificuldade inicial
+1. **Performance:** many users mentioned slowness
+2. **Support:** some customers expressed dissatisfaction with the service
+3. **Features:** there are requests for new features
+4. **Onboarding:** new customers reported initial difficulties
 
-Recomendo investigar essas áreas com mais profundidade.</div></div>
+I recommend investigating these areas in more depth.</div></div>
 <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-5">
-<h3 class="font-bold text-red-400 mb-2">😬 Pedro respira fundo</h3>
-<p class="text-sm text-neutral-300 mb-2">Isso é exatamente o tipo de "insight" que o CEO odeia. "Muitos", "alguns", "há solicitações" — vaguidade total. Sem número. Sem cliente. Sem nada acionável.</p>
-<p class="text-sm text-neutral-300"><strong class="text-red-400">Por que falhou (e por que TODO N2 mediano para aqui):</strong> Pedro pediu "análise" sem definir CATEGORIAS, sem CONTAGEM, sem CITAÇÃO real, sem SEGMENTAÇÃO. Claude defaultou pra resumo executivo genérico — exatamente o que CEO pediu pra NÃO mandar.</p>
+<h3 class="font-bold text-red-400 mb-2">😬 Pedro takes a deep breath</h3>
+<p class="text-sm text-neutral-300 mb-2">This is exactly the kind of "insight" the CEO hates. "Many", "some", "there are requests" — total vagueness. No number. No customer. With nothing actionable.</p>
+<p class="text-sm text-neutral-300"><strong class="text-red-400">Why it failed (and why EVERY average N2 stops here):</strong>Pedro asked for "analysis" without defining CATEGORIES, without COUNTING, without real QUOTE, without SEGMENTATION. Claude defaulted to a generic executive summary — exactly what the CEO asked NOT to send.</p>
 </div>
 </section>
-
-<!-- ITERAÇÃO 1 -->
+ITERATION 1
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">Iteração 1 — forçando estrutura (17h41)</h2></div>
-<p class="text-neutral-300 mb-4">Pedro pensa: "preciso forçar Claude a ser específico". Reescreve:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PEDRO →</div><div class="dialogue you text-sm text-neutral-200">Vamos de novo. Pra cada uma das 189 respostas com texto livre:
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold">Iteration 1 — forcing structure (17:41)</h2></div>
+<p class="text-neutral-300 mb-4">Pedro thinks, "I need to force Claude to be specific." Rewrite:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PETER →</div><div class="dialogue you text-sm text-neutral-200">Let's go again. For each of the 189 free text responses:
 
-1. Categorize em UMA de 6 categorias: Performance, Bugs, Falta de feature, Suporte, Onboarding, UX confusa
-2. Identifique sentimento (Promotor, Neutro, Detrator) — já tá na coluna B
-3. Marque o segmento (já tá na coluna C: pequena/média/grande escola)
-4. Extraia 1 citação curta (15 palavras max) por resposta
+1. Categorize into ONE of 6 categories: Performance, Bugs, Lack of feature, Support, Onboarding, Confusing UX
+2. Identify sentiment (Promoter, Neutral, Detractor) — it’s already in column B
+3. Select the segment (it's already in column C: small/medium/large school)
+4. Extract 1 short quote (15 words max) per answer
 
-Saída: tabela markdown com as 6 categorias, contagem por sentimento, contagem por segmento, e 3 citações representativas por categoria.</div></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">[tabela com 6 categorias]
+Output: markdown table with the 6 categories, count by sentiment, count by segment, and 3 representative quotes per category.</div></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">[table with 6 categories]
 
-**Performance:** 47 menções (32 Detratores, 12 Neutros, 3 Promotores)
-- Por segmento: 28 grande, 14 média, 5 pequena
-- Citações:
-  - "trava direto na hora do fechamento mensal"
-  - "demora 8 segundos pra carregar relatório de notas"
-  - "lentidão piorou de 6 meses pra cá"
+**Performance:** 47 mentions (32 Detractors, 12 Neutrals, 3 Promoters)
+- By segment: 28 large, 14 medium, 5 small
+- Quotes:
+  - "locks directly at the monthly closing time"
+  - "it takes 8 seconds to load the grade report"
+  - "slowness has gotten worse over the last 6 months"
 
-**Bugs:** 34 menções...
-[continua]</div></div>
+**Bugs:** 34 mentions...
+[continues]</div></div>
 <div class="bg-amber-500/10 border border-amber-500/30 rounded-lg p-5">
-<h3 class="font-bold text-amber-400 mb-2">🟡 Bem melhor — mas Pedro estranha um número</h3>
-<p class="text-sm text-neutral-300 mb-2">Pedro lê e tem o alerta certo: <em>"32 detratores em Performance? Isso é metade dos detratores totais. Será que isso bate com os dados de uptime do mês?"</em> Ele abre o monitoring e... uptime está em 99.94%, sem degradação.</p>
-<p class="text-sm text-neutral-300">Algo está estranho. Pedro lê 5 das citações originais (não as 15-palavras-resumo, as respostas inteiras). Descobre: 18 das 47 "menções de performance" são na verdade reclamações sobre <strong>processamento de boleto bancário</strong> (terceirizado, fora do controle direto da edtech). Não é o produto travando.</p>
-<p class="text-sm text-neutral-300 mt-2"><strong class="text-amber-400">Claude misturou categorias.</strong> "Sistema lento na hora do boleto" entrou em Performance — mas a causa é financeira/integração, não infra.</p>
+<h3 class="font-bold text-amber-400 mb-2">🟡 Much better — but Pedro finds a number strange</h3>
+<p class="text-sm text-neutral-300 mb-2">Pedro reads it and gets the right warning:<em>"32 detractors in Performance? That's half of the total detractors. Does this match the uptime data for the month?"</em>He opens monitoring and... uptime is at 99.94%, without degradation.</p>
+<p class="text-sm text-neutral-300">Something is strange. Pedro reads 5 of the original quotes (not the 15-word summary, the entire answers). Find out: 18 of 47 "performance mentions" are actually complaints about<strong>bank slip processing</strong>(outsourced, outside the direct control of edtech). It's not the product crashing.</p>
+<p class="text-sm text-neutral-300 mt-2"><strong class="text-amber-400">Claude mixed categories.</strong>"Slow system at billing time" was included in Performance — but the cause is financial/integration, not infra.</p>
 </div>
 </section>
-
-<!-- ITERAÇÃO 2 -->
+ITERATION 2
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">Iteração 2 — ancorar em citação literal (18h05)</h2></div>
-<p class="text-neutral-300 mb-4">Pedro percebe que Claude está "interpretando" demais. Ele força o output a citar trecho LITERAL e mostrar raciocínio:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PEDRO →</div><div class="dialogue you text-sm text-neutral-200">Refaz com 2 regras novas:
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold">Iteration 2 — anchor in literal quote (18:05)</h2></div>
+<p class="text-neutral-300 mb-4">Pedro realizes that Claude is "interpreting" too much. It forces the output to quote LITERAL passage and show reasoning:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PETER →</div><div class="dialogue you text-sm text-neutral-200">Redo with 2 new rules:
 
-1. Pra cada resposta, ANTES de categorizar, transcreva LITERALMENTE o trecho da resposta original (sem parafrasear) que justifica a categoria. Mantenha aspas duplas.
+1. For each answer, BEFORE categorizing, LITERALLY transcribe the excerpt from the original answer (without paraphrasing) that justifies the category. Keep double quotes.
 
-2. Crie nova categoria "Integração/Boleto" — clientes reclamando de processamento financeiro entram aqui, não em Performance.
+2. Create a new category "Integration/Boleto" — customers complaining about financial processing go here, not in Performance.
 
-3. Se a resposta cobre 2 temas, divida em 2 entradas separadas (mesmo cliente, 2 linhas).
+3. If the answer covers 2 topics, split it into 2 separate entries (same client, 2 lines).
 
-4. Importantíssimo: se você não tem certeza da categoria, marque como [?] e me liste pra eu decidir.
+4. Very important: if you are not sure of the category, mark it as [?] and list it so I can decide.
 
-Saída: CSV completo (id, texto literal citado, categoria, sentimento, segmento, observação). Sem agregação por enquanto — quero ver as 189+ linhas brutas pra eu auditar.</div></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">Processado. 214 entradas (algumas respostas geraram 2 linhas por cobrir múltiplos temas).
+Output: Full CSV (id, quoted literal text, category, sentiment, segment, observation). No aggregation for now — I want to see the 189+ raw rows so I can audit them.</div></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">Processed. 214 entries (some responses generated 2 lines as they covered multiple topics).
 
-Resumo da auditoria:
-- 8 respostas marcadas com [?] — precisam sua decisão
-- "Integração/Boleto" emergiu como categoria com 21 menções (separada de Performance)
-- Performance agora tem 29 menções legítimas (vs 47 antes)
+Audit summary:
+- 8 answers marked with [?] — specify your decision
+- "Integration/Boleto" emerged as a category with 21 mentions (separate from Performance)
+- Performance now has 29 legitimate mentions (vs 47 before)
 
-Os 8 casos [?]:
-1. Cliente #142: "está bom mas poderia melhorar". Categoria provável: ? — muito genérico, não dá pra mapear. Ignorar?
-2. Cliente #178: "vocês são piores que a empresa Y". Categoria: Comparação com concorrente. Criar nova categoria?
-3. ... [mais 6]
+The 8 cases [?]:
+1. Customer #142: "it's good but could be better." Probable category: ? — very generic, can’t be mapped. Ignore?
+2. Customer #178: "you are worse than company Y." Category: Comparison with competitor. Create new category?
+3. ... [6 more]
 
-Quer que eu já gere as agregações com o que está claro, ou aguardo sua decisão sobre os 8?</div></div>
+Do you want me to generate the aggregations now with what is clear, or do I await your decision on the 8?</div></div>
 <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5">
 <h3 class="font-bold text-emerald-400 mb-2">✅ Aha moment</h3>
-<p class="text-sm text-neutral-300">Pedro lê e percebe que <strong>Claude agora é parceiro de análise, não buscador de padrão</strong>. As 3 mudanças que destravaram:</p>
+<p class="text-sm text-neutral-300">Pedro reads and realizes that<strong>Claude is now an analysis partner, not a pattern seeker</strong>. The 3 changes that unlocked:</p>
 <ol class="text-sm text-neutral-300 space-y-1 ml-4 mt-2">
-<li>1. <strong class="text-emerald-400">Citação literal antes de categoria</strong> — força Claude a se ancorar no texto, não inventar agrupamento.</li>
-<li>2. <strong class="text-emerald-400">Múltiplas linhas por resposta</strong> — clientes não falam de 1 tema só; obrigar 1-tema-por-resposta perde sinal.</li>
-<li>3. <strong class="text-emerald-400">"Marque [?] e me liste"</strong> — Claude para de chutar e devolve casos ambíguos pra decisão humana.</li>
+<li>1. <strong class="text-emerald-400">Literal quote before category</strong>— forces Claude to anchor himself in the text, not invent groupings.</li>
+<li>2. <strong class="text-emerald-400">Multiple lines per response</strong>— clients don’t talk about just one topic; obliging 1-topic-per-answer loses signal.</li>
+<li>3. <strong class="text-emerald-400">"Mark [?] and list me"</strong>— Claude stops guessing and returns ambiguous cases to human decision.</li>
 </ol>
-<p class="text-sm text-neutral-300 mt-2">Pedro decide os 8 casos em 3 minutos. "Comparação com concorrente" vira nova categoria com 6 menções. 18h45 ele tem CSV limpo com 220 entradas categorizadas e auditáveis.</p>
+<p class="text-sm text-neutral-300 mt-2">Pedro decides the 8 cases in 3 minutes. "Comparison with competitor" becomes a new category with 6 mentions. 18:45 he has clean CSV with 220 categorized and auditable entries.</p>
 </div>
 </section>
-
-<!-- ITERAÇÃO 3 -->
+ITERATION 3
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">Iteração 3 — gerando o relatório (19h12)</h2></div>
-<p class="text-neutral-300 mb-4">Pedro pede agora o relatório executivo, com as 3 perguntas do CEO como estrutura obrigatória:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PEDRO →</div><div class="dialogue you text-sm text-neutral-200">Agora gera relatório executivo respondendo as 3 perguntas do CEO:
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold">Iteration 3 — generating the report (7:12 pm)</h2></div>
+<p class="text-neutral-300 mb-4">Pedro now asks for the executive report, with the CEO's 3 questions as a mandatory structure:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PETER →</div><div class="dialogue you text-sm text-neutral-200">Now generate an executive report answering the CEO's 3 questions:
 
-(a) O QUE está doendo no produto? Top 5 categorias por impacto (peso = menções × % detrator)
-(b) ONDE está concentrado? Cruzamento categoria × segmento. Aponte onde 1 segmento sofre 2x mais que os outros.
-(c) O QUE dá pra mexer em 30 dias? Pra cada das 5 top categorias, sugira UMA ação concreta com: o que fazer, quem é dono provável, esforço (P/M/G), risco. NÃO sugira ação pra categoria que não tem controle interno (boleto terceirizado, comparação com concorrente).
+(a) WHAT is hurting about the product? Top 5 categories by impact (weight = mentions × % detractor)
+(b) WHERE is it concentrated? Category × segment crossing. Point out where 1 segment suffers 2x more than the others.
+(c) WHAT can you change in 30 days? For each of the top 5 categories, suggest ONE concrete action with: what to do, who is likely to own it, effort (P/M/L), risk. DO NOT suggest action for a category that does not have internal control (outsourced bill, comparison with a competitor).
 
-Formato:
-- 1 página, máx 600 palavras
-- Cada afirmação ancorada em número ou citação
-- Frase final: "se eu tivesse 1 mês e 1 time de 3 pessoas, atacaria PRIMEIRO X porque Y"
+Format:
+- 1 page, max 600 words
+- Each statement anchored in number or quote
+- Final phrase: "if I had 1 month and a team of 3 people, I would attack X FIRST because Y"
 
-Não invente. Use só os 220 entradas categorizadas.</div></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300"># NPS Q1/2026 — onde dói, onde concentra, o que mexer
+Don't make it up. Use only the 220 categorized entries.</div></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300"># NPS Q1/2026 — where it hurts, where it concentrates, what to change
 
-## (a) Top 5 dores
+## (a) Top 5 pains
 
-1. **Bugs no fechamento mensal** — 38 menções (89% detrator). Peso: 33,8. Cliente #44: "trava direto na hora do fechamento, perdemos 2h refazendo".
-2. **Integração/Boleto** — 21 menções (76% detrator). Peso: 16. Causa externa (gateway), mas afeta percepção do produto.
-3. **Onboarding confuso** — 19 menções (53% detrator, 32% neutro). Peso: 10,1. Concentrado em clientes &lt; 6 meses de casa.
-4. **Falta relatório de presença automático** — 17 menções (35% detrator, 53% neutro, escala curiosa: 12% promotor pediu "se tivesse, indicaria"). Peso: 6.
-5. **Performance real** — 9 menções legítimas (após reclassificar boletos). Peso: 4,5. Não é problema sistêmico.
+1. **Bugs in the monthly closing** — 38 mentions (89% detractors). Weight: 33.8. Customer #44: "it crashes right at closing time, we wasted 2 hours redoing it".
+2. **Integration/Boleto** — 21 mentions (76% detractors). Weight: 16. External cause (gateway), but affects perception of the product.
+3. **Confusing onboarding** — 19 mentions (53% detractor, 32% neutral). Weight: 10.1. Focused on clients &lt; 6 months from home.
+4. **Automatic presence report missing** — 17 mentions (35% detractor, 53% neutral, curious scale: 12% promoter asked “if I had one, I would recommend it”). Weight: 6.
+5. **Actual performance** — 9 legitimate mentions (after reclassifying invoices). Weight: 4.5. It's not a systemic problem.
 
-## (b) Concentração
+## (b) Concentration
 
-- Escolas **grandes** (50+ funcionários) sofrem 2,3x mais com Bugs no fechamento. Hipótese: volume de dados estressa lógica de batch atual.
-- Escolas **pequenas** (até 10 func.) lideram Onboarding confuso (61% das menções da categoria). Hipótese: setup feito sem CSM dedicado.
-- Médias estão silenciosamente OK em quase tudo.
+- **Large** schools (50+ employees) suffer 2.3x more from Bugs upon closure. Hypothesis: Data volume stresses current batch logic.
+- **Small** schools (up to 10 employees) lead Confused Onboarding (61% of category mentions). Hypothesis: setup done without dedicated CSM.
+- Averages are quietly OK on almost everything.
 
-## (c) Ações 30 dias
+## (c) Actions 30 days
 
-| # | Ação | Dono provável | Esforço | Risco |
+| # | Action | Probable owner | Effort | Risk |
 |---|---|---|---|---|
-| 1 | Refatorar batch do fechamento (lote 500 → lote 50, async) | Tech Lead Backend | M | Médio — testes em staging primeiro |
-| 2 | Pra os 21 de boleto: comunicação proativa + plano B com gateway alt | Ops + Financeiro | P | Baixo — não envolve dev |
-| 3 | Onboarding guiado pras pequenas: vídeo curto + checklist + 1 call 30min | CS | P | Baixo |
-| 4 | Relatório de presença automático: scoping em 2 semanas, decidir build/buy | PM (eu) + Tech | M | Médio — escopo creep |
+| 1 | Refactor closure batch (batch 500 → batch 50, async) | Tech Lead Backend | M | Medium — staging tests first |
+| 2 | For bill 21: proactive communication + plan B with alt gateway | Ops + Financial | P | Low — does not involve dev |
+| 3 | Guided onboarding for little ones: short video + checklist + 1 call 30min | CS | P | Bass |
+| 4 | Automatic presence report: scoping in 2 weeks, decide build/buy | PM (me) + Tech | M | Medium — scope creep |
 
-(Comparação com concorrente: 6 menções, sem ação direta. Cobrir em conteúdo de marketing/CS.)
+(Comparison to competitor: 6 mentions, no direct action. Cover in marketing/CS content.)
 
-## Se eu tivesse 1 mês + 3 pessoas
-Atacaria **Bugs no fechamento (ação #1) PRIMEIRO** porque:
-1. Concentra 38 menções com altíssima taxa de detrator (89%)
-2. Afeta escolas grandes — segmento de maior LTV
-3. Causa raiz é controlável internamente (não é fornecedor)
-4. Resolver isso destrava 15 pontos de NPS na próxima medição (estimativa)</div></div>
-<p class="text-neutral-300 mt-2"><strong class="text-blue-400">Pedro lê e sente que tem o que CEO precisa.</strong> Mas vem a iteração que muda o jogo.</p>
+## If I had 1 month + 3 people
+I would attack **Bugs in closing (action #1) FIRST** because:
+1. Concentrates 38 mentions with a very high detractor rate (89%)
+2. Affects large schools — segment with the highest LTV
+3. Root cause is internally controllable (not supplier)
+4. Solving this unlocks 15 NPS points in the next measurement (estimate)</div></div>
+<p class="text-neutral-300 mt-2"><strong class="text-blue-400">Pedro reads it and feels that he has what the CEO needs.</strong>But comes the iteration that changes the game.</p>
 </section>
-
-<!-- ITERAÇÃO 4 -->
+ITERATION 4
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">Iteração 4 — o salto que faz o N2 valer (19h48)</h2></div>
-<p class="text-neutral-300 mb-4">Pedro está pra fechar o laptop. Mas pensa: <em>"Esse relatório vai virar 40 slides na reunião. Diretor de Customer Success vai querer ver as citações de pequenas. Tech Lead vai querer drillar nos bugs. Cada liderança vai precisar de um corte diferente. Se eu mandar PDF, vai voltar 8 perguntas no domingo."</em></p>
-<p class="text-neutral-300 mb-4">Em vez de PDF, ele pede ARTIFACT:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PEDRO →</div><div class="dialogue you text-sm text-neutral-200">Plot twist. Em vez do relatório virar PDF, gera um Artifact interativo no painel lateral:
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold">Iteration 4 — the leap that makes N2 worthwhile (7:48 p.m.)</h2></div>
+<p class="text-neutral-300 mb-4">Pedro is about to close the laptop. But think:<em>"This report will turn into 40 slides at the meeting. Customer Success Director will want to see the small quotes. Tech Lead will want to drill into the bugs. Each leader will need a different cut. If I send a PDF, 8 questions will come back on Sunday."</em></p>
+<p class="text-neutral-300 mb-4">Instead of PDF, it asks for ARTIFACT:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">PETER →</div><div class="dialogue you text-sm text-neutral-200">Plot twist. Instead of the report becoming a PDF, it generates an interactive Artifact in the side panel:
 
-- Dashboard simples (1 página, sem login)
-- Topo: 3 KPIs grandes (NPS atual, variação vs trimestre passado, total respostas)
-- Centro: tabela das 220 entradas com colunas (id, citação literal, categoria, sentimento, segmento)
-- Filtros laterais: categoria, sentimento, segmento — clicáveis e combinabis
-- Embaixo: 2 mini-gráficos que atualizam com filtros (categoria × sentimento; categoria × segmento)
-- Header com timestamp da última análise
+- Simple dashboard (1 page, no login)
+- Top: 3 large KPIs (current NPS, variation vs last quarter, total responses)
+- Center: table of 220 entries with columns (id, literal quote, category, sentiment, segment)
+- Side filters: category, sentiment, segment — clickable and combinable
+- Below: 2 mini-charts that update with filters (category × sentiment; category × segment)
+- Header with timestamp of last analysis
 
-Tom visual: sóbrio, escala de cinzas + 1 cor de destaque (azul). Não é apresentação, é ferramenta.
+Visual tone: sober, gray scale + 1 highlight color (blue). It's not a presentation, it's a tool.
 
-Os dados são os 220 que você gerou na iteração 2. Embute eles no Artifact (não preciso de backend).
+The data is the 220 that you generated in iteration 2. Embed them in Artifact (I don't need a backend).
 
-Quando estiver pronto, publica e me dá o link.</div></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">Artifact criado: "NPS Q1/2026 — Explorador Interativo"
+When you're ready, publish it and give me the link.</div></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4 mb-4"><div class="text-xs text-neutral-500 mb-2">← CLAUDE</div><div class="dialogue claude-says text-sm text-neutral-300">Artifact created: "NPS Q1/2026 — Interactive Explorer"
 
-Features implementadas:
-✓ 3 KPIs no topo (NPS: 7, Δ: -6, n: 247)
-✓ Tabela com as 220 entradas categorizadas
-✓ Filtros: 7 categorias, 3 sentimentos, 3 segmentos (multi-select)
-✓ Gráficos atualizam ao filtrar (Recharts)
-✓ Search no texto da citação
-✓ Export pra CSV ao final dos filtros aplicados
+Features implemented:
+✓ Top 3 KPIs (NPS: 7, Δ: -6, n: 247)
+✓ Table with 220 categorized entries
+✓ Filters: 7 categories, 3 feelings, 3 segments (multi-select)
+✓ Charts update when filtering (Recharts)
+✓ Search in quote text
+✓ Export to CSV at the end of the applied filters
 
-Publiquei. Link público: [URL gerada pelo Claude]
-Storage persistente ativado — dados ficam, ninguém precisa rerodar.
+I published it. Public link: [URL generated by Claude]
+Persistent storage enabled — data stays, no one needs to rerun it.
 
-Posso adicionar mais alguma coisa antes de você mandar?</div></div>
-<p class="text-neutral-300"><strong class="text-blue-400">19h54.</strong> Pedro abre o link. Funciona. Tabela com 220 linhas, filtros funcionando, gráficos atualizando. Não é simulação — é ferramenta real, com URL pública, que ele pode mandar pro time.</p>
+Can I add anything else before you send it?</div></div>
+<p class="text-neutral-300"><strong class="text-blue-400">7:54 p.m.</strong>Pedro opens the link. It works. Table with 220 lines, filters working, graphs updating. It's not a simulation — it's a real tool, with a public URL, that he can send to the team.</p>
 </section>
-
-<!-- DEPLOY -->
+DEPLOY
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">✓</span><h2 class="text-2xl font-bold">Sábado 9h12 — o time já começou a usar</h2></div>
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">✓</span><h2 class="text-2xl font-bold">Saturday 9:12 am — the team has already started using</h2></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-3">Pedro manda no Slack #produto-liderança:</p>
-<blockquote class="border-l-4 border-blue-500/30 pl-4 italic text-neutral-300 my-3">"Liderança — antes da all-hands de segunda, deixei o explorador do NPS Q1 aqui: [link]. Filtre por sua área antes da reunião. Tem 220 citações ancoradas no texto original; usem pra defender ou desafiar minhas conclusões. Resumo executivo em PDF separado, pra quem quiser só o tldr."</blockquote>
-<p class="text-neutral-300 mb-3"><strong class="text-blue-400">Sábado 11h — primeiras reações chegam:</strong></p>
+<p class="text-neutral-300 mb-3">Pedro sends #product-leadership on Slack:</p>
+<blockquote class="border-l-4 border-blue-500/30 pl-4 italic text-neutral-300 my-3">"Leadership — before Monday's all-hands, I left the NPS Q1 explorer here: [link]. Filter by your area before the meeting. There are 220 quotes anchored in the original text; use them to defend or challenge my conclusions. Executive summary in separate PDF, for those who just want the tldr."</blockquote>
+<p class="text-neutral-300 mb-3"><strong class="text-blue-400">Saturday 11am — first reactions arrive:</strong></p>
 <ul class="text-sm text-neutral-300 space-y-2 ml-4">
-<li>• <strong>Carla (CS):</strong> filtrou "pequenas + detrator". Achou padrão extra: 9 das 11 vinham de clientes que tinham apenas 1 funcionário usando. "Olha esse drill — pode ser problema de adoção interna, não de produto. Vamos cobrir na call de segunda?"</li>
-<li>• <strong>Ricardo (Tech Lead):</strong> filtrou "Bugs no fechamento". Encontrou 3 menções que descrevem o MESMO erro específico de timeout. "Pedro, isso é o ticket #4419 que o time tinha priorizado pra Q2. Vou subir pra Q1."</li>
-<li>• <strong>Diego (Founder):</strong> "Excelente trabalho. Segunda já entramos com pauta clara. Quero que esse explorador vire ritual trimestral."</li>
+<li>• <strong>Carla (CS):</strong>filtered "small + detractor". He found it extra standard: 9 of the 11 came from customers who only had 1 employee using it. "Look at this drill — it could be an internal adoption issue, not a product issue. Shall we cover it in Monday's call?"</li>
+<li>• <strong>Ricardo (Tech Lead):</strong>filtered "Bugs on closure". Found 3 mentions that describe the SAME specific timeout error. "Pedro, this is ticket #4419 that the team had prioritized for Q2. I'm going to move up to Q1."</li>
+<li>• <strong>Diego (Founder):</strong>"Excellent work. We already have a clear agenda on Monday. I want this explorer to become a quarterly ritual."</li>
 </ul>
-<p class="text-neutral-300 mt-3">Pedro fechou o laptop sábado 9h30. Família, almoço, parque. Domingo intocado. Segunda 9h, all-hands rodou em 28 minutos (era pra ser 90), saiu com 4 ações e donos definidos.</p>
+<p class="text-neutral-300 mt-3">Pedro closed his laptop on Saturday at 9:30 am. Family, lunch, park. Untouched Sunday. Monday 9am, all-hands ran in 28 minutes (it was supposed to be 90), came out with 4 shares and defined owners.</p>
 </div>
 </section>
-
-<!-- LIÇÕES -->
+LESSONS
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">★</span><h2 class="text-2xl font-bold">Lições da jornada</h2></div>
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">★</span><h2 class="text-2xl font-bold">Lessons from the journey</h2></div>
 <div class="space-y-4">
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">1. "Análise" sem categorias = vaguidade</h3><p class="text-sm text-neutral-300">Iteração 0 falhou porque pedir "análise" deixa Claude no nível "muitos clientes citaram performance". Forçar categorias explícitas + contagem + segmentação destrava raciocínio quantitativo real.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">2. Citação literal &gt; paráfrase</h3><p class="text-sm text-neutral-300">O erro do "Performance ≠ Boleto" só apareceu porque Pedro pediu citação literal. Quando Claude parafraseia, ele interpreta — e interpretação errada vira categoria errada vira insight errado.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">3. Permissão pra [?] = Claude vira parceiro</h3><p class="text-sm text-neutral-300">"Se não tem certeza, marque [?] e me liste" transformou Claude de "vou chutar pra parecer útil" em "vou separar o que é certo do que é ambíguo". 3 minutos de Pedro decidiu 8 casos. Vale ouro.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">4. PDF é o output errado quando o time precisa drillar</h3><p class="text-sm text-neutral-300">O movimento N2 que separa Pedro da maioria foi: trocar "gera relatório" por "gera artifact interativo". PDF morre na pasta; ferramenta vira ritual. CEO falou sobre "isso vira ritual trimestral" — não pediu, percebeu.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">5. O Projeto pré-configurado fez TUDO ser mais rápido</h3><p class="text-sm text-neutral-300">Pedro não começou do zero. Já tinha Projeto "Edtech NPS" com instrução + conector Drive. Por isso 2h30 cobriu da bagunça ao artifact publicado. Sem o Projeto pronto, isso vira 5-6h.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">1. “Analysis” without categories = vagueness</h3><p class="text-sm text-neutral-300">Iteration 0 failed because asking for "analysis" leaves Claude at the "many customers cited performance" level. Forcing explicit categories + counting + segmentation unlocks real quantitative reasoning.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">2. Literal quote &gt; paraphrase</h3><p class="text-sm text-neutral-300">The "Performance ≠ Boleto" error only appeared because Pedro asked for a literal quote. When Claude paraphrases, he interprets — and wrong interpretation becomes wrong category becomes wrong insight.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">3. Permission to [?] = Claude becomes a partner</h3><p class="text-sm text-neutral-300">"If you're not sure, check [?] and list me" turned Claude from "I'm going to guess so I seem useful" to "I'm going to separate what's certain from what's ambiguous." 3 minutes of Pedro decided 8 cases. It's worth gold.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">4. PDF is the wrong output when the team needs to drill</h3><p class="text-sm text-neutral-300">The N2 movement that separates Pedro from the majority was: changing "generates report" for "generates interactive artifact". PDF dies in the folder; tool becomes ritual. CEO talked about "this becomes a quarterly ritual" — he didn't ask, he realized.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5"><h3 class="font-bold text-blue-400 mb-2">5. Preconfigured Design made EVERYTHING faster</h3><p class="text-sm text-neutral-300">Pedro didn't start from scratch. There was already an "Edtech NPS" Project with instructions + Drive connector. That's why 2h30 covered the mess to the published artifact. Without the Project ready, this takes 5-6 hours.</p></div>
 </div>
 </section>
-
-<!-- ADAPTAÇÕES -->
+ADAPTATIONS
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Adapte o walkthrough pro seu mundo</h2></div>
-<p class="text-neutral-300 mb-4">A jornada do Pedro foi análise de NPS + artifact. Mas o <strong>movimento</strong> serve pra qualquer pilha de texto/dados que precisa virar exploração compartilhada:</p>
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">⚙</span><h2 class="text-2xl font-bold">Adapt the walkthrough to your world</h2></div>
+<p class="text-neutral-300 mb-4">Pedro's journey was NPS + artifact analysis. But the<strong>movement</strong>Suitable for any pile of text/data that needs to become shared exploration:</p>
 <div class="grid sm:grid-cols-2 gap-4">
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">📞 Calls de venda transcritas → explorador de objeções</h3><p class="text-sm text-neutral-300">Categorize objeções, ancore em citação literal, artifact filtrável por etapa do funil. Time inteiro vê padrões.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">🐛 Tickets de bug → priorização interativa</h3><p class="text-sm text-neutral-300">Categoria + severidade + módulo + cliente. Artifact com filtros = PM e Tech decidem juntos sem reunião.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">📋 Pesquisa de mercado → tabela de competidores filtrável</h3><p class="text-sm text-neutral-300">100 produtos analisados, cada um com features, preço, segmento. Time comercial filtra pela situação do lead.</p></div>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">📚 Currículos/portfolios → triagem de recrutamento</h3><p class="text-sm text-neutral-300">200 currículos, categoria (skill, senioridade, expectativa salarial), filtros pra hiring manager.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">📞 Transcribed sales calls → objection explorer</h3><p class="text-sm text-neutral-300">Categorize objections, anchor in literal quote, filterable artifact by funnel stage. Entire team sees patterns.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">🐛 Bug tickets → interactive prioritization</h3><p class="text-sm text-neutral-300">Category + severity + module + client. Artifact with filters = PM and Tech decide together without a meeting.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">📋 Market research → filterable competitor table</h3><p class="text-sm text-neutral-300">100 products analyzed, each with features, price, segment. Sales team filters by lead situation.</p></div>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-4"><h3 class="font-semibold text-blue-400 mb-2">📚 Resumes/portfolios → recruitment screening</h3><p class="text-sm text-neutral-300">200 CVs, category (skill, seniority, salary expectations), filters for hiring manager.</p></div>
 </div>
 </section>
-
-<!-- MÉTRICAS -->
+METRICS
 <section class="mb-12">
-<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">📊</span><h2 class="text-2xl font-bold">Métricas reais</h2></div>
+<div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">📊</span><h2 class="text-2xl font-bold">Actual metrics</h2></div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-<div><div class="text-3xl font-bold text-blue-400">2h30</div><div class="text-xs text-neutral-500">tempo total<br>(versus ~14h fazendo manual)</div></div>
-<div><div class="text-3xl font-bold text-blue-400">5</div><div class="text-xs text-neutral-500">iterações até<br>artifact publicado</div></div>
-<div><div class="text-3xl font-bold text-blue-400">28 min</div><div class="text-xs text-neutral-500">all-hands<br>(era pra ser 90min)</div></div>
-<div><div class="text-3xl font-bold text-blue-400">1 ritual</div><div class="text-xs text-neutral-500">trimestral<br>nascido do artifact</div></div>
+<div><div class="text-3xl font-bold text-blue-400">2:30 am</div><div class="text-xs text-neutral-500">total time<br/>(versus ~14h doing manual)</div></div>
+<div><div class="text-3xl font-bold text-blue-400">5</div><div class="text-xs text-neutral-500">iterations until<br/>published artifact</div></div>
+<div><div class="text-3xl font-bold text-blue-400">28 min</div><div class="text-xs text-neutral-500">all-hands<br/>(it was supposed to be 90 minutes)</div></div>
+<div><div class="text-3xl font-bold text-blue-400">1 ritual</div><div class="text-xs text-neutral-500">quarterly<br/>born of the artifact</div></div>
 </div>
-<p class="text-sm text-neutral-400 mt-5 text-center italic">Tudo dentro de 1 Projeto. Conectores ativados. Artifact com storage persistente publicado em link. N2 entregando valor de consultor sênior.</p>
+<p class="text-sm text-neutral-400 mt-5 text-center italic">All within 1 Project. Connectors enabled. Artifact with persistent storage published in link. N2 delivering senior consultant value.</p>
 </div>
 </section>
-
-<!-- RESUMO -->
+SUMMARY
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span> Resumo do Módulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🎓</span>Module Summary</h2>
 <div class="space-y-3 mb-6 text-sm">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">"Análise" sem categorias é vaguidade</strong> — force enumeração, contagem, segmentação.</div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Citação literal &gt; paráfrase</strong> — interpretação de Claude pode misturar coisas (boleto ≠ performance).</div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Permissão pra [?]</strong> — Claude separa o claro do ambíguo em vez de chutar.</div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Artifact &gt; PDF</strong> quando o time precisa drillar. Ritual nasce sozinho.</div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Projeto pré-configurado</strong> reduz tempo da próxima análise em 60-70%.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">"Analysis" without categories is vague</strong>— force enumeration, counting, segmentation.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Literal quote &gt; paraphrase</strong>— Claude's interpretation can mix things up (bileto ≠ performance).</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Permission to [?]</strong>— Claude separates the clear from the ambiguous instead of guessing.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Artifact &gt; PDF</strong>when the team needs to drill. Ritual is born alone.</div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Pre-configured project</strong>reduces next analysis time by 60-70%.</div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-blue-400 mb-2">Próximo passo:</h3><p class="text-neutral-300">Trilha 3 — Intermediário. Co-work tira Claude do chat e bota pra rodar na sua máquina.</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-blue-400 mb-2">Next step:</h3><p class="text-neutral-300">Trail 3 — Intermediate. Co-work takes Claude out of the chat and runs it on his machine.</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a>
-<a href="../trilha3/index.html" class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition">Próxima Trilha →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="index.html">← Back to Trail</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition" href="../trilha3/index.html">Next Trail →</a>
 </div>
 </div>
 </section>
-
 </main>
-<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
-<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a></div></footer>
+<script data-notranslate="True">const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
 </body></html>
