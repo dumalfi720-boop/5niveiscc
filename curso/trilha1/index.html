@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+html
+<html class="dark" lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trilha 1 — Entusiasta | 5 Níveis do Claude</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trail 1 — Enthusiast | 5 Claude Levels</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">
 body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 .topic-explanation{display:none}.topic-explanation.active{display:block}
 html:not(.dark) body{background-color:#f8fafc}
@@ -27,400 +27,366 @@ html:not(.dark) .text-rose-400{color:#be123c}html:not(.dark) .hover\:text-rose-4
 </style>
 </head>
 <body class="text-neutral-100">
-
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
-    <div class="flex items-center space-x-4">
-      <a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a>
-      <span class="text-neutral-600">|</span>
-      <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
-    </div>
-    <div class="flex items-center space-x-1 sm:space-x-2">
-      <a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-emerald-400 bg-emerald-500/10"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a>
-      <a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a>
-      <a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a>
-      <a href="../trilha4/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a>
-      <a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a>
-      <a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a>
-      <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1">
-        <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg>
-        <svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/></svg>
-      </button>
-    </div>
-  </div></div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14">
+<div class="flex items-center space-x-4">
+<a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a>
+<span class="text-neutral-600">|</span>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a>
+</div>
+<div class="flex items-center space-x-1 sm:space-x-2">
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a>
+<a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a>
+<button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle">
+<svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+<svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+</div></div>
 </nav>
-
-<!-- HEADER -->
+HEADER
 <section class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 border-b border-dark-600">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mb-3">TRILHA 1</span>
-    <h1 class="text-3xl sm:text-5xl font-extrabold mb-3">💬 Nível 1 — Entusiasta</h1>
-    <p class="text-lg text-neutral-300 max-w-3xl mb-6">Você abre o Claude, pergunta, copia a resposta e fecha. Útil — mas é o chão. Aqui você aprende a tirar 3x mais valor do mesmo chat e prepara o pulo pro Nível 2.</p>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">4</div><div class="text-xs text-neutral-400">Módulos</div></div>
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">14 + 3 cases + 1 walkthrough</div><div class="text-xs text-neutral-400">Conteúdo</div></div>
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">~130min</div><div class="text-xs text-neutral-400">Duração</div></div>
-      <div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">Iniciante</div><div class="text-xs text-neutral-400">Nível</div></div>
-    </div>
-  </div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 mb-3">TRACK 1</span>
+<h1 class="text-3xl sm:text-5xl font-extrabold mb-3">💬 Level 1 — Enthusiast</h1>
+<p class="text-lg text-neutral-300 max-w-3xl mb-6">You open Claude, ask, copy the answer and close. Useful — but it's the floor. Here you learn how to get 3x more value from the same chat and prepare for the jump to Level 2.</p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">4</div><div class="text-xs text-neutral-400">Modules</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">14 + 3 cases + 1 walkthrough</div><div class="text-xs text-neutral-400">Content</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">~130min</div><div class="text-xs text-neutral-400">Duration</div></div>
+<div class="bg-dark-800 rounded-lg p-4"><div class="text-2xl font-bold text-emerald-400">Beginner</div><div class="text-xs text-neutral-400">Level</div></div>
+</div>
+</div>
 </section>
-
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
-<!-- NAVEGAÇÃO RÁPIDA -->
+QUICK NAVIGATION
 <section class="mb-12">
-  <h2 class="text-2xl font-bold mb-6">🗺 Mapa da trilha</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <a href="#modulo-1-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition">
-      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
-      <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">💬 Dominando o básico que ninguém domina</h3>
-      <p class="text-xs text-neutral-400">8 tópicos: prompt, screenshots, usos, erros e exercício prático</p>
-    </a>
-    <a href="#modulo-1-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition">
-      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.2</span><span class="text-xs text-neutral-500">~20 min</span></div>
-      <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">🚀 Cheat Code: seu primeiro Projeto</h3>
-      <p class="text-xs text-neutral-400">6 tópicos: por que projeto é a espinha do N2, template e checklist</p>
-    </a>
-    <a href="#modulo-1-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition">
-      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.3</span><span class="text-xs text-neutral-500">~40 min</span></div>
-      <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">🎯 Cases reais worked-through</h3>
-      <p class="text-xs text-neutral-400">3 cases completos: atendimento espinhoso, ideias com ROI, estudo ativo. Tentativa falha + ajuste + métricas</p>
-    </a>
-    <a href="#modulo-1-4" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition">
-      <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.4</span><span class="text-xs text-neutral-500">~45 min</span></div>
-      <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">🎬 Walkthrough: da reunião à ata</h3>
-      <p class="text-xs text-neutral-400">Jornada completa de 78min de transcrição a 6 linhas no slide do Conselho. 3 iterações, sem corte</p>
-    </a>
-  </div>
+<h2 class="text-2xl font-bold mb-6">🗺 Trail map</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition" href="#modulo-1-1">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">💬 Mastering the basics that no one masters</h3>
+<p class="text-xs text-neutral-400">8 topics: prompt, screenshots, uses, errors and practical exercise</p>
+</a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition" href="#modulo-1-2">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.2</span><span class="text-xs text-neutral-500">~20 min</span></div>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">🚀 Cheat Code: your first Project</h3>
+<p class="text-xs text-neutral-400">6 topics: why project is the backbone of N2, template and checklist</p>
+</a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition" href="#modulo-1-3">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.3</span><span class="text-xs text-neutral-500">~40 min</span></div>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">🎯 Real cases worked-through</h3>
+<p class="text-xs text-neutral-400">3 complete cases: thorny service, ideas with ROI, active study. Failed attempt + tuning + metrics</p>
+</a>
+<a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition" href="#modulo-1-4">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.4</span><span class="text-xs text-neutral-500">~45 min</span></div>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition">🎬 Walkthrough: from meeting to minutes</h3>
+<p class="text-xs text-neutral-400">Complete day of 78 minutes of transcription to 6 lines on the Council slide. 3 iterations, no cutting</p>
+</a>
+</div>
 </section>
-
 <div class="border-t border-dark-600 my-10"></div>
-<h2 class="text-2xl font-bold mb-8">📚 Conteúdo detalhado</h2>
-
-<!-- MÓDULO 1.1 -->
-<div id="modulo-1-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600">
-    <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
-    <h3 class="text-2xl font-bold mb-2">💬 Dominando o básico que ninguém domina</h3>
-    <p class="text-neutral-400 text-sm">Como tirar 3x mais valor do chat puro antes de sair pro próximo nível.</p>
-  </div>
-  <div class="divide-y divide-dark-700">
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-        <span class="text-lg">🎯</span>
-        <div><span class="font-medium">O que caracteriza o Nível 1</span><span class="text-neutral-500 text-sm ml-2">— e por que 90% trava aqui</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">O nível em que Claude é usado como busca: você abre, pergunta, copia a resposta e fecha. Sem memória, sem projeto, sem integração.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o chão de qualquer um. Reconhecer que você está aqui é o pré-requisito pra subir. 90% das pessoas ficam nele porque acham que isso "já é o suficiente".</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Chat sem estado · Resposta única · ~30 min/dia economizados · Teto baixo, mas seguro.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-        <span class="text-lg">✍</span>
-        <div><span class="font-medium">Anatomia de um prompt que entrega</span><span class="text-neutral-500 text-sm ml-2">— papel + contexto + formato + restrição</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Estrutura simples pra qualquer pedido: defina o <em>papel</em> ("aja como copywriter sênior"), dê <em>contexto</em> ("é um e-mail pra cliente B2B"), peça o <em>formato</em> ("3 versões em bullets") e ponha <em>restrição</em> ("máx. 80 palavras cada").</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A maior parte das respostas ruins não é culpa do Claude — é prompt vago. Esse padrão dobra a qualidade sem mudar de ferramenta.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Papel claro · Contexto suficiente · Formato explícito · Restrição mensurável · Iterar com "agora faça mais X".</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-        <span class="text-lg">📸</span>
-        <div><span class="font-medium">Screenshots: a habilidade mais subutilizada</span><span class="text-neutral-500 text-sm ml-2">— pare de digitar o que você pode colar</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Claude lê imagens. Você pode colar prints de planilhas, e-mails, telas de erro, fotos de quadros e gráficos — e pedir explicação, transcrição, melhoria ou análise.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Metade do trabalho do Nível 1 é descrever em texto o que um print resolveria em 2 segundos. Quem cola, ganha tempo absurdo.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Ctrl+Shift+S no Mac/Win · Transcrição de tabelas · Análise de gráficos · Leitura de erro · Comparação de duas telas.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-        <span class="text-lg">📝</span>
-        <div><span class="font-medium">Os 6 usos práticos do dia a dia</span><span class="text-neutral-500 text-sm ml-2">— escrever, resumir, explicar, ideias, revisar, scripts</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Seis padrões que cobrem 80% do uso de Nível 1: melhorar textos, resumir conteúdos longos, explicar conceitos difíceis, gerar ideias, revisar erros, criar fórmulas/scripts curtos.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Você não precisa "saber tudo" — precisa reconhecer qual dos 6 padrões cabe no que está fazendo agora.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">"Reescreva mais formal" · "Resuma em 5 bullets" · "Explique pra uma criança" · "10 ideias diferentes" · "Aponte erros" · "Fórmula Excel pra X".</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-        <span class="text-lg">⚠</span>
-        <div><span class="font-medium">Os 4 erros que mantêm você no Nível 1</span><span class="text-neutral-500 text-sm ml-2">— tratar como Google, não iterar, prompt vago, não revisar</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Pedir respostas de 1 palavra como se fosse buscador · aceitar a 1ª resposta sem refinar · prompts genéricos ("me ajuda com isso") · não revisar erros factuais nem de tom.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Esses 4 hábitos são o teto invisível do Nível 1. Eliminá-los já te dá metade do salto pro Nível 2.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Iterar é grátis · Revisar é obrigatório · Claude erra com confiança · 2ª pergunta vale mais que a 1ª.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-        <span class="text-lg">📋</span>
-        <div><span class="font-medium">Galeria de prompts prontos</span><span class="text-neutral-500 text-sm ml-2">— e-mail, resumo, explicação, brainstorm, revisão</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Coleção de prompts copia-e-cola pra cada um dos 6 usos. Não pra decorar — pra adaptar.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Tirar a "página em branco" da equação acelera o uso. Depois de 1 semana você já cria os seus.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Templates parametrizáveis · Variáveis entre {chaves} · Salvar os melhores · Compartilhar com o time.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
-        <span class="text-lg">🚪</span>
-        <div><span class="font-medium">Quando o Nível 1 é suficiente</span><span class="text-neutral-500 text-sm ml-2">— e quando você precisa subir</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Critério honesto: se você usa Claude pra coisas pontuais e descartáveis, Nível 1 basta. Se você repete o mesmo tipo de tarefa toda semana, é hora de subir.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Subir de nível sem necessidade vira esforço perdido. Mas ficar quando o trabalho já pede continuidade é deixar 5h/semana na mesa.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">"Você está copiando a mesma resposta?" → suba · "Você reescreve o contexto toda vez?" → suba · "Você usa só pra tirar dúvida?" → fique.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span>
-        <span class="text-lg">🏋</span>
-        <div><span class="font-medium">Exercício prático: 1 semana de chat</span><span class="text-neutral-500 text-sm ml-2">— tarefas reais, prompts próprios</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Por 7 dias, registre cada tarefa real que você resolveu com Claude no chat. Anote prompt + qualidade da resposta + quantas iterações.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem dado, você acha que usa bem. Com dado, você descobre seus padrões e bottlenecks.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Planilha simples · 3 colunas (tarefa, prompt, iterações) · Revisão no domingo · Identificar padrão repetido = candidato a Projeto (N2).</p></div>
-      </div></div>
-    </div>
-
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
-    <a href="modulo-1-1.html" class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition">📖 Ver Completo</a>
-    <button onclick="openModal('modal-1-1')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button>
-  </div>
+<h2 class="text-2xl font-bold mb-8">📚 Detailed content</h2>
+MODULE 1.1
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-1-1">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.1</span><span class="text-xs text-neutral-500">~25 min</span></div>
+<h3 class="text-2xl font-bold mb-2">💬 Mastering the basics that no one masters</h3>
+<p class="text-neutral-400 text-sm">How to get 3x more value from pure chat before moving on to the next level.</p>
 </div>
-
-<!-- MÓDULO 1.2 -->
-<div id="modulo-1-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600">
-    <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.2</span><span class="text-xs text-neutral-500">~20 min</span></div>
-    <h3 class="text-2xl font-bold mb-2">🚀 Cheat Code: seu primeiro Projeto</h3>
-    <p class="text-neutral-400 text-sm">A jogada única que muda você de Nível 1 pra Nível 2 sem virar técnico.</p>
-  </div>
-  <div class="divide-y divide-dark-700">
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-        <span class="text-lg">🦴</span>
-        <div><span class="font-medium">Por que Projeto é a espinha do N2</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Projeto é um espaço com instrução fixa + base de conhecimento. Toda conversa nasce pré-carregada com seu contexto.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a feature gratuita que mais separa quem economiza 30min/dia de quem economiza 5h/semana.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Instrução fixa · Knowledge base · 1 tema por projeto · "Começa carregado".</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-        <span class="text-lg">🎯</span>
-        <div><span class="font-medium">Escolhendo o tema certo</span><span class="text-neutral-500 text-sm ml-2">— recorrente, com docs, com público claro</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Tema bom pra 1º projeto: algo que você toca toda semana, tem material de referência (PDF, docs, exemplos), e fala pra um público definido.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Projeto genérico = ROI baixo. Projeto específico = você sente a diferença na primeira conversa.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">"Atendimento ao cliente loja X" > "Marketing geral" · "Conteúdo pro Instagram da empresa Y" > "Redes sociais".</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-        <span class="text-lg">🧬</span>
-        <div><span class="font-medium">Anatomia de um Projeto bem montado</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">3 camadas: (1) system prompt — quem você é, como Claude deve responder, (2) knowledge base — PDFs/docs de referência, (3) histórico — conversas anteriores.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Conhecer as 3 camadas evita o erro mais comum: empilhar tudo no prompt e nada nos docs.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Prompt < 1 página · Docs em PDF/MD · 1 conversa, 1 escopo · Memory ativa.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-        <span class="text-lg">📝</span>
-        <div><span class="font-medium">Template de instrução fixa</span><span class="text-neutral-500 text-sm ml-2">— copia-e-cola adaptável</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Modelo pronto: "Você é meu [papel]. Trabalha com [contexto]. Sempre que eu pedir X, faça Y. Nunca faça Z. Responda em [formato]."</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem template, todo mundo escreve prompt genérico. Com template, em 5 min você tem instrução utilizável.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Papel claro · Sempre/Nunca · Formato fixo · Tom de voz · Idioma.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-        <span class="text-lg">✅</span>
-        <div><span class="font-medium">Sinais de que você está pronto pra subir</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Você criou um Projeto, usou por 1 semana, percebeu que ainda copia coisas do Drive/Slack manualmente. Esse incômodo é o gatilho do N2.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Subir pelo incômodo certo, não pela moda. N2 só vale se você sente o atrito de continuar manualizando.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">"Queria que ele pegasse esse arquivo sozinho" · "Esse Excel mereceria um deck" · Sinais práticos > sinais teóricos.</p></div>
-      </div></div>
-    </div>
-
-    <div class="topic-item">
-      <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left">
-        <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-        <span class="text-lg">📋</span>
-        <div><span class="font-medium">Checklist de transição → Nível 2</span></div>
-      </button>
-      <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-        <div><span class="text-emerald-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">7 itens: tema escolhido · instrução escrita · docs anexados · 1 conversa-piloto rodou · você revisou erros · ajustou prompt · sente atrito de manualizar.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Pular sem checklist = caos no N2. Com checklist, você chega no próximo nível já com base sólida.</p></div>
-        <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Tudo no papel · Conversa-piloto · Atrito identificado · Próximo passo: conectores.</p></div>
-      </div></div>
-    </div>
-
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
-    <a href="modulo-1-2.html" class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition">📖 Ver Completo</a>
-    <button onclick="openModal('modal-1-2')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button>
-  </div>
+<div class="divide-y divide-dark-700">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg">🎯</span>
+<div><span class="font-medium">What characterizes Level 1</span><span class="text-neutral-500 text-sm ml-2">— and why 90% crashes here</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">The level where Claude is used as a quest: you open it, ask it, copy the answer and close it. No memory, no project, no integration.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's anyone's floor. Recognizing that you are here is the prerequisite for rising. 90% of people stay with it because they think it's "enough."</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Stateless chat · Single reply · ~30 min/day saved · Low ceiling but safe.</p></div>
+</div></div>
 </div>
-
-<!-- MÓDULO 1.3 - CASES COMPLETOS -->
-<div id="modulo-1-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600">
-    <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.3</span><span class="text-xs text-neutral-500">~40 min · CASES COMPLETOS</span></div>
-    <h3 class="text-2xl font-bold mb-2">🎯 Cases reais worked-through</h3>
-    <p class="text-neutral-400 text-sm mb-3">Três situações reais, cada uma com tentativa que falhou, ajuste exato e prompt final que entrega. Padrão de 5 ingredientes destilado ao fim.</p>
-  </div>
-  <div class="p-6 space-y-4">
-    <div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-emerald-500/30">
-      <h4 class="font-semibold text-emerald-400 mb-1">📧 Case 1 — Responder reclamação espinhosa de cliente</h4>
-      <p class="text-sm text-neutral-300">Maria, atendimento, cliente ameaça Procon. Restrição: não pode cancelar, oferta de 15% disponível. Veja o prompt errado, o porquê, o prompt final que funciona, 4 variações e 4 erros comuns ao adaptar.</p>
-    </div>
-    <div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-emerald-500/30">
-      <h4 class="font-semibold text-emerald-400 mb-1">💡 Case 2 — 5 ideias com ROI estimado pra amanhã 9h</h4>
-      <p class="text-sm text-neutral-300">Carlos, gerente de produto fintech B2B. Diretor pediu 5 ideias diferentes pra reter clientes R$500-2k/mês. Veja como ele saiu de "ideias genéricas" pra proposta defensável com premissa numérica e ranking.</p>
-    </div>
-    <div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-emerald-500/30">
-      <h4 class="font-semibold text-emerald-400 mb-1">📚 Case 3 — Estudo ativo pra concurso (não passivo)</h4>
-      <p class="text-sm text-neutral-300">Ana, 30 dias pra prova de fiscal. 7 capítulos densos. Veja como "resumo" é o output errado pra memorizar — flashcards + 10 questões estilo banca + tabela de armadilhas é o output certo.</p>
-    </div>
-    <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
-      <h4 class="font-semibold text-emerald-400 mb-1">🧠 Bônus — o padrão dos 5 ingredientes</h4>
-      <p class="text-sm text-neutral-300">Os 3 cases seguem a mesma anatomia. Os 5 ingredientes que destravam qualquer prompt do N1, destilados pra você adaptar a qualquer área.</p>
-    </div>
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
-    <a href="modulo-1-3.html" class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition">📖 Ver Completo</a>
-    <button onclick="openModal('modal-1-3')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button>
-  </div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg">✍</span>
+<div><span class="font-medium">Anatomy of a prompt that delivers</span><span class="text-neutral-500 text-sm ml-2">— role + context + format + constraint</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Simple structure for any order: define the<em>paper</em>("act as senior copywriter"), give<em>context</em>("it's an email for B2B customers"), ask for the<em>format</em>("3 versions in bullets") and put<em>restriction</em>("max. 80 words each").</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Most of the bad answers aren't Claude's fault — it's vague prompting. This pattern doubles the quality without changing tools.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Clear role · Sufficient context · Explicit format · Measurable constraint · Iterate with “now do more X”.</p></div>
+</div></div>
 </div>
-
-<!-- MÓDULO 1.4 - WALKTHROUGH -->
-<div id="modulo-1-4" class="bg-dark-800 rounded-xl border border-dark-600 mb-8">
-  <div class="p-6 border-b border-dark-600">
-    <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.4</span><span class="text-xs text-neutral-500">~45 min · WALKTHROUGH CINEMATOGRÁFICO</span></div>
-    <h3 class="text-2xl font-bold mb-2">🎬 Da reunião de 78min à ata que todos leem</h3>
-    <p class="text-neutral-400 text-sm mb-3">Uma jornada completa, sem corte, da quarta 15h35 (CEO mandou WhatsApp) até quinta 9h12 (Conselho aprovou). 3 iterações, 2 outputs diferentes da mesma fonte, 0 alucinações.</p>
-  </div>
-  <div class="p-6 space-y-3">
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-red-500/30"><strong class="text-red-400 text-sm">Iteração 0 — o reflexo ruim:</strong><span class="text-sm text-neutral-300"> "faz um resumo pra mim". Output genérico, não serve.</span></div>
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-amber-500/30"><strong class="text-amber-400 text-sm">Iteração 1 — primeiro ajuste:</strong><span class="text-sm text-neutral-300"> agora com perguntas do CEO. Melhor, mas Claude alucinou nomes.</span></div>
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-emerald-500/30"><strong class="text-emerald-400 text-sm">Iteração 2 — apertando contexto e veto:</strong><span class="text-sm text-neutral-300"> estrutura exata + regras anti-vaguidade + permissão pra dizer "não sei". Funciona.</span></div>
-    <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-emerald-500/30"><strong class="text-emerald-400 text-sm">Iteração 3 — CEO pede outro corte:</strong><span class="text-sm text-neutral-300"> "Versão de slide do Conselho, 6 linhas". 30 segundos, mesma conversa.</span></div>
-    <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-3">
-      <strong class="text-emerald-400 text-sm">📊 Métricas reais:</strong>
-      <span class="text-sm text-neutral-300"> 63 min poupados, 2 outputs diferentes da mesma fonte, 0 alucinações no final. Tudo no chat puro.</span>
-    </div>
-  </div>
-  <div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
-    <a href="modulo-1-4.html" class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition">📖 Ver Completo</a>
-    <button onclick="openModal('modal-1-4')" class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600">⚡ Ver em Modal</button>
-  </div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg">📸</span>
+<div><span class="font-medium">Screenshots: the most underused skill</span><span class="text-neutral-500 text-sm ml-2">— stop typing what you can paste</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Claude reads images. You can paste screenshots of spreadsheets, emails, error screens, photos of tables and graphs — and ask for an explanation, transcription, improvement or analysis.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Half of the work in Level 1 is describing in text what a print would solve in 2 seconds. Whoever cheats, saves an absurd amount of time.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Ctrl+Shift+S on Mac/Win · Table transcription · Graph analysis · Error reading · Comparison of two screens.</p></div>
+</div></div>
 </div>
-
-<!-- NAV PREV/NEXT -->
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg">📝</span>
+<div><span class="font-medium">The 6 practical everyday uses</span><span class="text-neutral-500 text-sm ml-2">— write, summarize, explain, ideas, review, scripts</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Six standards that cover 80% of Level 1 usage: improve texts, summarize long content, explain difficult concepts, generate ideas, review errors, create short formulas/scripts.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">You don't need to "know it all" — you need to recognize which of the 6 patterns fits what you're doing now.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">"Rewrite more formal" · "Summarize in 5 bullets" · "Explain to a child" · "10 different ideas" · "Point out errors" · "Excel Formula for X".</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg">⚠</span>
+<div><span class="font-medium">The 4 mistakes that keep you at Level 1</span><span class="text-neutral-500 text-sm ml-2">— treat like Google, don't iterate, vague prompt, don't review</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Asking for 1-word answers as if you were a search engine · accepting the 1st answer without refining · generic prompts ("help me with this") · not reviewing factual or tone errors.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">These 4 habits are the invisible ceiling of Level 1. Eliminating them already gives you half the jump to Level 2.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Iterating is free · Revising is mandatory · Claude makes mistakes with confidence · 2nd question is worth more than the 1st.</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg">📋</span>
+<div><span class="font-medium">Gallery of ready-made prompts</span><span class="text-neutral-500 text-sm ml-2">— email, summary, explanation, brainstorm, review</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Collection of copy-and-paste prompts for each of the 6 uses. Not to decorate — to adapt.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Taking the "blank page" out of the equation speeds up usage. After 1 week you can create your own.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Parameterizable templates · Variables between {keys} · Save the best ones · Share with the team.</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
+<span class="text-lg">🚪</span>
+<div><span class="font-medium">When Level 1 is enough</span><span class="text-neutral-500 text-sm ml-2">— and when you need to go up</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Honest criteria: if you use Claude for occasional and disposable things, Level 1 is enough. If you find yourself repeating the same type of task every week, it's time to step up.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Leveling up unnecessarily becomes wasted effort. But staying when work already demands continuity means leaving 5 hours/week on the table.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">"Are you copying the same answer?" → climb · "Do you rewrite the context every time?" → climb · "Do you just use it to clear up doubts?" → stay.</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span>
+<span class="text-lg">🏋</span>
+<div><span class="font-medium">Practical exercise: 1 week of chat</span><span class="text-neutral-500 text-sm ml-2">— real tasks, own prompts</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">For 7 days, record every real task you solved with Claude in the chat. Write down prompt + quality of response + how many iterations.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without data, you think you use it well. With dice, you discover your patterns and bottlenecks.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Simple spreadsheet · 3 columns (task, prompt, iterations) · Review on Sunday · Identify repeated pattern = Project candidate (N2).</p></div>
+</div></div>
+</div>
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
+<a class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition" href="modulo-1-1.html">📖 See Full</a>
+<button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-1-1')">⚡ View in Modal</button>
+</div>
+</div>
+MODULE 1.2
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-1-2">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.2</span><span class="text-xs text-neutral-500">~20 min</span></div>
+<h3 class="text-2xl font-bold mb-2">🚀 Cheat Code: your first Project</h3>
+<p class="text-neutral-400 text-sm">The unique move that changes you from Level 1 to Level 2 without becoming a technician.</p>
+</div>
+<div class="divide-y divide-dark-700">
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+<span class="text-lg">🦴</span>
+<div><span class="font-medium">Why Project is the backbone of N2</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Project is a space with fixed instruction + knowledge base. Every conversation is born preloaded with its context.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">It's the free feature that most separates those who save 30 minutes/day from those who save 5 hours/week.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Fixed instruction · Knowledge base · 1 theme per project · "Starts loaded".</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+<span class="text-lg">🎯</span>
+<div><span class="font-medium">Choosing the Right Theme</span><span class="text-neutral-500 text-sm ml-2">— recurring, with documents, with clear audience</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Good topic for the first project: something you play every week, has reference material (PDF, docs, examples), and speaks to a defined audience.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Generic project = low ROI. Specific project = you feel the difference in the first conversation.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">"Customer service at store X" &gt; "General marketing" · "Content for company Y's Instagram" &gt; "Social media".</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+<span class="text-lg">🧬</span>
+<div><span class="font-medium">Anatomy of a well-assembled project</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">3 layers: (1) system prompt — who you are, how Claude should respond, (2) knowledge base — reference PDFs/docs, (3) history — previous conversations.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Knowing the 3 layers avoids the most common mistake: stacking everything in the prompt and nothing in the docs.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Prompt &lt; 1 page · Docs in PDF/MD · 1 conversation, 1 scope · Active memory.</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+<span class="text-lg">📝</span>
+<div><span class="font-medium">Fixed instruction template</span><span class="text-neutral-500 text-sm ml-2">— adaptive copy and paste</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">Ready template: "You are my [role]. You work with [context]. Whenever I ask for X, do Y. Never do Z. Answer in [format]."</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Without a template, everyone writes a generic prompt. With template, in 5 minutes you have usable instructions.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Light paper · Always/Never · Fixed format · Tone of voice · Language.</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+<span class="text-lg">✅</span>
+<div><span class="font-medium">Signs that you are ready to move up</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">You created a Project, used it for 1 week, realized that you still copy things from Drive/Slack manually. This discomfort is the trigger for N2.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Going up for the right inconvenience, not for fashion. N2 is only valid if you feel the friction of continuing to manualize.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">"I wish he could get this file on his own" · "This Excel would deserve a deck" · Practical signs &gt; theoretical signs.</p></div>
+</div></div>
+</div>
+<div class="topic-item">
+<button class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition text-left" onclick="toggleTopic(this)">
+<span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+<span class="text-lg">📋</span>
+<div><span class="font-medium">Transition checklist → Level 2</span></div>
+</button>
+<div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+<div><span class="text-emerald-400 font-semibold">What is it:</span><p class="text-neutral-300 text-sm">7 items: chosen topic · written instructions · attached docs · 1 pilot conversation run · you reviewed errors · adjusted the prompt · feel the friction of manualizing.</p></div>
+<div><span class="text-emerald-400 font-semibold">Why learn:</span><p class="text-neutral-300 text-sm">Jumping without a checklist = chaos on N2. With a checklist, you reach the next level with a solid foundation.</p></div>
+<div><span class="text-emerald-400 font-semibold">Key concepts:</span><p class="text-neutral-300 text-sm">Everything on paper · Pilot conversation · Identified friction · Next step: connectors.</p></div>
+</div></div>
+</div>
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
+<a class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition" href="modulo-1-2.html">📖 See Full</a>
+<button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-1-2')">⚡ View in Modal</button>
+</div>
+</div>
+MODULE 1.3 - COMPLETE CASES
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-1-3">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.3</span><span class="text-xs text-neutral-500">~40 min · COMPLETE CASES</span></div>
+<h3 class="text-2xl font-bold mb-2">🎯 Real cases worked-through</h3>
+<p class="text-neutral-400 text-sm mb-3">Three real situations, each with a failed attempt, an exact fit, and a final prompt that delivers. Standard 5 ingredients distilled to the end.</p>
+</div>
+<div class="p-6 space-y-4">
+<div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-emerald-500/30">
+<h4 class="font-semibold text-emerald-400 mb-1">📧 Case 1 — Responding to a thorny customer complaint</h4>
+<p class="text-sm text-neutral-300">Maria, customer service, customer threatens Procon. Restriction: Cannot cancel, 15% offer available. See the wrong prompt, why, the final prompt that works, 4 variations and 4 common mistakes when adapting.</p>
+</div>
+<div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-emerald-500/30">
+<h4 class="font-semibold text-emerald-400 mb-1">💡 Case 2 — 5 ideas with estimated ROI for tomorrow 9am</h4>
+<p class="text-sm text-neutral-300">Carlos, fintech B2B product manager. Director asked for 5 different ideas to retain customers R$500-2k/month. See how he went from "generic ideas" to a defensible proposal with a numerical premise and ranking.</p>
+</div>
+<div class="bg-dark-700/50 rounded-lg p-4 border-l-4 border-emerald-500/30">
+<h4 class="font-semibold text-emerald-400 mb-1">📚 Case 3 — Active study for the competition (not passive)</h4>
+<p class="text-sm text-neutral-300">Ana, 30 days for the tax exam. 7 dense chapters. See how "summary" is the wrong output for memorizing — flashcards + 10 exam-style questions + trap table is the right output.</p>
+</div>
+<div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
+<h4 class="font-semibold text-emerald-400 mb-1">🧠 Bonus — the 5 ingredient standard</h4>
+<p class="text-sm text-neutral-300">The 3 cases follow the same anatomy. The 5 ingredients that unlock any N1 prompt, distilled for you to adapt to any area.</p>
+</div>
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
+<a class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition" href="modulo-1-3.html">📖 See Full</a>
+<button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-1-3')">⚡ View in Modal</button>
+</div>
+</div>
+MODULE 1.4 - WALKTHROUGH
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-8" id="modulo-1-4">
+<div class="p-6 border-b border-dark-600">
+<div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.4</span><span class="text-xs text-neutral-500">~45 min · CINEMATOGRAPHIC WALKTHROUGH</span></div>
+<h3 class="text-2xl font-bold mb-2">🎬 From the 78-minute meeting to the minutes that everyone reads</h3>
+<p class="text-neutral-400 text-sm mb-3">A complete day, without cuts, from Wednesday 3:35 pm (CEO sent WhatsApp) until Thursday 9:12 am (Council approved). 3 iterations, 2 different outputs from the same source, 0 hallucinations.</p>
+</div>
+<div class="p-6 space-y-3">
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-red-500/30"><strong class="text-red-400 text-sm">Iteration 0 — the bad reflection:</strong><span class="text-sm text-neutral-300">"give me a summary." Generic output, no use.</span></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-amber-500/30"><strong class="text-amber-400 text-sm">Iteration 1 — first adjustment:</strong><span class="text-sm text-neutral-300">now with questions from the CEO. Better, but Claude hallucinated names.</span></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-emerald-500/30"><strong class="text-emerald-400 text-sm">Iteration 2 — tightening context and veto:</strong><span class="text-sm text-neutral-300">exact structure + anti-vagueness rules + permission to say "I don't know". It works.</span></div>
+<div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-emerald-500/30"><strong class="text-emerald-400 text-sm">Iteration 3 — CEO asks for another cut:</strong><span class="text-sm text-neutral-300">"Council slide version, 6 lines". 30 seconds, same conversation.</span></div>
+<div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-3">
+<strong class="text-emerald-400 text-sm">📊 Real metrics:</strong>
+<span class="text-sm text-neutral-300">63 min saved, 2 different outputs from the same source, 0 hallucinations in the end. All in pure chat.</span>
+</div>
+</div>
+<div class="p-6 flex flex-col sm:flex-row justify-start gap-3">
+<a class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition" href="modulo-1-4.html">📖 See Full</a>
+<button class="px-5 py-2.5 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition border border-dark-600" onclick="openModal('modal-1-4')">⚡ View in Modal</button>
+</div>
+</div>
+PREV/NEXT NAV
 <div class="flex flex-col sm:flex-row gap-4 mt-8">
-  <a href="../../index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Capa</a>
-  <a href="../trilha2/index.html" class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition">Próxima Trilha: Iniciante →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="../../index.html">← Back to Cover</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition" href="../trilha2/index.html">Next Trail: Beginner →</a>
 </div>
-
 </main>
-
 <footer class="border-t border-dark-600 mt-12 py-8">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-neutral-500">
-    <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a> · 5 Níveis do Claude Code
-  </div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-neutral-500">
+<a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a>· 5 Claude Code Levels</div>
 </footer>
-
-<!-- MODAIS -->
-<div id="modal-1-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()">
-  <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-    <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
-      <div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">Dominando o básico</span></div>
-      <button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button>
-    </div>
-    <iframe src="modulo-1-1.html" class="flex-1 w-full rounded-b-xl"></iframe>
-  </div>
+MODES
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-1" onclick="if(event.target===this) closeModal()">
+<div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
+<div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">Mastering the basics</span></div>
+<button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button>
 </div>
-
-<div id="modal-1-2" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()">
-  <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-    <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
-      <div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">Cheat Code: seu primeiro Projeto</span></div>
-      <button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button>
-    </div>
-    <iframe src="modulo-1-2.html" class="flex-1 w-full rounded-b-xl"></iframe>
-  </div>
+<iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-1.html"></iframe>
 </div>
-
-<div id="modal-1-3" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()">
-  <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-    <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
-      <div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">Cases reais worked-through</span></div>
-      <button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button>
-    </div>
-    <iframe src="modulo-1-3.html" class="flex-1 w-full rounded-b-xl"></iframe>
-  </div>
 </div>
-
-<div id="modal-1-4" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target===this) closeModal()">
-  <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-    <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
-      <div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.4</span><span class="font-semibold">Walkthrough: da reunião à ata</span></div>
-      <button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button>
-    </div>
-    <iframe src="modulo-1-4.html" class="flex-1 w-full rounded-b-xl"></iframe>
-  </div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-2" onclick="if(event.target===this) closeModal()">
+<div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
+<div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">Cheat Code: your first Project</span></div>
+<button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button>
 </div>
-
-<script>
+<iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-2.html"></iframe>
+</div>
+</div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-3" onclick="if(event.target===this) closeModal()">
+<div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
+<div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">Real cases worked-through</span></div>
+<button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button>
+</div>
+<iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-3.html"></iframe>
+</div>
+</div>
+<div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-4" onclick="if(event.target===this) closeModal()">
+<div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
+<div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.4</span><span class="font-semibold">Walkthrough: from meeting to minutes</span></div>
+<button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button>
+</div>
+<iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-4.html"></iframe>
+</div>
+</div>
+<script data-notranslate="True">
 const themeToggle=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;
 if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}
 themeToggle.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});
