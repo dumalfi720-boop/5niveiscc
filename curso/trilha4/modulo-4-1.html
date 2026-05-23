@@ -1,106 +1,76 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>4.1 Claude Code: o motor | T4</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
+html
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>4.1 Claude Code: the engine | T4</title>
+<script data-notranslate="True" src="https://cdn.tailwindcss.com"></script>
+<script data-notranslate="True">tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{600:'#374151',700:'#1f2937',800:'#111827',900:'#0a0f1c'}}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style data-notranslate="True">body{font-family:'Inter',sans-serif}.dark body{background-color:#0a0f1c}
 html:not(.dark) body{background-color:#f8fafc}html:not(.dark) .bg-dark-900{background-color:#fff}html:not(.dark) .bg-dark-900\/95{background-color:rgba(255,255,255,.95)}html:not(.dark) .bg-dark-800{background-color:#f9fafb}html:not(.dark) .bg-dark-800\/50{background-color:rgba(249,250,251,.5)}html:not(.dark) .bg-dark-700{background-color:#f3f4f6}html:not(.dark) .bg-dark-600{background-color:#e5e7eb}html:not(.dark) .text-neutral-100{color:#111827}html:not(.dark) .text-neutral-300{color:#4b5563}html:not(.dark) .text-neutral-400{color:#6b7280}html:not(.dark) .text-neutral-500{color:#9ca3af}html:not(.dark) .border-dark-600{border-color:#d1d5db}html:not(.dark) [class*="bg-gradient-to"]{background-image:none!important}
 html:not(.dark) .text-sky-400{color:#0369a1}html:not(.dark) .hover\:text-sky-300:hover{color:#0284c7}
 html:not(.dark) .text-amber-400{color:#b45309}html:not(.dark) .bg-amber-500\/10{background-color:rgba(180,83,9,.08)}html:not(.dark) .bg-amber-500\/20{background-color:rgba(180,83,9,.12)}html:not(.dark) .border-amber-500\/30{border-color:rgba(180,83,9,.3)}html:not(.dark) .bg-amber-600{background-color:#b45309}html:not(.dark) .hover\:bg-amber-500:hover{background-color:#d97706}</style></head><body class="text-neutral-100">
-<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a href="../../index.html" class="flex items-center space-x-2"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Níveis do Claude</span></a><span class="text-neutral-600">|</span><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a href="../trilha1/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Entusiasta</span></a><a href="../trilha2/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Iniciante</span></a><a href="../trilha3/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediário</span></a><a href="index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-amber-400 bg-amber-500/10"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Avançado</span></a><a href="../trilha5/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Arquiteto</span></a><a href="../trilha6/index.html" class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Prova</span></a><button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1"><svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg></button></div></div></div></nav>
-
+<nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600"><div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-14"><div class="flex items-center space-x-4"><a class="flex items-center space-x-2" href="../../index.html"><span class="text-2xl">🪜</span><span class="font-bold text-lg hidden sm:inline">5 Claude Levels</span></a><span class="text-neutral-600">|</span><a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://duclub" target="_blank">duclub</a></div><div class="flex items-center space-x-1 sm:space-x-2"><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Enthusiast</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Beginner</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Intermediary</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Advanced</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Architect</span></a><a class="px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition" href="../trilha6/index.html"><span class="sm:hidden">T6</span><span class="hidden sm:inline">Proof</span></a><button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition ml-1" id="theme-toggle"><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg><svg class="hidden w-4 h-4" fill="currentColor" id="theme-toggle-light-icon" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" fill-rule="evenodd"></path></svg></button></div></div></div></nav>
 <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-<nav class="text-sm text-neutral-500 mb-6"><a href="../../index.html" class="hover:text-amber-400">Início</a> / <a href="index.html" class="hover:text-amber-400">Trilha 4</a> / <span class="text-neutral-300">Módulo 4.1</span></nav>
-
-<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-3">MÓDULO 4.1 · ~30 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">⚙ Claude Code: o motor</h1><p class="text-lg text-neutral-300">Os 8 elementos centrais que separam usuário casual de quem opera Claude Code como time de engenharia: claude.md, plan mode, subagentes, worktrees, e a hierarquia CLI&gt;API&gt;Skill&gt;MCP.</p></header>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🖥 Terminal vs aba Code</h2></div>
-<p class="text-neutral-300 mb-4">Claude Code roda em duas interfaces com engine único: <strong class="text-amber-400">CLI no terminal</strong> (mais rápido depois que acostuma — comandos atalhos, integração nativa com tmux, screen) ou <strong class="text-amber-400">aba Code no Claude Desktop</strong> (interface gráfica, ideal pra começar). Mesmo modelo, mesmas features, mesmas skills.</p>
-<p class="text-neutral-300">Se você é não-coder vindo do N3, comece pela aba Code. Migre pra CLI quando sentir necessidade de velocidade.</p>
+<nav class="text-sm text-neutral-500 mb-6"><a class="hover:text-amber-400" href="../../index.html">Start</a> / <a class="hover:text-amber-400" href="index.html">Track 4</a> / <span class="text-neutral-300">Module 4.1</span></nav>
+<header class="mb-10"><span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 mb-3">MODULE 4.1 · ~30 min</span><h1 class="text-3xl sm:text-4xl font-extrabold mb-3">⚙ Claude Code: the engine</h1><p class="text-lg text-neutral-300">The 8 central elements that separate the casual user from those who operate Claude Code as an engineering team: claude.md, plan mode, subagents, worktrees, and the CLI&gt;API&gt;Skill&gt;MCP hierarchy.</p></header>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span><h2 class="text-2xl font-bold mt-1">🖥 Terminal vs Code tab</h2></div>
+<p class="text-neutral-300 mb-4">Claude Code runs on two interfaces with a single engine:<strong class="text-amber-400">CLI in the terminal</strong>(faster once you get used to it — shortcut commands, native integration with tmux, screen) or<strong class="text-amber-400">Code tab in Claude Desktop</strong>(graphical interface, ideal for starting). Same model, same features, same skills.</p>
+<p class="text-neutral-300">If you are a non-coder coming from N3, start with the Code tab. Migrate to CLI when you feel the need for speed.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">📜 claude.md — o arquivo que treina Claude no seu jeito</h2></div>
-<p class="text-neutral-300 mb-4">Markdown na raiz do projeto. Claude lê em toda nova conversa. Conteúdo típico:</p>
-<div class="bg-dark-800 rounded-lg border border-dark-600 p-5 font-mono text-sm text-neutral-300 mb-4">
-# Projeto<br><br>
-## Objetivo<br>
-&lt;1 parágrafo&gt;<br><br>
-## Stack<br>
-- Next.js 14, TypeScript estrito<br>
-- Supabase (PG)<br>
-- Vercel<br><br>
-## Convenções<br>
-- Componentes em PascalCase<br>
-- Hooks em camelCase com prefixo use*<br>
-- Testes em __tests__/&lt;arquivo&gt;.test.ts<br><br>
-## Regras<br>
-- Nunca usar &lt;em-dash&gt; em texto<br>
-- Sempre criar branch antes de mexer em src/<br>
-- PR sem teste = recusado<br><br>
-@docs/arquitetura.md<br>
-@docs/glossario.md
-</div>
-<p class="text-neutral-300"><strong class="text-amber-400">Regra de ouro:</strong> ≤200 linhas. Pra detalhes longos, use <code class="bg-dark-700 px-2 py-0.5 rounded">@arquivo.md</code> — Claude lê só quando precisa, sem inflar contexto.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span><h2 class="text-2xl font-bold mt-1">📜 claude.md — the file that trains Claude your way</h2></div>
+<p class="text-neutral-300 mb-4">Markdown in the project root. Claude reads into every new conversation. Typical content:</p>
+<div class="bg-dark-800 rounded-lg border border-dark-600 p-5 font-mono text-sm text-neutral-300 mb-4"># Project<br/><br/>## Objective<br/>&lt;1 paragraph&gt;<br/><br/>## Stack<br/>- Next.js 14, Strict TypeScript<br/>- Supabase (PG)<br/>- Vercel<br/><br/>## Conventions<br/>- Components in PascalCase<br/>- Hooks in camelCase with use* prefix<br/>- Tests in __tests__/&lt;file&gt;.test.ts<br/><br/>## Rules<br/>- Never use &lt;em-dash&gt; in text<br/>- Always create a branch before touching src/<br/>- PR without test = declined<br/><br/>@docs/arquitetura.md<br/>@docs/glossario.md</div>
+<p class="text-neutral-300"><strong class="text-amber-400">Rule of thumb:</strong>≤200 lines. For long details, use<code class="bg-dark-700 px-2 py-0.5 rounded" data-notranslate="True">@arquivo.md</code>— Claude reads only when he needs to, without inflating context.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🔁 Atualizar claude.md quando Claude errar</h2></div>
-<p class="text-neutral-300 mb-4">Quando Claude cometer erro recorrente, diga literalmente: <em>"Atualize o claude.md pra não fazer isso de novo."</em> Em semanas, o arquivo treina Claude no seu padrão.</p>
-<p class="text-neutral-300">A própria Anthropic faz isso. É o loop que separa N4 médio (Claude aceitável) de N4 dominante (Claude que parece treinado pra você).</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span><h2 class="text-2xl font-bold mt-1">🔁 Update claude.md when Claude makes a mistake</h2></div>
+<p class="text-neutral-300 mb-4">When Claude makes a recurring mistake, literally say:<em>"Update claude.md so you don't do this again."</em>Within weeks, the archive trains Claude to its standard.</p>
+<p class="text-neutral-300">Anthropic itself does this. It's the loop that separates average N4 (acceptable Claude) from dominant N4 (Claude who seems trained to you).</p>
 </section>
-
 <section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span><h2 class="text-2xl font-bold mt-1">📋 Plan mode + Opus Plan</h2></div>
-<p class="text-neutral-300 mb-4"><strong class="text-amber-400">Plan mode:</strong> Shift+Tab 2x ativa. Claude lê código, apresenta plano detalhado, espera aprovação antes de executar. Você revisa, pede ajustes, e só então libera.</p>
-<p class="text-neutral-300 mb-4"><strong class="text-amber-400">Opus Plan (setting escondido):</strong> Opus faz o planejamento, Sonnet executa o trabalho. Resultado: custo de Sonnet, qualidade de Opus. Reduz gasto pela metade sem perder rigor.</p>
+<p class="text-neutral-300 mb-4"><strong class="text-amber-400">Plan mode:</strong>Shift+Tab 2x activates. Claude reads code, presents a detailed plan, waits for approval before executing. You review it, ask for adjustments, and only then release it.</p>
+<p class="text-neutral-300 mb-4"><strong class="text-amber-400">Opus Plan (hidden setting):</strong>Opus does the planning, Sonnet carries out the work. Result: cost of Sonnet, quality of Opus. Reduces spending by half without losing rigor.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">👥 Subagentes especializados</h2></div>
-<p class="text-neutral-300 mb-4">Subagentes são Claudes com papel específico: <strong class="text-amber-400">tests</strong> (roda + analisa testes), <strong class="text-amber-400">security</strong> (audita vulnerabilidades), <strong class="text-amber-400">docs</strong> (gera/atualiza documentação), <strong class="text-amber-400">code-reviewer</strong> (revisa PRs). Cada um em contexto isolado.</p>
-<p class="text-neutral-300 mb-4">Vantagem: noise de um não contamina outro. Você efetivamente monta um time de engenharia onde cada papel é especializado e múltiplos rodam em paralelo.</p>
-<p class="text-neutral-300">Limitação atual (até teams no N5): não conversam diretamente entre si — comunicam via sessão principal.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span><h2 class="text-2xl font-bold mt-1">👥 Specialized sub-agents</h2></div>
+<p class="text-neutral-300 mb-4">Subagents are Claudes with a specific role:<strong class="text-amber-400">tests</strong>(runs + analyzes tests),<strong class="text-amber-400">security</strong>(audits vulnerabilities),<strong class="text-amber-400">docs</strong>(generates/updates documentation),<strong class="text-amber-400">code-reviewer</strong>(reviews PRs). Each in an isolated context.</p>
+<p class="text-neutral-300 mb-4">Advantage: noise from one does not contaminate another. You effectively assemble an engineering team where each role is specialized and multiple roles run in parallel.</p>
+<p class="text-neutral-300">Current limitation (even teams on N5): they don't talk directly to each other — they communicate via the main session.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">🌳 Worktrees: 3-4 Claudes em paralelo</h2></div>
-<p class="text-neutral-300 mb-4"><code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400">claude-worktree feature-name</code> cria workspace git isolado numa branch própria. Abra outro terminal, rode de novo, pronto: 2 Claudes trabalhando em features diferentes sem conflito de arquivos.</p>
-<p class="text-neutral-300 mb-4">Boris Cherny (criador do Claude Code) roda <strong class="text-amber-400">5 sessões em paralelo todo dia</strong> em terminais numerados. Cada uma em worktree própria. Volta depois e revisa as PRs prontas.</p>
-<p class="text-neutral-300">Sweet spot: 3-4 sessões. Mais que isso vira babá novamente.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span><h2 class="text-2xl font-bold mt-1">🌳 Worktrees: 3-4 Claudes in parallel</h2></div>
+<p class="text-neutral-300 mb-4"><code class="bg-dark-700 px-2 py-0.5 rounded text-amber-400" data-notranslate="True">claude-worktree feature-name</code>creates an isolated git workspace on its own branch. Open another terminal, run it again, that's it: 2 Claudes working on different features without file conflicts.</p>
+<p class="text-neutral-300 mb-4">Boris Cherny (creator of Claude Code) runs<strong class="text-amber-400">5 sessions in parallel every day</strong>on numbered terminals. Each one in its own worktree. Come back later and review the finished PRs.</p>
+<p class="text-neutral-300">Sweet spot: 3-4 sessions. More than that, she becomes a nanny again.</p>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">🔗 MCP com asterisco: CLI &gt; API &gt; Skill &gt; MCP</h2></div>
-<p class="text-neutral-300 mb-4">A própria Anthropic recomenda: <strong class="text-amber-400">se existe CLI pro trabalho (gh, aws, gcloud, kubectl), use CLI antes de MCP</strong>. Gasta 60-70% menos tokens — nada entra no contexto até você executar.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">7</span><h2 class="text-2xl font-bold mt-1">🔗 MCP with asterisk: CLI &gt; API &gt; Skill &gt; MCP</h2></div>
+<p class="text-neutral-300 mb-4">Anthropic itself recommends:<strong class="text-amber-400">If there is a CLI for work (gh, aws, gcloud, kubectl), use CLI before MCP</strong>. Spends 60-70% fewer tokens — nothing comes into context until you execute.</p>
 <div class="bg-dark-800 rounded-lg border border-dark-600 p-5 mb-4">
-  <h3 class="font-semibold text-amber-400 mb-2">Hierarquia oficial:</h3>
-  <ol class="text-sm text-neutral-300 space-y-1 ml-4">
-    <li>1. <strong>CLI</strong> (gh, aws, gcloud, kubectl, docker) — primeiro</li>
-    <li>2. <strong>Endpoints REST</strong> — quando CLI não cobre</li>
-    <li>3. <strong>Skills</strong> — quando workflow é repetitivo</li>
-    <li>4. <strong>MCP</strong> — só quando nada acima funciona</li>
-  </ol>
+<h3 class="font-semibold text-amber-400 mb-2">Official hierarchy:</h3>
+<ol class="text-sm text-neutral-300 space-y-1 ml-4">
+<li>1. <strong>CLI</strong>(gh, aws, gcloud, kubectl, docker) — first</li>
+<li>2. <strong>REST endpoints</strong>— when CLI does not cover</li>
+<li>3. <strong>Skills</strong>— when workflow is repetitive</li>
+<li>4. <strong>MCP</strong>— only when nothing above works</li>
+</ol>
 </div>
 </section>
-
-<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">🔧 Tool search e deferred loading</h2></div>
-<p class="text-neutral-300 mb-4">Janeiro/2026: quando o overhead de MCP passa de 10% da janela de contexto, Claude defere o carregamento dos tools até precisar. Reduz overhead em 85%, zero configuração.</p>
-<p class="text-neutral-300">É a feature que torna MCP viável em sessões longas. Mas a regra "CLI antes" ainda vale — deferred loading é só pra quando MCP é mesmo necessário.</p>
+<section class="mb-12"><div class="flex items-start space-x-4 mb-4"><span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">8</span><h2 class="text-2xl font-bold mt-1">🔧 Tool search and deferred loading</h2></div>
+<p class="text-neutral-300 mb-4">January/2026: when the MCP overhead exceeds 10% of the context window, Claude defers the loading of tools until needed. Reduces overhead by 85%, zero configuration.</p>
+<p class="text-neutral-300">It is the feature that makes MCP viable in long sessions. But the "CLI before" rule still applies — deferred loading is only for when MCP is really necessary.</p>
 </section>
-
 <section class="mb-12"><div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-  <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span> Resumo do Módulo</h2>
-  <div class="space-y-3 mb-6 text-sm">
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">CLI vs aba Code</strong> — mesmo engine, comece pela aba.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">claude.md ≤200 linhas + @arquivos</strong> pra detalhes.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">"Atualize claude.md pra não errar de novo"</strong> = loop dominante.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Plan mode + Opus Plan</strong> — qualidade de Opus, custo de Sonnet.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Subagentes especializados</strong> — time de engenharia em paralelo.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">3-4 worktrees</strong> é o sweet spot.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">CLI &gt; API &gt; Skill &gt; MCP</strong> — economiza 60-70% de tokens.</div></div>
-    <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Tool search</strong> reduz overhead de MCP em 85%.</div></div>
-  </div>
-  <div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-amber-400 mb-2">Próximo Módulo:</h3><p class="text-neutral-300">4.2 — Movimentos de alto impacto: /compact, auto mode, verificação, slash commands, /insights.</p></div>
-  <div class="flex flex-col sm:flex-row gap-4"><a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition">← Voltar para Trilha</a><a href="modulo-4-2.html" class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition">Próximo Módulo →</a></div>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">📚</span>Module Summary</h2>
+<div class="space-y-3 mb-6 text-sm">
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">CLI vs Code tab</strong>— same engine, start with the tab.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">claude.md ≤200 lines + @files</strong>for details.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">"Update claude.md so you don't make mistakes again"</strong>= dominant loop.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Plan mode + Opus Plan</strong>— quality of Opus, cost of Sonnet.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Specialized subagents</strong>— parallel engineering team.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">3-4 worktrees</strong>It's the sweet spot.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">CLI &gt; API &gt; Skill &gt; MCP</strong>— saves 60-70% of tokens.</div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Tool search</strong>reduces MCP overhead by 85%.</div></div>
+</div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-6"><h3 class="font-semibold text-amber-400 mb-2">Next Module:</h3><p class="text-neutral-300">4.2 — High-impact moves: /compact, auto mode, verification, slash commands, /insights.</p></div>
+<div class="flex flex-col sm:flex-row gap-4"><a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition" href="index.html">← Back to Trail</a><a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition" href="modulo-4-2.html">Next Module →</a></div>
 </div></section>
-
 </main>
-<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></div></footer>
-<script>const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
+<footer class="border-t border-dark-600 py-8"><div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-500"><a class="text-sky-400 hover:text-sky-300" href="https://duclub" target="_blank">duclub</a></div></footer>
+<script data-notranslate="True">const tt=document.getElementById('theme-toggle'),di=document.getElementById('theme-toggle-dark-icon'),li=document.getElementById('theme-toggle-light-icon'),h=document.documentElement;if(localStorage.getItem('theme')==='light'){h.classList.remove('dark');di.classList.remove('hidden');}else{li.classList.remove('hidden');}tt.addEventListener('click',()=>{di.classList.toggle('hidden');li.classList.toggle('hidden');h.classList.toggle('dark');localStorage.setItem('theme',h.classList.contains('dark')?'dark':'light');});</script>
 </body></html>
