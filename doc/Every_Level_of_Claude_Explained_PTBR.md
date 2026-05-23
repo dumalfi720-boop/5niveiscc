@@ -1,283 +1,277 @@
-# Cada nível do Claude explicado
+# Each level of Claude explained
 
-Este guia detalha os cinco estágios de domínio do Claude, desde o uso casual até a infraestrutura autônoma. Cada nível descreve as características definidoras, o teto que impede as pessoas de avançar e o "código secreto" exato para passar ao próximo estágio.
-
-\---
-
-## I. Nível 1: O entusiasta
-
-Este é o ponto de partida. Você abre o Claude, faz uma pergunta, recebe uma resposta e fecha a aba. Talvez você rascunhe um e-mail, escreva um script rápido ou peça ao Claude para explicar algo que leu. Você economiza cerca de 30 minutos por dia em pequenas tarefas.
-
-### 1\. A melhoria rápida que a maioria das pessoas ignora
-
-Cole capturas de tela. O Claude consegue ler imagens. Metade das pessoas presas neste nível está digitando o que uma captura de tela mostraria em dois segundos.
-
-### 2\. Por que a maioria das pessoas fica presa aqui
-
-Elas não percebem que o Claude consegue:
-
-* Manter contexto entre conversas
-* Organizar trabalho em projetos
-* Conectar-se às ferramentas que elas já usam todos os dias
-
-Elas continuam tratando o Claude como uma barra de busca que, por acaso, retorna parágrafos.
-
-### 3\. Código secreto para o Nível 2
-
-Crie seu primeiro projeto. Escolha algo ao qual você sempre volta, como seu negócio, um projeto paralelo ou um tipo recorrente de trabalho. Coloque alguns documentos de referência, escreva um prompt de sistema rápido sobre quem você é e como quer que o Claude responda. Agora, todo chat dentro desse projeto começa pré-carregado.
+This guide details the five stages of Claude mastery, from casual use to autonomous infrastructure. Each level describes the defining characteristics, the ceiling that stops people from advancing, and the exact "secret code" to get to the next stage.
 
 \---
 
-## II. Nível 2: O iniciante
+## I. Level 1: The Enthusiast
 
-Projetos são a espinha dorsal do Nível 2. Todos os outros recursos alimentam um projeto ou são construídos em cima dele. Abra um novo chat na próxima terça-feira dentro do seu projeto, pergunte "Qual foi aquela decisão que tomamos sobre o lançamento do Q2 na semana passada?" e o Claude recupera a informação com citações.
+This is the starting point. You open Claude, ask a question, receive an answer and close the tab. Maybe you draft an email, write a quick script, or ask Claude to explain something he read. You save about 30 minutes a day on small tasks.
 
-### 1\. Os seis recursos definidores
+### 1\. The quick improvement most people ignore
 
-|Recurso|O que faz|Observações|
+Paste screenshots. Claude can read images. Half the people stuck on this level are typing what a screenshot would show in two seconds.
+
+### 2\. Why do most people get stuck here
+
+They don't realize that Claude can:
+
+* Maintain context between conversations
+* Organize work on projects
+* Connect to the tools they already use every day
+
+They continue to treat Claude like a search bar that happens to return paragraphs.
+
+### 3\. Secret code for Level 2
+
+Create your first project. Choose something you keep coming back to, like your business, a side project, or a recurring type of work. Put in some reference documents, write a quick system prompt about who you are and how you want Claude to respond. Now, every chat within this project starts preloaded.
+
+\---
+
+##II. Level 2: The Beginner
+
+Projects are the backbone of Level 2. All other resources feed into a project or build on top of it. Open a new chat next Tuesday within your project, ask "What was that decision we made about launching Q2 last week?" and Claude retrieves the information with quotes.
+
+### 1\. The six defining features
+
+|Resource|What it does|Observations|
 |-|-|-|
-|Memória e busca em chats anteriores|O Claude lembra seu papel, preferências e decisões entre conversas|A memória é gratuita em todos os planos; a busca em chats anteriores é paga|
-|Conectores|Conecta mais de 50 ferramentas, como Slack, Google Drive, Gmail, GitHub, Notion e Calendar, pelo botão de mais|Faça login com OAuth e peça ao Claude para puxar threads, documentos ou eventos diretamente|
-|Criação de arquivos|Gera arquivos reais do Excel com fórmulas funcionais, apresentações em PowerPoint, documentos Word e PDFs|Gratuito para todos; inclui entregáveis baixáveis prontos para clientes|
-|Artefatos com armazenamento persistente|Cria aplicativos que lembram dados entre sessões, chamam a API do Claude diretamente e podem ser publicados por link público|Pessoas sem programação conseguem criar ferramentas funcionais sem Lovable, Bolt ou desenvolvimento personalizado|
-|Visuais embutidos|Gráficos e diagramas criados dentro do chat; temporários e interativos|Gratuito em todos os planos; também disponível no Cowork|
-|Complementos nativos do Office|O Claude vive dentro do Excel, PowerPoint e Word como complementos nativos|Em abril de 2026, os três compartilham contexto entre os aplicativos|
+|Memory and search in previous chats|Claude remembers your role, preferences and decisions between conversations|Memory is free on all plans; the search in previous chats is paid |
+|Connectors|Connects more than 50 tools, such as Slack, Google Drive, Gmail, GitHub, Notion and Calendar, via the plus button|Log in with OAuth and ask Claude to pull threads, documents or events directly|
+|File creation|Generates real Excel files with functional formulas, PowerPoint presentations, Word documents and PDFs|Free for everyone; Includes customer-ready downloadable deliverables|
+|Artifacts with persistent storage|Create applications that remember data between sessions, call the Claude API directly and can be published via public link|People without programming can create working tools without Lovable, Bolt or custom development|
+|Embedded visuals|Graphs and diagrams created within the chat; temporary and interactive|Free on all plans; also available on Cowork|
+|Native Office Add-ins|Claude lives inside Excel, PowerPoint, and Word as native add-ons|In April 2026, all three share context across applications|
 
-### 2\. Divisão entre gratuito e pago
+### 2\. Division between free and paid
 
-* Gratuito para todos: memória, criação de arquivos, visuais embutidos
-* Pro ou superior: busca em chats anteriores, armazenamento persistente para artefatos, complementos do Office
+* Free for everyone: memory, file creation, built-in visuals
+* Pro or higher: search past chats, persistent storage for artifacts, Office add-ons
 
-### 3\. Onde você está agora
+### 3\. Where are you now
 
-O Nível 1 era um estagiário brilhante sem memória. O Nível 2 é o mesmo estagiário com uma pasta de documentos do projeto, todas as conversas lembradas e a capacidade de puxar informações de qualquer ferramenta sem pedir. Você pode economizar mais de 5 horas por semana. É aqui que o Claude começa a se pagar.
+Level 1 was a brilliant intern with no memory. Level 2 is the same intern with a folder of project documents, all conversations remembered, and the ability to pull information from any tool without asking. You can save more than 5 hours a week. This is where Claude starts to pay for himself.
 
-### 4\. O teto
+### 4\. The ceiling
 
-O Claude ainda não consegue realmente fazer nada na sua máquina. Você continua copiando saídas para outras ferramentas, executando alterações manualmente e rodando certas coisas por conta própria. O chat do Claude é a superfície de conversa, e você está prestes a superá-la.
+Claude still can't really do anything on his machine. You keep copying outputs to other tools, making changes manually, and running certain things on your own. Claude's chat is the conversational surface, and you're about to surpass it.
 
-### 5\. Código secreto para o Nível 3
+### 5\. Secret code for Level 3
 
-Pare de tentar fazer o chat resolver tudo. Abra o Claude Desktop e clique na aba Cowork.
+Stop trying to make chat solve everything. Open Claude Desktop and click on the Cowork tab.
 
 \---
 
-## III. Nível 3: O intermediário
+##III. Level 3: The Intermediate
+This is where Claude stops telling you how to do something and just goes out there and does it. Point to your downloads folder, with three months of PDFs, screenshots, random files, old invoices, and pure chaos, and tell Claude: organize everything by type, rename it consistently, and write a summary for me. Go make a coffee; When you come back, you'll be ready.
 
-É aqui que o Claude para de dizer como fazer algo e simplesmente vai lá e faz. Aponte para sua pasta de downloads, com três meses de PDFs, capturas de tela, arquivos aleatórios, faturas antigas e puro caos, e diga ao Claude: organize tudo por tipo, renomeie de forma consistente e escreva um resumo para mim. Vá fazer um café; quando voltar, estará pronto.
+Warning: Cowork is paid only. It comes with any Pro, Max, Team, or Enterprise plan.
 
-Aviso: o Cowork é apenas pago. Ele vem com qualquer plano Pro, Max, Team ou Enterprise.
+### 1\. The five defining features
 
-### 1\. Os cinco recursos definidores
-
-|Recurso|O que faz|
+|Resource|What it does|
 |-|-|
-|Acesso ao sistema de arquivos|O Cowork executa código em uma VM isolada com acesso de leitura e escrita às pastas que você conceder. Ele pode assumir totalmente qualquer coisa que você permitir que ele toque|
-|Skills|Fluxos de trabalho reutilizáveis definidos como arquivos Markdown simples. Crie uma vez, por exemplo, "relatório semanal de cliente", e execute em qualquer lugar. Mais de 100 já publicados, mais de 16 oficiais da Anthropic, além de um marketplace completo da comunidade|
-|Tarefas agendadas|Digite `/schedule` em qualquer conversa do Cowork. Standups diários às 8h, briefs semanais de concorrentes, relatórios mensais. Exige que seu computador esteja ligado e o app desktop aberto|
-|Controle móvel|Pareie seu telefone ao desktop usando Dispatch. Dispare tarefas de qualquer lugar, o Claude trabalha enquanto você está fora e avisa quando terminar|
-|Claude Design|Produto do Anthropic Labs incluído no Pro. Descreva um protótipo, apresentação ou landing page em linguagem natural e o Claude cria o design|
+|File system access|Cowork runs code in an isolated VM with read and write access to the folders you grant. He can totally take over anything you allow him to touch|
+|Skills|Reusable workflows defined as simple Markdown files. Create once, for example, "weekly customer report", and run anywhere. More than 100 already published, more than 16 official Anthropic, as well as a complete community marketplace|
+|Scheduled tasks|Enter`/schedule`in any Cowork conversation. Daily 8am standups, weekly competitor briefs, monthly reports. Requires your computer to be turned on and the desktop app open |
+|Mobile Control|Pair your phone to your desktop using Dispatch. Trigger tasks from anywhere, Claude works while you're away and notifies you when you're done |
+|Claude Design|Anthropic Labs product included in Pro. Describe a prototype, presentation or landing page in natural language and Claude creates the design|
 
-### 2\. O que torna o Claude Design diferente
+### 2\. What makes Claude Design different
 
-Duas coisas o separam das ferramentas genéricas de design com IA:
+Two things separate it from generic AI design tools:
 
-* **Consciência de marca:** envie um repositório GitHub, base de código, arquivos de design ou diretrizes de marca. O Claude cria um sistema de design a partir das suas cores, fontes e tipografia, e então o aplica a cada projeto, para que a saída pareça sua marca, e não algo genérico de IA.
-* **Pacote de handoff:** quando termina, o Claude empacota tudo para Claude Code, Canva ou um arquivo zip. Uma pessoa sem programação pode desenhar um frontend funcional e enviá-lo para produção pelo Claude Code sem escrever uma linha de código.
+* **Brand Awareness:** Submit a GitHub repository, codebase, design files, or brand guidelines. Claude creates a design system from your colors, fonts, and typography, then applies it to each project so the output looks like your brand, not some generic AI.
+* **Handoff package:** When finished, Claude packages everything to Claude Code, Canva or a zip file. A person without programming can design a working frontend and push it to production via Claude Code without writing a line of code.
 
-### 3\. Mais dois recursos que vale conhecer
+### 3\. Two more resources worth knowing
 
-* **Plugins:** pacotes pré-criados de skills, conectores, hooks e agentes que você instala com um clique. Marketplace completo disponível.
-* **Computer Use:** para aplicativos sem conectores, o Claude navega visualmente, clicando, digitando, alternando abas e enviando formulários. Disponível para Mac e Windows.
+* **Plugins:** pre-created packages of skills, connectors, hooks and agents that you install with one click. Full marketplace available.
+* **Computer Use:** For applications without connectors, Claude navigates visually by clicking, typing, switching tabs, and submitting forms. Available for Mac and Windows.
 
-### 4\. Por que as pessoas travam aqui
+### 4\. Why do people get stuck here
 
-* Algumas ficam assustadas com qualquer coisa que pareça técnica, o que é justo, mas o app desktop não exige terminal.
-* Outras batem no teto do Cowork. Ele é seguro e amigável, mas menos preciso do que o próximo estágio. Quando você precisa de controle de versão real, rigor de engenharia ou sistemas pelos quais clientes pagam mais de US$ 5.000, você o supera.
+* Some are scared by anything that seems technical, which is fair, but the desktop app doesn't require a terminal.
+* Others hit the Cowork ceiling. It is safe and user-friendly, but less accurate than the next stage. When you need real version control, engineering rigor, or systems that customers pay $5,000+ for, you've got it.
 
-Este é o primeiro nível em que você economiza mais de 10 horas por semana, e o primeiro em que pessoas sem programação conseguem vender automação como serviço. Se você administra um negócio de automação com IA, este é o patamar mínimo.
+This is the first level where you save more than 10 hours a week, and the first where people without programming can sell automation as a service. If you run an AI automation business, this is the minimum threshold.
 
-### 5\. Código secreto para o Nível 4
+### 5\. Secret code for Level 4
 
-Configure uma estrutura de pastas em que o Claude possa confiar:
+Set up a folder structure that Claude can trust:
 
-* Um arquivo sobre mim
-* Uma pasta de templates
-* Uma pasta de projetos
-* Uma pasta de saídas
+* An archive about me
+* A folder of templates
+* A folder of projects
+* A folder of outputs
 
-Diga ao Cowork: "Leia o arquivo sobre mim primeiro. Nunca edite meus templates. Sempre entregue na pasta de saídas." Essa estrutura é o que faz o Cowork parecer um colega de trabalho real, em vez de um assistente imprevisível.
+Tell Cowork: "Read the about me file first. Never edit my templates. Always deliver to the outputs folder." This structure is what makes Cowork feel like a real coworker rather than an unpredictable assistant.
 
 \---
 
-## IV. Nível 4: O avançado
+##IV. Level 4: Advanced
 
-Boris Cherny, o engenheiro que construiu o Claude Code na Anthropic, executa cinco sessões do Claude em paralelo todos os dias. Abas de terminal numeradas, cada uma em seu próprio workspace isolado, sem conflitos de arquivos. Ele dispara as sessões, sai, e volta para múltiplos pull requests concluídos e prontos para revisão. Isso não é produtividade paralela; é outra categoria de trabalho.
+Boris Cherny, the engineer who built Claude Code at Anthropic, runs five Claude sessions in parallel every day. Numbered terminal tabs, each in its own isolated workspace, without file conflicts. It triggers the sessions, exits, and returns to multiple pull requests completed and ready for review. This is not parallel productivity; is another category of work.
 
-Observação para não programadores: a aba Code dentro do Claude Desktop tem o mesmo motor da versão de terminal. Você não precisa usar a CLI, mas o terminal é mais rápido depois que você se acostuma.
+Note for non-programmers: the Code tab within Claude Desktop has the same engine as the terminal version. You don't need to use the CLI, but the terminal is faster once you get used to it.
 
-### 1\. Os cinco recursos centrais
+### 1\. The five core features
 
-#### A. O arquivo `claude.md`
+#### A. The file`claude.md`A Markdown file in your project folder that Claude reads at the start of each session. Include:
 
-Um arquivo Markdown na pasta do seu projeto que o Claude lê no início de cada sessão. Inclua:
+* Its technical stack and naming conventions
+* Who you are and what is the objective of the project
+* Negative instructions, such as "never do X" or "never write with dashes"
 
-* Sua stack técnica e convenções de nomenclatura
-* Quem você é e qual é o objetivo do projeto
-* Instruções negativas, como "nunca faça X" ou "nunca escreva com travessões"
+Rules:
 
-Regras:
+* Keep it below about 200 lines, as Claude reads it in every conversation, so excess costs tokens constantly.
+* Put deeper details in separate files and reference with`@nome-do-arquivo`, so that Claude only reads them when necessary.
+* The move that separates Level 4 users from everyone else: every time Claude makes a mistake, ask him to update the`claude.md`so as not to repeat the error. After a few weeks, he trains himself in how you work. The Anthropic team itself does this.
 
-* Mantenha abaixo de cerca de 200 linhas, pois o Claude o lê em toda conversa, então excesso custa tokens constantemente.
-* Coloque detalhes mais profundos em arquivos separados e referencie com `@nome-do-arquivo`, para que o Claude só os leia quando necessário.
-* O movimento que separa usuários de Nível 4 de todos os outros: toda vez que o Claude cometer um erro, peça para ele atualizar o `claude.md` para não repetir o erro. Depois de algumas semanas, ele se treina em como você trabalha. A própria equipe da Anthropic faz isso.
+#### B. Planning mode
 
-#### B. Modo de planejamento
+Press Shift + Tab twice. Claude reads your code, comes up with a plan, asks questions, and waits for approval.
 
-Pressione Shift + Tab duas vezes. O Claude lê seu código, apresenta um plano, faz perguntas e espera aprovação.
+Hidden configuration: Opus Plan. Opus does the planning, Sonnet does the execution. Smart model where it counts, cheap model for the heavy lifting. Reduces the cost by half without losing quality.
 
-Configuração escondida: Opus Plan. O Opus faz o planejamento, o Sonnet faz a execução. Modelo inteligente onde importa, modelo barato para o trabalho pesado. Reduz o custo pela metade sem perder qualidade.
+#### C. Subagents
 
-#### C. Subagentes
-
-Claudes especializados para trabalhos especializados. Um para testes, um para revisão de segurança, um para documentação. Cada um roda em sua própria janela de contexto, para que o ruído não contamine a sessão principal, nem o contrário. Vários subagentes podem rodar em paralelo. Na prática, é uma pequena equipe de engenharia que se comunica pela sessão principal.
+Specialized Claudes for specialized jobs. One for testing, one for security review, one for documentation. Each one runs in its own context window, so that noise does not contaminate the main session, nor vice versa. Several subagents can run in parallel. In practice, it is a small engineering team that communicates through the main session.
 
 #### D. Worktrees
 
-Digite `claude-worktree nome-da-feature`. O Claude cria um workspace Git isolado em sua própria branch. Abra outro terminal e faça de novo. Agora você tem dois, três ou quatro Claudes trabalhando simultaneamente sem sobrescrever os arquivos uns dos outros. Três a quatro é o ponto confortável. Implemente uma feature em um, corrija um bug em outro, escreva testes em um terceiro.
+Enter`claude-worktree nome-da-feature`. Claude creates an isolated Git workspace on his own branch. Open another terminal and do it again. Now you have two, three or four Claudes working simultaneously without overwriting each other's files. Three to four is the comfortable spot. Implement a feature in one, fix a bug in another, write tests in a third.
 
-#### E. MCP, com um grande asterisco
+#### E. MCP, with a big asterisk
 
-MCP, ou Model Context Protocol, permite conectar ferramentas externas ao Claude, mas a documentação da Anthropic diz: quando existir uma ferramenta CLI para o trabalho, use a CLI em vez de MCP. Exemplos incluem GitHub, AWS e Google Workspace. A CLI usa de 60% a 70% menos tokens porque nada entra no contexto até você realmente executar.
+MCP, or Model Context Protocol, allows you to connect external tools to Claude, but Anthropic's documentation says: when there is a CLI tool for the job, use the CLI instead of MCP. Examples include GitHub, AWS, and Google Workspace. The CLI uses 60% to 70% fewer tokens because nothing enters context until you actually execute.
 
-Quando você usa MCP, o recurso de busca de ferramentas, lançado em janeiro de 2026, adia automaticamente o carregamento de ferramentas quando a sobrecarga de MCP passa de 10% da janela, reduzindo a sobrecarga em 85% sem configuração.
+When you use MCP, the tool fetch feature, released in January 2026, automatically defers tool loading when MCP overhead passes 10% of the window, reducing overhead by 85% without configuration.
 
-Ordem de prioridade das ferramentas:
+Tool priority order:
 
-1. CLI primeiro
-2. Endpoints de API em segundo
-3. Skills em terceiro
-4. MCP apenas quando nada mais se encaixar
+1. CLI first
+2. API Endpoints Second
+3. Third Skills
+4. MCP only when nothing else fits
 
-### 2\. Os movimentos de alto impacto
+### 2\. High impact movements
 
-|Movimento|O que faz|
+|Movement|What it does|
 |-|-|
-|Domine sua janela de contexto|A janela de 1 milhão de tokens no Opus 4.7 ainda fica imprecisa depois de 50% da capacidade. Use `/compact` para resumir histórico antigo proativamente, não quando aparecerem avisos, porque aí já é tarde. Use `/context` para ver para onde os tokens estão indo. Com cache automático de prompts, os custos caem de 60% a 90% em sessões longas|
-|Modo automático + foco|Pare de apertar sim 30 vezes por sessão. Shift + Tab alterna para o modo automático, no qual o Claude encaminha comandos seguros por um classificador. Digite `/focus` para esconder etapas intermediárias e ver apenas o resultado final. É assim que Boris roda cinco sessões paralelas|
-|O ciclo de verificação|Segundo Boris, este é o hábito mais importante no Nível 4. Dê ao Claude uma forma de checar o próprio trabalho. Combine Claude Code com uma extensão do Chrome para que ele possa abrir um navegador, testar a interface, tirar capturas de tela e iterar. Ele diz que esse hábito sozinho multiplicou a qualidade da saída por 2 a 3 vezes|
-|Comandos slash personalizados|Se você digita o mesmo prompt duas vezes, transforme-o em um comando slash. Boris usa `/commit-push-pr` dezenas de vezes por dia. Os comandos vivem em `.claude/commands/`. São compartilháveis entre equipes e organizações|
+|Master Your Context Window|The 1 million token window in Opus 4.7 is still fuzzy after 50% capacity. Use`/compact`to summarize old history proactively, not when warnings appear, because by then it's too late. Use`/context`to see where the tokens are going. With automatic prompt caching, costs drop by 60% to 90% in long sessions |
+|Auto mode + focus|Stop pressing yes 30 times per session. Shift + Tab switches to automatic mode, in which Claude routes secure commands through a classifier. Enter`/focus`to hide intermediate steps and see only the final result. This is how Boris runs five parallel sessions |
+|The checking cycle|According to Boris, this is the most important habit in Level 4. Give Claude a way to check his own work. Combine Claude Code with a Chrome extension so he can open a browser, test the interface, take screenshots, and iterate. He says this habit alone multiplied the quality of the output by 2 to 3 times |
+|Custom slash commands|If you type the same prompt twice, make it a slash command. Boris uses`/commit-push-pr`dozens of times a day. The commandos live in`.claude/commands/`. Are shareable across teams and organizations|
 
-### 3\. Ferramentas laterais e comandos slash
+### 3\. Side tools and slash commands
 
-|Comando|Finalidade|
+|Command|Purpose|
 |-|-|
-|`/rewind` ou Esc duas vezes|Remove completamente uma tentativa fracassada do contexto, em vez de contaminar a sessão com correções; reverte para uma mensagem anterior|
-|`/btw`|Pergunta algo rápido ao Claude no meio da tarefa sem quebrar o fluxo nem adicionar ruído à sessão principal|
-|`/branch`, antes `/fork`|Bifurca a conversa atual naquele ponto exato. Tente uma abordagem, volte, tente outra. Git para conversas. Combina com worktrees: um para arquivos paralelos, outro para raciocínio paralelo|
-|`/insights`|Lê seu último mês de uso do Claude e gera um relatório sobre seus padrões: tarefas repetitivas, tokens desperdiçados, prompts para converter em skills, acréscimos ao `claude.md`. Execute mensalmente|
-|`/output style new`|Troca a personalidade do Claude Code. Modos integrados incluem padrão, explicativo e aprendizado. Crie modos personalizados para revisor de código, modo direto ou redator de documentação|
+|`/rewind`or Esc twice|Removes a failed attempt from context completely, rather than contaminating the session with corrections; reverts to a previous message|
+|`/btw`|Ask Claude something quick in the middle of the task without breaking the flow or adding noise to the main session|
+|`/branch`, before`/fork`|Forks the current conversation at that exact point. Try one approach, come back, try another. Git for conversations. Combines with worktrees: one for parallel files, one for parallel reasoning |
+|`/insights`|Reads your last month of Claude usage and generates a report on your patterns: repetitive tasks, wasted tokens, prompts to convert to skills, additions to`claude.md`. Run monthly|
+|`/output style new`|Changes Claude Code's personality. Built-in modes include standard, explanatory, and learning. Create custom modes for code reviewer, direct mode or documentation writer|
 
-### 4\. Onde você está agora
+### 4\. Where are you now
 
-Se o chat do Claude era seu estagiário e o Cowork era seu assistente, o Claude Code é sua equipe de engenharia. Cada membro pode ser especializado, trabalhar em paralelo e se reportar a você. É aqui que trabalhos freelance e de agência viram projetos de US$ 5.000 a US$ 15.000, porque você está construindo sistemas e softwares reais, não apenas automações.
+If Claude Chat was your intern and Cowork was your assistant, Claude Code is your engineering team. Each member can be specialized, work in parallel, and report to you. This is where freelance and agency jobs turn into $5,000 to $15,000 projects because you're building real systems and software, not just automations.
 
-### 5\. Por que as pessoas travam aqui
+### 5\. Why do people get stuck here
 
-Elas gerenciam o trabalho paralelo manualmente e se tornam o próprio gargalo. Disparam Claudes, observam, trocam de contexto, e isso vira apenas babá de IA.
+They manage parallel work manually and become the bottleneck themselves. They fire Claudes, observe, switch contexts, and it just becomes AI babysitting.
 
-### 6\. Código secreto para o Nível 5
+### 6\. Secret code for Level 5
 
-Encontre a coisa mais repetitiva que você faz toda semana no Claude Code, como revisões, verificações de dependências ou execução manual dos mesmos skills e comandos. Essa é sua primeira automação em nuvem.
+Find the most repetitive thing you do every week in Claude Code, like reviews, dependency checks, or manually executing the same skills and commands. This is your first cloud automation.
 
 \---
 
-## V. Nível 5: O arquiteto
+## V. Level 5: The Architect
 
-Você fecha o laptop. Acaba a energia. Você está no jantar, na academia, dormindo. Alguém abre um pull request no seu repositório. O Claude vê, inicia na nuvem, revisa o código e publica feedback detalhado com sugestões. Quando você olha o celular, tudo já está feito e você não tocou em nada.
+You close the laptop. The power goes out. You're at dinner, at the gym, sleeping. Someone opens a pull request on your repository. Claude sees, launches in the cloud, reviews the code, and posts detailed feedback with suggestions. When you look at your cell phone, everything is already done and you haven't touched anything.
 
-### 1\. As três coisas que tornam isso real
+### 1\. The three things that make it real
 
-#### A. Rotinas em nuvem
+#### A. Cloud Routines
 
-Configurações salvas do Claude Code que rodam na nuvem da Anthropic. Sua máquina permanece desligada.
+Claude Code saved configurations that run in the Anthropic cloud. Your machine remains turned off.
 
-Elas são acionadas de três formas:
+They are activated in three ways:
 
-* Em um agendamento, como triagem diária de backlog às 8h ou auditoria semanal de dependências às segundas
-* Por uma chamada de API
-* Em resposta a um evento do GitHub, como revisão de PR no momento em que um pull request é aberto
+* On a schedule, such as daily backlog screening at 8am or weekly dependency audit on Mondays
+* By an API call
+* In response to a GitHub event, such as PR review at the time a pull request is opened
 
-É quando o Claude vira infraestrutura, não apenas uma ferramenta.
+That's when Claude becomes infrastructure, not just a tool.
 
 #### B. Hooks
 
-Trilhos de segurança. Lógica personalizada disparada em eventos do ciclo de vida.
+Safety rails. Custom logic triggered on lifecycle events.
 
-* Hooks pré-uso de ferramenta bloqueiam comandos perigosos antes que rodem
-* Hooks pós-edição formatam automaticamente todo arquivo que o Claude toca
-* Hooks de parada avisam você no Slack quando uma sessão longa termina
-* Hooks de resposta enviam uma notificação sempre que o Claude responde, para você voltar à aba
+* Tool pre-use hooks block dangerous commands before they run
+* Post-edit hooks automatically format every file Claude plays
+* Stop hooks notify you in Slack when a long session ends
+* Response hooks send a notification whenever Claude responds, so you can return to the tab
 
-Essas são as diferenças entre uma demonstração legal e um sistema de produção no qual você confia com trabalho real.
+These are the differences between a cool demo and a production system that you trust with real work.
 
-#### C. Canais
+#### C. Channels
 
-Controle sessões fora do terminal: Discord, Telegram, iMessage no Mac ou webhooks personalizados.
+Control sessions outside the terminal: Discord, Telegram, iMessage on Mac or custom webhooks.
 
-Dois formatos:
+Two formats:
 
-* **Mão única:** eventos externos acionam o Claude. Por exemplo, uma reserva no calendário dispara um agente de pesquisa que prepara um briefing de cliente.
-* **Mão dupla:** envie mensagem ao Claude pelo telefone e ele trabalha contra sua base de código real.
+* **One-way:** external events trigger Claude. For example, a booking on the calendar triggers a search agent who prepares a client brief.
+* **Two-way:** message Claude on the phone and he works against your real codebase.
 
-### 2\. Peças adicionais que vale combinar
+### 2\. Additional pieces worth combining
 
-|Recurso|O que faz|
+|Resource|What it does|
 |-|-|
-|Modo headless|O Claude Code roda sem sessão humana. Passe um prompt com `claude -p`, receba a saída de volta e encaminhe para Slack, Datadog ou outro agente Claude|
-|Agent SDK|Bibliotecas Python e TypeScript para criar seu próprio produto em cima do motor do Claude Code. Você deixa de ser usuário e vira construtor|
-|Controle remoto|Conecta sua sessão local do Claude Code ao app móvel do Claude ou a qualquer navegador. Execute `/remote-control`, escaneie o QR code e programe pelo telefone enquanto caminha, com a sessão rodando na sua máquina|
-|Consolidação de memória, ou autodream|Subagente em segundo plano que limpa arquivos de memória entre sessões. Remove fatos contraditórios, mescla duplicatas e converte "ontem" em datas reais. Como compressão de memória humana. Precisa ser ativado|
-|Orçamentos de tarefa|Beta do Opus 4.7. Dê ao agente uma meta de tokens para uma execução inteira, incluindo pensamento, chamadas de ferramentas e saída. O modelo se regula e encerra com elegância, em vez de bater em uma parede no meio da tarefa. Atualmente apenas via API|
-|Equipes de agentes|Experimental. Vários Claudes especializados coordenados por um agente líder. Diferente dos subagentes, eles podem conversar entre si, compartilhar uma lista de tarefas, debater e se desafiar. Usa muitos tokens|
+|Headless mode|Claude Code runs without a human session. Pass a prompt with`claude -p`, receive the output back and forward to Slack, Datadog or another agent Claude|
+|Agent SDK|Python and TypeScript libraries to create your own product based on the Claude Code engine. You stop being a user and become a builder|
+|Remote Control|Connects your local Claude Code session to the Claude mobile app or any browser. Run`/remote-control`, scan the QR code and program it on your phone while walking, with the session running on your machine|
+|Memory consolidation, or autodream|Background agent that clears memory files between sessions. Removes contradictory facts, merges duplicates and converts "yesterday" to real dates. Like human memory compression. Needs to be activated |
+|Task Budgets|Opus 4.7 Beta. Give the agent a target of tokens for an entire execution, including thinking, tool calls, and output. The model adjusts and closes elegantly, instead of hitting a wall in the middle of the task. Currently only via API |
+|Agent teams|Experimental. Several specialized Claudes coordinated by a lead agent. Unlike sub-agents, they can talk to each other, share a to-do list, debate and challenge each other. Uses a lot of tokens|
 
-### 3\. A skill de maior alavancagem neste nível
+### 3\. The highest leverage skill at this level
 
-Não é construir do zero, mas descobrir o que já existe. A comunidade já publicou:
+It's not building from scratch, but discovering what already exists. The community has already published:
 
-* Mais de 5.000 skills
-* Mais de 800 servidores MCP
-* Mais de 3.000 marketplaces
+* More than 5,000 skills
+* More than 800 MCP servers
+* More than 3,000 marketplaces
 
-Verifique X, Reddit e GitHub para casos de uso específicos. Puxe um repositório público open source e personalize.
+Check X, Reddit, and GitHub for specific use cases. Pull a public open source repository and customize.
 
-### 4\. A verdadeira trava no Nível 5
+### 4\. The real lock on Level 5
 
-Isso não é técnico. É sobre confiança. Quase todo mundo consegue configurar uma rotina em nuvem, mas não o faz, porque entregar o volante a um sistema que roda enquanto você dorme parece imprudente se você não sabe o que está acontecendo por baixo.
+This is not technical. It's about trust. Almost everyone can set up a cloud routine, but they don't, because handing over the steering wheel to a system that runs while you sleep seems reckless if you don't know what's going on underneath.
 
-A solução é a mesma de aprender a dirigir. Você não começa na estrada; começa em um estacionamento vazio.
+The solution is the same as learning to drive. You don't start on the road; It starts in an empty parking lot.
 
-* Escolha uma rotina de baixo risco, como um resumo diário de standup que vai apenas para você, sem envio externo
-* Observe-a rodar por semanas sem tocar
-* Quando confiar nela, aprenderá a confiar nas próximas 10 execuções
+* Choose a low-risk routine, like a daily standup roundup that goes just to you, with no external submission
+* Watch it run for weeks without touching
+* Once you trust her, you will learn to trust her in the next 10 runs
 
-### 5\. Implante com responsabilidade
+### 5\. Implant responsibly
 
-Publicar uma rotina em nuvem não significa que você pode configurar e esquecer, especialmente se ela for agêntica. Mas automações que apenas pegam dados de um lugar e colocam em outro geralmente são seguras porque são determinísticas. Skills e fluxos agênticos são mais poderosos, mas não determinísticos.
+Publishing a routine to the cloud doesn't mean you can set it and forget it, especially if it's agentic. But automations that just take data from one place and put it somewhere else are generally safe because they are deterministic. Agentic skills and flows are more powerful, but not deterministic.
 
 \---
 
-## VI. Os cinco níveis em resumo
+## VI. The five levels at a glance
 
-|Nível|Nome|Superfície|O que você economiza|Desbloqueio principal|
+|Level|Name|Surface|What you save|Main unlock|
 |-|-|-|-|-|
-|1|Entusiasta|Chat do Claude|30 min/dia|Colar capturas de tela; criar o primeiro projeto|
-|2|Iniciante|Projetos + chat|Mais de 5 horas/semana|Memória, conectores, criação de arquivos, artefatos, visuais embutidos, complementos do Office|
-|3|Intermediário|Cowork + Claude Design|Mais de 10 horas/semana|Acesso ao sistema de arquivos, skills, tarefas agendadas, controle móvel, pipeline de design|
-|4|Avançado|Claude Code|Projetos de US$ 5 mil a US$ 15 mil|`claude.md`, modo de planejamento, subagentes, worktrees, sessões paralelas|
-|5|Arquiteto|Rotinas em nuvem + hooks|Alavancagem em nível de infraestrutura|Rotinas autônomas, hooks, canais, equipes de agentes|
+|1|Enthusiast|Chat from Claude|30 min/day|Paste screenshots; create the first project|
+|2|Beginner|Projects + chat|More than 5 hours/week|Memory, connectors, file creation, artifacts, built-in visuals, Office add-ons|
+|3|Intermediate|Cowork + Claude Design|More than 10 hours/week|Access to file system, skills, scheduled tasks, mobile control, design pipeline|
+|4|Advanced|Claude Code|Projects from US$5,000 to US$15,000|`claude.md`, planning mode, subagents, worktrees, parallel sessions|
+|5|Architect|Cloud routines + hooks|Leverage at the infrastructure level|Autonomous routines, hooks, channels, agent teams|
 
 \---
-
-
-
