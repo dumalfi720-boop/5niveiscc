@@ -1,115 +1,113 @@
-# Nível 3 — Intermediário
+# Level 3 — Intermediate
 
-O **Nível 3** começa quando Claude deixa de ser apenas um ambiente de conversa e passa a **executar tarefas práticas no computador**, com acesso controlado a arquivos, pastas, skills e rotinas.
+**Level 3** begins when Claude stops being just a conversation environment and starts **performing practical tasks on the computer**, with controlled access to files, folders, skills and routines.
 
-É o ponto em que você começa a pensar menos em “me dê uma resposta” e mais em:
+It’s the point where you start thinking less about “give me an answer” and more about:
 
-> “Claude, faça esse trabalho para mim.”
+> “Claude, do this job for me.”
 
-## O que caracteriza o Nível 3
+## What characterizes Level 3
 
-No Nível 1, Claude responde perguntas.
+In Level 1, Claude answers questions.
 
-No Nível 2, Claude trabalha com projetos, memória e documentos.
+At Level 2, Claude works with projects, memory and documents.
 
-No **Nível 3**, Claude começa a atuar como um **colega operacional**, capaz de organizar arquivos, executar fluxos, aplicar modelos, gerar entregáveis e repetir processos com menos supervisão.
+At **Level 3**, Claude begins to act as an **operational colleague**, capable of organizing files, executing flows, applying models, generating deliverables and repeating processes with less supervision.
 
-Exemplo simples:
+Simple example:
 
-Você não pede apenas:
+You don't just ask:
 
-> “Como eu organizo essa pasta?”
+> “How do I organize this folder?”
 
-Você pede:
+You ask:
 
-> “Organize essa pasta por tipo de arquivo, renomeie os documentos seguindo este padrão e gere um resumo do que encontrou.”
+> “Organize this folder by file type, rename the documents following this pattern and generate a summary of what you found.”
 
-## A grande mudança do Nível 3
+## The big change in Level 3
 
-A mudança principal é sair de:
+The main change is to move away from:
 
-> “Claude, me diga o que fazer.”
+> “Claude, tell me what to do.”
 
-Para:
+For:
 
-> “Claude, vá lá e faça.”
+> “Claude, go out there and do it.”
 
-Isso muda completamente o valor da ferramenta, porque ela passa a economizar não só tempo de pensamento, mas também **tempo de execução**.
+This completely changes the value of the tool, because it saves not only thinking time, but also **execution time**.
 
-## Para que serve na prática
+## What is it for in practice
 
-### 1. Organizar arquivos e pastas
+### 1. Organize files and folders
 
-Uma das aplicações mais úteis do Nível 3 é deixar Claude trabalhar com arquivos reais.
+One of the most useful applications of Level 3 is to let Claude work with real files.
 
-Exemplos práticos:
+Practical examples:
 
-- “Analise esta pasta de PDFs e separe por assunto.”
-- “Renomeie os arquivos usando o padrão: data_cliente_tipo.”
-- “Crie uma pasta para cada cliente e mova os arquivos correspondentes.”
-- “Leia os documentos e gere um índice com resumo de cada um.”
-- “Encontre arquivos duplicados ou mal nomeados.”
+- “Analyze this folder of PDFs and separate them by subject.”
+- “Rename the files using the pattern: data_cliente_tipo.”
+- “Create a folder for each client and move the corresponding files.”
+- “Read the documents and generate an index with a summary of each one.”
+- “Find duplicate or misnamed files.”
 
-Uso real: você transforma uma pasta bagunçada em uma estrutura organizada.
+Actual use: you transform a messy folder into an organized structure.
 
-### 2. Processar documentos
+### 2. Process documents
 
-Claude pode ajudar a analisar, resumir, converter e reorganizar documentos.
+Claude can help analyze, summarize, convert and reorganize documents.
 
-Exemplos:
+Examples:
 
-- “Leia todos os PDFs desta pasta e gere um resumo executivo.”
-- “Extraia as principais decisões desses documentos.”
-- “Transforme esses textos em um relatório.”
-- “Compare estes dois documentos e destaque diferenças.”
-- “Crie uma versão final mais clara e profissional.”
+- “Read all PDFs in this folder and generate an executive summary.”
+- “Extract the main decisions from these documents.”
+- “Turn these texts into a report.”
+- “Compare these two documents and highlight differences.”
+- “Create a clearer and more professional final version.”
 
-Uso real: você delega leitura, triagem e organização de informação.
+Actual use: you delegate reading, sorting and organizing information.
 
-### 3. Criar entregáveis a partir de arquivos
+### 3. Create deliverables from files
 
-No Nível 3, Claude pode produzir arquivos mais completos com base em materiais existentes.
+At Level 3, Claude can produce more complete files based on existing materials.
 
-Exemplos:
+Examples:
 
-- “Com base nesses PDFs, crie uma apresentação de 10 slides.”
-- “Transforme essas anotações em um documento formal.”
-- “Monte uma planilha com os dados encontrados nesses arquivos.”
-- “Crie um resumo em Markdown com links para os arquivos originais.”
-- “Gere uma proposta comercial usando este briefing e este modelo.”
+- “Based on these PDFs, create a 10-slide presentation.”
+- “Turn these notes into a formal document.”
+- “Build a spreadsheet with the data found in these files.”
+- “Create a summary in Markdown with links to the original files.”
+- “Generate a commercial proposal using this brief and this template.”
 
-Uso real: Claude pega materiais brutos e transforma em algo utilizável.
+Actual use: Claude takes raw materials and turns them into something usable.
 
-### 4. Usar skills reutilizáveis
+### 4. Use reusable skills
 
-Skills são instruções ou fluxos padronizados que Claude pode repetir.
+Skills are standardized instructions or flows that Claude can repeat.
 
-Pense em skills como “receitas de trabalho”.
+Think of skills as “job recipes”.
 
-Exemplos de skills:
+Examples of skills:
 
-- relatório semanal;
-- análise de contrato;
-- resumo de reunião;
-- revisão de proposta;
-- criação de apresentação;
-- análise de planilha;
-- organização de pasta;
-- geração de roteiro;
-- checklist de entrega.
+- weekly report;
+- contract analysis;
+- meeting summary;
+- proposal review;
+- presentation creation;
+- spreadsheet analysis;
+- folder organization;
+- script generation;
+- delivery checklist.
 
-A vantagem é que você não precisa explicar o processo completo toda vez.
+The advantage is that you don't need to explain the complete process every time.
 
-Você pode dizer:
+You can say:
 
-- “Use a skill de relatório semanal para gerar o relatório desta pasta.”
-- “Use o fluxo de proposta comercial com esses arquivos.”
+- “Use the weekly report skill to generate the report for this folder.”
+- “Use the business proposal flow with these files.”
 
-## Exemplo prático de skill simples
+## Practical example of a simple skill
 
-Uma skill pode dizer:
-
-```text
+A skill can say:```text
 Quando eu pedir um relatório semanal:
 
 1. Leia os arquivos da pasta indicada.
@@ -119,79 +117,75 @@ Quando eu pedir um relatório semanal:
 5. Destaque riscos.
 6. Gere um resumo executivo.
 7. Salve o resultado na pasta de saída.
-```
+```Then, instead of explaining everything, you just ask:
 
-Depois, em vez de explicar tudo, você só pede:
+> “Generate the weekly report from the Project X folder.”
 
-> “Gere o relatório semanal da pasta Projeto X.”
+### 5. Automate recurring tasks
 
-### 5. Automatizar tarefas recorrentes
+At Level 3, you start scheduling or repeating tasks with less effort.
 
-No Nível 3, você começa a agendar ou repetir tarefas com menos esforço.
+Examples:
 
-Exemplos:
+- “Every day at 8am, generate a summary of today’s tasks.”
+- “Every Friday, prepare a weekly report.”
+- “Every Monday, review the client folder and tell me what is pending.”
+- “Once a month, organize new files in the downloads folder.”
 
-- “Todo dia às 8h, gere um resumo das tarefas de hoje.”
-- “Toda sexta, prepare um relatório semanal.”
-- “Toda segunda, revise a pasta de clientes e me diga o que está pendente.”
-- “Uma vez por mês, organize os arquivos novos da pasta de downloads.”
+These routines may still depend on the computer being turned on and the application open, but they already represent a huge leap forward.
 
-Essas rotinas ainda podem depender do computador ligado e do aplicativo aberto, mas já representam um salto enorme.
+### 6. Control tasks via cell phone
 
-### 6. Controlar tarefas pelo celular
+With remote or mobile control features, you can trigger tasks even away from the computer.
 
-Com recursos de controle remoto ou mobile, você pode acionar tarefas mesmo longe do computador.
+Examples:
 
-Exemplos:
+- “I'm on my cell phone. Ask Claude to organize the project files.”
+- “Trigger the weekly summary routine.”
+- “Ask me to prepare the material for tomorrow’s meeting.”
 
-- “Estou no celular. Peça para Claude organizar os arquivos do projeto.”
-- “Dispare a rotina de resumo semanal.”
-- “Peça para preparar o material da reunião de amanhã.”
+Actual use: you send the command on your cell phone and Claude works on the desktop.
 
-Uso real: você envia o comando pelo celular e Claude trabalha no desktop.
+### 7. Use Claude Design
 
-### 7. Usar Claude Design
+At this level, Claude also begins helping with visual and product tasks.
 
-Neste nível, Claude também começa a ajudar em tarefas visuais e de produto.
+You can order:
 
-Você pode pedir:
+- “Create a landing page prototype for this service.”
+- “Put together a presentation design based on this visual identity.”
+- “Create a one-page to explain this offer.”
+- “Design the structure of a capture page.”
+- “Create an initial layout for a dashboard.”
 
-- “Crie um protótipo de landing page para esse serviço.”
-- “Monte um design de apresentação com base nesta identidade visual.”
-- “Crie um one-page para explicar esta oferta.”
-- “Desenhe a estrutura de uma página de captura.”
-- “Crie um layout inicial para um dashboard.”
+The difference is that Claude not only writes the content, but helps put together the visual structure and flow.
 
-A diferença é que Claude não só escreve o conteúdo, mas ajuda a montar a estrutura visual e o fluxo.
+### 8. Computer Use
 
-### 8. Usar Computer Use
+When a tool does not have a direct connector, Claude can interact visually with it, like a person.
 
-Quando uma ferramenta não tem conector direto, Claude pode interagir visualmente com ela, como uma pessoa.
+Examples:
 
-Exemplos:
+- click on buttons;
+- fill out forms;
+- navigate screens;
+- copy information;
+- send commands;
+- switch tabs.
 
-- clicar em botões;
-- preencher formulários;
-- navegar em telas;
-- copiar informações;
-- enviar comandos;
-- alternar abas.
+Practical use:
 
-Uso prático:
+> “Open this application, enter the reports screen, download the most recent file and save it in the project folder.”
 
-> “Abra essa aplicação, entre na tela de relatórios, baixe o arquivo mais recente e salve na pasta do projeto.”
+This is a big leap, because Claude starts operating interfaces.
 
-Esse é um grande salto, porque Claude começa a operar interfaces.
+## How to configure Level 3 well
 
-## Como configurar bem o Nível 3
+The secret of Level 3 is to provide structure for Claude to work safely.
 
-O segredo do Nível 3 é dar estrutura para Claude trabalhar com segurança.
+You need to create a clear organization.
 
-Você precisa criar uma organização clara.
-
-### Estrutura recomendada de pastas
-
-```text
+### Recommended folder structure```text
 /Claude_Workspace
   /00_sobre_mim
   /01_templates
@@ -200,45 +194,35 @@ Você precisa criar uma organização clara.
   /04_processando
   /05_outputs
   /06_arquivo
-```
+```### What to put in each folder
 
-### O que colocar em cada pasta
+####`00_sobre_mim`Fixed information about you, your business, your style and your preferences.
 
-#### `00_sobre_mim`
+Examples:
 
-Informações fixas sobre você, seu negócio, seu estilo e suas preferências.
+- who you are;
+- what it does;
+- how you prefer answers;
+- types of customers;
+- tone of voice;
+- important rules.
 
-Exemplos:
+####`01_templates`Templates that Claude can use, but must not change.
 
-- quem você é;
-- o que faz;
-- como prefere respostas;
-- tipos de clientes;
-- tom de voz;
-- regras importantes.
+Examples:
 
-#### `01_templates`
+- proposal model;
+- report template;
+- presentation template;
+- email template;
+- contract model;
+- visual identity.
 
-Modelos que Claude pode usar, mas não deve alterar.
+Important rule:
 
-Exemplos:
+> “Never edit files in the templates folder. Just copy and use as a base.”
 
-- modelo de proposta;
-- modelo de relatório;
-- modelo de apresentação;
-- modelo de e-mail;
-- modelo de contrato;
-- identidade visual.
-
-Regra importante:
-
-> “Nunca edite arquivos da pasta templates. Apenas copie e use como base.”
-
-#### `02_projetos`
-
-Pastas separadas para cada projeto ou cliente.
-
-```text
+####`02_projetos`Separate folders for each project or client.```text
 /02_projetos
   /cliente_A
   /cliente_B
@@ -247,43 +231,33 @@ Pastas separadas para cada projeto ou cliente.
   /propostas
 ```
 
-#### `03_entradas`
+#### `03_entradas`Raw files that Claude must process.
 
-Arquivos brutos que Claude deve processar.
-
-Exemplos:
+Examples:
 
 - PDFs;
-- transcrições;
+- transcriptions;
 - prints;
-- planilhas;
-- documentos;
-- áudios transcritos.
+- spreadsheets;
+- documents;
+- transcribed audios.
 
-#### `04_processando`
+####`04_processando`Temporary area for work in progress.
 
-Área temporária para trabalho em andamento.
+####`05_outputs`Where Claude must save final deliverables.
 
-#### `05_outputs`
+Examples:
 
-Onde Claude deve salvar entregáveis finais.
-
-Exemplos:
-
-- relatórios;
-- apresentações;
-- resumos;
-- planilhas;
-- documentos prontos;
+- reports;
+- presentations;
+- summaries;
+- spreadsheets;
+- ready documents;
 - checklists.
 
-#### `06_arquivo`
+####`06_arquivo`Old or finished materials.
 
-Materiais antigos ou finalizados.
-
-## Instrução prática para Claude no Nível 3
-
-```text
+## Practical instruction for Claude at Level 3```text
 Antes de começar qualquer tarefa, leia primeiro a pasta 00_sobre_mim.
 
 Regras:
@@ -294,13 +268,9 @@ Regras:
 5. Salve entregáveis finais em 05_outputs.
 6. Ao terminar, gere um resumo do que foi feito.
 7. Se houver risco de apagar, sobrescrever ou mover arquivos importantes, peça confirmação antes.
-```
+```## Practical examples of use
 
-## Exemplos práticos de uso
-
-### Exemplo 1: Organizar downloads
-
-```text
+### Example 1: Organize downloads```text
 Organize minha pasta de downloads.
 
 Tarefas:
@@ -309,11 +279,7 @@ Tarefas:
 3. Não apague nada.
 4. Crie um resumo com o que foi encontrado.
 5. Salve o resumo em outputs.
-```
-
-### Exemplo 2: Relatório semanal
-
-```text
+```### Example 2: Weekly report```text
 Gere o relatório semanal do projeto Cliente A.
 
 Use os arquivos da pasta do cliente.
@@ -325,11 +291,7 @@ Organize o relatório em:
 5. Próximos passos
 
 Salve o resultado em outputs como relatório_semana_atual.md.
-```
-
-### Exemplo 3: Preparar reunião
-
-```text
+```### Example 3: Prepare meeting```text
 Prepare um briefing para minha reunião de amanhã.
 
 Leia:
@@ -344,11 +306,7 @@ Gere:
 3. Pontos de atenção
 4. Perguntas para fazer na reunião
 5. Próximas ações sugeridas
-```
-
-### Exemplo 4: Criar apresentação
-
-```text
+```### Example 4: Create presentation```text
 Com base nos arquivos desta pasta, crie uma apresentação de 8 slides.
 
 Estrutura:
@@ -363,11 +321,7 @@ Estrutura:
 
 Use linguagem clara e profissional.
 Salve a apresentação em outputs.
-```
-
-### Exemplo 5: Criar fluxo de atendimento
-
-```text
+```### Example 5: Create service flow```text
 Analise estes documentos e crie um fluxo de atendimento ao cliente.
 
 Entregue:
@@ -376,116 +330,114 @@ Entregue:
 3. Mensagens padrão
 4. Pontos de automação possíveis
 5. Checklist operacional
-```
+```## What changes in your work
 
-## O que muda no seu trabalho
+At Level 3, you start delegating entire blocks of work.
 
-No Nível 3, você começa a delegar blocos inteiros de trabalho.
+Before:
 
-Antes:
+You read files, organize data, copy excerpts, assemble documents and save manually.
 
-Você lia arquivos, organizava dados, copiava trechos, montava documentos e salvava manualmente.
+Now:
 
-Agora:
+You define the result, give access to the material and Claude carries out much of the process.
 
-Você define o resultado, dá acesso ao material e Claude executa boa parte do processo.
+## Important precautions
 
-## Cuidados importantes
+### 1. Give permissions carefully
 
-### 1. Dê permissões com cuidado
+Claude should only access necessary folders.
 
-Claude só deve acessar pastas necessárias.
+Avoid giving too broad access unnecessarily.
 
-Evite dar acesso amplo demais sem necessidade.
+Best:
 
-Melhor:
+> “Work only in this project folder.”
 
-> “Trabalhe apenas nesta pasta do projeto.”
+Worst:
 
-Pior:
+> “Use my entire computer.”
 
-> “Use meu computador inteiro.”
+### 2. Protect templates
 
-### 2. Proteja templates
+Templates should be read-only in practice.
 
-Templates devem ser somente leitura na prática.
+Always say:
 
-Sempre diga:
+> “Do not edit the templates. Make copies.”
 
-> “Não edite os templates. Faça cópias.”
+### 3. Never delete files without confirmation
 
-### 3. Nunca deixe apagar arquivos sem confirmação
+Always include this rule:
 
-Inclua sempre esta regra:
+> “Do not delete anything without my confirmation.”
 
-> “Não apague nada sem minha confirmação.”
+### 4. Request final report
 
-### 4. Peça relatório final
+When concluding, Claude should say:
 
-Ao concluir, Claude deve dizer:
+- what you did;
+- which files you read;
+- which files you created;
+- where you saved it;
+- what problems you encountered;
+- which needs human review.
 
-- o que fez;
-- quais arquivos leu;
-- quais arquivos criou;
-- onde salvou;
-- quais problemas encontrou;
-- o que precisa de revisão humana.
+### 5. Start with low-risk tasks
 
-### 5. Comece com tarefas de baixo risco
+Don't start by automating something sensitive.
 
-Não comece automatizando algo sensível.
+Start with:
 
-Comece com:
+- organize copies of files;
+- generate summaries;
+- create drafts;
+- assemble checklists;
+- compare documents;
+- prepare internal materials.
 
-- organizar cópias de arquivos;
-- gerar resumos;
-- criar rascunhos;
-- montar checklists;
-- comparar documentos;
-- preparar materiais internos.
+Then move on to more important tasks.
 
-Depois avance para tarefas mais importantes.
+## How to know that you have mastered Level 3
 
-## Como saber que você domina o Nível 3
+You are at Level 3 when:
 
-Você está no Nível 3 quando:
+- Claude can work with his folders;
+- you use skills for repeated tasks;
+- you have a structure of inputs and outputs;
+- you generate deliverables with less intervention;
+- you use Claude to organize files;
+- you schedule simple tasks;
+- you trigger jobs via desktop or cell phone;
+- you start thinking in processes, not just prompts.
 
-- Claude consegue trabalhar com suas pastas;
-- você usa skills para tarefas repetidas;
-- você tem estrutura de entradas e outputs;
-- você gera entregáveis com menos intervenção;
-- você usa Claude para organizar arquivos;
-- você agenda tarefas simples;
-- você aciona trabalhos pelo desktop ou celular;
-- você começa a pensar em processos, não apenas prompts.
+## Expected result
 
-## Resultado esperado
+At Level 3, you can save **10 hours or more per week**, mainly on operational tasks.
 
-No Nível 3, você pode economizar **10 horas ou mais por semana**, principalmente em tarefas operacionais.
+You get:
 
-Você ganha:
+- organization;
+- execution;
+- standardization;
+- repetition of processes;
+- generation of deliverables;
+- less rework;
+- more ability to serve customers;
+- basis for selling simple automations.
 
-- organização;
-- execução;
-- padronização;
-- repetição de processos;
-- geração de entregáveis;
-- menos retrabalho;
-- mais capacidade de atender clientes;
-- base para vender automações simples.
+## Level 3 Limit
 
-## Limite do Nível 3
+The limit is that there is still a lack of complete technical rigor.
 
-O limite é que ainda falta rigor técnico completo.
+Claude can perform tasks, but for more complex systems you still need:
 
-Claude pode executar tarefas, mas para sistemas mais complexos você ainda precisa de:
-
-- controle de versão;
-- revisão de código;
-- ambientes isolados;
-- testes;
+- version control;
+- code review;
+- isolated environments;
+- tests;
 - branches;
-- subagentes especializados;
-- validação mais robusta.
+- specialized subagents;
+- more robust validation.
 
-Quando você começa a precisar de engenharia real, múltiplas sessões paralelas e projetos técnicos mais sérios, entra no **Nível 4 — Avançado**, com Claude Code.
+When you start needing real engineering, multiple parallel sessions, and more serious technical projects, enter **Level 4 — Advanced**, with Claude Code.
